@@ -1,4 +1,4 @@
-#teach-yourself-cs-curriculum
+# teach-yourself-cs-curriculum
 
 This document is my record of work towards a Self-Taught equivalent of a CS degree. The core curriculum is as perscribed by Oz Nove and Myles Byrne, authors of [teachyourselfcs.com](https://teachyourselfcs.com), but consists of an additional slew of resources that I have completed / am interested in. If you want to ask questions about the core curriculum, all the answers are to be found at the link above.
 
@@ -26,5 +26,5 @@ Crafting Interpreters | Book | Languages and Compilers | queued | [tycs](https:/
 Alex Aiken's course on edX | Video | Languages and Compilers | queued | [tycs](https://teachyourselfcs.com/)
 Designing Data-Intensive Applications by Martin Kleppmann | Book | Distributed Systems | queued | [tycs](https://teachyourselfcs.com/)
 MIT 6.824 | Video | Distributed Systems | queued | [tycs](https://teachyourselfcs.com/)
-YDKJS Book Series (all) | Book | JS | completed | [ydkjs](https://github.com/getify/You-Dont-Know-JS)
+YDKJS Book Series (all) | Book | JS | [x] | [ydkjs](https://github.com/getify/You-Dont-Know-JS)
 
