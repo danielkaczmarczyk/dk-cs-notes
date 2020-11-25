@@ -4,7 +4,7 @@ This document is my record of work towards a Self-Taught equivalent of a CS degr
 
 The purpose of this repository is twofold - to keep myself organised and accountable, and also to be able to share my experience with other people who are undertaking a similar challenge of completing this curriculum.
 
-## Progress
+## Progress
 
 Resource | Type | Topic | Status | Source
 ---------|------|-------|--------|-------
