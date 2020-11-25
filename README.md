@@ -26,5 +26,5 @@ Crafting Interpreters | Book | Languages and Compilers | queued | [tycs](https:/
 Alex Aiken's course on edX | Video | Languages and Compilers | queued | [tycs](https://teachyourselfcs.com/)
 Designing Data-Intensive Applications by Martin Kleppmann | Book | Distributed Systems | queued | [tycs](https://teachyourselfcs.com/)
 MIT 6.824 | Video | Distributed Systems | queued | [tycs](https://teachyourselfcs.com/)
-YDKJS Book Series (all) | Book | JS | [x] | [ydkjs](https://github.com/getify/You-Dont-Know-JS)
+YDKJS Book Series (all) | Book | JS | completed | [ydkjs](https://github.com/getify/You-Dont-Know-JS)
 
