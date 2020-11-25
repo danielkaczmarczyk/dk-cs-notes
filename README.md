@@ -9,8 +9,8 @@ The purpose of this repository is twofold - to keep myself organised and account
 Resource | Type | Topic | Status | Source
 ---------|------|-------|--------|-------
 YDKJS Book Series (all) | Book | JS | completed | [ydkjs](https://github.com/getify/You-Dont-Know-JS)
-Structure and Implementation of Computer Programs | Book | Programming | 1.2/5.5 | [tycs](https://teachyourselfcs.com/)
-Brian Harvey's Berkeley CS 61A | Video |  Programming | 7/44 | [videos](https://archive.org/details/ucberkeley-webcast-PL3E89002AA9B9879E?sort=titleSorter)
+Structure and Implementation of Computer Programs | Book | Programming | 1.3/5.5 | [tycs](https://teachyourselfcs.com/)
+Brian Harvey's Berkeley CS 61A | Video |  Programming | 9/40 | [videos](https://archive.org/details/ucberkeley-webcast-PL3E89002AA9B9879E?sort=titleSorter)
 Computer Systems: A Programmer's Perspective | Book | Computer Architecture | queued | [tycs](https://teachyourselfcs.com/)
 Berkeley CS 61C | Video | Computer Architecture | queued | [tycs](https://teachyourselfcs.com/)
 The Algorithm Design Manual | Book | Algorithms and Data Structures | queued | [tycs](https://teachyourselfcs.com/)
