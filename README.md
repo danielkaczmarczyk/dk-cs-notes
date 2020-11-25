@@ -8,8 +8,8 @@ The purpose of this repository is twofold - to keep myself organised and account
 
 Resource | Type | Topic | Status | Source
 ---------|------|-------|--------|-------
-Structure and Implementation of Computer Programs | Book | Programming | in progress | [tycs](https://teachyourselfcs.com/)
-Brian Harvey's Berkeley CS 61A | Video |  Programming | in progress | [tycs](https://teachyourselfcs.com/)
+Structure and Implementation of Computer Programs | Book | Programming | 1.2/5.5 | [tycs](https://teachyourselfcs.com/)
+Brian Harvey's Berkeley CS 61A | Video |  Programming | 7/44 | [videos](https://archive.org/details/ucberkeley-webcast-PL3E89002AA9B9879E?sort=titleSorter)
 Computer Systems: A Programmer's Perspective | Book | Computer Architecture | queued | [tycs](https://teachyourselfcs.com/)
 Berkeley CS 61C | Video | Computer Architecture | queued | [tycs](https://teachyourselfcs.com/)
 The Algorithm Design Manual | Book | Algorithms and Data Structures | queued | [tycs](https://teachyourselfcs.com/)
@@ -27,4 +27,11 @@ Alex Aiken's course on edX | Video | Languages and Compilers | queued | [tycs](h
 Designing Data-Intensive Applications by Martin Kleppmann | Book | Distributed Systems | queued | [tycs](https://teachyourselfcs.com/)
 MIT 6.824 | Video | Distributed Systems | queued | [tycs](https://teachyourselfcs.com/)
 YDKJS Book Series (all) | Book | JS | completed | [ydkjs](https://github.com/getify/You-Dont-Know-JS)
+C.O.D.E. by Charles Petzold | Book | Programming | completed | [amazon](https://www.amazon.co.uk/Code-Language-Computer-Hardware-Software/dp/0735611319/ref=sr_1_1?adgrpid=50764275022&dchild=1&gclid=CjwKCAiAnvj9BRA4EiwAuUMDfyT5n7YXKm936Z8c81dv1Zk3kFNT3XOw6WG6fv90hR5zkOFLpAvgpxoCnF0QAvD_BwE&hvadid=259073923662&hvdev=c&hvlocint=9045954&hvlocphy=20853&hvnetw=g&hvqmt=b&hvrand=15507896899033965839&hvtargid=kwd-300578219443&hydadcr=17607_1775410&keywords=charles+petzold+code&qid=1606314907&sr=8-1&tag=googhydr-21)
+
+## Algorithms && Data Structures general problem solving practice
+
+Resource | Status | Source | Repo
+---------|--------|--------|-----
+Advent of Code 2015 | in progress | [2015](https://adventofcode.com/2015) | [my solutions](https://github.com/danielkaczmarczyk/adventOfCode)
 
