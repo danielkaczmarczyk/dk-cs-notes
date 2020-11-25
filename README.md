@@ -1,10 +1,10 @@
 # teach-yourself-cs-curriculum
 
-This document is my record of work towards a Self-Taught equivalent of a CS degree. The core curriculum is as perscribed by Oz Nove and Myles Byrne, authors of [teachyourselfcs.com](https://teachyourselfcs.com), but consists of an additional slew of resources that I have completed / am interested in. If you want to ask questions about the core curriculum, all the answers are to be found at the link above.
+This document is my record of work towards a Self-Taught equivalent of a CS degree. The core curriculum is as perscribed by Oz Nove and Myles Byrne, authors of [teachyourselfcs.com](https://teachyourselfcs.com), but consists of additional resources that I have completed / am interested in. If you want to ask questions about the core curriculum, all the answers are to be found at the link above.
 
 The purpose of this repository is twofold - to keep myself organised and accountable, and also to be able to share my experience with other people who are undertaking a similar challenge of completing this curriculum.
 
-## Progress
+## Progress
 
 Resource | Type | Topic | Status | Source
 ---------|------|-------|--------|-------
