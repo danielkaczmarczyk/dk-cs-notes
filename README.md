@@ -9,6 +9,10 @@ The purpose of this repository is twofold - to keep myself organised and account
 Resource | Type | Topic | Status | Source
 ---------|------|-------|--------|-------
 YDKJS Book Series (all) | Book | JS | completed | [ydkjs](https://github.com/getify/You-Dont-Know-JS)
+tmux: productive mouse-free development | Book | tmux | in progress | [no link yet]() 
+William Shotts - The Linux Command Line A Complete Introduction No Starch Press (2019) | Book | linux | in progress | [no link yet]() 
+Drew Neil - Modern Vim Craft Your Development Environment with Vim 8 and Neovim-Pragmatic Bookshelf (2018) | Book | vim | in progress | [no link yet]() 
+Composing Programs | Book | Programming | in progress | [composing programs](https://composingprograms.com/) 
 Structure and Implementation of Computer Programs | Book | Programming | 1.3/5.5 | [tycs](https://teachyourselfcs.com/)
 Brian Harvey's Berkeley CS 61A | Video |  Programming | 11/40 | [videos](https://archive.org/details/ucberkeley-webcast-PL3E89002AA9B9879E?sort=titleSorter)
 Computer Systems: A Programmer's Perspective | Book | Computer Architecture | queued | [tycs](https://teachyourselfcs.com/)
