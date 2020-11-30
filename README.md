@@ -13,8 +13,8 @@ tmux: productive mouse-free development | Book | tmux | in progress | [no link y
 William Shotts - The Linux Command Line A Complete Introduction No Starch Press (2019) | Book | linux | in progress | [no link yet]() 
 Drew Neil - Modern Vim Craft Your Development Environment with Vim 8 and Neovim-Pragmatic Bookshelf (2018) | Book | vim | in progress | [no link yet]() 
 Composing Programs | Book | Programming | in progress | [composing programs](https://composingprograms.com/) 
-Structure and Implementation of Computer Programs | Book | Programming | 1.3/5.5 | [tycs](https://teachyourselfcs.com/)
-Brian Harvey's Berkeley CS 61A | Video |  Programming | 11/40 | [videos](https://archive.org/details/ucberkeley-webcast-PL3E89002AA9B9879E?sort=titleSorter)
+Structure and Implementation of Computer Programs | Book | Programming | in progress | [tycs](https://teachyourselfcs.com/)
+Brian Harvey's Berkeley CS 61A | Video |  Programming | in progress | [videos](https://archive.org/details/ucberkeley-webcast-PL3E89002AA9B9879E?sort=titleSorter)
 Computer Systems: A Programmer's Perspective | Book | Computer Architecture | queued | [tycs](https://teachyourselfcs.com/)
 Berkeley CS 61C | Video | Computer Architecture | queued | [tycs](https://teachyourselfcs.com/)
 The Algorithm Design Manual | Book | Algorithms and Data Structures | queued | [tycs](https://teachyourselfcs.com/)
@@ -39,5 +39,5 @@ CS50 | Video | CS | 2020 queued | [no link yet]()
 
 Resource | Status | Source | Repo
 ---------|--------|--------|-----
-Advent of Code 2015 | in progress | [2015](https://adventofcode.com/2015) | [my solutions](https://github.com/danielkaczmarczyk/adventOfCode)
+Advent of Code | in progress | [click](https://adventofcode.com) | [my solutions](https://github.com/danielkaczmarczyk/adventOfCode)
 
