@@ -37,14 +37,14 @@ Alex Aiken's course on edX | Video | Languages and Compilers | queued | [tycs](h
 Designing Data-Intensive Applications by Martin Kleppmann | Book | Distributed Systems | queued | [tycs](https://teachyourselfcs.com/)
 MIT 6.824 | Video | Distributed Systems | queued | [tycs](https://teachyourselfcs.com/)
 
-## Problem Solving
+### Problem Solving
 
 Resource | Status | Source | Repo
 ---------|--------|--------|-----
 Advent of Code | in progress | [click](https://adventofcode.com) | [my solutions](https://github.com/danielkaczmarczyk/adventOfCode)
 LeetCode | in progress | [click](https://leetcode.com) | [my solutions](https://github.com/danielkaczmarczyk/leetCode)
 
-## Other Resources I've Found Valuable
+### Other Resources I've Found Valuable
 
 Resource | Status | Source | Repo
 ---------|--------|--------|-----
