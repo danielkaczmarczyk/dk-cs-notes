@@ -6,8 +6,8 @@ The purpose of this repository is twofold - to keep myself organised and account
 
 ## Table of Contents
 
-[General Findings](##general-findings)
-[Progress](##Progress)
+[General Findings](#general-findings)
+[Progress](#progress)
 
 ## Progress
 
