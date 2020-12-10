@@ -8,17 +8,15 @@ Join my [Discord server](https://discord.gg/HjNfTnu9aQ) if you're interested in 
 
 ## Table of Contents
 
-[General Findings](#general-findings)
-[Progress](#progress)
+- [Progress](#progress)
+- [General Findings](#general-findings)
 
 ## Progress
 
+### teachyourselfcs core
+
 Resource | Type | Topic | Status | Source
 ---------|------|-------|--------|-------
-YDKJS Book Series (all) | Book | JS | completed | [ydkjs](https://github.com/getify/You-Dont-Know-JS)
-tmux: productive mouse-free development | Book | tmux | in progress | [no link yet]() 
-William Shotts - The Linux Command Line A Complete Introduction No Starch Press (2019) | Book | linux | in progress | [no link yet]() 
-Drew Neil - Modern Vim Craft Your Development Environment with Vim 8 and Neovim-Pragmatic Bookshelf (2018) | Book | vim | in progress | [no link yet]() 
 Composing Programs | Book | Programming | in progress | [composing programs](https://composingprograms.com/) 
 Structure and Implementation of Computer Programs | Book | Programming | in progress | [tycs](https://teachyourselfcs.com/)
 Brian Harvey's Berkeley CS 61A | Video |  Programming | in progress | [videos](https://archive.org/details/ucberkeley-webcast-PL3E89002AA9B9879E?sort=titleSorter)
@@ -38,9 +36,6 @@ Crafting Interpreters | Book | Languages and Compilers | queued | [tycs](https:/
 Alex Aiken's course on edX | Video | Languages and Compilers | queued | [tycs](https://teachyourselfcs.com/)
 Designing Data-Intensive Applications by Martin Kleppmann | Book | Distributed Systems | queued | [tycs](https://teachyourselfcs.com/)
 MIT 6.824 | Video | Distributed Systems | queued | [tycs](https://teachyourselfcs.com/)
-C.O.D.E. by Charles Petzold | Book | Programming | completed | [amazon](https://www.amazon.co.uk/Code-Language-Computer-Hardware-Software/dp/0735611319/ref=sr_1_1?adgrpid=50764275022&dchild=1&gclid=CjwKCAiAnvj9BRA4EiwAuUMDfyT5n7YXKm936Z8c81dv1Zk3kFNT3XOw6WG6fv90hR5zkOFLpAvgpxoCnF0QAvD_BwE&hvadid=259073923662&hvdev=c&hvlocint=9045954&hvlocphy=20853&hvnetw=g&hvqmt=b&hvrand=15507896899033965839&hvtargid=kwd-300578219443&hydadcr=17607_1775410&keywords=charles+petzold+code&qid=1606314907&sr=8-1&tag=googhydr-21)
-CS50 | Video | CS | 2020 queued | [no link yet]()
-
 
 ## Problem Solving
 
@@ -48,6 +43,17 @@ Resource | Status | Source | Repo
 ---------|--------|--------|-----
 Advent of Code | in progress | [click](https://adventofcode.com) | [my solutions](https://github.com/danielkaczmarczyk/adventOfCode)
 LeetCode | in progress | [click](https://leetcode.com) | [my solutions](https://github.com/danielkaczmarczyk/leetCode)
+
+## Other Resources I've Found Valuable
+
+Resource | Status | Source | Repo
+---------|--------|--------|-----
+YDKJS Book Series (all) | Book | JS | completed | [ydkjs](https://github.com/getify/You-Dont-Know-JS)
+tmux: productive mouse-free development | Book | tmux | in progress | [no link yet]() 
+William Shotts - The Linux Command Line A Complete Introduction No Starch Press (2019) | Book | linux | in progress | [no link yet]() 
+Drew Neil - Modern Vim Craft Your Development Environment with Vim 8 and Neovim-Pragmatic Bookshelf (2018) | Book | vim | in progress | [no link yet]()
+CS50 | Video | CS | 2020 queued | [no link yet]()
+C.O.D.E. by Charles Petzold | Book | Programming | completed | [amazon](https://www.amazon.co.uk/Code-Language-Computer-Hardware-Software/dp/0735611319/ref=sr_1_1?adgrpid=50764275022&dchild=1&gclid=CjwKCAiAnvj9BRA4EiwAuUMDfyT5n7YXKm936Z8c81dv1Zk3kFNT3XOw6WG6fv90hR5zkOFLpAvgpxoCnF0QAvD_BwE&hvadid=259073923662&hvdev=c&hvlocint=9045954&hvlocphy=20853&hvnetw=g&hvqmt=b&hvrand=15507896899033965839&hvtargid=kwd-300578219443&hydadcr=17607_1775410&keywords=charles+petzold+code&qid=1606314907&sr=8-1&tag=googhydr-21)
 
 ## General Findings
 
