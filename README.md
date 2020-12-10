@@ -4,6 +4,11 @@ This document is my record of work towards a Self-Taught equivalent of a CS degr
 
 The purpose of this repository is twofold - to keep myself organised and accountable, and also to be able to share my experience with other people who are undertaking a similar challenge of completing this curriculum.
 
+## Table of Contents
+
+[General Findings](##general-findings)
+[Progress](##Progress)
+
 ## Progress
 
 Resource | Type | Topic | Status | Source
@@ -35,9 +40,14 @@ C.O.D.E. by Charles Petzold | Book | Programming | completed | [amazon](https://
 CS50 | Video | CS | 2020 queued | [no link yet]()
 
 
-## Algorithms && Data Structures general problem solving practice
+## Problem Solving
 
 Resource | Status | Source | Repo
 ---------|--------|--------|-----
 Advent of Code | in progress | [click](https://adventofcode.com) | [my solutions](https://github.com/danielkaczmarczyk/adventOfCode)
+LeetCode | in progress | [click](https://leetcode.com) | [my solutions](https://github.com/danielkaczmarczyk/leetCode)
+
+## General Findings
+
+test body
 
