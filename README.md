@@ -4,6 +4,8 @@ This document is my record of work towards a Self-Taught equivalent of a CS degr
 
 The purpose of this repository is twofold - to keep myself organised and accountable, and also to be able to share my experience with other people who are undertaking a similar challenge of completing this curriculum.
 
+Join my [Discord server](https://discord.gg/HjNfTnu9aQ) if you're interested in working through that curriculum too!
+
 ## Table of Contents
 
 [General Findings](#general-findings)
@@ -49,11 +51,15 @@ LeetCode | in progress | [click](https://leetcode.com) | [my solutions](https://
 
 ## General Findings
 
+### Biggest Challenges
+
+By far the most challenging part of taking a self-guided course like this is not doing it with other people. I have started a [Discord Server](https://discord.gg/HjNfTnu9aQ) for people who are also working through that curriculum, and it is helpful to exchange experiences and advice. Be ready for a lot of frustration trying to find solutions to your problems without a centralised place for people who are doing something similar hang out. Luckily there are groups centered around various resources and topics (SICP has a big community).
+
 ### First few weeks
 
 Working through the first month of the curriculum has been a challenge - especially in guiding my learning and scheduling sessions. Working on your own you have to answer questions regarding what to study, for how long, and what are measurable deliverables. I've iterated over a few frameworks and I've found that having a clear view of a week ahead with a minimum goal works best for me. The study topics are organised in sections as per the teachyourselfcs curriculum, so for example:
 
-I'm working through the Programming section, directly on Composing Programs, therefore every day I spend 3-5h on the main topic. To add variety, and for pleasure of it (I find it brings me the most joy to do) I also schedule daily code challenge sessions (leetcode / codewars / advent of code etc). That takes up a couple hours, and I use it to not only brush up on Algorithms, Data Structures, and Problem Solving, but also polish a language of my choice that I'm currently working with. As a tetriary topic of the day I include meta-study, on the tooling that I am using. [Therefore there's always a 30-60 minute session on vim / tmux / shell scripting etc.](#rethinking-development-process-and-tooling). Lastly, I make sure to review [recent knowledge.](#flashcards,-flashcards,-flashcards.)
+I'm working through the Programming section, directly on Composing Programs, therefore every day I spend 3-5h on the main topic. To add variety, and for pleasure of it (I find it brings me the most joy to do) I also schedule daily code challenge sessions (leetcode / codewars / advent of code etc). That takes up a couple hours, and I use it to not only brush up on Algorithms, Data Structures, and Problem Solving, but also polish a language of my choice that I'm currently working with. As a tetriary topic of the day I include meta-study, on the tooling that I am using. [Therefore there's always a 30-60 minute session on vim / tmux / shell scripting etc.](#rethinking-development-process-and-tooling). Lastly, I make sure to review [recent knowledge.](#flashcards-flashcards-flashcards.)
 
 ### Flashcards, flashcards, flashcards.
 
@@ -63,4 +69,5 @@ I'm using a [tool called Anki](https://apps.ankiweb.net/) to organise my knowled
 
 Working on the core Computer Science content is one thing, but becoming more proficient with the tooling while doing so is a completely different topic. I've been used to working in VSCode + separate terminal setup, but due to the fact that I am working on two different computers often (macos and linux), I need a reliable and replicable setup on both machines. For that reason I have narrowed the text editing and all work on a computer to using `tmux`, and `vim`. If you're not sure where to start with that, [I suggest a great series of video lectures](https://www.youtube.com/channel/UCuXy5tCgEninup9cGplbiFw).
 
+One example of a simple gain is to use a tool like [nodemon](https://github.com/remy/nodemon) to speed up iteration through the coding challenges / exercises. Do not ignore it for just being a JS tool, take a look at the documentation and the `--exec` flag.
 
