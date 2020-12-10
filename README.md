@@ -47,7 +47,5 @@ Resource | Status | Source | Repo
 Advent of Code | in progress | [click](https://adventofcode.com) | [my solutions](https://github.com/danielkaczmarczyk/adventOfCode)
 LeetCode | in progress | [click](https://leetcode.com) | [my solutions](https://github.com/danielkaczmarczyk/leetCode)
 
-## General Findings
-
-test body
+## General Findings
 
