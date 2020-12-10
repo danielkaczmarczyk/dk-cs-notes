@@ -49,3 +49,18 @@ LeetCode | in progress | [click](https://leetcode.com) | [my solutions](https://
 
 ## General Findings
 
+### First few weeks
+
+Working through the first month of the curriculum has been a challenge - especially in guiding my learning and scheduling sessions. Working on your own you have to answer questions regarding what to study, for how long, and what are measurable deliverables. I've iterated over a few frameworks and I've found that having a clear view of a week ahead with a minimum goal works best for me. The study topics are organised in sections as per the teachyourselfcs curriculum, so for example:
+
+I'm working through the Programming section, directly on Composing Programs, therefore every day I spend 3-5h on the main topic. To add variety, and for pleasure of it (I find it brings me the most joy to do) I also schedule daily code challenge sessions (leetcode / codewars / advent of code etc). That takes up a couple hours, and I use it to not only brush up on Algorithms, Data Structures, and Problem Solving, but also polish a language of my choice that I'm currently working with. As a tetriary topic of the day I include meta-study, on the tooling that I am using. [Therefore there's always a 30-60 minute session on vim / tmux / shell scripting etc.](#rethinking-development-process-and-tooling). Lastly, I make sure to review [recent knowledge.](#flashcards,-flashcards,-flashcards.)
+
+### Flashcards, flashcards, flashcards.
+
+I'm using a [tool called Anki](https://apps.ankiweb.net/) to organise my knowledge into bite-sized reviewable flashcards. It's an incredible and simple tool that enabled me to actually retrieve a lot of knowledge. Simply as I read / watch / code, every time I stumble upon a nugget of information, I distill it to a fact, write it down into the flashcard database and review them daily. Time invested in those is worth its weight in gold for me.
+
+### Rethinking development process and tooling
+
+Working on the core Computer Science content is one thing, but becoming more proficient with the tooling while doing so is a completely different topic. I've been used to working in VSCode + separate terminal setup, but due to the fact that I am working on two different computers often (macos and linux), I need a reliable and replicable setup on both machines. For that reason I have narrowed the text editing and all work on a computer to using `tmux`, and `vim`. If you're not sure where to start with that, [I suggest a great series of video lectures](https://www.youtube.com/channel/UCuXy5tCgEninup9cGplbiFw).
+
+
