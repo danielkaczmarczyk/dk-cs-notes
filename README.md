@@ -73,8 +73,11 @@ One example of a simple gain is to use a tool like [nodemon](https://github.com/
 
 ### Diary/Log
 
-Blog-like selection of thoughts. Unstructured. Writing those helps me rethink the process.
+Blog-like selection of thoughts. Unstructured. Writing those helps me think about the process of learning more clearly. 
 
 #### 11th December 2020
 
 For all this to work I need a sustainable system through which I am going to be able to measure - how well I'm doing, and am I doing enough. Learning on one's own can become chaotic and unstructured, and to countermeasure that, I decided to time myself study (not to a second, but let's say, to a 15-20 min period). Instead of using a schedule based on a week-plan, I am using a table in Google Sheets to log planned learning, with time spent on it, for the ease of querying, filtering, and tallying. This approach leaves me with raw data on my efforts (at least). It has worked for me to use a fitbit that way -- measuring effort draws better results for me, I find. 
+
+I have deleted all the repos for course material (I did create one for each course/book, but it has been proven to be a lot of redundant work since code included in those repositories is just a scattered selection of snippets. All the code for this process therefore is currently included in this repository and that's how I intend to keep it. Also, the reason I've done it in the first place is that I failed at partitioning my linux laptop's hard drive and I'm currently reinstalling Ubuntu and I've found copying all the repos to be a lot of work.
+
