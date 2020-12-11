@@ -79,6 +79,7 @@ One example of a simple gain is to use a tool like [nodemon](https://github.com/
 - `nnn` a more advanced alt to `broot`
 - `ranger` for navigating files with `vi` bindings 
 - `tldr` for snippets of usage examples of tools, saves you stackoverflow googling
+- `pretzo` [for a really pretty](https://github.com/sorin-ionescu/prezto) `zsh` prompt. 
 
 ### Diary/Log
 
