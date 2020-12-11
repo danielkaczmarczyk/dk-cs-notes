@@ -10,6 +10,7 @@ Join my [Discord server](https://discord.gg/HjNfTnu9aQ) if you're interested in 
 
 - [Progress](#progress)
 - [General Findings](#general-findings)
+- [Notes on different parts of the course](#course)
 - [Diary/Log](#diary/log)
 
 ## Progress
@@ -80,6 +81,14 @@ One example of a simple gain is to use a tool like [nodemon](https://github.com/
 - `ranger` for navigating files with `vi` bindings 
 - `tldr` for snippets of usage examples of tools, saves you stackoverflow googling
 - `pretzo` [for a really pretty](https://github.com/sorin-ionescu/prezto) `zsh` prompt. 
+
+### Course
+
+#### Programming
+
+#### Composing Programs
+
+I found [this article](https://accu.org/journals/overload/16/86/golodetz_1506/) useful while digesting Partition Trees described in section 2.3.6.
 
 ### Diary/Log
 

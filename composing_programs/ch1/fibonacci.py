@@ -12,9 +12,9 @@ def fib_memo(n):
 
     if n not in memo:
         if n == 0:
-            return 0
-        if n == 1:
             return 1
+        if n == 1:
+            return 2
         val = fib_memo(n - 2) + fib_memo(n - 1)
         memo[n] = val
         return val
@@ -25,9 +25,9 @@ def fib(n):
     global calls
     calls += 1
     if n == 0:
-        return 0
-    if n == 1:
         return 1
+    if n == 1:
+        return 2
     return fib(n - 2) + fib(n - 1)
 
 def call(n):
