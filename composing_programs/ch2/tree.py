@@ -57,3 +57,4 @@ t4 = tree(1, [tree(2), tree(3), tree(4)])
 t5 = tree(1, [tree(2, [tree(5), tree(6)]), tree(3), tree(4)])
 t6 = tree(1, [tree(2, [tree(5, [tree(7), tree(8), tree(9)]), tree(6)]), tree(3), tree(4)])
 
+print(tree(0, [tree(x) for x in [1, 2, 3, 4, 5, 6, 7]]))
