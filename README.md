@@ -112,3 +112,6 @@ For all this to work I need a sustainable system through which I am going to be 
 
 I have deleted all the repos for course material (I did create one for each course/book, but it has been proven to be a lot of redundant work since code included in those repositories is just a scattered selection of snippets. All the code for this process therefore is currently included in this repository and that's how I intend to keep it. Also, the reason I've done it in the first place is that I failed at partitioning my linux laptop's hard drive and I'm currently reinstalling Ubuntu and I've found copying all the repos to be a lot of work.
 
+Important reminder to self (and you, dear reader) - writing bad code that works is better than writing good code that doesn't, assuming that's only the first step. I get too hung up and critical with my solutions before they work, and the way to beautiful code always has to be paved with first few rough drafts. Write bad code. Make it work. Make it better, beautiful, faster. Have a short feedback loop.
+
+
