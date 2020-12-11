@@ -1,0 +1,18 @@
+{
+  "name": "advent_of_code",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danielkaczmarczyk/adventOfCode.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/danielkaczmarczyk/adventOfCode/issues"
+  },
+  "homepage": "https://github.com/danielkaczmarczyk/adventOfCode#readme",
+  "dependencies": {
+    "lodash": "^4.17.20",
+    "md5": "^2.3.0"
+  }
+}

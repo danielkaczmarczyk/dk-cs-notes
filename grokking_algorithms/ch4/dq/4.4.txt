@@ -1,0 +1,8 @@
+Base case and recursive case for binary search.
+
+Base case(s):
+  guess is correct, length of the list to search is 0 
+
+Recursive case:
+  call binary search with the list of size [:i] or [i:], depending on
+  whether what we guessed is correct / not
