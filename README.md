@@ -73,7 +73,9 @@ Working on the core Computer Science content is one thing, but becoming more pro
 
 One example of a simple gain is to use a tool like [nodemon](https://github.com/remy/nodemon) to speed up iteration through the coding challenges / exercises. Do not ignore it for just being a JS tool, take a look at the documentation and the `--exec` flag.
 
-### Command-Line tools i highly recommend getting
+### Command Line tools i highly recommend
+
+All should be supported under most unix systems.
 
 - `fzf` for fuzzy matching searches in text files. a good alternative to grep/ripgrep for quick searches
 - `broot` for a very neat alternative to `ls -R` or `tree` commands
