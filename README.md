@@ -10,6 +10,7 @@ Join my [Discord server](https://discord.gg/HjNfTnu9aQ) if you're interested in 
 
 - [Progress](#progress)
 - [General Findings](#general-findings)
+- [Diary/Log](#diary/log)
 
 ## Progress
 
