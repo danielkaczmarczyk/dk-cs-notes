@@ -77,3 +77,10 @@ Working on the core Computer Science content is one thing, but becoming more pro
 
 One example of a simple gain is to use a tool like [nodemon](https://github.com/remy/nodemon) to speed up iteration through the coding challenges / exercises. Do not ignore it for just being a JS tool, take a look at the documentation and the `--exec` flag.
 
+### Diary/Log
+
+Blog-like selection of thoughts. Unstructured. Writing those helps me rethink the process.
+
+#### 11th December 2020
+
+For all this to work I need a sustainable system through which I am going to be able to measure - how well I'm doing, and am I doing enough. Learning on one's own can become chaotic and unstructured, and to countermeasure that, I decided to time myself study (not to a second, but let's say, to a 15-20 min period). Instead of using a schedule based on a week-plan, I am using a table in Google Sheets to log planned learning, with time spent on it, for the ease of querying, filtering, and tallying. This approach leaves me with raw data on my efforts (at least). It has worked for me to use a fitbit that way -- measuring effort draws better results for me, I find. 
