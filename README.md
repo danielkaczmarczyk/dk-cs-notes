@@ -42,6 +42,7 @@ MIT 6.824 | Video | Distributed Systems | queued | [tycs](https://teachyourselfc
 
 Resource | Type | Topic | Status | Source
 ---------|------|-------|--------|-------
+MIT Missing Semester | Videos | Tooling | in progress | [source](https://missing.csail.mit.edu/)
 YDKJS Book Series (all) | Book | JS | completed | [ydkjs](https://github.com/getify/You-Dont-Know-JS)
 tmux: productive mouse-free development | Book | tmux | in progress | [no link yet]() 
 William Shotts - The Linux Command Line A Complete Introduction No Starch Press (2019) | Book | linux | in progress | [no link yet]() 
