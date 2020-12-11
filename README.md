@@ -86,11 +86,21 @@ All should be supported under most unix systems.
 
 ### Course
 
+Various notes from the course content, that I will probably want to look up later.
+
 #### Programming
 
 #### Composing Programs
 
-I found [this article](https://accu.org/journals/overload/16/86/golodetz_1506/) useful while digesting Partition Trees described in section 2.3.6.
+I found [this article](https://accu.org/journals/overload/16/86/golodetz_1506/) useful while digesting Partition Trees described in section 2.3.6. Excerpt:
+
+ A partition tree is a way of representing a hierarchy of these partitions of an entity. The way it works is as follows:
+
+- Each node in the tree represents a part of the whole entity. In particular, the root node of the tree represents the entity in its entirety.
+- As is usual with trees in computer science, a node is either a branch node or a leaf node. (The distinction is that a branch node has child nodes, whereas a leaf has none.) In a partition tree, the children of a branch node represent a partition of the branch node (properly speaking, the parts of the entity represented by the children of the branch node represent a partition of the part of the entity represented by the branch node, but continually distinguishing between nodes and the sub-entities they represent is tedious).
+- Each layer in the hierarchy represents a partition of the entire entity.
+
+Using our pizza analogy, we could imagine first dividing our pizza into three portions, one for each person at the table. Each person's portion is then further sub-divided into four slices. Each person's slices are a partition of their portion, and the portions are a partition of the pizza as a whole. Furthermore, if you take all the slices, or all the portions, together, you have the entire pizza. 
 
 ### Diary/Log
 
