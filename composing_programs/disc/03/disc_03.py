@@ -60,8 +60,19 @@ def make_repeater(f, x):
             return f(repeat(n - 1))
     return repeat
 
-incr_1 = make_repeater(lambda x : x + 1, 1)
-print(incr_1(3))
+def is_prime(n):
+    def prime_helper(index):
+        if index == n:
+            return True
+        elif n % index == 0 or n == 1:
+            return False
+        else:
+            return prime_helper(index + 1)
+    return prime_helper(2)
+
+assert is_prime(2) == True, 'is prime didnt work'
+assert is_prime(7) == True, 'is prime didnt work'
+assert is_prime(1) == False, 'is prime didnt work'
 
 
 
