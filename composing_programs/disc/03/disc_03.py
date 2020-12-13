@@ -40,4 +40,46 @@ def merge(n1, n2):
         return(str(big) + str(small))
     return merge(n1 // 10, n2 // 10) + merge(n1 % 10, n2 % 10) 
 
+def make_repeater(f, x):
+    '''return a function that will call f on x n times'''
+    def repeat(n):
+        result = x
+        i = 1
+        while i <= n:
+            result = f(result)
+            i += 1
+        return result
+    return repeat
+
+def make_repeater(f, x):
+    '''recursive version of the above'''
+    def repeat(n):
+        if n == 0:
+            return x
+        else:
+            return f(repeat(n - 1))
+    return repeat
+
+incr_1 = make_repeater(lambda x : x + 1, 1)
+print(incr_1(3))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
