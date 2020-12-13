@@ -12,6 +12,7 @@ Join my [Discord server](https://discord.gg/HjNfTnu9aQ) if you're interested in 
 - [General Findings](#general-findings)
 - [Notes on different parts of the course](#course)
 - [Diary/Log](#diary/log)
+- [References](#references)
 
 ## Progress
 
@@ -114,4 +115,13 @@ I have deleted all the repos for course material (I did create one for each cour
 
 Important reminder to self (and you, dear reader) - writing bad code that works is better than writing good code that doesn't, assuming that's only the first step. I get too hung up and critical with my solutions before they work, and the way to beautiful code always has to be paved with first few rough drafts. Write bad code. Make it work. Make it better, beautiful, faster. Have a short feedback loop.
 
+## References
 
+This repository would not have existed if I had not been insipred by the people who did things like that before me. I'm eternally grateful for efforts of others publishing resources online, and here is a list of just a select few that I've used over the years to become a better programmer.
+
+- [Coding Interview University](https://github.com/jwasham/coding-interview-university)
+- [5+5](https://www.reddit.com/r/learnprogramming/comments/gsansp/my_55step_selftaught_cs_curriculum_updated/)
+- [Project-Based Learning](https://github.com/tuvtran/project-based-learning)
+- [Let's Build a Compiler](https://compilers.iecc.com/crenshaw/)
+- [OSSU](https://github.com/ossu/computer-science)
+- [p1xt](https://github.com/P1xt/p1xt-guides/blob/master/README.md)
