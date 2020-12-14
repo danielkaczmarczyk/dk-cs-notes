@@ -125,3 +125,4 @@ This repository would not have existed if I had not been insipred by the people 
 - [Let's Build a Compiler](https://compilers.iecc.com/crenshaw/)
 - [OSSU](https://github.com/ossu/computer-science)
 - [p1xt](https://github.com/P1xt/p1xt-guides/blob/master/README.md)
+- [startup next door](https://startupnextdoor.com/)
