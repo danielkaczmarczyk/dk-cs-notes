@@ -115,6 +115,10 @@ I have deleted all the repos for course material (I did create one for each cour
 
 Important reminder to self (and you, dear reader) - writing bad code that works is better than writing good code that doesn't, assuming that's only the first step. I get too hung up and critical with my solutions before they work, and the way to beautiful code always has to be paved with first few rough drafts. Write bad code. Make it work. Make it better, beautiful, faster. Have a short feedback loop.
 
+#### 14th December 2020
+
+It's been a very frustrating few days when I was working thgouh the programming section of the course, without proper preparation in maths. Foolishly I've assumed that Composing Programs is using fewer mathematical examples. I am therefore starting with my full attention on the course in Discrete Maths, and I already see how much benefit it is providing me. I have also enrolled and taken first couple weeks worth of classes of the [learning how to learn course on coursera](https://www.coursera.org/learn/learning-how-to-learn/), which already has pointed out a few serious mistakes in my methods thus far. I am very happy about both changes of direction and methodology. Also, I find, that writing code to solve the given problem is by far the least hard activity of every session, and the most learning, so far, happens with pen and paper. Overall, it's a big rehaul of a mindset, hopefully, for good.
+
 ## References
 
 This repository would not have existed if I had not been insipred by the people who did things like that before me. I'm eternally grateful for efforts of others publishing resources online, and here is a list of just a select few that I've used over the years to become a better programmer.
