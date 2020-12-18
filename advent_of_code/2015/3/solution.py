@@ -1,3 +1,5 @@
+test_input = '^v<>'
+
 class Solver():
     def __init__(self):
         self.input = open('input.txt', 'r').read()
@@ -31,8 +33,10 @@ class Solver():
             else:
                 self.move(character, self.robo_santa)
                 self.visit_house('robo_santa')
+        print(self.robo_santa, self.santa)
         print(len(self.visited_houses))
 
 solver = Solver()
 solver.solve()
+
 
