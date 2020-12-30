@@ -12,6 +12,7 @@ Join my [Discord server](https://discord.gg/HjNfTnu9aQ) if you're interested in 
 - [General Findings](#general-findings)
 - [Notes on different parts of the course](#course)
 - [Diary/Log](#diary/log)
+- [References](#references)
 
 ## Progress
 
@@ -50,6 +51,7 @@ William Shotts - The Linux Command Line A Complete Introduction No Starch Press 
 Drew Neil - Modern Vim Craft Your Development Environment with Vim 8 and Neovim-Pragmatic Bookshelf (2018) | Book | vim | in progress | [no link yet]()
 CS50 | Video | CS | 2020 queued | [no link yet]()
 C.O.D.E. by Charles Petzold | Book | Programming | completed | [amazon](https://www.amazon.co.uk/Code-Language-Computer-Hardware-Software/dp/0735611319/ref=sr_1_1?adgrpid=50764275022&dchild=1&gclid=CjwKCAiAnvj9BRA4EiwAuUMDfyT5n7YXKm936Z8c81dv1Zk3kFNT3XOw6WG6fv90hR5zkOFLpAvgpxoCnF0QAvD_BwE&hvadid=259073923662&hvdev=c&hvlocint=9045954&hvlocphy=20853&hvnetw=g&hvqmt=b&hvrand=15507896899033965839&hvtargid=kwd-300578219443&hydadcr=17607_1775410&keywords=charles+petzold+code&qid=1606314907&sr=8-1&tag=googhydr-21)
+Mathematical Thinking in Computer Science | Video | Discrete Maths | in progress | [coursera](https://www.coursera.org/learn/what-is-a-proof/home/welcome)
 
 ## General Findings
 
@@ -114,4 +116,19 @@ I have deleted all the repos for course material (I did create one for each cour
 
 Important reminder to self (and you, dear reader) - writing bad code that works is better than writing good code that doesn't, assuming that's only the first step. I get too hung up and critical with my solutions before they work, and the way to beautiful code always has to be paved with first few rough drafts. Write bad code. Make it work. Make it better, beautiful, faster. Have a short feedback loop.
 
+#### 14th December 2020
 
+It's been a very frustrating few days when I was working thgouh the programming section of the course, without proper preparation in maths. Foolishly I've assumed that Composing Programs is using fewer mathematical examples. I am therefore starting with my full attention on the course in Discrete Maths, and I already see how much benefit it is providing me. I have also enrolled and taken first couple weeks worth of classes of the [learning how to learn course on coursera](https://www.coursera.org/learn/learning-how-to-learn/), which already has pointed out a few serious mistakes in my methods thus far. I am very happy about both changes of direction and methodology. Also, I find, that writing code to solve the given problem is by far the least hard activity of every session, and the most learning, so far, happens with pen and paper. Overall, it's a big rehaul of a mindset, hopefully, for good.
+
+## References
+
+This repository would not have existed if I had not been insipred by the people who did things like that before me. I'm eternally grateful for efforts of others publishing resources online, and here is a list of just a select few that I've used over the years to become a better programmer.
+
+- [Coding Interview University](https://github.com/jwasham/coding-interview-university)
+- [5+5](https://www.reddit.com/r/learnprogramming/comments/gsansp/my_55step_selftaught_cs_curriculum_updated/)
+- [Project-Based Learning](https://github.com/tuvtran/project-based-learning)
+- [Let's Build a Compiler](https://compilers.iecc.com/crenshaw/)
+- [OSSU](https://github.com/ossu/computer-science)
+- [p1xt](https://github.com/P1xt/p1xt-guides/blob/master/README.md)
+- [startup next door](https://startupnextdoor.com/)
+- [computer stuff they didn't teach you](https://www.youtube.com/shanselman)
