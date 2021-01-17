@@ -14,7 +14,7 @@ int main(void) {
   printf("Temperature conversion table for F to C:\n\n");
   fahr = lower;
   while (fahr <= upper) {
-    celsius = 5 * (fahr - 32) / 9;
+    celsius = (5.0/9.0) * (fahr-32.0);
     printf(" %4.0f*F --> %5.1f*C\n", fahr, celsius);
     fahr += step;
   }
