@@ -13,9 +13,7 @@ int main(void) {
 
   int c, chars, lines, state, wc;
 
-  chars = 0;
-  lines = 0;
-  wc    = 0;     
+  chars = lines = wc 0;
   state = OUT;
 
   while ((c = getchar()) != EOF) {
