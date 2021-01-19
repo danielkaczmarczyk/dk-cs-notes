@@ -6,7 +6,9 @@
  */
 
 // TODO:
-// [ ] capture a whole line as a string of characters and store it
+// [x] capture a whole line as a string of characters and store it
+// [x] capture the length of this line
+// [ ] allow for multiple lines and report on the longest
 
 int main(void) {
 
@@ -22,5 +24,6 @@ int main(void) {
   line[i] = '\0';
 
   printf("your line: %s\n", line);
+  printf("i value: %d\n", i);
   return 0; 
 }
