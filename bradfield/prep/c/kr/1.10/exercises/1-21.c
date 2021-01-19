@@ -10,7 +10,6 @@
 
 int collect_line(char target[]);
 void entab(char source[], int len, char target[]);
-void print_whitespace(int gap_size);
 void print_invisibles(char target[]);
 
 int main(void) {
@@ -24,15 +23,6 @@ int main(void) {
     print_invisibles(line);
     print_invisibles(post_entab_line);
   }
-}
-
-/*
- * given gap_size, prints appropriate amount of tabs and spaces
- */
-void print_whitespace(int gap_size) {
-  // is it a clean amount of tabs or not?
-  // if yes, just print tabs
-  // if need be, fill in with spaces
 }
 
 /*
@@ -55,9 +45,11 @@ void entab(char source[], int len, char target[]) {
     } else { // the character is a word char
       if (state == IN_SPACES) {
         int remainder = space_count % TAB_SIZE;
-
+        printf("remainder: %d\n", remainder);
         int tabs_to_print = space_count / TAB_SIZE;
-        for (int i = 0; i <= tabs_to_print; i++) {
+        printf("tabs_to_print: %d\n", tabs_to_print);
+
+        for (int i = 0; i < tabs_to_print; i++) {
           target[target_index] = '\t';
           target_index++;
         }
