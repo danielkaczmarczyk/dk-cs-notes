@@ -7,6 +7,7 @@
  * program that prints lines longer than MAX_LINE_LEN on multiple lines.
  */
 
+void break_line(char source[], int source_len);
 int collect_line(char target[]);
 void print_invisibles(char target[]); 
 
@@ -16,11 +17,37 @@ int main(void) {
 
   while (1) {
     line_length = collect_line(line);
+    if (line_length > MAX_LINE_LEN) {
+      printf("Max line exceeded\n");
+      break_line(line, line_length);
+    } else {
+      printf("Max line not exceeded\n");
+      printf("%s", line);
+    }
     print_invisibles(line);
   }
 }
 
+void break_line(char source[], int source_len) {
+  int index = 0;
+  int fulls = source_len / MAX_LINE_LEN;
+  int remainder = source_len % MAX_LINE_LEN; 
 
+  for (int i = 0; i < fulls; i++ ) {
+    for (int j = 0; j < MAX_LINE_LEN; j++) {
+      putchar(source[index]);
+      index++;
+    }
+    printf("\n");
+  }
+
+  if (remainder > 0) {
+    for (int i = 0; i < remainder; i++) {
+      putchar(source[index]);
+      index++;
+    }
+  }
+}
 
 /* 
  * A function that collects a line of input from the stdin, copies it to
