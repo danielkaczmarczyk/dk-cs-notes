@@ -1,6 +1,9 @@
 #include<stdio.h>
 #define ARRAY_SIZE 1000
 #define MAX_LINE_LEN 10
+#define DEBUG 0
+#define FALSE 0
+#define TRUE  1
 
 /*
  * program that removes comments from a C program source
@@ -10,8 +13,8 @@
  * [ ] handle multiline comments
  */
 
-void break_line(char source[], int source_len);
 int collect_line(char target[]);
+void scrape_comments(char source[], int len);
 void print_invisibles(char target[]); 
 
 int main(void) {
@@ -20,8 +23,37 @@ int main(void) {
 
   while (1) {
     line_length = collect_line(line);
+    scrape_comments(line, line_length);
     print_invisibles(line);
   }
+}
+
+void scrape_comments(char source[], int len) {
+  int in_comment = FALSE;
+  char current, previous;
+  int c;
+  int i = 1;        /* leave 1 index for being able to read two chars */
+  
+  while (i < len) {
+    current = source[i];
+    previous = source[i - 1];
+    if (DEBUG) printf("Current: %c, previous: %c\n", current, previous);
+
+    if (current == '/' && previous == '/') {
+      printf("\n");
+      return;
+    } else if (current == '*' && previous == '/') {
+      in_comment = TRUE;  
+    } else if (current == '/' && previous == '*') {
+      in_comment = FALSE;  
+    } else {
+      if (!in_comment) {
+        putchar(previous);
+      }
+    }
+    i++;
+  }
+  printf("\n");
 }
 
 /* 
@@ -48,18 +80,20 @@ int collect_line(char target[]) {
 
 /* prints invisible characters (tabs and spaces) for debugging */
 void print_invisibles(char target[]) {
-  int i = 0;
-  char c;
-  printf("DEBUG: ");
-  while((c = target[i]) != '\0') {
-    if (c == ' ') {
-      printf("\\s");
-    } else if (c == '\t') {
-      printf("\\t");
-    } else {
-      putchar(c);
+  if (DEBUG) {
+    int i = 0;
+    char c;
+    printf("DEBUG: ");
+    while((c = target[i]) != '\0') {
+      if (c == ' ') {
+        printf("\\s");
+      } else if (c == '\t') {
+        printf("\\t");
+      } else {
+        putchar(c);
+      }
+      i++;
     }
-    i++;
   }
 }
 
