@@ -11,8 +11,9 @@
  * i could write a method that goes over a char array and fixes that, or i could modify the
  * collect_line method to do that.
  *
- * [ ] remove empty lines
- * [ ] remove trailing blanks and tabs
+ * [x] remove empty lines
+ * [ ] remove trailing blanks and tabs - separate method
+ * [ ] remove trailing blanks and tabs - inside of collect_line
  */
 
 int collect_line(char target[]);
@@ -25,12 +26,10 @@ int main(void) {
 
   while (1) {
     current_line_len = collect_line(current_line);
-    if (current_line_len == 0) {
+    if (current_line_len == 1) {
       continue;
     } else if (current_line_len >= 80) {
       printf("%s\n", current_line);
-    } else {
-      printf("line shorter than 80. len: %d\n", current_line_len);
     }
   }
 
