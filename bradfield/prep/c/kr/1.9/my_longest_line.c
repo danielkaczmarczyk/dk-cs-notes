@@ -1,6 +1,8 @@
 #include <stdio.h>
 #define MAX_LINE_LENGTH 1000
 
+int collectline(char line[], int max_length);
+
 /*
  * this program reads lines from input and at the end, prints out the longest one
  */
@@ -12,18 +14,31 @@
 
 int main(void) {
 
-  int i = 0;
-  int c;
   char line[MAX_LINE_LENGTH];
+  char line_length = 0;
 
-  while ((c = getchar()) != '\n') {
+  line_length = collectline(line, MAX_LINE_LENGTH);
+
+  printf("your line: %s\n", line);
+  printf("line length: %d\n", line_length);
+  return 0; 
+}
+
+/* captures a line of text, returns its length */
+int collectline(char line[], int max_length) {
+  int c, i;
+
+  for (i = 0; i < max_length - 1 && (c = getchar()) != EOF && c != '\n'; i++) {
+    line[i] = c;
+  }
+
+  if (c == '\n') {
     line[i] = c;
     i++;
   }
 
   line[i] = '\0';
 
-  printf("your line: %s\n", line);
-  printf("i value: %d\n", i);
-  return 0; 
+  return i;
 }
+
