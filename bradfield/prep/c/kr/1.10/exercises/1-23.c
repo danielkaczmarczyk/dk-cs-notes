@@ -47,7 +47,7 @@ void scrape_comments(char source[], int len) {
     } else if (current == '/' && previous == '*') {
       in_comment = FALSE;  
     } else {
-      if (!in_comment) {
+      if (!in_comment && previous != '/' ) {
         putchar(previous);
       }
     }
