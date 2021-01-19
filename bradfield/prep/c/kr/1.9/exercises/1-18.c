@@ -3,20 +3,10 @@
 
 /* a program that removes trailing blanks and tabs of input, and removes empty
  * lines. 
- *
- * how do I know that the trailing blanks and tabs have been removed? it won't come up on the screen
- * comparing length of the char[] could do the trick. it's the placement of the \0 char that will
- * define how long the string is. therefore, I need to reduce the string size by doing this - 
- * cutting off and placing the null byte earlier than it originally was placed. to achieve that
- * i could write a method that goes over a char array and fixes that, or i could modify the
- * collect_line method to do that.
- *
- * [x] remove empty lines
- * [ ] remove trailing blanks and tabs - separate method
- * [ ] remove trailing blanks and tabs - inside of collect_line
  */
 
 int collect_line(char target[]);
+int trim(char target[], int len);
 
 int main(void) {
 
@@ -30,16 +20,10 @@ int main(void) {
       continue;
     } else if (current_line_len >= 80) {
       printf("%s\n", current_line);
+    } else {
+      trim(current_line, current_line_len);      
     }
   }
-
-  // printf("%d\n", current_line_len);
-
-  // collect a line of input into temporary memory
-  // if it is longer, print it
-  // if not, keep collecting
-  // stop collecting if EOF is found
-
 }
 
 /* 
@@ -62,3 +46,34 @@ int collect_line(char target[]) {
   target[i] = '\0';
   return i; 
 }
+
+/*
+ * goes over the char array supplied and remembers the position of the last
+ * non-whitespace character. removes the outstanding whitespace by moving the
+ * null byte and the newline.
+ */
+int trim(char target[], int len) {
+  int i = 0;
+  int c = target[i];
+  int last_char_pos = 0;
+
+  printf("Trimming started. Current len of char array: %d\n", len);
+  while (c != '\0') {
+    if (c != ' ' && c != '\n' && c != '\t') {
+      last_char_pos = i;
+    }
+    i++;
+    c = target[i];
+  }
+
+  printf("The last char of this input is at index %d.\n", last_char_pos);
+  printf("Moving the null byte and newline to reflect that.\n");
+
+  last_char_pos++;
+  target[last_char_pos] = '\n';
+  last_char_pos++;
+  target[last_char_pos] = '\0';
+  printf("The difference in length: %d\n", len - last_char_pos);
+  return last_char_pos;
+}
+
