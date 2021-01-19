@@ -2,6 +2,7 @@
 #define MAX_LINE_LENGTH 1000
 
 int collectline(char line[], int max_length);
+void copyline(char source[], char destination[]);
 
 /*
  * this program reads lines from input and at the end, prints out the longest one
@@ -23,10 +24,11 @@ int main(void) {
   while ((line_length = collectline(line, MAX_LINE_LENGTH)) > 0) {
     if (line_length > longest_line_length) {
       longest_line_length = line_length;
+      copyline(line, longest_line);
     }
   }
 
-  printf("your line: %s\n", line);
+  printf("longest line: %s\n", longest_line);
   printf("longest line length: %d\n", longest_line_length);
   return 0; 
 }
@@ -36,19 +38,23 @@ int collectline(char line[], int max_length) {
   int c, i;
 
   for (i = 0; i < max_length - 1 && (c = getchar()) != EOF && c != '\n'; i++) {
-    printf("in for loop, currently placing %c at index %d\n", c, i);
     line[i] = c;
   }
 
   if (c == '\n') {
     line[i] = c;
     i++;
-    printf("%d value of i\n", i);
-    if (i > 2) {
-      line[i] = '\0';
-    }
   }
+
+  line[i] = '\0';
 
   return i;
 }
 
+/* copies a line from source to destination */
+void copyline(char source[], char destination[]) {
+  int i = 0;
+  while ((destination[i] = source[i]) != '\0') {
+    ++i;
+  }
+}
