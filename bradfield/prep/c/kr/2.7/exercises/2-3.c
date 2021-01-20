@@ -1,3 +1,4 @@
+#include <ctype.h>
 #include <stdio.h>
 #include <math.h>
 #define ARRAY_SIZE 1000
@@ -20,6 +21,7 @@ int main(void) {
   }
 }
 
+/* converts a string of a hex number into an int. assumes the hex is correct */
 void htoi(char string[]) {
   char hex_string[32];
 
@@ -35,16 +37,26 @@ void htoi(char string[]) {
   }
   hex_string[i] = '\0';
   printf("The string got loaded. here goes: %s", hex_string);
-  // knowing the length, iterate from the end until the 'x' or 'X' char
+
   int len = i - 2; // i-2 due to the \n and \0 bytes included in the string.
   printf("Its length is: %d\n", len);
-  // perform conversion
+
   for (int i = len; i >= 0; i--) {
     c = hex_string[i];
-    if (c == 'x') {
+    if (c == 'x' || c == 'X') {
       break;
     }
-    c = c - '0';
+
+    if (isalpha(c)) {
+      printf("isalpha %d\n", c);
+      c = tolower(c);
+      c = c - 87;
+    } else if (isdigit(c)) {
+      printf("isdigit \n");
+      c = c - '0';
+      printf("after c - '0' %d\n", c);
+    }
+
     int term = c * pow(16, power);
     printf("c: %d, power: %d, n: %d, term: %d\n", c, power, n, term);
     n += term;
