@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <math.h>
 #define ARRAY_SIZE 1000
 
 /* htoi - converts a hexadecimal string into its integer value */
@@ -23,7 +24,10 @@ void htoi(char string[]) {
   char hex_string[32];
 
   // load the string into the hex string char array
-  int c, i;
+  int c, i, n, power;
+
+  n = 0;
+  power = 0;
 
   while((c = string[i]) != '\0') {
     hex_string[i] = c;
@@ -40,9 +44,13 @@ void htoi(char string[]) {
     if (c == 'x') {
       break;
     }
-    putchar(hex_string[i]);
+    c = c - '0';
+    int term = c * pow(16, power);
+    printf("c: %d, power: %d, n: %d, term: %d\n", c, power, n, term);
+    n += term;
+    power++;
   }
-  printf("\nout of the loop \n");
+  printf("the value of n is: %d\n", n);
 }
 
 /* 
