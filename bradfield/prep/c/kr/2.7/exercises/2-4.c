@@ -5,24 +5,10 @@
 void squeeze(char s1[], char s2[]);
 
 int main(void) {
-  char s1[6];
-  char s2[5];
-
-  s1[0] = 'd';
-  s1[1] = 'u';
-  s1[2] = 'm';
-  s1[3] = 'b';
-  s1[4] = 'o';
-  s1[5] = '\0';
-
-  s2[0] = 'b';
-  s2[1] = 'o';
-  s2[2] = 'd';
-  s2[3] = 'y';
-  s2[4] = '\0';
+  char s1[6] = "dumbo";
+  char s2[5] = "body";
 
   squeeze(s1, s2);
-
   printf("%s\n", s1);
   printf("um\n");
 
