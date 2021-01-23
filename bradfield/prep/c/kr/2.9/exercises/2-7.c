@@ -9,28 +9,11 @@
 int invert(unsigned x, int p, int n);
 
 int main(void) {
-  invert(218, 2, 4);    
+  unsigned result = invert(218, 2, 4);    
+  printf("%u\n", result);
 }
 
 
 int invert(unsigned x, int p, int n) {
-  unsigned y;
-
-  y = x >> p; // y == 54
-  printf("%d\n", y);
-  y = ~y;     // y == 201
-  printf("%d\n", y);
-
-  int mask = 0;
-  mask = ~mask;
-  mask = mask << n;
-  mask = ~mask;
-  y = y & mask;
-  y = y << p; // y == 36
-  printf("%d\n", y);
-
-  int mask2 = 0;
-  mask2 = ~mask2;
-  mask2 = ;
-  return 1;
+  return x ^ ~ (~0 << n) << p;
 }
