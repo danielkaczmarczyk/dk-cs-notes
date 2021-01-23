@@ -106,7 +106,9 @@ Using our pizza analogy, we could imagine first dividing our pizza into three po
 
 ### Diary/Log
 
-Blog-like selection of thoughts. Unstructured. Writing those helps me think about the process of learning more clearly. 
+Blog-like selection of thoughts. Unstructured. Writing those helps me think about the process of learning more clearly.
+
+EDIT 22nd jan 2021: Haven't updated it in a while as I've ended up logging more personal info somewhere. Leaving this here for posterity nonetheless.
 
 #### 11th December 2020
 
