@@ -1,25 +1,36 @@
 #include <stdio.h>
+#define ARRAY_SIZE 1000
 
 void escape(char source[], char target[]);
 
 int main(void) {
-  char source[] = "Source\nString\tO.o\n";
-  escape(source, source);
+  char source[] = "Source\nString\ttest\n";
+  char target[ARRAY_SIZE];
+  escape(source, target);
+  printf("%s\n", target);
 }
 
 void escape(char source[], char target[]) {
-  int i, c;
-  for (i = 0; (c = source[i]) != '\0'; i++) {
+  int i, j, c;
+  i = 0;
+  j = 0;
+  while ((c = source[i]) != '\0') {
     switch (c) {
       case '\n':
-        printf("\\n");
+        target[j] = '\\';
+        target[j + 1] = 'n';
+        j += 2;
         break;
       case '\t':
-        printf("\\t");
+        target[j] = '\\';
+        target[j + 1] = 't';
+        j += 2;
         break;
       default:
-        printf("%c", c);
+        target[j] = c;
+        j++;
     }
+    i++;
   }
-  printf("\n");
+  target[j] = '\0';
 }
