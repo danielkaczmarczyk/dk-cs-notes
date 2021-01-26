@@ -1,2 +1,8 @@
+*
+!/**/
+!*.*
 __pycache__
 *swp
+.DS_Store
+*.dSYM
+*.plist
