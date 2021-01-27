@@ -26,10 +26,20 @@ int main(int argc, char *argv[]) {
 
   // printing second way using pointers
   for (i = 0; i < count; i++) {
-    printf("%s is %d years old\n", *cur_name, *cur_age);
-    cur_name += i;
-    cur_age += i;
+    printf("%s is %d years old\n", *(cur_name + i), *(cur_age + i));
   }
 
+  printf("--->\n");
 
+  // third way, pointers are 'just arrays'
+  for (i = 0; i < count; i++ ) {
+    printf("%s is %d years old\n", cur_name[i], cur_age[i]);
+  }
+
+  printf("--->\n");
+
+  // fourth way with pointers in a stupid complex way
+  for (cur_name = names, cur_age = ages; (cur_age - ages) < count; cur_name++, cur_age++) {
+    printf("%s is %d years old\n", *cur_name, *cur_age);
+  }
 }
