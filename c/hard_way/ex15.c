@@ -47,9 +47,10 @@ int main(int argc, char *argv[]) {
       // are we into the array
       (cur_age - ages) < count;
       // increment the pointers to move to the next block of memory
-      cur_name++, cur_age++
+      cur_name += 1, cur_age++
   ) {
-    printf("cur_age - ages: %ld\n", cur_age - ages);
+    //printf("cur_age - ages: %ld\n", cur_age - ages);
     printf("%s is %d years old\n", *cur_name, *cur_age);
   }
 }
+
