@@ -1,7 +1,7 @@
 CFLAGS=-Wall -g
 
-all: clean ex15
+all: clean pointer_experiment
 
 clean:
-		rm -rf ex15 *.dSYM
+		rm -rf pointer_experiment *.dSYM
 
