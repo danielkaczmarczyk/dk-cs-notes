@@ -1,6 +1,6 @@
 # teach-yourself-cs-curriculum
 
-This document is my record of work towards a Self-Taught equivalent of a CS degree. The core curriculum is as perscribed by Oz Nove and Myles Byrne, authors of [teachyourselfcs.com](https://teachyourselfcs.com), but consists of additional resources that I have completed / am interested in. If you want to ask questions about the core curriculum, all the answers are to be found at the link above.
+This document is my record of work towards a Self-Taught equivalent of a CS degree. The core curriculum is as perscribed by Oz Nova and Myles Byrne, authors of [teachyourselfcs.com](https://teachyourselfcs.com), but consists of additional resources that I have completed / am interested in. If you want to ask questions about the core curriculum, all the answers are to be found at the link above.
 
 The purpose of this repository is twofold - to keep myself organised and accountable, and also to be able to share my experience with other people who are undertaking a similar challenge of completing this curriculum.
 
@@ -11,7 +11,6 @@ Join my [Discord server](https://discord.gg/HjNfTnu9aQ) if you're interested in 
 - [Progress](#progress)
 - [General Findings](#general-findings)
 - [Notes on different parts of the course](#course)
-- [Diary/Log](#diary/log)
 - [References](#references)
 
 ## Progress
@@ -103,24 +102,6 @@ I found [this article](https://accu.org/journals/overload/16/86/golodetz_1506/) 
 - Each layer in the hierarchy represents a partition of the entire entity.
 
 Using our pizza analogy, we could imagine first dividing our pizza into three portions, one for each person at the table. Each person's portion is then further sub-divided into four slices. Each person's slices are a partition of their portion, and the portions are a partition of the pizza as a whole. Furthermore, if you take all the slices, or all the portions, together, you have the entire pizza. 
-
-### Diary/Log
-
-Blog-like selection of thoughts. Unstructured. Writing those helps me think about the process of learning more clearly.
-
-EDIT 22nd jan 2021: Haven't updated it in a while as I've ended up logging more personal info somewhere. Leaving this here for posterity nonetheless.
-
-#### 11th December 2020
-
-For all this to work I need a sustainable system through which I am going to be able to measure - how well I'm doing, and am I doing enough. Learning on one's own can become chaotic and unstructured, and to countermeasure that, I decided to time myself study (not to a second, but let's say, to a 15-20 min period). Instead of using a schedule based on a week-plan, I am using a table in Google Sheets to log planned learning, with time spent on it, for the ease of querying, filtering, and tallying. This approach leaves me with raw data on my efforts (at least). It has worked for me to use a fitbit that way -- measuring effort draws better results for me, I find. 
-
-I have deleted all the repos for course material (I did create one for each course/book, but it has been proven to be a lot of redundant work since code included in those repositories is just a scattered selection of snippets. All the code for this process therefore is currently included in this repository and that's how I intend to keep it. Also, the reason I've done it in the first place is that I failed at partitioning my linux laptop's hard drive and I'm currently reinstalling Ubuntu and I've found copying all the repos to be a lot of work.
-
-Important reminder to self (and you, dear reader) - writing bad code that works is better than writing good code that doesn't, assuming that's only the first step. I get too hung up and critical with my solutions before they work, and the way to beautiful code always has to be paved with first few rough drafts. Write bad code. Make it work. Make it better, beautiful, faster. Have a short feedback loop.
-
-#### 14th December 2020
-
-It's been a very frustrating few days when I was working thgouh the programming section of the course, without proper preparation in maths. Foolishly I've assumed that Composing Programs is using fewer mathematical examples. I am therefore starting with my full attention on the course in Discrete Maths, and I already see how much benefit it is providing me. I have also enrolled and taken first couple weeks worth of classes of the [learning how to learn course on coursera](https://www.coursera.org/learn/learning-how-to-learn/), which already has pointed out a few serious mistakes in my methods thus far. I am very happy about both changes of direction and methodology. Also, I find, that writing code to solve the given problem is by far the least hard activity of every session, and the most learning, so far, happens with pen and paper. Overall, it's a big rehaul of a mindset, hopefully, for good.
 
 ## References
 
