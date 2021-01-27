@@ -1,20 +1,22 @@
 #include <stdio.h>
+#include <string.h>
 #include <ctype.h>
 
-void print_letters(char arg[]);   /* takes an array of characters */
+void print_letters(char arg[], int len);   /* takes an array of characters */
 
 void print_arguments(int argc, char *argv[]) {
   int i = 0;
-
   for (i = 0; i < argc; i++) {
-    print_letters(argv[i]);
+    int length = strlen(argv[i]);
+    printf("str len: %d\n", length);
+    print_letters(argv[i], length);
   }
 }
 
-void print_letters(char arg[]) {
+void print_letters(char arg[], int len) {
   int i = 0;
 
-  for (i = 0; arg[i] != '\0'; i++) {
+  for (i = 0; i < len; i++) {
     char ch = arg[i];
 
     if (isalpha((int)ch) || isblank((int)ch)) {
