@@ -25,6 +25,8 @@ int main(int argc, char *argv[]) {
 
   // printing second way using pointers
   for (i = 0; i < count; i++) {
+    printf("cur_name pointer address: %p\n", (&cur_name + i));
+    printf("cur_age  pointer address: %p\n", (&cur_age + i));
     printf("%s is %d years old\n", *(cur_name + i), *(cur_age + i));
   }
 
@@ -52,5 +54,6 @@ int main(int argc, char *argv[]) {
     //printf("cur_age - ages: %ld\n", cur_age - ages);
     printf("%s is %d years old\n", *cur_name, *cur_age);
   }
+
 }
 
