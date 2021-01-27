@@ -52,4 +52,17 @@ int main(int argc, char *argv[])
 
   printf("name: %s\n", name);
 
+  // another way to use name
+  char *another = "Zed";
+
+  printf("another: %s\n", another);
+
+  printf("another each: %c %c %c %c\n",
+    another[0],
+    another[1],
+    another[2],
+    another[3]
+  );
+
+  return 0;
 }
