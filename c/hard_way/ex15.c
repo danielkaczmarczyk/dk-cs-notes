@@ -20,9 +20,8 @@ int main(int argc, char *argv[]) {
 
   printf("--->\n");
 
-  // setup the pointers to the start of arrays;
-  int *cur_age = ages;      // pointer to the start of array ages.
-  char **cur_name = names;  // pointer to pointers to strings (**)
+  int *cur_age = (int *) names;
+  char **cur_name = names;
 
   // printing second way using pointers
   for (i = 0; i < count; i++) {
