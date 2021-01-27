@@ -10,5 +10,9 @@ int main(int argc, char *argv[]) {
   printf("The address of cur_age is                : %p\n", &cur_age);
   printf("The address of ages is                   : %p\n", &ages);
   printf("The address of ages[0] is                : %p\n", &ages[0]);
-
+  // can I take a pointer and access it using array syntax?
+  printf("The value of ages[0] is                  : %d\n", cur_age[0]);
+  // effectively, pointers behave like arrays and vice versa
+  // when dealing with pointers to arrays
+  printf("The value of ages[1] is                  : %d\n", cur_age[1]);
 }
