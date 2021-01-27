@@ -20,7 +20,7 @@ int main(int argc, char *argv[]) {
 
   printf("--->\n");
 
-  int *cur_age = (int *) names;
+  int *cur_age = ages;
   char **cur_name = names;
 
   // printing second way using pointers
@@ -38,7 +38,18 @@ int main(int argc, char *argv[]) {
   printf("--->\n");
 
   // fourth way with pointers in a stupid complex way
-  for (cur_name = names, cur_age = ages; (cur_age - ages) < count; cur_name++, cur_age++) {
+  for (
+      // make cur_name point at the beginning of names
+      // make cur_age point at the beginning of ages
+      cur_name = names, cur_age = ages;
+      // what the fuck is (cur_age - ages)
+      // alright, it's pointer artihmetic expression checking how far
+      // are we into the array
+      (cur_age - ages) < count;
+      // increment the pointers to move to the next block of memory
+      cur_name++, cur_age++
+  ) {
+    printf("cur_age - ages: %ld\n", cur_age - ages);
     printf("%s is %d years old\n", *cur_name, *cur_age);
   }
 }
