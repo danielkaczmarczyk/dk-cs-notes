@@ -12,12 +12,10 @@ int main(int argc, char *argv[]) {
   int count = sizeof(ages) / sizeof(int);
   int i = 0;
 
-  printf("count: %d\n", count);
-  printf("count: %d\n", count);
   // printing
   // first way using indexing
   for (i = 0; i < count; i++) {
-    printf("%s has %d years alive\n", names[i], ages[i]);
+    printf("%s has %d years alive\n", *(names + i), *(ages + i));
   }
 
   printf("--->\n");
