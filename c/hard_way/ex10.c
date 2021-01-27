@@ -10,8 +10,8 @@ int main(int argc, char *argv[]) {
   }
 
   int i = 0;
-  for (i = 0; argv[1][i] != '\0'; i++) {
-    char letter = argv[1][i];
+  char letter;
+  for (i = 0; (letter = argv[1][i]) != '\0'; i++) {
 
     if (isupper(letter)) {
       letter = tolower(letter);
