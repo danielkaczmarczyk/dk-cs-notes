@@ -30,13 +30,21 @@ void Person_destroy(struct Person *who) {
 }
 
 void Person_print(struct Person *who) {
-  printf("Name: %s\n", who->name);
-  printf("Age: %d\n", who->age);
+  printf("--- %s ---\n", who->name);
+  printf("Age:    %d\n", who->age);
   printf("Height: %d\n", who->height);
   printf("Weight: %d\n", who->weight);
 }
 
 int main(int argc, char *argv[]) {
+  // make two people structures
+  struct Person *joe = Person_create("Joe Alex", 32, 64, 140);
+  struct Person *frank = Person_create("Frank Blank", 20, 72, 180);
+
+  printf("Joe is at a memory location %p\n", joe);
+  Person_print(joe);
+  printf("Frank is at a memory location %p\n", frank);
+  Person_print(frank);
   return 0;  
 }
 
