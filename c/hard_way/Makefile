@@ -1,4 +1,4 @@
-CFLAGS=-Wall -g
+CFLAGS=-g -Wall
 
 all: clean ex16
 
