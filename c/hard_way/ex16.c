@@ -45,6 +45,25 @@ int main(int argc, char *argv[]) {
   Person_print(joe);
   printf("Frank is at a memory location %p\n", frank);
   Person_print(frank);
+
+  // make everyone age 20 years and print them again
+  printf("\n20 years had passed\n");
+
+  joe->age += 20;
+  joe->height -= 2;
+  joe->weight += 40;
+
+  frank->age += 20;
+  frank->weight += 20;
+
+  Person_print(joe);
+  Person_print(frank);
+
+  Person_destroy(joe);
+  Person_destroy(frank);
+
   return 0;  
 }
+
+// TODO make a function that accetps an array of people and prints them
 
