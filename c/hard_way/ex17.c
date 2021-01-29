@@ -12,7 +12,7 @@ struct Address {
   int set;
   char name[MAX_DATA];
   char email[MAX_DATA];
-}
+};
 
 int main(int argc, char *argv[]) {
   printf("i am the function\n");
