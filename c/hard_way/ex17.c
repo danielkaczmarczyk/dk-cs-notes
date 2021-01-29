@@ -45,6 +45,60 @@ void Database_load(struct Connection *conn) {
   }
 }
 
+struct Connection *Database_open(const char *filename, char mode) {
+  struct Connection *conn = malloc(sizeof(struct Connection));
+  if (!conn) {
+    die("Memory error");
+  }
+
+  conn->db = malloc(sizeof(struct Database));
+  if (!conn->db) {
+    die("Memory error");
+  }
+
+  if (mode == 'c') {
+    conn->file = fopen(filename, "w");
+  } else {
+    conn->file = fopen(filename, "r+");
+
+    if (conn->file) {
+      Database_load(conn);
+    }
+  }
+
+  if (!conn->file) {
+    die("Failed to open the file");
+  }
+
+  return conn;
+}
+
+void Database_close(struct Connection *conn) {
+  if (conn) {
+    if (conn->file) {
+      fclose(conn->file);
+    }
+    if (conn->db) {
+      free(conn->db);
+    }
+    free(conn);
+  }
+}
+
+void Database_write(struct Connection *conn) {
+  rewind(conn->file);
+
+  int rc = fwrite(conn->db, sizeof(struct Database), 1, conn->file);
+  if (rc != 1) {
+    die("Failed to write database.");
+  }
+
+  rc = fflush(conn->file);
+  if (rc == -1) {
+    die("Cannot flush database.");
+  }
+}
+
 int main(int argc, char *argv[]) {
 
 }
