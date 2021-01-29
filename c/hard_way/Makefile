@@ -1,7 +1,7 @@
 CFLAGS=-g -Wall
 
-all: clean ex16
+all: clean ex17
 
 clean:
-		rm -rf ex16 *.dSYM
+		rm -rf ex17 *.dSYM
 
