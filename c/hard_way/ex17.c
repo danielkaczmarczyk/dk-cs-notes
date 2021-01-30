@@ -24,7 +24,6 @@ struct Connection {
 };
 
 void die(const char *message) {
-  // TODO what are those functions?
   if (errno) {
     perror(message);
   } else {
@@ -99,6 +98,10 @@ void Database_write(struct Connection *conn) {
   }
 }
 
+/* why exactly are we creating the whole database and fill it with empty structs?
+ * are there better ways of 'putting aside' memory for later usage?
+ * is it the only way to ensure write success? it can't be
+ */
 void Database_create(struct Connection *conn) {
   int i = 0;
 
