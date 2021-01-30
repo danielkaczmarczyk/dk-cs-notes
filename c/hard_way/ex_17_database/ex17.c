@@ -4,7 +4,7 @@
 #include <errno.h>
 #include <string.h>
 
-#define MAX_DATA 8
+#define MAX_DATA 512
 #define MAX_ROWS 100
 #define VERBOSE 0
 
