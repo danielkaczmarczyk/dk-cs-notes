@@ -26,11 +26,22 @@ $DB $TEST_DB_FILE s 3 dinesh_c dinesh@pied.piper
 echo "Users created"
 
 # view data
-echo "Calling view data:"
+echo "Listing data:"
 $DB $TEST_DB_FILE l
-# alter data
-# view data
+echo "User data end"
+
 # remove data
+echo "Removing user with id: 1"
+$DB $TEST_DB_FILE d 1
+
 # view data
-# cleanup
+echo "Listing data:"
+$DB $TEST_DB_FILE l
+echo "User data end"
+
+echo "Getting just one user by id: 2"
+$DB $TEST_DB_FILE g 2
+
+echo "Test over."
+exit 0
 
