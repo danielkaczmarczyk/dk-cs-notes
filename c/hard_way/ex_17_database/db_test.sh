@@ -21,8 +21,8 @@ echo "Created database in $TEST_DB_FILE"
 # populate the db
 echo "Creating users"
 $DB $TEST_DB_FILE s 1 daniel_kaczmarczyk daniel@dan.dan
-$DB $TEST_DB_FILE s 2 bertram_g dinesh_sucks@pied.piper
-$DB $TEST_DB_FILE s 3 dinesh_c dinesh@pied.piper
+$DB $TEST_DB_FILE s 2 bertram_gilfoyle gilfoyle@pied.piper
+$DB $TEST_DB_FILE s 3 dinesh_chugtai dinesh@pied.piper
 echo "Users created"
 
 # view data

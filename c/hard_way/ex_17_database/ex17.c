@@ -4,7 +4,7 @@
 #include <errno.h>
 #include <string.h>
 
-#define MAX_DATA 512
+#define MAX_DATA 8
 #define MAX_ROWS 100
 #define VERBOSE 0
 
@@ -129,13 +129,15 @@ void Database_set(struct Connection *conn, int id, const char *name, const char 
 
   addr->set = 1;
   char *res = strncpy(addr->name, name, MAX_DATA);
-  printf("PRINTING FROM *res\n");
-  printf("%s", res);
+  // fix for buff overflow
+  res[MAX_DATA - 1] = '\0';
   if (!res) {
     die("Name copy failed");
   }
 
   res = strncpy(addr->email, email, MAX_DATA);
+  // fix for buff overflow
+  res[MAX_DATA - 1] = '\0';
   if (!res) {
     die("Email copy failed");
   }
