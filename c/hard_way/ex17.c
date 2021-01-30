@@ -113,8 +113,15 @@ void Database_create(struct Connection *conn) {
   }
 }
 
+/* Sets a record in a database - in a way, it is the 'create' method, CRUD-wise
+ * although since int `Database_create` I'm actually creating the 'slots'
+ * for data, this is just setting.
+ */
 void Database_set(struct Connection *conn, int id, const char *name, const char *email) {
+  // find the row, in the db, in the connection, and store its address ass `addr`
   struct Address *addr = &conn->db->rows[id];
+
+  // since `addr` is a struct, I can look at the value of `set`
   if (addr->set) {
     die("Already set, delete it first");
   }
@@ -133,6 +140,9 @@ void Database_set(struct Connection *conn, int id, const char *name, const char 
   }
 }
 
+/* performs a 'get' from the database. R in CRUD
+ * and prints out the given field to the screen
+ */ 
 void Database_get(struct Connection *conn, int id) {
   struct Address *addr = &conn->db->rows[id];
 
@@ -143,11 +153,18 @@ void Database_get(struct Connection *conn, int id) {
   }
 }
 
+/* D in CRUD, removes a record by un-setting it */
 void Database_delete(struct Connection *conn, int id) {
+  // create an empty `addr` record
   struct Address addr = { .id = id, .set = 0 };
+  // put it in where is the record that we want to delete
   conn->db->rows[id] = addr;
 }
 
+/* lists all the records in the database
+ * simply by iterating over every address we've got there
+ * and printing it if it's set.
+ */
 void Database_list(struct Connection *conn) {
   int i = 0;
   struct Database *db = conn->db;
@@ -157,6 +174,8 @@ void Database_list(struct Connection *conn) {
 
     if (cur->set) {
       Address_print(cur);
+    } else {
+      printf("No record at %d\n", i);
     }
   }
 }
