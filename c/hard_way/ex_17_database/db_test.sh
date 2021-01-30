@@ -27,6 +27,7 @@ echo "Users created"
 
 # view data
 echo "Calling view data:"
+$DB $TEST_DB_FILE l
 # alter data
 # view data
 # remove data

@@ -6,7 +6,6 @@
 
 #define MAX_DATA 512
 #define MAX_ROWS 100
-#define VERBOSE 0
 
 struct Address {
   int id;
@@ -226,7 +225,7 @@ int main(int argc, char *argv[]) {
       break;
 
     case 'l':
-      Database_list(conn, VERBOSE);
+      Database_list(conn);
       break;
 
     default:
