@@ -85,6 +85,11 @@ void Connection_open(const char *filename, char mode) {
   if (!conn) die("Memory error");
   conn->db = Database_create(MAX_DATA, MAX_ROWS);
   if (!conn->db) die("Memory error");
+
+  if (mode == 'c') {
+    conn->file = fopen(filename, "w");
+  }
+
   CONNECTION = conn;
 }
 
@@ -138,7 +143,10 @@ int main(int argc, char *argv[]) {
   printf("---------------_DB_----------------\n");
   struct Address *address = Address_create(3, 1, "Daniel Kaczmarczyk", "daniel@dan.dk", MAX_DATA);
 
-  Connection_open("data.dat", 'w');
+  // manually set mode
+  char mode = 'c';
+
+  Connection_open("data.dat", mode);
 
   CONNECTION->db->rows[address->id] = *address;
   Address_print(&CONNECTION->db->rows[3]);
