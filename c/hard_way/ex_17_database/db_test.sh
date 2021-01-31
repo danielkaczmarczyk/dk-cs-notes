@@ -42,6 +42,6 @@ echo "User data end"
 echo "Getting just one user by id: 2"
 $DB $TEST_DB_FILE g 2
 
-echo "Test over."
+echo "Test over, everything is OK"
 exit 0
 
