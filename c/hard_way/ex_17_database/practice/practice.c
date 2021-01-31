@@ -13,7 +13,7 @@ void die();
 /* Globals */
 
 int MAX_DATA = 128;
-int MAX_ROWS = 500;
+int MAX_ROWS = 5;
 
 /* Address - related functions */
 
@@ -93,11 +93,23 @@ struct Database *Database_create(const int max_data, const int max_rows) {
   return db;
 }
 
-void Database_print(struct Database *db) {
+void Database_info(struct Database *db) {
   printf("\nDB INSPECT\n");
   printf("max_data: %d\n", db->max_data);
   printf("max_rows: %d\n", db->max_rows);
   printf("&rows: %p\n", db->rows);
+}
+
+void Database_print_all(struct Database *db) {
+  printf("\nPrinting all database entries\n");
+
+  for (int i = 1; i <= db->max_rows; i++) {
+    if (db->rows[i].set) {
+      Address_print(&db->rows[i]);
+    } else {
+      printf("ERRR: no entry for %d\n", i);
+    }
+  }
 }
 
 /* UTILITY FUNCTIONS */
@@ -111,12 +123,13 @@ int main(int argc, char *argv[]) {
   struct Address *address = Address_create(3, 1, "Daniel Kaczmarczyk", "daniel@dan.dk", MAX_DATA);
 
   struct Database *db = Database_create(MAX_DATA, MAX_ROWS);
-  Database_print(db);
 
   // TODO add row to the database. how?
   db->rows[address->id] = *address;
-
   Address_print(&db->rows[3]);
+
+  // TODO print all
+  Database_print_all(db);
 
   // TODO write the database to a file
 
