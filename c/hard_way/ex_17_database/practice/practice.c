@@ -8,12 +8,14 @@
 
 /* fn defs */
 
-void die();
+void die(char *message);
+struct Database *Database_create(int max_data, int max_rows);
 
 /* Globals */
 
 int MAX_DATA = 128;
 int MAX_ROWS = 5;
+struct Connection *CONNECTION;
 
 /* Address - related functions */
 
@@ -37,7 +39,6 @@ void Address_print(struct Address *add) {
  * in arguments, char *name, and char *email are equivalent to char name[] and char email[] - both are just pointers
  */
 struct Address *Address_create(const int id, const int set, const char *name, const char *email, const int MAX_DATA) {
-  int error = 0;
 
   struct Address *address = malloc(sizeof(struct Address));
   address->id = id;
@@ -48,16 +49,12 @@ struct Address *Address_create(const int id, const int set, const char *name, co
 
   if (name_size > MAX_DATA) {
     printf("Cannot write. Name \"%s\" too long. MAX_DATA == %d, string given == %d\n", name, MAX_DATA, name_size);
-    error = 1;
+    die("OVERSIZE");
   }
 
   if (email_size > MAX_DATA) {
     printf("Cannot write. Email \"%s\" too long. MAX_DATA == %d, string given == %d\n", email, MAX_DATA, email_size);
-    error = 1;
-  }
-
-  if (error) {
-    die();
+    die("OVERSIZE");
   }
 
   char *name_ptr = malloc(strlen(name));
@@ -70,6 +67,25 @@ struct Address *Address_create(const int id, const int set, const char *name, co
   address->email = email_ptr;
 
   return address;
+}
+
+/* Connection - related functions */
+
+struct Connection {
+  FILE *file;
+  struct Database *db;
+};
+
+/* 
+ * Creates a connection to the database, stores it in a global var
+ */
+void Connection_open(const char *filename, char mode) {
+  // allocate memory for one Connection
+  struct Connection *conn = malloc(sizeof(struct Connection));
+  if (!conn) die("Memory error");
+  conn->db = Database_create(MAX_DATA, MAX_ROWS);
+  if (!conn->db) die("Memory error");
+  CONNECTION = conn;
 }
 
 /* Database - related functions */
@@ -113,8 +129,8 @@ void Database_print_all(struct Database *db) {
 }
 
 /* UTILITY FUNCTIONS */
-void die() {
-  printf("ERROR. PROGRAM EXITING\n");
+void die(char *message) {
+  printf("ERROR. PROGRAM EXITING. ERROR:%s\n", message);
   exit(1);
 }
 
@@ -122,14 +138,11 @@ int main(int argc, char *argv[]) {
   printf("---------------_DB_----------------\n");
   struct Address *address = Address_create(3, 1, "Daniel Kaczmarczyk", "daniel@dan.dk", MAX_DATA);
 
-  struct Database *db = Database_create(MAX_DATA, MAX_ROWS);
+  Connection_open("data.dat", 'w');
 
-  // TODO add row to the database. how?
-  db->rows[address->id] = *address;
-  Address_print(&db->rows[3]);
-
-  // TODO print all
-  Database_print_all(db);
+  CONNECTION->db->rows[address->id] = *address;
+  Address_print(&CONNECTION->db->rows[3]);
+  Database_print_all(CONNECTION->db);
 
   // TODO write the database to a file
 
