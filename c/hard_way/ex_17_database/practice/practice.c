@@ -5,7 +5,8 @@
 #include <string.h>
 
 #define VERBOSE 0
-#define MAX_DATA 512
+
+int MAX_DATA = 512;
 
 struct Address {
   int id;
@@ -15,7 +16,7 @@ struct Address {
 };
 
 void Address_print(struct Address *add) {
-  printf("id: %d\n", add->id);
+  printf(">>> Address record #%d: \n", add->id);
   printf("set: %d\n", add->set);
   printf("name: %s\n", add->name);
   printf("email: %s\n", add->email);
@@ -26,11 +27,12 @@ void Address_print(struct Address *add) {
  *
  * in arguments, char *name, and char *email are equivalent to char name[] and char email[] - both are just pointers
  */
-struct Address *Address_create(const int id, const int set, const char *name, const char *email) {
+struct Address *Address_create(const int id, const int set, const char *name, const char *email, const int MAX_DATA) {
   struct Address *address = malloc(sizeof(struct Address));
   address->id = id;
   address->set = set;
 
+  // TODO -> a little repetitive
   char *name_ptr = malloc(MAX_DATA);
   strcpy(name_ptr, name);
   address->name = name_ptr;
@@ -45,6 +47,6 @@ struct Address *Address_create(const int id, const int set, const char *name, co
 int main(int argc, char *argv[]) {
   printf("---------------_DB_----------------\n");
   //printf("sizeof: %lu\n", sizeof(char));
-  struct Address *address = Address_create(3, 1, "Daniel Kaczmarczyk", "daniel@dan.dk");
+  struct Address *address = Address_create(3, 1, "Daniel Kaczmarczyk", "daniel@dan.dk", MAX_DATA);
   Address_print(address);
 }
