@@ -5,13 +5,13 @@
 #include <string.h>
 
 #define VERBOSE 0
-#define MAX_DATA 512
+#define MAX_DATA 512;
 
 struct Address {
   int id;
   int set;
-  char name[MAX_DATA];
-  char email[MAX_DATA];
+  char *name;
+  char *email;
 };
 
 void Address_print(struct Address *add) {
@@ -19,14 +19,24 @@ void Address_print(struct Address *add) {
   printf("set: %d\n", add->set);
   printf("name: %s\n", add->name);
   printf("email: %s\n", add->email);
+}
 
+/* 
+ * Creates a struct in the memory, and returns the pointer to it
+ *
+ * in arguments, char *name, and char *email are equivalent to char name[] and char email[] - both are just pointers
+ */
+struct Address *Address_create(const int id, const int set, const char *name, const char *email) {
+  struct Address *address = malloc(sizeof(struct Address));
+  address->id = id;
+  address->set = set;
+  printf("%s %s\n", name, email);
+  return address;
 }
 
 int main(int argc, char *argv[]) {
-  struct Address my_address;
-  my_address.id = 3;
-  my_address.set = 1;
-  strcpy( my_address.name, "Daniel Kaczmarczyk");
-  strcpy( my_address.email, "daniel@dan.dk");
-  Address_print(&my_address);
+  printf("---------------_DB_----------------\n");
+  //printf("sizeof: %lu\n", sizeof(char));
+  struct Address *address = Address_create(3, 1, "Daniel Kaczmarczyk", "daniel@dan.dk");
+  Address_print(address);
 }
