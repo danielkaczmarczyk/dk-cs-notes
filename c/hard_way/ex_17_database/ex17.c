@@ -4,19 +4,19 @@
 #include <errno.h>
 #include <string.h>
 
-#define MAX_DATA 512
-#define MAX_ROWS 100
 #define VERBOSE 0
 
 struct Address {
   int id;
   int set;
-  char name[MAX_DATA];
-  char email[MAX_DATA];
+  char *name;
+  char *email;
 };
 
 struct Database {
-  struct Address rows[MAX_ROWS];
+  int max_data;
+  int max_rows;
+  struct Address *rows;
 };
 
 struct Connection {
@@ -115,7 +115,7 @@ void Database_write(struct Connection *conn) {
 void Database_create(struct Connection *conn) {
   int i = 0;
 
-  for (i = 0; i < MAX_ROWS; i++) {
+  for (i = 0; i < conn->db->max_rows; i++) {
     // make a prototype to initialize it
     struct Address addr = { .id = i, .set = 0 };
     // then just assign it
@@ -137,16 +137,16 @@ void Database_set(struct Connection *conn, int id, const char *name, const char 
   }
 
   addr->set = 1;
-  char *res = strncpy(addr->name, name, MAX_DATA);
+  char *res = strncpy(addr->name, name, conn->db->max_data);
   // fix for buff overflow
-  res[MAX_DATA - 1] = '\0';
+  res[conn->db->max_data - 1] = '\0';
   if (!res) {
     die("Name copy failed", conn);
   }
 
-  res = strncpy(addr->email, email, MAX_DATA);
+  res = strncpy(addr->email, email, conn->db->max_data);
   // fix for buff overflow
-  res[MAX_DATA - 1] = '\0';
+  res[conn->db->max_data - 1] = '\0';
   if (!res) {
     die("Email copy failed", conn);
   }
@@ -181,7 +181,7 @@ void Database_list(struct Connection *conn, int verbose) {
   int i = 0;
   struct Database *db = conn->db;
 
-  for (i = 0; i < MAX_ROWS; i++) {
+  for (i = 0; i < conn->db->max_rows; i++) {
     struct Address *cur = &db->rows[i];
 
     if (cur->set) {
@@ -193,6 +193,7 @@ void Database_list(struct Connection *conn, int verbose) {
 }
 
 int main(int argc, char *argv[]) {
+
   if (argc < 3) {
     die("USAGE: ex17 <dbfile> <action> [action params]", NULL);
   } 
@@ -203,7 +204,7 @@ int main(int argc, char *argv[]) {
   int id = 0;
 
   if (argc > 3) id = atoi(argv[3]);
-  if (id >= MAX_ROWS) die("There's not that many records.", conn);
+  if (id >= conn->db->max_rows) die("There's not that many records.", conn);
 
   switch(action) {
     case 'c':
