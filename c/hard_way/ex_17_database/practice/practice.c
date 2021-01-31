@@ -6,7 +6,7 @@
 
 #define VERBOSE 0
 
-int MAX_DATA = 512;
+int MAX_DATA = 2;
 
 struct Address {
   int id;
@@ -14,6 +14,11 @@ struct Address {
   char *name;
   char *email;
 };
+
+void die() {
+  printf("ERROR. PROGRAM EXITING\n");
+  exit(1);
+}
 
 void Address_print(struct Address *add) {
   printf(">>> Address record #%d: \n", add->id);
@@ -28,6 +33,8 @@ void Address_print(struct Address *add) {
  * in arguments, char *name, and char *email are equivalent to char name[] and char email[] - both are just pointers
  */
 struct Address *Address_create(const int id, const int set, const char *name, const char *email, const int MAX_DATA) {
+  int error = 0;
+
   struct Address *address = malloc(sizeof(struct Address));
   address->id = id;
   address->set = set;
@@ -36,11 +43,17 @@ struct Address *Address_create(const int id, const int set, const char *name, co
   int email_size = strlen(email);
 
   if (name_size > MAX_DATA) {
-    printf("Cannot write. Name too long. MAX_DATA == %d, string given == %d\n", MAX_DATA, name_size);
+    printf("Cannot write. Name \"%s\" too long. MAX_DATA == %d, string given == %d\n", name, MAX_DATA, name_size);
+    error = 1;
   }
 
   if (email_size > MAX_DATA) {
-    printf("Cannot write. Email too long. MAX_DATA == %d, string given == %d\n", MAX_DATA, name_size);
+    printf("Cannot write. Email \"%s\" too long. MAX_DATA == %d, string given == %d\n", email, MAX_DATA, email_size);
+    error = 1;
+  }
+
+  if (error) {
+    die();
   }
 
   char *name_ptr = malloc(strlen(name));
