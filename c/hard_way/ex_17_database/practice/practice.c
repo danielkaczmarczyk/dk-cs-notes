@@ -6,7 +6,16 @@
 
 #define VERBOSE 0
 
+/* fn defs */
+
+void die();
+
+/* Globals */
+
 int MAX_DATA = 128;
+int MAX_ROWS = 500;
+
+/* Address - related functions */
 
 struct Address {
   int id;
@@ -14,11 +23,6 @@ struct Address {
   char *name;
   char *email;
 };
-
-void die() {
-  printf("ERROR. PROGRAM EXITING\n");
-  exit(1);
-}
 
 void Address_print(struct Address *add) {
   printf(">>> Address record #%d: \n", add->id);
@@ -68,9 +72,44 @@ struct Address *Address_create(const int id, const int set, const char *name, co
   return address;
 }
 
+/* Database - related functions */
+
+struct Database {
+  int max_data;
+  int max_rows;
+  struct Address *rows;
+};
+
+struct Database *Database_create(const int max_data, const int max_rows) {
+  struct Database *db = malloc(sizeof(struct Database));
+
+  db->max_data = max_data;
+  db->max_rows = max_rows;
+
+
+  return db;
+}
+
+void Database_print(struct Database *db) {
+  printf("\nDB INSPECT\n");
+  printf("max_data: %d\n", db->max_data);
+  printf("max_rows: %d\n", db->max_rows);
+  printf("*rows: %p\n", db->rows);
+}
+
+/* UTILITY FUNCTIONS */
+void die() {
+  printf("ERROR. PROGRAM EXITING\n");
+  exit(1);
+}
+
 int main(int argc, char *argv[]) {
   printf("---------------_DB_----------------\n");
   //printf("sizeof: %lu\n", sizeof(char));
   struct Address *address = Address_create(3, 1, "Daniel Kaczmarczyk", "daniel@dan.dk", MAX_DATA);
   Address_print(address);
+
+  struct Database *db = Database_create(MAX_DATA, MAX_ROWS);
+  Database_print(db);
 }
+
