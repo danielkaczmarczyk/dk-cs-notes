@@ -5,7 +5,7 @@
 #include <string.h>
 
 #define VERBOSE 0
-#define MAX_DATA 512;
+#define MAX_DATA 512
 
 struct Address {
   int id;
@@ -30,7 +30,15 @@ struct Address *Address_create(const int id, const int set, const char *name, co
   struct Address *address = malloc(sizeof(struct Address));
   address->id = id;
   address->set = set;
-  printf("%s %s\n", name, email);
+
+  printf("In Address_create, name: %s email: %s\n", name, email);
+
+  // allocate some memory to store email and name
+  char *name_ptr = malloc(MAX_DATA);
+  strcpy(name_ptr, name);
+
+  address->name = name_ptr;
+
   return address;
 }
 
