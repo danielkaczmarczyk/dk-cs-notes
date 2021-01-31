@@ -87,7 +87,11 @@ void Connection_open(const char *filename, char mode) {
   if (!conn->db) die("Memory error");
 
   if (mode == 'c') {
-    conn->file = fopen(filename, "w");
+    conn->file = fopen("data.db", "w");
+  }
+
+  if (!conn->file) {
+    die("Failed to open the database file");
   }
 
   CONNECTION = conn;
@@ -133,6 +137,17 @@ void Database_print_all(struct Database *db) {
   }
 }
 
+void Database_write(struct Connection *conn) {
+  // set the file position indicater for the stream to the beginning of the file.
+  rewind(conn->file);
+
+  int rc = fwrite(conn->db, sizeof(struct Database), 1, conn->file);
+  if (rc != 1) die("Failed to write db to file");
+
+  rc = fflush(conn->file);
+  if (rc == -1) die("Cannot flush database");
+}
+
 /* UTILITY FUNCTIONS */
 void die(char *message) {
   printf("ERROR. PROGRAM EXITING. ERROR:%s\n", message);
@@ -153,6 +168,10 @@ int main(int argc, char *argv[]) {
   Database_print_all(CONNECTION->db);
 
   // TODO write the database to a file
+  
+
+
+  Database_write(CONNECTION);
 
   // TODO read the database from a file
 
