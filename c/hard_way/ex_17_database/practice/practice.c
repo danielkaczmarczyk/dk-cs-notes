@@ -32,13 +32,24 @@ struct Address *Address_create(const int id, const int set, const char *name, co
   address->id = id;
   address->set = set;
 
-  // TODO -> a little repetitive
-  char *name_ptr = malloc(MAX_DATA);
-  strcpy(name_ptr, name);
-  address->name = name_ptr;
+  int name_size = strlen(name);
+  int email_size = strlen(email);
 
-  char *email_ptr = malloc(MAX_DATA);
+  if (name_size > MAX_DATA) {
+    printf("Cannot write. Name too long. MAX_DATA == %d, string given == %d\n", MAX_DATA, name_size);
+  }
+
+  if (email_size > MAX_DATA) {
+    printf("Cannot write. Email too long. MAX_DATA == %d, string given == %d\n", MAX_DATA, name_size);
+  }
+
+  char *name_ptr = malloc(strlen(name));
+  char *email_ptr = malloc(strlen(email));
+
+  strcpy(name_ptr, name);
   strcpy(email_ptr, email);
+
+  address->name = name_ptr;
   address->email = email_ptr;
 
   return address;
