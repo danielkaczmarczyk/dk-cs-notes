@@ -6,7 +6,7 @@
 
 #define VERBOSE 0
 
-int MAX_DATA = 2;
+int MAX_DATA = 128;
 
 struct Address {
   int id;
