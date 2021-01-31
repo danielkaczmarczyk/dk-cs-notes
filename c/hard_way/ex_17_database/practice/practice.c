@@ -108,11 +108,19 @@ void die() {
 
 int main(int argc, char *argv[]) {
   printf("---------------_DB_----------------\n");
-  //printf("sizeof: %lu\n", sizeof(char));
   struct Address *address = Address_create(3, 1, "Daniel Kaczmarczyk", "daniel@dan.dk", MAX_DATA);
-  Address_print(address);
 
   struct Database *db = Database_create(MAX_DATA, MAX_ROWS);
   Database_print(db);
+
+  // TODO add row to the database. how?
+  db->rows[address->id] = *address;
+
+  Address_print(&db->rows[3]);
+
+  // TODO write the database to a file
+
+  // TODO read the database from a file
+
 }
 
