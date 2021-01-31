@@ -86,6 +86,9 @@ struct Database *Database_create(const int max_data, const int max_rows) {
   db->max_data = max_data;
   db->max_rows = max_rows;
 
+  // put aside the memory for all the address pointers
+  void *rows = malloc(sizeof(struct Address) * max_rows);
+  db->rows = rows;
 
   return db;
 }
@@ -94,7 +97,7 @@ void Database_print(struct Database *db) {
   printf("\nDB INSPECT\n");
   printf("max_data: %d\n", db->max_data);
   printf("max_rows: %d\n", db->max_rows);
-  printf("*rows: %p\n", db->rows);
+  printf("&rows: %p\n", db->rows);
 }
 
 /* UTILITY FUNCTIONS */
