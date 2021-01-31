@@ -31,13 +31,13 @@ struct Address *Address_create(const int id, const int set, const char *name, co
   address->id = id;
   address->set = set;
 
-  printf("In Address_create, name: %s email: %s\n", name, email);
-
-  // allocate some memory to store email and name
   char *name_ptr = malloc(MAX_DATA);
   strcpy(name_ptr, name);
-
   address->name = name_ptr;
+
+  char *email_ptr = malloc(MAX_DATA);
+  strcpy(email_ptr, email);
+  address->email = email_ptr;
 
   return address;
 }
