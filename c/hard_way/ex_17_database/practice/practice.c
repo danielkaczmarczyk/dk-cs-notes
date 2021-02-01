@@ -155,25 +155,60 @@ void die(char *message) {
 }
 
 int main(int argc, char *argv[]) {
-  printf("---------------_DB_----------------\n");
-  struct Address *address = Address_create(3, 1, "Daniel Kaczmarczyk", "daniel@dan.dk", MAX_DATA);
-
+  // printf("---------------_DB_----------------\n");
+  // struct Address *address = Address_create(3, 1, "Daniel Kaczmarczyk", "daniel@dan.dk", MAX_DATA);
   // manually set mode
-  char mode = 'c';
+  // char mode = 'c';
 
-  Connection_open("data.dat", mode);
+  // Connection_open("data.dat", mode);
 
-  CONNECTION->db->rows[address->id] = *address;
-  Address_print(&CONNECTION->db->rows[3]);
-  Database_print_all(CONNECTION->db);
+  // CONNECTION->db->rows[address->id] = *address;
+  // Address_print(&CONNECTION->db->rows[3]);
+  // Database_print_all(CONNECTION->db);
+  // Database_write(CONNECTION);
 
-  // TODO write the database to a file
-  
+  // FILE *fp; // declare an empty pointer to some arbitrary file
+  // char *str = "Daniel's file content!";
+  // fp = fopen("file.txt", "w");
+  // printf("sizeof(str): %lu\n", sizeof(str));
+  // fwrite(str, 1, strlen(str), fp);
+  // fclose(fp);
 
+  struct Person {
+    int age;         // 4
+    int height;      // 4
+    char initial;    // 1
+    char name[10];   
+    char email[10];
+  };
+  // total 29
+  // it got padded to 32B (3 additional bytes) 
+  // due to the initial being smaller than a size of a word (sizeof(int))
 
-  Database_write(CONNECTION);
+  struct Person Person_daniel = {
+    .age = 20,
+    .name = "Daniel",
+    .email = "dan@dan.dk",
+    .height = 30,
+    .initial = 'D'
+   };
+  struct Person *daniel = &Person_daniel;
 
-  // TODO read the database from a file
+  struct Person Person_natasha = {
+    .age = 30,
+    .name = "Natasha",
+    .email = "nat@nat.nk",
+    .height = 40,
+    .initial = 'N'
+   };
+  struct Person *natasha = &Person_natasha;
+  // printf("%s, age: %d, email:%s \n", daniel->name, daniel->age, daniel->email);
+
+  FILE *fp;
+  fp = fopen("persons.txt", "w");
+  fwrite(daniel, sizeof(struct Person), 1, fp);
+  fwrite(natasha, sizeof(struct Person), 1, fp);
+  fclose(fp);
 
 }
 
