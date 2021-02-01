@@ -70,6 +70,32 @@ void destroy(struct char_stack *stack) {
   printf("Stack destroyed.\n");
 }
 
+void write(struct char_stack *stack) {
+  FILE *fp;
+  fp = fopen("stack.st", "w");
+  if (fp == NULL) {
+    printf("\nError opening file\n");
+    exit(1);
+  }
+
+  fwrite(stack, sizeof(struct char_stack), 1, fp);
+  fclose(fp);
+} 
+
+struct char_stack *read(void) {
+  FILE *fp;
+  struct char_stack *stack;
+
+  fp = fopen("stack.st", "r");
+  if (fp == NULL) {
+    printf("\nError opening file\n");
+    exit(1);
+  }
+  fread(&stack, sizeof(struct char_stack), 1, fp);
+  fclose(fp);
+  return stack;
+}
+
 void test_driver(void) {
   struct char_stack *stack = new();
   print(stack);
@@ -98,6 +124,14 @@ void test_driver(void) {
   push(stack, 'r');
   push(stack, 'd');
   print(stack);
+  write(stack);
+  printf("written stack\n");
+
+  printf("attempting to read stack\n");
+  struct char_stack *new_stack;
+  new_stack = read();
+  printf("read stack successfully\n");
+  print(new_stack);
 }
 
 int main(int argc, char *argv[]) {
