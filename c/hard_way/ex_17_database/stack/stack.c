@@ -6,13 +6,13 @@ struct char_stack {
   char items[512];
 };
 
-struct char_stack *new();
+struct char_stack *new(void);
 void print(struct char_stack *stack);
 int push(struct char_stack *stack, char item);
 int pop(struct char_stack *stack);
 int is_empty(struct char_stack *stack);
 
-struct char_stack *new() {
+struct char_stack *new(void) {
   struct char_stack *stack = malloc(sizeof(struct char_stack));
   stack->n_items = 0;
   return stack;
@@ -51,6 +51,10 @@ int main(int argc, char *argv[]) {
   push(stack, 'r');
   push(stack, 'd');
   print(stack);
+}
+
+void test_driver(void) {
+  
 }
 
 // TODO receive commands via CLI
