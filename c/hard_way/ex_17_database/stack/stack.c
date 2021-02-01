@@ -3,7 +3,7 @@
 
 struct char_stack {
   int n_items;
-  char items[512];
+  char items[64];
 };
 
 struct char_stack *new(void);
