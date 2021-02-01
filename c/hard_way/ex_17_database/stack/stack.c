@@ -92,7 +92,11 @@ void test_driver(void) {
   printf("size: %d\n", size(stack));
   flush(stack);
   print(stack);
-  destroy(stack);
+  print(stack);
+  push(stack, 'l');
+  push(stack, 'a');
+  push(stack, 'r');
+  push(stack, 'd');
   print(stack);
 }
 
