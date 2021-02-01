@@ -12,6 +12,7 @@ int push(struct char_stack *stack, char item);
 int pop(struct char_stack *stack);
 int is_empty(struct char_stack *stack);
 void test_driver(void);
+char peek(struct char_stack *stack);
 
 struct char_stack *new(void) {
   struct char_stack *stack = malloc(sizeof(struct char_stack));
@@ -45,6 +46,10 @@ int is_empty(struct char_stack *stack) {
   return 0;
 }
 
+char peek(struct char_stack *stack) {
+  return stack->items[stack->n_items - 1];
+}
+
 
 int main(int argc, char *argv[]) {
   test_driver();
@@ -68,11 +73,8 @@ void test_driver(void) {
   push(stack, 'n');
   push(stack, 'd');
   print(stack);
+  printf("peeking: %c\n", peek(stack));
 }
 
-// TODO receive commands via CLI
-// TODO write auto tests in bash
 // TODO write stack to file
 // TODO read stack to file
-// TODO enable varied size stack creation
-// TODO write and read from files
