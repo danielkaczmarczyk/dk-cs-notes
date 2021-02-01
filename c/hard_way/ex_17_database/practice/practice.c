@@ -202,13 +202,22 @@ int main(int argc, char *argv[]) {
     .initial = 'N'
    };
   struct Person *natasha = &Person_natasha;
-  // printf("%s, age: %d, email:%s \n", daniel->name, daniel->age, daniel->email);
 
   FILE *fp;
   fp = fopen("persons.txt", "w");
   fwrite(daniel, sizeof(struct Person), 1, fp);
   fwrite(natasha, sizeof(struct Person), 1, fp);
   fclose(fp);
+
+  // read structs
+  fp = fopen("persons.txt", "r");
+
+  struct Person *read_daniel = NULL;
+  int rc = fread(read_daniel, sizeof(struct Person), 1, fp);
+  if (rc != 1) die("READ FAIL");
+
+  printf("%s, age: %d, email:%s \n", read_daniel->name, read_daniel->age, read_daniel->email);
+
 
 }
 
