@@ -84,7 +84,7 @@ void write(struct char_stack *stack) {
 
 struct char_stack *read(void) {
   FILE *fp;
-  struct char_stack *stack;
+  void *stack = malloc(sizeof(struct char_stack));
 
   fp = fopen("stack.st", "r");
   if (fp == NULL) {
