@@ -66,7 +66,7 @@ void flush(struct char_stack *stack) {
 }
 
 void destroy(struct char_stack *stack) {
-  int rc = free(stack);
+  free(stack);
   printf("Stack destroyed.\n");
 }
 
