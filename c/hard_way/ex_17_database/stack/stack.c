@@ -15,9 +15,14 @@ void test_driver(void);
 char peek(struct char_stack *stack);
 int size(struct char_stack *stack);
 void flush(struct char_stack *stack);
+void destroy(struct char_stack *stack);
 
 struct char_stack *new(void) {
   struct char_stack *stack = malloc(sizeof(struct char_stack));
+  if (!stack) {
+    printf("Memory error!\n");
+    exit(1);
+  }
   stack->n_items = 0;
   return stack;
 }
@@ -58,6 +63,16 @@ int size(struct char_stack *stack) {
 
 void flush(struct char_stack *stack) {
   stack->n_items = 0;
+}
+
+void destroy(struct char_stack *stack) {
+  int rc = free(stack);
+  if (rc != 0) {
+    printf("Could not destroy stack. Exiting\n");
+    exit(1);
+  } else {
+    printf("Stack destroyed.\n");
+  }
 }
 
 void test_driver(void) {
