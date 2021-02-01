@@ -67,12 +67,7 @@ void flush(struct char_stack *stack) {
 
 void destroy(struct char_stack *stack) {
   int rc = free(stack);
-  if (rc != 0) {
-    printf("Could not destroy stack. Exiting\n");
-    exit(1);
-  } else {
-    printf("Stack destroyed.\n");
-  }
+  printf("Stack destroyed.\n");
 }
 
 void test_driver(void) {
@@ -96,6 +91,8 @@ void test_driver(void) {
   printf("peeking: %c\n", peek(stack));
   printf("size: %d\n", size(stack));
   flush(stack);
+  print(stack);
+  destroy(stack);
   print(stack);
 }
 
