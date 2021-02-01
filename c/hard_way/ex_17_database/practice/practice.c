@@ -212,12 +212,16 @@ int main(int argc, char *argv[]) {
   // read structs
   fp = fopen("persons.txt", "r");
 
-  struct Person *read_daniel = NULL;
+  struct Person *read_daniel = malloc(sizeof(struct Person));
   int rc = fread(read_daniel, sizeof(struct Person), 1, fp);
   if (rc != 1) die("READ FAIL");
 
-  printf("%s, age: %d, email:%s \n", read_daniel->name, read_daniel->age, read_daniel->email);
+  struct Person *read_natasha = malloc(sizeof(struct Person));
+  rc = fread(read_natasha, sizeof(struct Person), 1, fp);
+  if (rc != 1) die("READ FAIL");
 
+  printf("%s, age: %d, email:%s \n", read_daniel->name, read_daniel->age, read_daniel->email);
+  printf("%s, age: %d, email:%s \n", read_natasha->name, read_natasha->age, read_natasha->email);
 
 }
 
