@@ -13,6 +13,8 @@ int pop(struct char_stack *stack);
 int is_empty(struct char_stack *stack);
 void test_driver(void);
 char peek(struct char_stack *stack);
+int size(struct char_stack *stack);
+void flush(struct char_stack *stack);
 
 struct char_stack *new(void) {
   struct char_stack *stack = malloc(sizeof(struct char_stack));
@@ -21,7 +23,7 @@ struct char_stack *new(void) {
 }
 
 void print(struct char_stack *stack) {
-  printf("char_stack { items: %d } [ ", stack->n_items);
+  printf("char_stack { items: %d } [ ", size(stack));
   for (int i = 0; i < stack->n_items; i++ ) {
     printf("%c, ", stack->items[i]);
   }
@@ -50,9 +52,12 @@ char peek(struct char_stack *stack) {
   return stack->items[stack->n_items - 1];
 }
 
+int size(struct char_stack *stack) {
+  return stack->n_items;
+}
 
-int main(int argc, char *argv[]) {
-  test_driver();
+void flush(struct char_stack *stack) {
+  stack->n_items = 0;
 }
 
 void test_driver(void) {
@@ -74,7 +79,15 @@ void test_driver(void) {
   push(stack, 'd');
   print(stack);
   printf("peeking: %c\n", peek(stack));
+  printf("size: %d\n", size(stack));
+  flush(stack);
+  print(stack);
 }
+
+int main(int argc, char *argv[]) {
+  test_driver();
+}
+
 
 // TODO write stack to file
 // TODO read stack to file
