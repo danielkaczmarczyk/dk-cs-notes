@@ -84,7 +84,7 @@ void write(struct char_stack *stack) {
 
 struct char_stack *read(void) {
   FILE *fp;
-  void *stack = malloc(sizeof(struct char_stack));
+  struct char_stack *stack = malloc(sizeof(struct char_stack));
 
   fp = fopen("stack.st", "r");
   if (fp == NULL) {
@@ -138,6 +138,4 @@ int main(int argc, char *argv[]) {
   test_driver();
 }
 
-
-// TODO write stack to file
-// TODO read stack to file
+// TODO read stack from file
