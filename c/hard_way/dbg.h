@@ -28,7 +28,7 @@
 #define check(A, M, ...) if(!(A)) {\
   log_err(M, ##__VA_ARGS__); errno=0; goto error; }
 
-#define sentinel(M, ...) { log_err(M, ##_VA_ARGS__);\
+#define sentinel(M, ...) { log_err(M, ##__VA_ARGS__);\
   errno=0; goto error; }
 
 #define check_mem(A) check((A), "Out of memory.")
