@@ -26,7 +26,7 @@ int main(int argc, char *argv[]) {
   char *in = NULL;
 
   printf("What's your first name? ");
-  in = fgets(you.first_name, MAX_DATA - 1, stdin);
+  gets(in);
   check(in != NULL, "Failed to read first name.");
 
   printf("What's your last name? ");
