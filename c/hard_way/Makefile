@@ -1,7 +1,8 @@
 CFLAGS=-g -Wall -DNDEBUG
+TARGET= ex24
 
-all: clean ex19
+all: clean $(TARGET)
 
 clean:
-		rm -rf ex19 *.dSYM
+		rm -rf $(TARGET) *.dSYM
 

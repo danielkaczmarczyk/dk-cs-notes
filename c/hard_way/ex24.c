@@ -8,4 +8,16 @@ typedef enum EyeColor {
   BLACK_EYES, OTHER_EYES
 } EyeColor;
 
+const char *EYE_COLOR_NAMES[] = {
+  "Blue", "Green", "Brown", "Black", "Other"
+};
+
+typedef struct Person {
+  int age;
+  char first_name[MAX_DATA];
+  char last_name[MAX_DATA];
+  EyeColor eyes;
+  float income;
+} Person;
+
 
