@@ -58,9 +58,9 @@ int main(int argc, char *argv[]) {
 
   printf("First name: %s", you.first_name);
   printf("Last name: %s", you.last_name);
-  printf("Age: %d", you.age);
-  printf("Eyes: %s", EYE_COLOR_NAMES[you.eyes]);
-  printf("Income: %f\n", you.income);
+  printf("Age: %d ", you.age);
+  printf("Eyes: %s\n", EYE_COLOR_NAMES[you.eyes]);
+  printf("Income: $%1.2fph\n", you.income);
 
   return 0;
 
