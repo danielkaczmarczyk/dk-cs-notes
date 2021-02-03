@@ -1,5 +1,5 @@
 CFLAGS=-g -Wall -DNDEBUG
-TARGET= ex24
+TARGET= ex25
 
 all: clean $(TARGET)
 
