@@ -1,7 +1,16 @@
+CC = gcc
 CFLAGS=-g -Wall -DNDEBUG
+OBJFILES = ex22.o
+TARGET = ex22
 
-all: clean ex19
+all: $(TARGET)
+
+$(TARGET): obj $(OBJFILES)
+	$(CC) $(CFLAGS) -o $(TARGET) $(OBJFILES)
+
+obj:
+	-c -o $(OBJFILES) ex22.c
 
 clean:
-		rm -rf ex19 *.dSYM
+		rm -rf $(TARGET) *.dSYM
 
