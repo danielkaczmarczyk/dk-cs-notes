@@ -196,6 +196,7 @@ int main(int argc, char *argv[]) {
       // TODO what happens if it's just a newline?
       if (strlen(buffer) == 0) {
         debug("strlen of buffer is zerO!");
+        continue;
       }
       char *current_glob = malloc(128);
       strcpy(current_glob, buffer);
@@ -215,7 +216,12 @@ int main(int argc, char *argv[]) {
 
   debug("got %d globs!", globs_count);
   for (int k = 0; k < globs_count; k++) {
-    debug("%s", globs[k]);
+    // does the glob string include the newline character?
+    int len = strlen(globs[k]);
+    for (int l = 0; l < len; l++) {
+      char c = globs[k][l];
+      debug("%c: %d", c, c); 
+    }
   }
 
   fclose(glob_file_pointer);
