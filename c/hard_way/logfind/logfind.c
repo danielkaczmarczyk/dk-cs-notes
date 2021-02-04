@@ -155,24 +155,54 @@ void globbing() {
  * look at:
  * https://codeforwin.org/2018/01/c-program-read-and-display-file-contents.html
  */
-void read_logfind() {
+void read_logfind(char *globs[]) {
   FILE *fp;
   int buffer_length = 255;
   char buffer[buffer_length];
 
   fp = fopen(".logfind", "r");
  
-  debug("before fgets");
+  int i = 0;
   while (fgets(buffer, buffer_length, fp)) {
-    debug("in fgets");
-    printf("%s\n", buffer);
+    char *current_glob = malloc(128);
+    strcpy(buffer, current_glob);
+    globs[i] = current_glob;
+    i++;
+    printf("%s", buffer);
   }
-  debug("after fgets");
 
   fclose(fp);
 }
 
 int main(int argc, char *argv[]) {
-  read_logfind();
+  FILE *glob_file_pointer;
+
+  char *globs[128];
+
+  int buffer_length = 255;
+  char buffer[buffer_length]; // buffer of chars to put temporary stuff in
+
+  glob_file_pointer = fopen(".logfind", "r");
+  char c;
+  int i = 0;
+  int j = 0;
+  do {
+    c = fgetc(glob_file_pointer);
+    if (c == '\n') {
+      // copy what is in the buffer into a new location in memory
+      // TODO what happens if it's just a newline?
+      char *current_glob = malloc(128);
+      strcpy(buffer, current_glob);
+      // and put the pointer to it in globs
+      globs[j] = current_glob;
+      j++;
+    } else {
+      buffer[i] = c;
+      putchar(c);
+      i++;
+    }
+  } while(c != EOF);
+
+  fclose(glob_file_pointer);
 }
 
