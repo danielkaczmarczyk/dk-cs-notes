@@ -151,6 +151,7 @@ void globbing() {
 /**
  * reads contents of ~/.logfind and
  * treats every line as a glob pattern
+ * https://codeforwin.org/2018/01/c-program-read-and-display-file-contents.html
  */
 void read_logfind() {
   FILE *fp;
@@ -158,8 +159,12 @@ void read_logfind() {
   char buffer[buffer_length];
 
   fp = fopen("~/.logfind", "r");
-
-  debug("%c \n", fp[0];
+ 
+  char c;
+  do { 
+    c = fgetc(fp);
+    putchar(c);
+  } while(c != EOF);
 
   // debug("before fgets");
   // while (fgets(buffer, buffer_length, fp)) {
