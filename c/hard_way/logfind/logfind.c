@@ -151,6 +151,8 @@ void globbing() {
 /**
  * reads contents of ~/.logfind and
  * treats every line as a glob pattern
+ *
+ * look at:
  * https://codeforwin.org/2018/01/c-program-read-and-display-file-contents.html
  */
 void read_logfind() {
@@ -158,7 +160,9 @@ void read_logfind() {
   int buffer_length = 255;
   char buffer[buffer_length];
 
-  fp = fopen("~/.logfind", "r");
+  // TODO bug:
+  // something problematic with ~/ . reads from other directories succeed
+  fp = fopen(".logfind", "r");
  
   char c;
   do { 
