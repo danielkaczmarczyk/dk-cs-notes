@@ -157,7 +157,7 @@ void read_logfind() {
   int buffer_length = 255;
   char buffer[buffer_length];
 
-  fp = fopen("~/.logfind");
+  fp = fopen("~/.logfind", "r");
 
   while (fgets(buffer, buffer_length, fp)) {
     printf("%s\n", buffer);
@@ -171,5 +171,6 @@ int main(int argc, char *argv[]) {
   parse_args(argc, argv);
   debug("after parsing args: or: %d, test_mode: %d", or, test_mode); 
   globbing();
+  read_logfind();
 }
 
