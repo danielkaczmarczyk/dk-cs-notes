@@ -255,9 +255,30 @@ int get_keywords(char *keywords[], char *argv[], int argc) {
 }
 
 void search_for_matches(char *filenames[], int files_count, char *keywords[], int kw_count, int mode) {
+
+  // for every file in filenames
   for (int i = 0; i < files_count; i++) {
-    debug("%s", filenames[i]);
+    FILE * fp;
+    char buffer[BUFFER_SIZE];
+
+    fp = fopen(filenames[i], "r");
+
+    debug("reading: %s", filenames[i]);
+    while(fgets(buffer, BUFFER_SIZE, fp) != NULL) {
+      // for every keyword in keywords
+      for (int j = 0; j < kw_count; j++) {
+        if (strstr(buffer, keywords[j])) {
+          debug("found keyword %s in file %s. here:", keywords[j], filenames[i]);
+          printf("%s ", filenames[i]);
+          goto kw_found;
+        }
+      }
+    }
+kw_found:
+    continue;
   }
+
+  printf("\n");
 }
 
 
@@ -269,21 +290,18 @@ int main(int argc, char *argv[]) {
   char *keywords[128];
   int kw_count = 0;
   kw_count = get_keywords(keywords, argv, argc);
-  print_strings(keywords, kw_count, "keywords");
 
   // Gather globs from the config file
   char *globs[128];
   int globs_count = 0;
   globs_count = get_globs(globs);
-  print_strings(globs, globs_count, "globs");
 
   // Gather filenames to be searched based on globs
   char *filenames[128];
   int files_count = 0;
   files_count = get_filenames(globs, globs_count, filenames);
-  print_strings(filenames, files_count, "filenames");
 
-  // Iterate over the files, open each one of them, check for matches
-  //search_for_matches(filenames, files_count, keywords, kw_count, mode);
+  // Iterate over the files, open each one of them, check for matches, print them
+  search_for_matches(filenames, files_count, keywords, kw_count, mode);
 }
 
