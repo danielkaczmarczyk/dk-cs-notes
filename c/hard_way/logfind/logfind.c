@@ -102,18 +102,28 @@ void parse_args(int argc, char *argv[]) {
 }
 
 /**
- * Load list of allowed log files from ./logfind
+ * Searches current directory for files that match the
+ * patterns we defined in ~/.logfind
+ *
+ * Returns all the filenames that MATCH
+ * TODO: it does not do that
  */
-void load_allowed_files() {
-  DIR *folder = NULL; // pointer to the directory
+void search_dir() {
+  DIR *folder = NULL;    // pointer to the directory
+  struct dirent *entry;  // struct for a directory entry, defined in <dirent.h>
+  int files = 0;
 
   folder = opendir(".");
   // TODO fix it to use zed's macros
   if (folder == NULL) {
     puts("Unable to read directory");
-  } else {
-    puts("Directory is opened!");
   }
+
+  while ((entry = readdir(folder))) {
+    files++;
+    printf("File %3d: %s\n", files, entry->d_name);
+  }
+
   closedir(folder);
 }
 
@@ -123,5 +133,4 @@ int main(int argc, char *argv[]) {
   debug("after parsing args: or: %d, test_mode: %d", or, test_mode); 
   load_allowed_files();
 }
-
 
