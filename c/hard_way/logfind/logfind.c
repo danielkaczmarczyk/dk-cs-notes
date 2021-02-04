@@ -20,7 +20,6 @@
  *   built to pass exercise 26 from
  *   learn c the hard way by zed shaw
  *
- *
  *   available flags:
  *   o      for running the queries in an 'or' manner
  *   t      for running the automated tests
@@ -199,58 +198,74 @@ void read_logfind(char *globs[]) {
   fclose(fp);
 }
 
-void print_strings(char *array[], int len) {
-  for (int i = 0; i < len; i++) {
-    debug("%s", array[i]);
-  }
-}
-
-int main(int argc, char *argv[]) {
-
-  char *globs[128];
-  int globs_count;
-  globs_count = get_globs(globs);
-
-  char *filenames[128];
+int get_filenames(char *globs[], int globs_count, char *filenames[]) {
   int files_count = 0;
-
   /* ----- ITERATE OVER FILENAMES THAT ARE GOING TO BE SEARCHED ----- */
 
   for (int i = 0; i < globs_count; i++) {
     debug("USING GLOB %s", globs[i]);
     glob_t g;
-    glob(globs[i], GLOB_DOOFFS, NULL, &g);
+    debug("starting glob");
+    glob(globs[i], 0, NULL, &g);
+    debug("glob over. filenames count: %zu", g.gl_pathc);
+
     for (int i = 0; i < g.gl_pathc; i++) {
+      debug("in the inside loop. i: %d", i);
 
       char *filename = malloc(128);
       strcpy(filename, g.gl_pathv[i]);
       filenames[files_count++] = filename;
       debug("file to search: %s", g.gl_pathv[i]);
-      for (int i = 0; i < argc; i++) {
-        if (!is_flag(argv[i])) {
-          debug("keyword: %s", argv[i]);
-          // perform strstr line by line on the contents of the file
-          // if at any point we've got a non-null value, STOP PROCESSING this file and
-          FILE *fp;
-          char buffer[BUFFER_SIZE];
-          fp = fopen(g.gl_pathv[i], "r");
-          if (fp == NULL) {
-            log_err("Unable to open %s.", g.gl_pathv[i]);
-            log_err("FAULTY gl_pathv i: %d", i);
-            log_err("FAULTY argv[i]: %s", argv[i]);
-          } else {
-            while(fgets(buffer, BUFFER_SIZE, fp) != NULL) {
-              debug("current line: %s", buffer);
-            }
-          }
 
-          fclose(fp);
-          // return its filename.
-        }
-      }
-
+//       for (int i = 0; i < argc; i++) {
+//         if (!is_flag(argv[i])) {
+//           debug("keyword: %s", argv[i]);
+//           // perform strstr line by line on the contents of the file
+//           // if at any point we've got a non-null value, STOP PROCESSING this file and
+//           FILE *fp;
+//           char buffer[BUFFER_SIZE];
+//           fp = fopen(g.gl_pathv[i], "r");
+//           if (fp == NULL) {
+//             log_err("Unable to open %s.", g.gl_pathv[i]);
+//             log_err("FAULTY gl_pathv i: %d", i);
+//             log_err("FAULTY argv[i]: %s", argv[i]);
+//           } else {
+//             while(fgets(buffer, BUFFER_SIZE, fp) != NULL) {
+//               debug("current line: %s", buffer);
+//             }
+//           }
+// 
+//           fclose(fp);
+//           // return its filename.
+//         }
+//       }
     }
   }
+  return files_count;
+}
 
-} // end main
+void print_strings(char *array[], int len, char *var_name) {
+  debug("Printing contents of %s", var_name);
+  for (int i = 0; i < len; i++) {
+    debug("%s", array[i]);
+  }
+  debug("End contents of %s\n", var_name);
+}
+
+
+int main(int argc, char *argv[]) {
+
+  // Gather globs from the config file
+  char *globs[128];
+  int globs_count;
+  globs_count = get_globs(globs);
+  print_strings(globs, globs_count, "globs");
+
+  // Gather filenames to be searched based on globs
+  char *filenames[128];
+  int files_count = 0;
+  files_count = get_filenames(globs, globs_count, filenames);
+  print_strings(filenames, files_count, "filenames");
+
+}
 
