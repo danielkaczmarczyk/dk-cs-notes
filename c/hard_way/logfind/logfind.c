@@ -10,12 +10,11 @@
  */
 
 /**
- *
- *               LOGFIND
+ *             LOGFIND
  *
  *   an alternative to grep
  *   that is not only more limited in functionality
- *   but also probably doesn't work well
+ *   but also probably doesn't work well!
  *
  *   by 
  *   daniel kaczmarczyk
@@ -27,6 +26,13 @@
  *   available flags:
  *   o      for running the queries in an 'or' manner
  *   t      for running the automated tests
+ *
+ *   flags to be passed ONLY separately, ex.:
+ *   $ ./logfind -o -t hello world
+ *
+ *   passing flags like that:
+ *   $ ./logfind -ot hello world
+ *   _will not work_
  *
  */
 
@@ -55,6 +61,8 @@ void parse_args(int argc, char *argv[]) {
 }
 
 int main(int argc, char *argv[]) {
+  int or = 0;
+  int test_mode = 0;
   parse_args(argc, argv);
 }
 
