@@ -135,14 +135,13 @@ void search_dir() {
  * in a globs array inside of main
  */
 int get_globs(char *globs[]) {
-  /* ----- GETTING GLOBS ----- */
   debug("start reading globs");
   FILE *glob_file_pointer;
 
   int globs_count = 0;
 
   int buffer_length = 255;
-  char buffer[buffer_length]; // buffer of chars to put temporary stuff in
+  char buffer[buffer_length];
 
   glob_file_pointer = fopen(".logfind", "r");
   char c;
@@ -151,15 +150,13 @@ int get_globs(char *globs[]) {
   do {
     c = fgetc(glob_file_pointer);
     if (c == '\n') {
-      // copy what is in the buffer into a new location in memory
-      // TODO what happens if it's just a newline?
       if (strlen(buffer) == 0) {
-        debug("strlen of buffer is zerO!");
+        debug("strlen of buffer is zero!");
         continue;
       }
+
       char *current_glob = malloc(128);
       strcpy(current_glob, buffer);
-      // and put the pointer to it in globs
       globs[j] = current_glob;
       globs_count++;
       j++;
@@ -171,9 +168,7 @@ int get_globs(char *globs[]) {
       i++;
     }
   } while(c != EOF);
-  debug("reading globs over");
-  debug("got %d globs!", globs_count);
-  debug("\n\n\n");
+  debug("reading globs over. got %d globs!\n\n", globs_count);
   fclose(glob_file_pointer);
   return globs_count;
 }
@@ -210,15 +205,21 @@ int main(int argc, char *argv[]) {
   int globs_count;
   globs_count = get_globs(globs);
 
+  char *filenames[128];
+  int files_count = 0;
+
   /* ----- ITERATE OVER FILENAMES THAT ARE GOING TO BE SEARCHED ----- */
+
   for (int i = 0; i < globs_count; i++) {
     debug("USING GLOB %s", globs[i]);
     glob_t g;
     glob(globs[i], GLOB_DOOFFS, NULL, &g);
     for (int i = 0; i < g.gl_pathc; i++) {
+
+      char *filename = malloc(128);
+      strcpy(filename, g.gl_pathv[i]);
+      filenames[files_count++] = filename;
       debug("file to search: %s", g.gl_pathv[i]);
-      // TODO read file line by line to perform a test 
-      // FOR every keyword we've passed into our program
       for (int i = 0; i < argc; i++) {
         if (!is_flag(argv[i])) {
           debug("keyword: %s", argv[i]);
@@ -245,5 +246,5 @@ int main(int argc, char *argv[]) {
     }
   }
 
-}
+} // end main
 
