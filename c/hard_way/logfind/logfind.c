@@ -5,6 +5,7 @@
 #include <string.h>
 #include <unistd.h>
 #include "dbg.h"
+#define BUFFER_SIZE 512
 
 /**
  *             LOGFIND
@@ -211,9 +212,28 @@ int main(int argc, char *argv[]) {
       debug("file to search: %s", g.gl_pathv[i]);
       // TODO read file line by line to perform a test 
       // FOR every keyword we've passed into our program
-      // perform strstr line by line on the contents of the file
-      // if at any point we've got a non-null value, STOP PROCESSING this file and
-      // return its filename.
+      for (int i = 0; i < argc; i++) {
+        if (!is_flag(argv[i])) {
+          debug("keyword: %s", argv[i]);
+          // perform strstr line by line on the contents of the file
+          // if at any point we've got a non-null value, STOP PROCESSING this file and
+          FILE *fp;
+          char buffer[BUFFER_SIZE];
+          fp = fopen(g.gl_pathv[i], "r");
+          if (fp == NULL) {
+            log_err("Unable to open %s.", g.gl_pathv[i]);
+            log_err("FAULTY gl_pathv i: %d", i);
+            log_err("FAULTY argv[i]: %s", argv[i]);
+          } else {
+            while(fgets(buffer, BUFFER_SIZE, fp) != NULL) {
+              debug("current line: %s", buffer);
+            }
+          }
+
+          fclose(fp);
+          // return its filename.
+        }
+      }
 
     }
   }
