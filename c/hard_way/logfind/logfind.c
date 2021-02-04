@@ -243,6 +243,17 @@ void print_strings(char *array[], int len, char *var_name) {
   debug("End contents of %s\n", var_name);
 }
 
+int get_keywords(char *keywords[], char *argv[], int argc) {
+  int j = 0;
+  for (int i = 1; i < argc; i++) {
+    if (!is_flag(argv[i])) {
+      keywords[j] = argv[i];
+      j++;
+    }
+  }
+  return j;
+}
+
 void search_for_matches(char *filenames[], int files_count, char *keywords[], int kw_count, int mode) {
   for (int i = 0; i < files_count; i++) {
     debug("%s", filenames[i]);
@@ -257,7 +268,7 @@ int main(int argc, char *argv[]) {
   // Gather keywords to search for
   char *keywords[128];
   int kw_count = 0;
-  kw_count = get_keywords(argv);
+  kw_count = get_keywords(keywords, argv, argc);
   print_strings(keywords, kw_count, "keywords");
 
   // Gather globs from the config file
