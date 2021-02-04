@@ -160,6 +160,7 @@ void read_logfind(char *globs[]) {
 
 int main(int argc, char *argv[]) {
 
+  /* ----- GETTING GLOBS ----- */
   debug("start reading globs");
   FILE *glob_file_pointer;
 
@@ -197,16 +198,23 @@ int main(int argc, char *argv[]) {
     }
   } while(c != EOF);
   debug("reading globs over");
-
   debug("got %d globs!", globs_count);
+  debug("\n\n\n");
 
 
+  /* ----- ITERATE OVER FILENAMES THAT ARE GOING TO BE SEARCHED ----- */
   for (int i = 0; i < globs_count; i++) {
     debug("USING GLOB %s", globs[i]);
     glob_t g;
     glob(globs[i], GLOB_DOOFFS, NULL, &g);
     for (int i = 0; i < g.gl_pathc; i++) {
       debug("file to search: %s", g.gl_pathv[i]);
+      // TODO read file line by line to perform a test 
+      // FOR every keyword we've passed into our program
+      // perform strstr line by line on the contents of the file
+      // if at any point we've got a non-null value, STOP PROCESSING this file and
+      // return its filename.
+
     }
   }
 
