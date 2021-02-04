@@ -194,20 +194,29 @@ int main(int argc, char *argv[]) {
     if (c == '\n') {
       // copy what is in the buffer into a new location in memory
       // TODO what happens if it's just a newline?
+      if (strlen(buffer) == 0) {
+        debug("strlen of buffer is zerO!");
+      }
       char *current_glob = malloc(128);
-      strcpy(buffer, current_glob);
+      strcpy(current_glob, buffer);
       // and put the pointer to it in globs
       globs[j] = current_glob;
       globs_count++;
       j++;
+      buffer[0] = '\0';
+      i = 0;
     } else {
       buffer[i] = c;
+      debug("putting %c in the buffer. current buffer: %s", c, buffer);
       i++;
     }
   } while(c != EOF);
   debug("reading globs over");
 
   debug("got %d globs!", globs_count);
+  for (int k = 0; k < globs_count; k++) {
+    debug("%s", globs[k]);
+  }
 
   fclose(glob_file_pointer);
 }
