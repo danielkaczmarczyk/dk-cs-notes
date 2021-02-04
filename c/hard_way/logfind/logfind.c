@@ -175,9 +175,12 @@ void read_logfind(char *globs[]) {
 }
 
 int main(int argc, char *argv[]) {
+
+  debug("start reading globs");
   FILE *glob_file_pointer;
 
   char *globs[128];
+  int globs_count = 0;
 
   int buffer_length = 255;
   char buffer[buffer_length]; // buffer of chars to put temporary stuff in
@@ -195,13 +198,16 @@ int main(int argc, char *argv[]) {
       strcpy(buffer, current_glob);
       // and put the pointer to it in globs
       globs[j] = current_glob;
+      globs_count++;
       j++;
     } else {
       buffer[i] = c;
-      putchar(c);
       i++;
     }
   } while(c != EOF);
+  debug("reading globs over");
+
+  debug("got %d globs!", globs_count);
 
   fclose(glob_file_pointer);
 }
