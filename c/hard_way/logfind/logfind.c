@@ -37,6 +37,12 @@
  *
  */
 
+/* GLOBALS */
+int or = 0;
+int test_mode = 0;
+
+/* FN DECLARATIONS */
+
 void print_usage();
 int starts_with_char(const char starts, const char *str);
 int is_flag(const char *str);
@@ -61,6 +67,9 @@ int starts_with_char(const char starts, const char *str) {
   return 0;
 }
 
+/**
+ * Verify whether a given argument is a flag
+ */
 int is_flag(const char *str) {
   if (starts_with_char('-', str)) {
     if (strlen(str) == 2) {
@@ -75,19 +84,33 @@ int is_flag(const char *str) {
 }
 
 void parse_args(int argc, char *argv[]) {
-  // find '-o'
   for (int i = 1; i < argc; i++) {
     printf("%s", argv[i]);
     if (is_flag(argv[i])) {
-      printf(" FLAG ");
+      debug(" is flag");
+      char c = argv[i][1];
+
+      switch (c) {
+        case 'o':
+          debug("o found");
+          or = 1;
+          break;
+
+        case 't':
+          debug("t found");
+          test_mode = 1;
+          break;
+
+        default:
+          log_err("Invalid flag declared.");
+          break;
+      }
     }
       printf("\n");
   }
 }
 
 int main(int argc, char *argv[]) {
-  int or = 0;
-  int test_mode = 0;
   parse_args(argc, argv);
 }
 

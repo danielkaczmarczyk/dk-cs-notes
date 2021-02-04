@@ -1,4 +1,4 @@
-CFLAGS=-g -Wall -DNDEBUG
+CFLAGS=-g -Wall #-DNDEBUG
 TARGET= logfind
 
 all: clean $(TARGET)
