@@ -160,22 +160,14 @@ void read_logfind() {
   int buffer_length = 255;
   char buffer[buffer_length];
 
-  // TODO bug:
-  // something problematic with ~/ . reads from other directories succeed
   fp = fopen(".logfind", "r");
  
-  char c;
-  do { 
-    c = fgetc(fp);
-    putchar(c);
-  } while(c != EOF);
-
-  // debug("before fgets");
-  // while (fgets(buffer, buffer_length, fp)) {
-  //   debug("in fgets");
-  //   printf("%s\n", buffer);
-  // }
-  // debug("after fgets");
+  debug("before fgets");
+  while (fgets(buffer, buffer_length, fp)) {
+    debug("in fgets");
+    printf("%s\n", buffer);
+  }
+  debug("after fgets");
 
   fclose(fp);
 }
