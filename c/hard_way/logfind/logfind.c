@@ -1,7 +1,9 @@
 #include <stdio.h>
 #include <dirent.h>
+#include <glob.h>
 #include <stdlib.h>
 #include <string.h>
+#include <unistd.h>
 #include "dbg.h"
 
 /**
@@ -127,10 +129,47 @@ void search_dir() {
   closedir(folder);
 }
 
+void globbing() {
+  glob_t g;
+
+  //g.gl_offs = 2;
+  //
+  
+  // TODO -> first argument here is going to accept entries from ~/.logfind
+  glob("*.c", GLOB_DOOFFS, NULL, &g);
+  debug("%zu", g.gl_pathc);
+  debug("%d", g.gl_matchc);
+  debug("%zu", g.gl_offs);
+  debug("%d", g.gl_flags);
+  for (int i = 0; i < g.gl_pathc; i++) {
+    // IF FILE (gl_pathv[i] IS IN LIST of files to be searched for, SEARCH
+    debug("%s", g.gl_pathv[i]);
+  }
+  execvp("ls", g.gl_pathv);
+}
+
+/**
+ * reads contents of ~/.logfind and
+ * treats every line as a glob pattern
+ */
+void read_logfind() {
+  FILE *fp;
+  int buffer_length = 255;
+  char buffer[buffer_length];
+
+  fp = fopen("~/.logfind");
+
+  while (fgets(buffer, buffer_length, fp)) {
+    printf("%s\n", buffer);
+  }
+
+  fclose(fp);
+}
+
 
 int main(int argc, char *argv[]) {
   parse_args(argc, argv);
   debug("after parsing args: or: %d, test_mode: %d", or, test_mode); 
-  load_allowed_files();
+  globbing();
 }
 
