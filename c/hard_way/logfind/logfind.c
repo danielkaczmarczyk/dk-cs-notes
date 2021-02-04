@@ -150,7 +150,6 @@ int get_globs(char *globs[]) {
     c = fgetc(glob_file_pointer);
     if (c == '\n') {
       if (strlen(buffer) == 0) {
-        debug("strlen of buffer is zero!");
         continue;
       }
 
@@ -163,11 +162,9 @@ int get_globs(char *globs[]) {
       memset(buffer, 0, sizeof(buffer));
     } else {
       buffer[i] = c;
-      debug("putting %c in the buffer. current buffer: %s", c, buffer);
       i++;
     }
   } while(c != EOF);
-  debug("reading globs over. got %d globs!\n\n", globs_count);
   fclose(glob_file_pointer);
   return globs_count;
 }
@@ -200,22 +197,20 @@ void read_logfind(char *globs[]) {
 
 int get_filenames(char *globs[], int globs_count, char *filenames[]) {
   int files_count = 0;
-  /* ----- ITERATE OVER FILENAMES THAT ARE GOING TO BE SEARCHED ----- */
 
   for (int i = 0; i < globs_count; i++) {
-    debug("USING GLOB %s", globs[i]);
     glob_t g;
-    debug("starting glob");
     glob(globs[i], 0, NULL, &g);
-    debug("glob over. filenames count: %zu", g.gl_pathc);
 
     for (int i = 0; i < g.gl_pathc; i++) {
-      debug("in the inside loop. i: %d", i);
 
       char *filename = malloc(128);
       strcpy(filename, g.gl_pathv[i]);
       filenames[files_count++] = filename;
-      debug("file to search: %s", g.gl_pathv[i]);
+    }
+  }
+  return files_count;
+}
 
 //       for (int i = 0; i < argc; i++) {
 //         if (!is_flag(argv[i])) {
@@ -239,10 +234,6 @@ int get_filenames(char *globs[], int globs_count, char *filenames[]) {
 //           // return its filename.
 //         }
 //       }
-    }
-  }
-  return files_count;
-}
 
 void print_strings(char *array[], int len, char *var_name) {
   debug("Printing contents of %s", var_name);
