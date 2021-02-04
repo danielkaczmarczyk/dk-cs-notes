@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <dirent.h>
 #include <stdlib.h>
 #include <string.h>
 #include "dbg.h"
@@ -103,11 +104,24 @@ void parse_args(int argc, char *argv[]) {
 /**
  * Load list of allowed log files from ./logfind
  */
+void load_allowed_files() {
+  DIR *folder = NULL; // pointer to the directory
+
+  folder = opendir(".");
+  // TODO fix it to use zed's macros
+  if (folder == NULL) {
+    puts("Unable to read directory");
+  } else {
+    puts("Directory is opened!");
+  }
+  closedir(folder);
+}
 
 
 int main(int argc, char *argv[]) {
   parse_args(argc, argv);
   debug("after parsing args: or: %d, test_mode: %d", or, test_mode); 
+  load_allowed_files();
 }
 
 
