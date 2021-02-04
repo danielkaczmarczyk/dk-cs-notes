@@ -199,6 +199,12 @@ void read_logfind(char *globs[]) {
   fclose(fp);
 }
 
+void print_strings(char *array[], int len) {
+  for (int i = 0; i < len; i++) {
+    debug("%s", array[i]);
+  }
+}
+
 int main(int argc, char *argv[]) {
 
   char *globs[128];
