@@ -1,0 +1,10 @@
+this is a log file
+without logs really
+just for testing the software I've written
+
+the list of allowed files is in a little hidden file in my user root
+called ~/.logfind
+
+bye thanks
+int main void paranoid
+

@@ -100,6 +100,11 @@ void parse_args(int argc, char *argv[]) {
   }
 }
 
+/**
+ * Load list of allowed log files from ./logfind
+ */
+
+
 int main(int argc, char *argv[]) {
   parse_args(argc, argv);
   debug("after parsing args: or: %d, test_mode: %d", or, test_mode); 
