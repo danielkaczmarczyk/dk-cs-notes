@@ -130,22 +130,6 @@ void search_dir() {
 }
 
 void globbing() {
-  glob_t g;
-
-  //g.gl_offs = 2;
-  //
-  
-  // TODO -> first argument here is going to accept entries from ~/.logfind
-  glob("*.c", GLOB_DOOFFS, NULL, &g);
-  debug("%zu", g.gl_pathc);
-  debug("%d", g.gl_matchc);
-  debug("%zu", g.gl_offs);
-  debug("%d", g.gl_flags);
-  for (int i = 0; i < g.gl_pathc; i++) {
-    // IF FILE (gl_pathv[i] IS IN LIST of files to be searched for, SEARCH
-    debug("%s", g.gl_pathv[i]);
-  }
-  execvp("ls", g.gl_pathv);
 }
 
 /**
@@ -215,12 +199,14 @@ int main(int argc, char *argv[]) {
   debug("reading globs over");
 
   debug("got %d globs!", globs_count);
-  for (int k = 0; k < globs_count; k++) {
-    // does the glob string include the newline character?
-    int len = strlen(globs[k]);
-    for (int l = 0; l < len; l++) {
-      char c = globs[k][l];
-      debug("%c: %d", c, c); 
+
+
+  for (int i = 0; i < globs_count; i++) {
+    debug("USING GLOB %s", globs[i]);
+    glob_t g;
+    glob(globs[i], GLOB_DOOFFS, NULL, &g);
+    for (int i = 0; i < g.gl_pathc; i++) {
+      debug("file to search: %s", g.gl_pathv[i]);
     }
   }
 
