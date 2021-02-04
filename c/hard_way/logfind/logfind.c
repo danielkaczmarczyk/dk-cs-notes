@@ -130,42 +130,15 @@ void search_dir() {
   closedir(folder);
 }
 
-void globbing() {
-}
-
 /**
- * reads contents of ~/.logfind and
- * treats every line as a glob pattern
- *
- * look at:
- * https://codeforwin.org/2018/01/c-program-read-and-display-file-contents.html
+ * Reads globs from the configuration file and puts them
+ * in a globs array inside of main
  */
-void read_logfind(char *globs[]) {
-  FILE *fp;
-  int buffer_length = 255;
-  char buffer[buffer_length];
-
-  fp = fopen(".logfind", "r");
- 
-  int i = 0;
-  while (fgets(buffer, buffer_length, fp)) {
-    char *current_glob = malloc(128);
-    strcpy(buffer, current_glob);
-    globs[i] = current_glob;
-    i++;
-    printf("%s", buffer);
-  }
-
-  fclose(fp);
-}
-
-int main(int argc, char *argv[]) {
-
+int get_globs(char *globs[]) {
   /* ----- GETTING GLOBS ----- */
   debug("start reading globs");
   FILE *glob_file_pointer;
 
-  char *globs[128];
   int globs_count = 0;
 
   int buffer_length = 255;
@@ -201,7 +174,41 @@ int main(int argc, char *argv[]) {
   debug("reading globs over");
   debug("got %d globs!", globs_count);
   debug("\n\n\n");
+  fclose(glob_file_pointer);
+  return globs_count;
+}
 
+/**
+ * reads contents of ~/.logfind and
+ * treats every line as a glob pattern
+ *
+ * look at:
+ * https://codeforwin.org/2018/01/c-program-read-and-display-file-contents.html
+ */
+void read_logfind(char *globs[]) {
+  FILE *fp;
+  int buffer_length = 255;
+  char buffer[buffer_length];
+
+  fp = fopen(".logfind", "r");
+ 
+  int i = 0;
+  while (fgets(buffer, buffer_length, fp)) {
+    char *current_glob = malloc(128);
+    strcpy(buffer, current_glob);
+    globs[i] = current_glob;
+    i++;
+    printf("%s", buffer);
+  }
+
+  fclose(fp);
+}
+
+int main(int argc, char *argv[]) {
+
+  char *globs[128];
+  int globs_count;
+  globs_count = get_globs(globs);
 
   /* ----- ITERATE OVER FILENAMES THAT ARE GOING TO BE SEARCHED ----- */
   for (int i = 0; i < globs_count; i++) {
@@ -238,6 +245,5 @@ int main(int argc, char *argv[]) {
     }
   }
 
-  fclose(glob_file_pointer);
 }
 
