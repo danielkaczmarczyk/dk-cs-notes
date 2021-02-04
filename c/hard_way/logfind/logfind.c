@@ -3,13 +3,6 @@
 #include <string.h>
 #include "dbg.h"
 
-
-/**             TODO
- * - [ ] implement checking for flags
- * - [ ] implement checking for an 'or' flag
- * - [ ] implement checking for a -t flag for tests _and running them_
- */
-
 /**
  *             LOGFIND
  *
@@ -87,17 +80,14 @@ void parse_args(int argc, char *argv[]) {
   for (int i = 1; i < argc; i++) {
     printf("%s", argv[i]);
     if (is_flag(argv[i])) {
-      debug(" is flag");
       char c = argv[i][1];
 
       switch (c) {
         case 'o':
-          debug("o found");
           or = 1;
           break;
 
         case 't':
-          debug("t found");
           test_mode = 1;
           break;
 
@@ -112,6 +102,7 @@ void parse_args(int argc, char *argv[]) {
 
 int main(int argc, char *argv[]) {
   parse_args(argc, argv);
+  debug("after parsing args: or: %d, test_mode: %d", or, test_mode); 
 }
 
 
