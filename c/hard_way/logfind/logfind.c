@@ -203,8 +203,8 @@ int main(int argc, char *argv[]) {
       globs[j] = current_glob;
       globs_count++;
       j++;
-      buffer[0] = '\0';
       i = 0;
+      memset(buffer, 0, sizeof(buffer));
     } else {
       buffer[i] = c;
       debug("putting %c in the buffer. current buffer: %s", c, buffer);
