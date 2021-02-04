@@ -159,18 +159,19 @@ void read_logfind() {
 
   fp = fopen("~/.logfind", "r");
 
-  while (fgets(buffer, buffer_length, fp)) {
-    printf("%s\n", buffer);
-  }
+  debug("%c \n", fp[0];
+
+  // debug("before fgets");
+  // while (fgets(buffer, buffer_length, fp)) {
+  //   debug("in fgets");
+  //   printf("%s\n", buffer);
+  // }
+  // debug("after fgets");
 
   fclose(fp);
 }
 
-
 int main(int argc, char *argv[]) {
-  parse_args(argc, argv);
-  debug("after parsing args: or: %d, test_mode: %d", or, test_mode); 
-  globbing();
   read_logfind();
 }
 
