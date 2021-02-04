@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include <string.h>
 #include "dbg.h"
 
@@ -36,6 +37,20 @@
  *
  */
 
+void print_usage();
+int starts_with_char(const char starts, const char *str);
+int is_flag(const char *str);
+void parse_args(int argc, char *argv[]);
+
+
+/**
+ * Print usage of the tool in case of malformed args
+ */
+void print_usage() {
+  printf("USAGE: ./logfind [-o, -t] ARG1, [ARG2, ARG3...]\n");
+  exit(1);
+}
+
 /**
  * Test whether string starts with a given character.
  */
@@ -48,15 +63,25 @@ int starts_with_char(const char starts, const char *str) {
 
 int is_flag(const char *str) {
   if (starts_with_char('-', str)) {
-    return 1;
+    if (strlen(str) == 2) {
+      return 1;
+    } else {
+      print_usage();
+      return 0;
+    }
+  } else {
+    return 0;
   }
-  return 0;
 }
 
 void parse_args(int argc, char *argv[]) {
   // find '-o'
   for (int i = 1; i < argc; i++) {
-    printf("%s\n", argv[i]);
+    printf("%s", argv[i]);
+    if (is_flag(argv[i])) {
+      printf(" FLAG ");
+    }
+      printf("\n");
   }
 }
 
