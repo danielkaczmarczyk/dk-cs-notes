@@ -59,5 +59,33 @@ void *List_pop(List * list)
   return node != NULL ? List_remove(list, node) : NULL;
 }
 
+void List_unshift(List * list, void *value)
+{
+  ListNode *node = calloc(1, sizeof(ListNode));
+  check_mem(node);
+
+  node->value = value;
+
+  if (list->first == NULL) {
+    list->first = node;
+    list->last = node;
+  } else {
+    node->next = list->first;
+    list->first->prev = node;
+    list->first = node;
+  }
+
+  list->count++;
+
+error:
+  return;
+}
+
+void *List_shift(List * list)
+{
+  ListNode *node = list->first;
+  return node != NULL ? List_remove(list, node) : NULL;
+}
+
 
 
