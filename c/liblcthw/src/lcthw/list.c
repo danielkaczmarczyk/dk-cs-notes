@@ -52,3 +52,12 @@ void List_push(List * list, void *value)
 error:
   return;
 }
+
+void *List_pop(List * list)
+{
+  ListNode *node = list->last;
+  return node != NULL ? List_remove(list, node) : NULL;
+}
+
+
+
