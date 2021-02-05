@@ -17,3 +17,38 @@ void List_destroy(List * list)
   free(list->last);
   free(list);
 }
+
+void List_clear(List * list)
+{
+  LIST_FOREACH(list, first, next, cur) {
+    free(cur->value);
+  }
+}
+
+void List_clear_destroy(List * list)
+{
+  List_clear(list);
+  List_destroy(list);
+}
+
+void List_push(List * list, void *value)
+{
+  ListNode *node = calloc(1, sizeof(ListNode));
+  check_mem(node);
+
+  node->value = value;
+
+  if (list->last == NULL) {
+    last->first = node;
+    list->last = node;
+  } else {
+    list->last->next = node;
+    node->prev = list->last;
+    list->last = node;
+  }
+
+  list->count++;
+
+error:
+  return;
+}
