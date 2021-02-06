@@ -94,6 +94,11 @@ class TestList(unittest.TestCase):
         dllist = DoublyLinkedList()
         dllist.batch_populate(['a', 'b', 'c'])
 
+        node = dllist.find_by_index(0)
+        self.assertIsInstance(node, ListNode)
+        self.assertEqual(node.prev, None)
+        self.assertEqual(node.next.value, 'b')
+
         node = dllist.find_by_index(1)
 
         self.assertEqual(node.value, 'b')
@@ -101,12 +106,37 @@ class TestList(unittest.TestCase):
         self.assertEqual(node.prev.value, 'a')
         self.assertEqual(node.next.value, 'c')
 
-        node = dllist.find_by_index(0)
+
+        node = dllist.find_by_index(2)
+        self.assertIsInstance(node, ListNode)
+        self.assertEqual(node.prev.value, 'b')
+        self.assertEqual(node.next, None)
+
+        node = dllist.find_by_index(15)
+        self.assertEqual(node, None)
+
+    def test_find_by_value(self):
+        dllist = DoublyLinkedList()
+        dllist.batch_populate(['a', 'b', 'c'])
+
+        node = dllist.find_by_value('a')
         self.assertIsInstance(node, ListNode)
         self.assertEqual(node.prev, None)
         self.assertEqual(node.next.value, 'b')
 
+        node = dllist.find_by_value('b')
+        self.assertEqual(node.value, 'b')
+        self.assertIsInstance(node, ListNode)
+        self.assertEqual(node.prev.value, 'a')
+        self.assertEqual(node.next.value, 'c')
 
+        node = dllist.find_by_value('c')
+        self.assertIsInstance(node, ListNode)
+        self.assertEqual(node.prev.value, 'b')
+        self.assertEqual(node.next, None)
+
+        node = dllist.find_by_value('non existent')
+        self.assertEqual(node, None)
 
 
 if __name__ == '__main__':
