@@ -4,18 +4,26 @@
 """
 
 answers = {}
+total = 0
 
-def fib(n):
+def solve(n):
+    global total
     if n <= 1:
         return 1
     if n not in answers:
-        result = fib(n - 1) + fib(n - 2)
+        result = solve(n - 1) + solve(n - 2)
         answers[n] = result
+        if result % 2 == 0:
+            total += result
         return result
     else:
         return answers[n]
 
+n = 1
+fib = solve(n)
 
+while fib < 4_000_000:
+    n += 1
+    fib = solve(n)
 
-for n in range(0, 99):
-    print(n, fib(n))
+print(total)
