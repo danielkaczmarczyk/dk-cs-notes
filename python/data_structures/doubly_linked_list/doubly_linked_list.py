@@ -20,7 +20,17 @@ class DoublyLinkedList():
         self.count += 1
 
     def pop(self):
-        pass
+        # last node is to be returned
+        node_to_return = self.last
+
+        # previous node becomes the last one
+        # severe ties
+        self.last.prev.next = None
+        self.last = self.last.prev
+
+        self.count -= 1
+
+        return node_to_return
 
     def unshift(self):
         pass
@@ -92,6 +102,20 @@ class TestList(unittest.TestCase):
         dllist.batch_populate(['a', 'b', 'c'])
         printout = dllist.print()
         self.assertEqual(printout, "a -> b -> c -> None")
+
+    def test_pop(self):
+        dllist = DoublyLinkedList()
+        dllist.batch_populate(['a', 'b', 'c'])
+        self.assertEqual(dllist.count, 3)
+
+        popped = dllist.pop()
+
+        self.assertIsInstance(popped, ListNode)
+        self.assertEqual(dllist.count, 2)
+        self.assertEqual(popped.value, 'c')
+
+        self.assertEqual(dllist.first.value, 'a')
+        self.assertEqual(dllist.last.value, 'b')
 
 
 
