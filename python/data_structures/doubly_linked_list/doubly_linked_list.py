@@ -5,7 +5,10 @@ class DoublyLinkedList():
         self.last = None
 
     def clear(self):
-        print("clearing list")
+        node = self.first
+        while node:
+            node.value = None
+            node = node.next
 
     def push(self, value):
         node = ListNode(value)
@@ -20,14 +23,9 @@ class DoublyLinkedList():
         self.count += 1
 
     def pop(self):
-        # last node is to be returned
         node_to_return = self.last
-
-        # previous node becomes the last one
-        # severe ties
         self.last.prev.next = None
         self.last = self.last.prev
-
         self.count -= 1
 
         return node_to_return

@@ -61,5 +61,17 @@ class TestList(unittest.TestCase):
 
         self.assertEqual(dllist.last.value, 'b')
 
+    def test_clear(self):
+        dllist = DoublyLinkedList()
+        dllist.batch_populate(['a', 'b', 'c'])
+        dllist.clear()
+
+        node = dllist.first
+        while node:
+            self.assertEqual(node.value, None)
+            node = node.next
+
+
+
 if __name__ == '__main__':
     unittest.main()
