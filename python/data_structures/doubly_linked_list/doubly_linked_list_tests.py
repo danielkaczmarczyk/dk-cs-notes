@@ -138,6 +138,26 @@ class TestList(unittest.TestCase):
         node = dllist.find_by_value('non existent')
         self.assertEqual(node, None)
 
+    def test_remove_by_index(self):
+        dllist = DoublyLinkedList()
+        dllist.batch_populate(['a', 'b', 'c'])
+
+        nodes_count = dllist.remove_by_index(0)
+        self.assertEqual(nodes_count, 2)
+        self.assertEqual(dllist.first.value, 'b')
+
+        nodes_count = dllist.remove_by_index(1)
+        self.assertEqual(nodes_count, 2)
+        self.assertEqual(dllist.first.next.value, 'c')
+
+        nodes_count = dllist.remove_by_index(2)
+        self.assertEqual(nodes_count, 2)
+        self.assertEqual(dllist.last.value, 'b')
+
+        nodes_count = dllist.remove_by_index(3)
+        self.assertEqual(nodes_count, 3)
+
+
 
 if __name__ == '__main__':
     unittest.main()

@@ -50,9 +50,27 @@ class DoublyLinkedList():
         pass
 
     def remove_by_index(self, index):
-        pass
+        node = self.find_by_index(index)
+        if index == 0:
+            self.shift()
+        elif index == self.count - 1:
+            self.pop()
+        else:
+            node.prev.next = node.next
+            node.next.prev = node.prev
+
+            node.prev = None
+            node.next = None
+
+            self.count -= 1
+        return self.count
 
     def find_by_index(self, index):
+        if index == 0:
+            return self.first
+        elif index == self.count:
+            return self.last
+
         current_index = 0
         node = self.first
         while current_index < self.count:
