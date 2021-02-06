@@ -1,4 +1,4 @@
-class List():
+class DoublyLinkedList():
     def __init__(self):
         self.count = 0
         self.first = None
@@ -9,15 +9,15 @@ class List():
 
     def push(self, value):
         node = ListNode(value)
-        if list.last == None:
-            list.first = node
-            list.last = node
+        if self.last == None:
+            self.first = node
+            self.last = node
         else:
-            list.last.next = node
-            node.prev = list.last
-            list.last = node
+            self.last.next = node
+            node.prev = self.last
+            self.last = node
 
-        list.count += 1
+        self.count += 1
 
     def pop(self):
         pass
@@ -31,6 +31,14 @@ class List():
     def remove(self, node):
         pass
 
+    def print(self):
+        node = self.last
+        while node != None:
+            print(node.value)
+            node = node.next
+
+
+
 
 class ListNode():
     def __init__(self, value):
@@ -41,7 +49,14 @@ class ListNode():
 
 # tests - to be moved out to a diff file (with an actual testing framework)
 
-dllist = List()
-dllist.push('hello world')
+import unittest
 
-print(dllist)
+class TestList(unittest.TestCase):
+
+    def test_init(self):
+        dllist = DoublyLinkedList()
+        self.assertIsInstance(dllist, DoublyLinkedList)
+
+if __name__ == '__main__':
+    unittest.main()
+
