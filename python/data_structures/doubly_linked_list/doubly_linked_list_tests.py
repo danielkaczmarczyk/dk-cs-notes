@@ -33,6 +33,15 @@ class TestList(unittest.TestCase):
         self.assertEqual(dllist.last.value, 'c')
         self.assertEqual(dllist.count, 3)
 
+    def test_unshift(self):
+        dllist = DoublyLinkedList()
+        dllist.batch_populate(['a', 'b', 'c'])
+        dllist.unshift('d')
+
+        self.assertEqual(dllist.count, 4)
+        self.assertEqual(dllist.first.value, 'd')
+        self.assertEqual(dllist.first.next.value, 'a')
+
     def test_print(self):
         dllist = DoublyLinkedList()
         dllist.batch_populate(['a', 'b', 'c'])

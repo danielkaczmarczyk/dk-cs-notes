@@ -30,10 +30,16 @@ class DoublyLinkedList():
 
         return node_to_return
 
-    def unshift(self):
+    def unshift(self, value):
+        node = ListNode(value)
+        node.next = self.first
+        self.first.prev = node
+        self.first = node
+        self.count += 1
         pass
 
     def shift(self):
+        # remove from beginning
         pass
 
     def remove(self, node):
