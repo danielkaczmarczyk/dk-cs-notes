@@ -39,10 +39,23 @@ class DoublyLinkedList():
         pass
 
     def shift(self):
-        # remove from beginning
+        new_first = self.first.next
+        new_first.prev = None
+        self.first.next = None
+        self.first = new_first
+        self.count -= 1
         pass
 
     def remove(self, node):
+        pass
+
+    def remove_by_index(self, index):
+        pass
+
+    def find_by_index(self, index):
+        pass
+
+    def find_by_value(self, value):
         pass
 
     def print(self):
@@ -57,6 +70,7 @@ class DoublyLinkedList():
     def batch_populate(self, items):
         for item in items:
             self.push(item)
+
 
 
 class ListNode():

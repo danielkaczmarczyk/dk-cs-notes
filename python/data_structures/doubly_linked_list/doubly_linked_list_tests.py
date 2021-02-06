@@ -42,6 +42,14 @@ class TestList(unittest.TestCase):
         self.assertEqual(dllist.first.value, 'd')
         self.assertEqual(dllist.first.next.value, 'a')
 
+    def test_shift(self):
+        dllist = DoublyLinkedList()
+        dllist.batch_populate(['a', 'b', 'c'])
+        dllist.shift()
+
+        self.assertEqual(dllist.count, 2)
+        self.assertEqual(dllist.first.value, 'b')
+
     def test_print(self):
         dllist = DoublyLinkedList()
         dllist.batch_populate(['a', 'b', 'c'])
@@ -81,6 +89,7 @@ class TestList(unittest.TestCase):
             node = node.next
 
         self.assertEqual(dllist.count, 3)
+
 
 if __name__ == '__main__':
     unittest.main()
