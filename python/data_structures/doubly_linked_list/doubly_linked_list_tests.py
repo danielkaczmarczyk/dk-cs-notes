@@ -90,6 +90,24 @@ class TestList(unittest.TestCase):
 
         self.assertEqual(dllist.count, 3)
 
+    def test_find_by_index(self):
+        dllist = DoublyLinkedList()
+        dllist.batch_populate(['a', 'b', 'c'])
+
+        node = dllist.find_by_index(1)
+
+        self.assertEqual(node.value, 'b')
+        self.assertIsInstance(node, ListNode)
+        self.assertEqual(node.prev.value, 'a')
+        self.assertEqual(node.next.value, 'c')
+
+        node = dllist.find_by_index(0)
+        self.assertIsInstance(node, ListNode)
+        self.assertEqual(node.prev, None)
+        self.assertEqual(node.next.value, 'b')
+
+
+
 
 if __name__ == '__main__':
     unittest.main()

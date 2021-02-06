@@ -53,7 +53,15 @@ class DoublyLinkedList():
         pass
 
     def find_by_index(self, index):
-        pass
+        current_index = 0
+        node = self.first
+        while current_index <= self.count:
+            if current_index == index:
+                return node
+            else:
+                node = node.next
+                current_index += 1
+        return None
 
     def find_by_value(self, value):
         pass
