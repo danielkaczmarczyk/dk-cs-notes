@@ -71,7 +71,7 @@ class TestList(unittest.TestCase):
             self.assertEqual(node.value, None)
             node = node.next
 
-
+        self.assertEqual(dllist.count, 3)
 
 if __name__ == '__main__':
     unittest.main()
