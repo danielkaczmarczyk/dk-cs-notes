@@ -1,5 +1,10 @@
 
 -- HUMAN RESOURCE MACHINE PROGRAM --
+-- jumping over instructions that technically happen at the end of a loop --
+-- seems to be a common speed gain pattern - we do not have to perform --
+-- a certain kind of operation before we get enough input --
+-- thus it is clear that checking for it on the first go --
+-- is not a necessary thing to do --
 
     JUMP     b
 a:
