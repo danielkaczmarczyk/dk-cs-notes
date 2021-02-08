@@ -1,9 +1,31 @@
 
 -- HUMAN RESOURCE MACHINE PROGRAM --
+-- solved for speed using a method called loop unrolling --
+-- context: https://en.wikipedia.org/wiki/Loop_unrolling --
 
-a:
     INBOX   
     OUTBOX  
-    JUMP     a
+    INBOX   
+    OUTBOX  
+    INBOX   
+    OUTBOX  
+    INBOX   
+    OUTBOX  
+    INBOX   
+    OUTBOX  
+    INBOX   
+    OUTBOX  
+    INBOX   
+    OUTBOX  
+    INBOX   
+    OUTBOX  
+    INBOX   
+    OUTBOX  
+    INBOX   
+    OUTBOX  
+    INBOX   
+    OUTBOX  
+    INBOX   
+    OUTBOX  
 
 
