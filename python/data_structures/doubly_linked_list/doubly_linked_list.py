@@ -46,10 +46,10 @@ class DoublyLinkedList():
         self.count -= 1
         pass
 
-    def remove(self, node):
-        pass
-
     def remove_by_index(self, index):
+        if index >= self.count:
+            return self.count
+        
         node = self.find_by_index(index)
         if index == 0:
             self.shift()

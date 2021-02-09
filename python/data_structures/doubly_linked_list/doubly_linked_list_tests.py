@@ -139,6 +139,7 @@ class TestList(unittest.TestCase):
         self.assertEqual(node, None)
 
     def test_remove_by_index(self):
+        print('testing remove by indexxxx')
         dllist = DoublyLinkedList()
         dllist.batch_populate(['a', 'b', 'c'])
 
@@ -146,14 +147,20 @@ class TestList(unittest.TestCase):
         self.assertEqual(nodes_count, 2)
         self.assertEqual(dllist.first.value, 'b')
 
+        dllist = DoublyLinkedList()
+        dllist.batch_populate(['a', 'b', 'c'])
         nodes_count = dllist.remove_by_index(1)
         self.assertEqual(nodes_count, 2)
         self.assertEqual(dllist.first.next.value, 'c')
 
+        dllist = DoublyLinkedList()
+        dllist.batch_populate(['a', 'b', 'c'])
         nodes_count = dllist.remove_by_index(2)
         self.assertEqual(nodes_count, 2)
         self.assertEqual(dllist.last.value, 'b')
 
+        dllist = DoublyLinkedList()
+        dllist.batch_populate(['a', 'b', 'c'])
         nodes_count = dllist.remove_by_index(3)
         self.assertEqual(nodes_count, 3)
 
