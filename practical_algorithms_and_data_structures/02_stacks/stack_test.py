@@ -36,5 +36,15 @@ class TestStack(unittest.TestCase):
         self.assertEqual(stack.count, 3)
         self.assertEqual(stack.items, ['a', 'b', 'c'])
 
+    def test_pop(self):
+        stack = self.setup_stack()
+
+        self.assertEqual(stack.count, 3)
+        
+        popped = stack.pop()
+        
+        self.assertEqual(stack.count, 2)
+        self.assertEqual(popped, 'c')
+
 if __name__ == '__main__':
     unittest.main()
