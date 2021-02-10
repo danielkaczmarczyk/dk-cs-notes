@@ -17,9 +17,6 @@ def smarter_sum(n):
 
 if __name__ == "__main__":
     n = 1_000_000
-    for _ in range(15):
-        result, t = sum_to_n(n)
+    for _ in range(1005):
         result_2, t_2 = smarter_sum(n)
-        print(f"sum_to_n({n}) = {result}, in: {t} seconds")
         print(f"smarter_sum({n}) = {result_2}, in: {t_2} seconds")
-        print()
