@@ -111,6 +111,24 @@ if __name__ == "__main__":
             result = ul.search(150)
             self.assertFalse(result)
 
+        def test_remove(self):
+            ul = UnorderedList()
+
+            ul.add(1)
+            ul.add(2)
+            ul.add(3)
+
+            result = ul.remove(2)
+            self.assertEqual(ul.size(), 2)
+            self.assertEqual(ul.head.value, 1)
+
+            result = ul.remove(3)
+            self.assertEqual(ul.size(), 1)
+            self.assertEqual(ul.head.value, 1)
+
+            result = ul.remove(1)
+            self.assertEqual(ul.size(), 0)
+            self.assertEqual(ul.head, None)
 
 
     unittest.main()
