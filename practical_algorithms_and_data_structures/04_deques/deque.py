@@ -1,9 +1,9 @@
 class Deque():
     def __init__(self):
-        pass
+        self.items = []
 
     def add_front(self, item):
-        pass
+        self.items.append(item)
 
     def add_read(self, item):
         pass
@@ -22,4 +22,17 @@ class Deque():
 
 
 if __name__ == '__main__':
-    pass
+    import unittest
+
+    class Test(unittest.TestCase):
+
+        def test_add_front(self):
+            deque = Deque()
+            deque.add_front('a')
+
+            self.assertEqual(deque.items, ['a'])
+
+    unittest.main()
+
+
+
