@@ -5,11 +5,11 @@ class Deque():
     def add_front(self, item):
         self.items.append(item)
 
-    def add_read(self, item):
-        pass
+    def add_rear(self, item):
+        self.items.insert(0, item)
 
     def remove_front(self):
-        pass
+        return self.items.pop(0)
 
     def remove_rear(self):
         pass
@@ -18,7 +18,7 @@ class Deque():
         pass
 
     def size(self):
-        pass
+        return len(self.items)
 
 
 if __name__ == '__main__':
@@ -31,6 +31,25 @@ if __name__ == '__main__':
             deque.add_front('a')
 
             self.assertEqual(deque.items, ['a'])
+            self.assertEqual(deque.size(), 1)
+
+        def test_add_rear(self):
+            deque = Deque()
+            deque.add_rear('a')
+            deque.add_rear('b')
+
+            self.assertEqual(deque.items, ['b', 'a'])
+            self.assertEqual(deque.size(), 2)
+
+        def test_remove(self):
+            deque = Deque()
+            deque.add_rear('a')
+            deque.add_rear('b')
+
+            result = deque.remove_front()
+
+            self.assertEqual(result, 'b')
+            self.assertEqual(deque.size(), 1)
 
     unittest.main()
 
