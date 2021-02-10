@@ -15,5 +15,26 @@ class TestStack(unittest.TestCase):
         self.assertEqual(stack.count, 0)
         self.assertEqual(stack.items, [])
 
+    def test_is_empty(self):
+        stack = self.setup_stack()
+        while not stack.is_empty():
+            stack.pop()
+        
+        self.assertEqual(stack.count, 0)
+        self.assertEqual(stack.items, [])
+
+    def test_push(self):
+        stack = Stack()
+        stack.push('a')
+        
+        self.assertEqual(stack.count, 1)
+        self.assertEqual(stack.items, ['a'])
+
+        stack.push('b')
+        stack.push('c')
+        
+        self.assertEqual(stack.count, 3)
+        self.assertEqual(stack.items, ['a', 'b', 'c'])
+
 if __name__ == '__main__':
     unittest.main()
