@@ -6,13 +6,15 @@ class Queue():
         self.items.append(item)
 
     def dequeue(self):
-        pass
+        return self.items.pop()
 
     def is_empty(self):
-        pass
+        if len(self.items) == 0:
+            return True
+        return False
 
     def size(self):
-        pass
+        return len(self.items)
 
 if __name__ == '__main__':
     import unittest
@@ -24,5 +26,14 @@ if __name__ == '__main__':
             q.enqueue('a')
 
             self.assertEqual(q.items, ['a'])
+            self.assertEqual(q.size(), 1)
+
+        def test_dequeue(self):
+            q = Queue()
+            q.enqueue('a')
+            result = q.dequeue()
+
+            self.assertEqual(result, 'a')
+            self.assertEqual(q.size(), 0)
 
     unittest.main()
