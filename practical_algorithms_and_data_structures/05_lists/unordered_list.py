@@ -31,3 +31,12 @@ class UnorderedList():
 
     def pop(self, pos):
         pass
+
+if __name__ == "__main__":
+    import unittest
+
+    class UnorderedListTest(unittest.TestCase):
+        pass
+
+    unittest.main()
+
