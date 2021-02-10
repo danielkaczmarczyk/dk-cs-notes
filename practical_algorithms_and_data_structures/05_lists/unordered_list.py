@@ -9,7 +9,9 @@ class UnorderedList():
         self.head = None
 
     def add(self, item):
-        pass
+        node = Node(item)
+        node.next = self.head
+        self.head = node
 
     def remove(self, item):
         pass
@@ -21,7 +23,15 @@ class UnorderedList():
         return self.head is None
 
     def size(self):
-        pass
+        count = 0
+        node = self.head
+        
+        while node is not None:
+            count += 1
+            node = node.next
+
+        return count
+
 
     def append(self, item):
         pass
@@ -46,7 +56,42 @@ if __name__ == "__main__":
         def test_is_empty(self):
             ul = UnorderedList()
             self.assertTrue(ul.is_empty(), "Empty list does not show up as empty")
-        
+
+        def test_add(self):
+            ul = UnorderedList()
+
+            ul.add(31)
+            self.assertEqual(ul.head.value, 31)
+
+            ul.add(77)
+            self.assertEqual(ul.head.value, 77)
+
+            ul.add(17)
+            self.assertEqual(ul.head.value, 17)
+
+            ul.add(93)
+            self.assertEqual(ul.head.value, 93)
+
+            ul.add(26)
+            self.assertEqual(ul.head.value, 26)
+
+            ul.add(54)
+            self.assertEqual(ul.head.value, 54)
+
+            self.assertEqual(ul.size(), 6)
+
+        def test_size(self):
+            ul = UnorderedList()
+
+            self.assertEqual(ul.size(), 0)
+
+            ul.add(1)
+            ul.add(2)
+            ul.add(3)
+
+            self.assertEqual(ul.size(), 3)
+
+
 
     unittest.main()
 
