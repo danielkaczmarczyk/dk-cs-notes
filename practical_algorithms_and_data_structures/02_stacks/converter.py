@@ -2,11 +2,11 @@ from stack import Stack
 
 class Converter():
     def __init__(self, n, base):
+        self.nums = "123456789ABCDEF"
         self.n = n
         self.base = base
         self.result = None
         self.stack = Stack()
-        self.convert()
 
     def convert(self):
 
@@ -29,5 +29,6 @@ class Converter():
 
 if __name__ == "__main__":
     c = Converter(233, 2)
+    c.convert()
     print(c.result)
 
