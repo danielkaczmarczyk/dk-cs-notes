@@ -17,7 +17,14 @@ class UnorderedList():
         pass
 
     def search(self, item):
-        pass
+        node = self.head
+
+        while node is not None:
+            if node.value == item:
+                return True
+            node = node.next
+
+        return False
 
     def is_empty(self):
         return self.head is None
@@ -90,6 +97,19 @@ if __name__ == "__main__":
             ul.add(3)
 
             self.assertEqual(ul.size(), 3)
+
+        def test_search(self):
+            ul = UnorderedList()
+
+            ul.add(1)
+            ul.add(2)
+            ul.add(3)
+
+            result = ul.search(2)
+            self.assertTrue(result)
+
+            result = ul.search(150)
+            self.assertFalse(result)
 
 
 
