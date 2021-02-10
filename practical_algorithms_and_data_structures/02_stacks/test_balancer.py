@@ -9,7 +9,25 @@ class BalancerTest(unittest.TestCase):
 
         self.assertEqual(balancer.input_string, input_string)
 
-    def test_balanced_1(self):
+    def test_matching(self):
+        balancer = Balancer('')
+
+        op = '('
+        cl = ')'
+
+        self.assertTrue(balancer.matching_brackets(op, cl))
+
+        op = '('
+        cl = ']'
+
+        self.assertFalse(balancer.matching_brackets(op, cl))
+
+        op = '['
+        cl = ']'
+
+        self.assertTrue(balancer.matching_brackets(op, cl))
+
+    def xtest_balanced_1(self):
 
         input_string = '()'
         balancer = Balancer(input_string)
