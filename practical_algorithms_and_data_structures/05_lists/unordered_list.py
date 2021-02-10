@@ -1,6 +1,12 @@
+class Node():
+    def __init__(self, value):
+        self.value = value
+        self.next = None
+
+
 class UnorderedList():
     def __init__(self):
-        pass
+        self.head = None
 
     def add(self, item):
         pass
@@ -12,7 +18,7 @@ class UnorderedList():
         pass
 
     def is_empty(self):
-        pass
+        return self.head is None
 
     def size(self):
         pass
@@ -36,7 +42,11 @@ if __name__ == "__main__":
     import unittest
 
     class UnorderedListTest(unittest.TestCase):
-        pass
+
+        def test_is_empty(self):
+            ul = UnorderedList()
+            self.assertTrue(ul.is_empty(), "Empty list does not show up as empty")
+        
 
     unittest.main()
 
