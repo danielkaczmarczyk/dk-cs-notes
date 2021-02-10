@@ -12,10 +12,12 @@ class Deque():
         return self.items.pop(0)
 
     def remove_rear(self):
-        pass
+        return self.items.pop()
 
     def is_empty(self):
-        pass
+        if self.size() == 0:
+            return True
+        return False
 
     def size(self):
         return len(self.items)
@@ -41,7 +43,7 @@ if __name__ == '__main__':
             self.assertEqual(deque.items, ['b', 'a'])
             self.assertEqual(deque.size(), 2)
 
-        def test_remove(self):
+        def test_remove_front(self):
             deque = Deque()
             deque.add_rear('a')
             deque.add_rear('b')
@@ -50,6 +52,32 @@ if __name__ == '__main__':
 
             self.assertEqual(result, 'b')
             self.assertEqual(deque.size(), 1)
+
+        def test_remove_rear(self):
+            deque = Deque()
+            deque.add_front('a')
+            deque.add_front('b')
+            deque.add_front('c')
+
+            result = deque.remove_rear()
+            self.assertEqual(result, 'c')
+
+            result = deque.remove_rear()
+            self.assertEqual(result, 'b')
+
+        def test_is_empty(self):
+            deque = Deque()
+            deque.add_front('a')
+            deque.add_front('b')
+            deque.add_front('c')
+
+            self.assertFalse(deque.is_empty())
+
+            deque.remove_rear()
+            deque.remove_rear()
+            deque.remove_rear()
+
+            self.assertTrue(deque.is_empty())
 
     unittest.main()
 
