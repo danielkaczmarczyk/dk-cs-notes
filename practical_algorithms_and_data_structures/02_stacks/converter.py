@@ -2,7 +2,7 @@ from stack import Stack
 
 class Converter():
     def __init__(self, n, base):
-        self.nums = "123456789ABCDEF"
+        self.nums = "0123456789ABCDEF"
         self.n = n
         self.base = base
         self.result = None
@@ -12,7 +12,7 @@ class Converter():
 
         while self.n != 0:
             rem = self.n % self.base
-            self.stack.push(rem)
+            self.stack.push(self.nums[rem])
             result = self.n // self.base
             print(f"{self.n} // {self.base} = {result}. remainder: {rem}")
             self.n = result
@@ -28,7 +28,20 @@ class Converter():
 
 
 if __name__ == "__main__":
-    c = Converter(233, 2)
-    c.convert()
-    print(c.result)
+    import unittest
 
+    class Test(unittest.TestCase):
+
+        def test_binary(self):
+            converter = Converter(233, 2)
+            converter.convert()
+            
+            self.assertEqual(converter.result, "11101001")
+
+        def test_octal(self):
+            converter = Converter(233, 2)
+            converter.convert()
+            
+            self.assertEqual(converter.result, "11101001")
+
+    unittest.main()
