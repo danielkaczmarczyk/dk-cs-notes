@@ -46,5 +46,14 @@ class TestStack(unittest.TestCase):
         self.assertEqual(stack.count, 2)
         self.assertEqual(popped, 'c')
 
+    def test_peek(self):
+
+        stack = self.setup_stack()
+        peeked = stack.peek()
+
+        self.assertEqual(peeked, 'c')
+        self.assertEqual(stack.count, 3)
+
+
 if __name__ == '__main__':
     unittest.main()
