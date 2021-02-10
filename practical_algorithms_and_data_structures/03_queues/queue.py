@@ -3,7 +3,7 @@ class Queue():
         self.items = []
 
     def enqueue(self, item):
-        pass
+        self.items.append(item)
 
     def dequeue(self):
         pass
@@ -13,3 +13,16 @@ class Queue():
 
     def size(self):
         pass
+
+if __name__ == '__main__':
+    import unittest
+
+    class QueueTests(unittest.TestCase):
+
+        def test_enqueue(self):
+            q = Queue()
+            q.enqueue('a')
+
+            self.assertEqual(q.items, ['a'])
+
+    unittest.main()
