@@ -27,13 +27,28 @@ class BalancerTest(unittest.TestCase):
 
         self.assertTrue(balancer.matching_brackets(op, cl))
 
-    def xtest_balanced_1(self):
+    def test_balanced(self):
 
         input_string = '()'
         balancer = Balancer(input_string)
-
         self.assertTrue(balancer.balanced)
 
+
+        input_string = '(())'
+        balancer = Balancer(input_string)
+        self.assertTrue(balancer.balanced)
+
+        input_string = '({})'
+        balancer = Balancer(input_string)
+        self.assertTrue(balancer.balanced)
+
+        input_string = '[({})]'
+        balancer = Balancer(input_string)
+        self.assertTrue(balancer.balanced)
+
+        input_string = '[[({}{}[]()([]))]]'
+        balancer = Balancer(input_string)
+        self.assertTrue(balancer.balanced)
 
 if __name__ == "__main__":
     unittest.main()

@@ -57,7 +57,6 @@ class TestStack(unittest.TestCase):
     def test_size(self):
 
         stack = self.setup_stack()
-
         self.assertEqual(stack.count, 3)
 
 
