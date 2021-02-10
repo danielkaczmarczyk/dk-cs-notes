@@ -39,9 +39,16 @@ if __name__ == "__main__":
             self.assertEqual(converter.result, "11101001")
 
         def test_octal(self):
-            converter = Converter(233, 2)
+            converter = Converter(233, 8)
             converter.convert()
             
-            self.assertEqual(converter.result, "11101001")
+            self.assertEqual(converter.result, "351")
+
+        def test_hex(self):
+            converter = Converter(233, 16)
+            converter.convert()
+            
+            self.assertEqual(converter.result, "E9")
+
 
     unittest.main()
