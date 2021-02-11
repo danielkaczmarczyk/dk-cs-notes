@@ -20,7 +20,7 @@ def dyn_num_paths(h, w):
     for i in range(1, h + 1):
         for j in range(1, w + 1):
             grid[i][j] = grid[i - 1][j] + grid[j - 1][i]
-    return grid
+    return grid[h][w]
 
 if __name__ == '__main__':
     print(dyn_num_paths(2,2))
