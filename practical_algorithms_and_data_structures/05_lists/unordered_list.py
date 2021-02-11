@@ -14,7 +14,20 @@ class UnorderedList():
         self.head = node
 
     def remove(self, item):
-        pass
+        previous = None
+        current = self.head
+
+        while current is not None:
+            if current.value == item:
+                break
+            previous, current = current, current.next
+
+        if previous is None:
+            self.head = current.next
+            current.next = None
+        else:
+            previous.next = current.next
+            current.next = None
 
     def search(self, item):
         node = self.head
@@ -120,7 +133,7 @@ if __name__ == "__main__":
 
             result = ul.remove(2)
             self.assertEqual(ul.size(), 2)
-            self.assertEqual(ul.head.value, 1)
+            self.assertEqual(ul.head.value, 3)
 
             result = ul.remove(3)
             self.assertEqual(ul.size(), 1)
