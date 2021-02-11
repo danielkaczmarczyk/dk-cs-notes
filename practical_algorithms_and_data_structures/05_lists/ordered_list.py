@@ -11,8 +11,17 @@ class OrderedList(UnorderedList):
             print(current.value)
             current = current.next
 
-    def search(self):
-        pass
+    def search(self, item):
+        current = self.head
+
+        while current is not None:
+            if current.value > item:
+                return False
+            if current.value == item:
+                return True
+            current = current.next
+
+        return False
 
     def add(self, item):
         node = Node(item)
@@ -22,21 +31,16 @@ class OrderedList(UnorderedList):
             previous = None
             current = self.head
 
-            # case where the value is the smallest in the list.
             if current.value > node.value:
                 node.next = self.head
                 self.head = node
                 return
 
-            # while we're not at the end and the values are still rising
             while current is not None and current.value < node.value:
                 previous, current = current, current.next
 
-            # how do we handle bigger/smaller? in that case it only works if
-            # the node we're inserting is smaller than the last node.
             node.next = current
 
-            # ensure that we're not at the beginning
             if previous is not None:
                 previous.next = node
 
@@ -54,13 +58,24 @@ if __name__ == '__main__':
             return ol
 
         def test_search(self):
-            pass
+            ol = self.list_setup()
+
+            result = ol.search(17)
+            self.assertTrue(result)
+
+            result = ol.search(77)
+            self.assertTrue(result)
+
+            result = ol.search(101)
+            self.assertTrue(result)
+
+            result = ol.search(69)
+            self.assertFalse(result)
 
         def test_add(self):
             ol = self.list_setup()
 
             self.assertEqual(ol.size(), 7)
-            ol.search()
 
 
     unittest.main()
