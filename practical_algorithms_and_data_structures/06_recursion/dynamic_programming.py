@@ -16,9 +16,11 @@ def rec_num_paths(h, w):
     return rec_num_paths(h - 1, w) + rec_num_paths(h, w - 1)
 
 def dyn_num_paths(h, w):
-    pass
-
+    grid = [[1 for n in range(w + 1)] for n in range(h + 1)]
+    for i in range(1, h + 1):
+        for j in range(1, w + 1):
+            grid[i][j] = grid[i - 1][j] + grid[j - 1][i]
+    return grid
 
 if __name__ == '__main__':
-    result = rec_num_paths(2, 2)
-    print(result)
+    print(dyn_num_paths(2,2))
