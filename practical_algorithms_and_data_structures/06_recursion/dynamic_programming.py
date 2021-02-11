@@ -10,6 +10,12 @@ def dynamic_fib(n):
         previous, current = current, previous + current
     return current
 
+def rec_num_paths(h, w):
+    if h == 0 or w == 0:
+        return 1
+    return rec_num_paths(h - 1, w) + rec_num_paths(h, w - 1)
+
+
 if __name__ == '__main__':
-    print(recursive_fib(5))
-    print(dynamic_fib(5))
+    result = rec_num_paths(2, 2)
+    print(result)
