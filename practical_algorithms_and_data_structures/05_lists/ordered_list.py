@@ -3,13 +3,16 @@ from unordered_list import Node, UnorderedList
 
 class OrderedList(UnorderedList):
 
-    def search(self):
+    def print(self):
 
         current = self.head
 
         while current is not None:
             print(current.value)
             current = current.next
+
+    def search(self):
+        pass
 
     def add(self, item):
         node = Node(item)
