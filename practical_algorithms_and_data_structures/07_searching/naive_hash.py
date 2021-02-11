@@ -12,6 +12,10 @@ class NaiveHash():
 
     def place(self, item):
         location = item % self.size
+        if self.table[location] is not None:
+            print("collision detected!")
+            print(f"placement error, slot {location} in use by value {self.table[location]}")
+            return -1
         self.table[location] = item
         return location
 
@@ -36,5 +40,6 @@ if __name__ == '__main__':
     assert naive_hash.place(17) == 6, place_error
     assert naive_hash.place(77) == 0, place_error
     assert naive_hash.place(31) == 9, place_error
+    assert naive_hash.place(44) == -1, place_error
 
     print(naive_hash)
