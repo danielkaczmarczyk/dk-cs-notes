@@ -21,6 +21,13 @@ class NaiveHash():
         self.table[location] = item
         return location
 
+    def find(self, item)
+        location = item % self.size
+        if self.table[location] != item:
+            print("need to probe")
+        else:
+            return location
+
     def count_empty_slots(self):
         empty_slots = 0
         for slot in self.table:
