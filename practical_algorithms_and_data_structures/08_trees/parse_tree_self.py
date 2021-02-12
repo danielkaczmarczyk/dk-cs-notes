@@ -7,8 +7,8 @@ def build_tree(expression):
     stack = [tree]
     current_node = tree
 
+
     for token in expression:
-        print(f"{stack=}")
         if token == LEFT_PAREN:
             new_node = {}
             current_node['left'] = new_node
@@ -24,17 +24,12 @@ def build_tree(expression):
             current_node = stack[-1]
         elif isinstance(int(token), int):
             current_node['val'] = token
-            current_node = stack.pop()
-        else:
-            print(f"THIS SHOULD NOT HAPPEN. {token=}")
+            stack.pop()
+            current_node = stack[-1]
 
-    print(f"{stack=}")
-    print(f"{tree=}")
     return tree
 
 
 if __name__ == "__main__":
-    #expression = ['(', '3', '+', '(', '4', '*', '5' ,')',')']
-    expression = ['(', '2', '+', '2', ')']
+    expression = ['(', '3', '+', '(', '4', '*', '5' ,')',')']
     tree = build_tree(expression)
-    #expected = {'val': '+', 'left': { 'val': 3 }, 'right': { 'val': 'x', 'left': { 'val': 4 }, 'right': { 'val': 5 }}}
