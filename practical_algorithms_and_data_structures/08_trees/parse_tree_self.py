@@ -19,4 +19,4 @@ def build_tree(expression):
 if __name__ == "__main__":
     expression = ['(', '3', '+', '(', '4', '*', '5' ,')',')']
     tree = build_tree(expression)
-    print(tree)
+    expected = {'val': '+', 'left': { 'val': 3 }, 'right': { 'val': 'x', 'left': { 'val': 4 }, 'right': { 'val': 5 }}}
