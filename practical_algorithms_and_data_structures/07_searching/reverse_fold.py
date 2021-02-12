@@ -8,10 +8,17 @@ def reverse_fold(number, table_size):
 
     index = 0 
     step = 2
+    odd = True
 
     while index < len(number):
         # reverse every other item
-        container.append(int(number[index] + number[index + 1]))
+        if odd:
+            container.append(int(number[index] + number[index + 1]))
+            odd = False
+        else:
+            container.append(int(number[index + 1] + number[index]))
+            odd = True
+
         index += step
 
     print(container)
@@ -26,7 +33,7 @@ if __name__ == '__main__':
             number = 4365554601
             table_size = 11
             result = reverse_fold(number, table_size)
-            expected = 1
+            expected = 10
             message = f"folding {number} did not give {expected}, got {result} instead"
 
             self.assertEqual(result, expected, message)
