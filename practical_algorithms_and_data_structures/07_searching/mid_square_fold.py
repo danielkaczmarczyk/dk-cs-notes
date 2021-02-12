@@ -5,7 +5,10 @@
 def mid_square_fold(number, table_size):
     squared = number ** 2
     string = str(squared)
-    print(string)
+    # big assumption, won't be true for most integers
+    middle_two = int(string[1:3])
+    print(f"{middle_two=}")
+    return middle_two % table_size
 
 if __name__ == '__main__':
     import unittest
