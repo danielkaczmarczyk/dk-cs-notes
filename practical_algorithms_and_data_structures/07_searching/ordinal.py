@@ -9,10 +9,14 @@ def hash(a_string, table_size):
 
 def hash_weighted(a_string, table_size):
     i = 0
+    the_sum = 0
     
     while i < len(a_string):
-        print(a_string[i])
+        char = a_string[i]
+        the_sum += ord(char) * i
         i += 1
+
+    return the_sum
 
 
 if __name__ == '__main__':
@@ -21,7 +25,10 @@ if __name__ == '__main__':
     h2 = hash('silent', 11)
 
     if h1 == h2:
+        print(h1, h2)
         print('both hashes have the same value - items are anagrams')
 
     h1 = hash_weighted('listen', 11)
     h2 = hash_weighted('silent', 11)
+
+    print(h1, h2)
