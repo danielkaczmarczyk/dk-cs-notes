@@ -17,11 +17,21 @@ class NaiveHash():
             print(self)
             print(f"placement error, slot {location} in use by value {self.table[location]}")
             print("attempting to resolve the collision by linear probing")
-            return -1
+            print(f"current location: {location}")
+            probing_index = (location + 1) % self.size
+
+            while probing_index != location:
+                print(f"{probing_index=}")
+                if self.table[probing_index] is None:
+                    self.table[probing_index] = item
+                    print(f"item successfully placed at location {probing_index}")
+                    return probing_index
+                probing_index = (probing_index + 1) % self.size
+
         self.table[location] = item
         return location
 
-    def find(self, item)
+    def find(self, item):
         location = item % self.size
         if self.table[location] != item:
             print("need to probe")
