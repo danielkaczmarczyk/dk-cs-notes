@@ -59,6 +59,11 @@ def preorder(node):
         preorder(node.get('left'))
         preorder(node.get('right'))
 
+def postorder(node):
+    if node:
+        postorder(node.get('left'))
+        postorder(node.get('right'))
+        print(node['val'])
 
 if __name__ == "__main__":
     expression = ['(', 3, '+', '(', 4, '*', 5 ,')',')']
@@ -66,3 +71,5 @@ if __name__ == "__main__":
     result = evaluate(tree)
 
     preorder(tree)
+    print('-' * 10)
+    postorder(tree)
