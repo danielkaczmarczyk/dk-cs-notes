@@ -65,6 +65,25 @@ def postorder(node):
         postorder(node.get('right'))
         print(node['val'])
 
+def inorder(node):
+    if node:
+        inorder(node.get('left'))
+        print(node['val'])
+        inorder(node.get('right'))
+
+def construct_expression(tree):
+    if tree is None:
+        return ''
+
+    left = construct_expression(tree.get('left'))
+    right = construct_expression(tree.get('right'))
+    val = tree['val']
+
+    if left and right:
+        return f"({left}{val}{right})"
+
+    return val
+
 if __name__ == "__main__":
     expression = ['(', 3, '+', '(', 4, '*', 5 ,')',')']
     tree = build_tree(expression)
@@ -73,3 +92,8 @@ if __name__ == "__main__":
     preorder(tree)
     print('-' * 10)
     postorder(tree)
+    print('-' * 10)
+    inorder(tree)
+
+    print(construct_expression(tree))
+
