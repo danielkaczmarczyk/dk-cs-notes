@@ -139,4 +139,26 @@ class BinarySearchTree(object):
             return self._get(key, node.left)
         return self._get(key, node.right)
 
+    def __contains__(self, key):
+        return bool(self._get(key, self.root))
+
+    def delete(self, key):
+        if self.size > 1:
+            node_to_remove = self._get(key, self.root)
+            if node_to_remve:
+                self.remove(node_to_remove)
+                self.size = self.size - 1
+                return
+        elif self.size == 1 and self.root.key == key:
+            self.root = None
+            self.size = self.size - 1
+            return
+
+        raise KeyError("Error, key not in tree")
+
+
+    def __delitem__(self.key):
+        self.delete(key)
+
+
 
