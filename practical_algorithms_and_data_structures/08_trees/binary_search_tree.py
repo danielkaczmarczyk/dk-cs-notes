@@ -156,9 +156,39 @@ class BinarySearchTree(object):
 
         raise KeyError("Error, key not in tree")
 
-
     def __delitem__(self.key):
         self.delete(key)
+
+    def remove(self, node):
+        if node.is_leaf() and node.parent is not None:
+            if node == node.parent.left:
+                node.parent.left = None
+            else:
+                node.parent.right = None
+        elif node.has_one_child():
+            promoted_node = node.left or node.right
+
+            if node.is_left_child():
+                promoted_node.parent = node.parent
+                node.parent.left = promoted_node
+            elif node.is_right_child():
+                promoted_node.parent = node.parent
+                node.parent.right = promoted_node
+            else:
+                node.replace_node_data(
+                    promoted_node.key,
+                    promoted_node.val,
+                    promoted_node.left,
+                    promoted_node.right
+                )
+        else: # has both children
+            successor = node.find_successor()
+            if successor:
+                successor.splice_out()
+                node.key = successor.key
+                node.val = successor.val
+
+
 
 
 
