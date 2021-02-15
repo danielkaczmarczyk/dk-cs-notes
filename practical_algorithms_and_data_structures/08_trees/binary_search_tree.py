@@ -90,3 +90,37 @@ class TreeNode(object):
             promoted_node.parent = self.parent
 
 
+class BinarySearchTree(object):
+
+    TreeNodeClass = TreeNode
+
+    def __init__(self):
+        self.root = None
+        self.size = 0
+
+    def __len__(self):
+        return self.size
+
+    def __iter__(self):
+        return self.root.__iter__()
+
+    def __setitem__(self, key, val):
+        if self.root:
+            self._put(key, val, self.root)
+        else:
+            self.root = self.TreeNodeClass(key, val)
+        self.size = self.size + 1
+
+    def _put(self, key, val, node):
+        if key < node.key:
+            if node.left:
+                self._put(key, val, node.left)
+            else:
+                node.left = self.TreeNodeCLass(key, val, parent=node)
+        else:
+            if node.right:
+                self._put(key, val, node.right)
+            else:
+                node.right = self.TreeNodeClass(key, val, parent=node)
+
+
