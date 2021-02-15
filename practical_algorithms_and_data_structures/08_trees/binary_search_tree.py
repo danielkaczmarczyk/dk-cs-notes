@@ -123,4 +123,20 @@ class BinarySearchTree(object):
             else:
                 node.right = self.TreeNodeClass(key, val, parent=node)
 
+    def __getitem__(self, key):
+        if self.root:
+            result = self._get(key, self.root)
+            if result:
+                return result.val
+        raise KeyError
+
+    def _get(self, key, node):
+        if not node:
+            return None
+        if node.key == key:
+            return node
+        if key < node.key:
+            return self._get(key, node.left)
+        return self._get(key, node.right)
+
 
