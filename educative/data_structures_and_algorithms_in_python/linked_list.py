@@ -47,6 +47,9 @@ class LinkedList:
         node.next = self.head
         self.head = node
 
+    def insert_after_node(self, data):
+        # inserts a node after a node with data contained in data
+
 
 if __name__ == '__main__':
     import unittest
@@ -84,6 +87,15 @@ if __name__ == '__main__':
             ll.prepend("Z")
             self.assertEqual(ll.head.data, "Z")
             self.assertEqual(str(ll), "Z -> A -> B -> C")
+            self.assertEqual(len(ll), 4)
+
+        def test_insert_after_node(self):
+            ll = LinkedList()
+            for letter in ["A", "B", "C"]:
+                ll.append(letter)
+
+            ll.insert_after_node("B", "Z")
+            self.assertEqual(str(ll), "A -> B -> Z -> C")
             self.assertEqual(len(ll), 4)
 
 
