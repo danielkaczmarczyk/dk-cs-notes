@@ -29,6 +29,9 @@ class LinkedList:
 
     def __str__(self):
         result = ''
+        
+        if len(self) == 0:
+            return result
 
         node = self.head
         while node.next:
@@ -56,6 +59,20 @@ class LinkedList:
         
         new_node.next = node.next
         node.next = new_node
+
+    def delete_by_value(self, value):
+    # foolishly assumes that value _is_ in the list
+        if self.head.data is value:
+            self.head = None
+
+        previous = None
+        node = self.head
+        while node and node.data is not value:
+            previous, node = node, node.next
+        
+        if node:
+            previous.next = node.next
+            node.next = None
 
 
 if __name__ == '__main__':
@@ -104,6 +121,19 @@ if __name__ == '__main__':
             ll.insert_after_node("B", "Z")
             self.assertEqual(str(ll), "A -> B -> Z -> C")
             self.assertEqual(len(ll), 4)
+
+        def test_deletion_by_value(self):
+            ll = LinkedList()
+            for letter in ["A", "B"]:
+                ll.append(letter)
+
+            ll.delete_by_value("B")
+            self.assertEqual(str(ll), "A")
+            self.assertEqual(len(ll), 1)
+
+            ll.delete_by_value("A")
+            self.assertEqual(str(ll), "")
+            self.assertEqual(len(ll), 0)
 
 
     unittest.main()
