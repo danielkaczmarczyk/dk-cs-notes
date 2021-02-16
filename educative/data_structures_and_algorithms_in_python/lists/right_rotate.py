@@ -1,17 +1,7 @@
 def right_rotate(a_list, n):
-    result = [None for x in a_list]
+    n = n % len(a_list)
 
-    for index in range(n - 1):
-        print(f"{index=} {a_list[index]=}")
-        location = index + n
-        result[location] = a_list[index]
-
-    for index in range(n - 1, len(a_list)):
-        print(f"{index=} {a_list[index]=}")
-        location = index - (n - 1)
-        result[location] = a_list[index]
-
-    return result
+    return a_list[-n:] + a_list[:-n]
 
 
 if __name__ == '__main__':
@@ -26,28 +16,28 @@ if __name__ == '__main__':
             result = right_rotate(arr, n)
             self.assertEqual(expected, result)
 
-        def test_3(self):
+        def test_2(self):
             arr = [300, -1, 3, 0]
             n = 1
             expected = [0, 300, -1, 3]
             result = right_rotate(arr, n)
             self.assertEqual(expected, result)
 
-        def test_1(self):
+        def test_3(self):
             arr = [0, 0, 0, 2]
             n = 1
             expected = [2, 0, 0, 0]
             result = right_rotate(arr, n)
             self.assertEqual(expected, result)
 
-        def test_1(self):
+        def test_4(self):
             arr = ['13', 'a', 'Python']
             n = 1
             expected = ['Python', '13', 'a']
             result = right_rotate(arr, n)
             self.assertEqual(expected, result)
 
-        def test_1(self):
+        def test_5(self):
             arr = [10, 20, 30, 40, 50]
             n = 3
             expected = [30, 40, 50, 10, 20]
