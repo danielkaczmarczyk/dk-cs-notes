@@ -74,6 +74,13 @@ class LinkedList:
             previous.next = node.next
             node.next = None
 
+    def delete_by_position(self, position):
+        current_position = 0
+        current_node = self.head
+
+        while current_position is not position:
+            current_node = current_node.next
+            current_position += 1
 
 if __name__ == '__main__':
     import unittest
@@ -132,6 +139,19 @@ if __name__ == '__main__':
             self.assertEqual(len(ll), 1)
 
             ll.delete_by_value("A")
+            self.assertEqual(str(ll), "")
+            self.assertEqual(len(ll), 0)
+
+        def test_deletion_by_position(self):
+            ll = LinkedList()
+            for letter in ["A", "B"]:
+                ll.append(letter)
+
+            ll.delete_by_position(1)
+            self.assertEqual(str(ll), "A")
+            self.assertEqual(len(ll), 1)
+
+            ll.delete_by_position(0)
             self.assertEqual(str(ll), "")
             self.assertEqual(len(ll), 0)
 
