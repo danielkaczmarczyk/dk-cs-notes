@@ -47,8 +47,15 @@ class LinkedList:
         node.next = self.head
         self.head = node
 
-    def insert_after_node(self, data):
-        # inserts a node after a node with data contained in data
+    def insert_after_node(self, data, new_data):
+        # foolishly assumes that data _is_ in the list
+        node = self.head
+        new_node = Node(new_data)
+        while node.data is not data:
+            node = node.next
+        
+        new_node.next = node.next
+        node.next = new_node
 
 
 if __name__ == '__main__':
