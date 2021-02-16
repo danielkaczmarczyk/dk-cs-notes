@@ -39,6 +39,14 @@ class LinkedList:
 
         return result
 
+    def prepend(self, data):
+        node = Node(data)
+        if not self.head:
+            self.append(node)
+
+        node.next = self.head
+        self.head = node
+
 
 if __name__ == '__main__':
     import unittest
@@ -67,6 +75,16 @@ if __name__ == '__main__':
                 ll.append(letter)
 
             self.assertEqual(str(ll), "A -> B -> C")
+
+        def test_prepend(self):
+            ll = LinkedList()
+            for letter in ["A", "B", "C"]:
+                ll.append(letter)
+
+            ll.prepend("Z")
+            self.assertEqual(ll.head.data, "Z")
+            self.assertEqual(str(ll), "Z -> A -> B -> C")
+            self.assertEqual(len(ll), 4)
 
 
     unittest.main()
