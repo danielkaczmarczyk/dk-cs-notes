@@ -27,6 +27,18 @@ class LinkedList:
 
         return length
 
+    def __str__(self):
+        result = ''
+
+        node = self.head
+        while node.next:
+            result += f"{node.data} -> "
+            node = node.next
+
+        result += f"{node.data}"
+
+        return result
+
 
 if __name__ == '__main__':
     import unittest
@@ -48,6 +60,14 @@ if __name__ == '__main__':
                 ll.append(letter)
 
             self.assertEqual(len(ll), 3)
+
+        def test__str__(self):
+            ll = LinkedList()
+            for letter in ["A", "B", "C"]:
+                ll.append(letter)
+
+            self.assertEqual(str(ll), "A -> B -> C")
+
 
     unittest.main()
 
