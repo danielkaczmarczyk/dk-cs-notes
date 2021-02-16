@@ -28,4 +28,22 @@ def get_words(vocabulary_file):
 vocabulary_file = os.path.join(os.path.dirname(__file__), 'vocabulary.txt')
 word_graph = build_graph(get_words(vocabulary_file))
 
+from collections import deque
+
+
+def traverse(graph, starting_vertex):
+    visited = set()
+    queue = deque([[starting_vertex]])
+    while queue:
+        path = queue.popleft()
+        vertex = path[-1]
+        yield vertex, path
+        for neighbor in graph[vertex] - visited:
+            visited.add(neighbor)
+            queue.append(path + [neighbor])
+
+if __name__ == '__main__':
+    for vertex, path in traverse(word_graph, 'FOOL'):
+        if vertex == 'SAGE':
+            print ' -> '.join(path)
 
