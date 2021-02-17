@@ -1,4 +1,4 @@
-Week of xx/xx/xx
+Week x: xx/xx/xx
 
 | Monday | Tuesday | Wednesday | Thursday | Friday | Saturday | Sunday |
 | ------ | ------- | --------- | -------- | ------ | -------- | ------ |
