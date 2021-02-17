@@ -1,5 +1,4 @@
-Week 7: 17/02/2021
-
+## Week 7: 17/02/2021 
 | Monday | Tuesday | Wednesday | Thursday | Friday | Saturday | Sunday |
 | ------ | ------- | --------- | -------- | ------ | -------- | ------ |
 | Programming `tycs` | Algorithms & Data Structures `tycs`| Operating Systems `tycs` | Databases `tycs` | Distributed Systems `tycs` | var | --- |
