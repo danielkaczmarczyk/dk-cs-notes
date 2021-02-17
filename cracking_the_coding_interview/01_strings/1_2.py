@@ -10,6 +10,8 @@ compare them
 
 one easy win is to check the lenght of those two, if they are different, for sure
 they will not be permutations
+
+hints 1 84 122 131
 """
 
 def check_permutation(string_1, string_2):
