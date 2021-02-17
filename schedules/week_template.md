@@ -6,3 +6,4 @@
 | vim | tmux | linux | python | go | c | js |
 | cc practice | cc practice | cc practice | cc practice | cc practice | var | var |
 | blog | reading | blog | reading | blog | reading | reading |
+| project work | project work | project work | project work | project work | project work 
