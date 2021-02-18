@@ -7,7 +7,15 @@ Assume the environment does not allow you to store
 64-bit integers (signed or unsigned)
 """
 
-def reverse_integer(i):
-    pass
+def reverse_integer(x):
+    reversed_int = ''
+    
+    while x > 0:
+        reversed_int += str(x % 10)
+        x //= 10
+
+    print(reversed_int)
 
 
+
+reverse_integer(123)
