@@ -19,3 +19,11 @@
 - RAM, implemented commonly using semiconductor technology called DRAM, volatile
 - EEPROM, electronically ereasable programmable read-only memory, to hold the _bootstrap program_ and other parts of _firmware_
 - HDD, secondary storage - nonvolatile memory devices (NVM) 
+
+### Definitions of coputer system components
+
+- CPU - the hardware that executes instructions
+- Processor - a physical chip that contains one or more CPUs
+- Core - the basic computation unit of the CPU
+- Multicore - including multiple computing cores on the same CPU
+- Multiprocessor - including multiple processors
