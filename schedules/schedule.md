@@ -7,6 +7,7 @@
 | Cracking the Coding Interview `ccp` | Cracking the Coding Interview `ccp` | LeetCode `ccp` | Advent of Code `ccp` | Hackerrank `ccp` | `var` | --- |
 | blog `chore` | reading `aux` | blog `chore` | reading `aux` | blog `chore` | reading `aux` | --- |
 | `var` | `var` | underscore `project` | over the wire `ctf` | `var` | `var` | --- |
+| flashcards `f` | flashcards `f` | flashcards `f` | flashcards `f` | flashcards `f` | flashcards `f` | --- | 
 
 ### Week B
 | Monday | Tuesday | Wednesday | Thursday | Friday | Saturday | Sunday |
@@ -16,3 +17,4 @@
 | Cracking the Coding Interview `ccp` | Cracking the Coding Interview `ccp` | LeetCode `ccp` | Advent of Code `ccp` | Hackerrank `ccp` | `var` | --- |
 | blog `chore` | reading `aux` | blog `chore` | reading `aux` | blog `chore` | reading `aux` | --- |
 | `var` | `var` | underscore `project` | over the wire `ctf` | `var` | `var` | --- |
+| flashcards `f` | flashcards `f` | flashcards `f` | flashcards `f` | flashcards `f` | flashcards `f` | --- |
