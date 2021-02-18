@@ -16,3 +16,7 @@ Note on notation of documentation for commands:
 `cd [-L|[-P[-e]]] [dir]` means:
 
 The `ls` command can be followed optionally by either a `-L` or a `-P` and further if the `-P` option is specified, the `-e` option may also be included folllowed by the optional argument `dir`.
+
+- Man pages are organised by sections!
+
+- use `;` to separate commands on single line
