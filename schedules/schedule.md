@@ -7,7 +7,7 @@
 | vim `reps` | tmux `reps` | ~~linux `reps` [_The Linux Command Line - William Shotts_](http://linuxcommand.org/tlcl.php)~~ | python `reps` | go `reps` | c `reps` | --- |
 | Cracking the Coding Interview `ccp` | Cracking the Coding Interview `ccp` | LeetCode `ccp` | Advent of Code `ccp` | Hackerrank `ccp` | `var` | --- |
 | blog `chore` | reading `aux` | blog `chore` | reading `aux` | blog `chore` | reading `aux` | --- |
-| `var` | `var` | underscore `project` | over the wire `ctf` | `var` | `var` | --- |
+| `var` | over the wire `ctf` | tabler `project` | tabler `project`  | `var` | `var` | --- |
 
 
 ### Week B
