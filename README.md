@@ -15,6 +15,11 @@ Join my [Discord server](https://discord.gg/HjNfTnu9aQ) if you're interested in 
 
 ## Progress
 
+Here's a list of all courses I'm planning to take. They're mostly taken from the [tycs](teachyourselfcs.com) website, which I'm treating as a central point of my curriculum, but I've been adding other resources as I was exploring varous avenues.
+
+- [x] (book) [You Don't Know JS](https://github.com/getify/You-Dont-Know-JS), by [getify](https://github.com/getify) books 1-6
+- [x] (book) [C.O.D.E](https://en.wikipedia.org/wiki/Code:_The_Hidden_Language_of_Computer_Hardware_and_Software) by [Charles Petzold](https://www.charlespetzold.com/)
+- [] (book) [Annotated Turing](https://www.charlespetzold.com/books/) by [Charles Petzold](https://www.charlespetzold.com/)
 ### teachyourselfcs core
 
 Resource | Type | Topic | Status | Source
