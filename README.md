@@ -27,9 +27,14 @@ Here's a list of all courses I'm planning to take. They're mostly taken from the
 - [x] (book) [Good Math](https://www.amazon.com/Good-Math-Computation-Pragmatic-Programmers/dp/1937785335). I've been shying away from maths most of my life, and this book is one of the reasons I've turned around to the beauty of Mathematics.
 - [x] (mooc) [Information Representation in Computer Systems](https://www.educative.io/courses/information-representation-computer-systems). Sounded great, but ended up being very superficial and kinda put together in a rush. One of many resources from educative that I tried and wasn't happy with. Their content is a hit or miss, still, the coding interview prep resources are quite decent, and I can see the resources quality grow over a few months since I started my subscription so don't write them off just yet.
 
-### Next in line
+### Currently working on
+
 - (video course) [CS 186 - DBMS](https://www.youtube.com/user/CS186Berkeley/playlists)
 - (book) [Composing Programs](https://composingprograms.com)
+- (book) [Practical Vim: Edit Text at the Speed of Thought](https://www.amazon.com/Practical-Vim-Edit-Speed-Thought/dp/1680501275/)
+- [Cracking the Coding Interview](https://www.amazon.com/Cracking-Coding-Interview-Programming-Questions/dp/0984782850)
+
+### Next in line
 - (book) [Computer Systems, a Programmer's Perspective](http://csapp.cs.cmu.edu/3e/home.html)
 - (book) [Algorithm Design Manual](https://www.amazon.com/Algorithm-Design-Manual-Steven-Skiena/dp/1848000693/?pldnSite=1)
 - [How to Solve It](https://www.amazon.com/How-Solve-Mathematical-Princeton-Science/dp/069111966X)
@@ -40,10 +45,8 @@ Here's a list of all courses I'm planning to take. They're mostly taken from the
 - [Practical SQL](https://www.amazon.com/Practical-SQL-Beginners-Guide-Storytelling/dp/1593278276)
 - [Crafting Interpreters](https://craftinginterpreters.com/)
 - [Designing Data-Intensive Applications](https://www.amazon.com/Designing-Data-Intensive-Applications-Reliable-Maintainable/dp/1449373321)
-- [Cracking the Coding Interview](https://www.amazon.com/Cracking-Coding-Interview-Programming-Questions/dp/0984782850)
 - [100 LeetCode Questions](https://www.amazon.com/Cracking-Coding-Interview-Programming-Questions/dp/0984782850)
 - [Advent of Code - all challenges from years 2015-2020](https://adventofcode.com/)
-- [Practical Vim: Edit Text at the Speed of Thought](https://www.amazon.com/Practical-Vim-Edit-Speed-Thought/dp/1680501275/)
 - [Oh shit git](https://wizardzines.com/zines/oh-shit-git/)
 - [tmux 2 - Productive Mouse-Free Development](https://pragprog.com/titles/bhtmux2/tmux-2/)
 - [Shotts, Linux Command Line](http://linuxcommand.org/tlcl.php)
