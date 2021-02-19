@@ -22,45 +22,52 @@ Here's a list of all courses I'm planning to take. They're mostly taken from the
 - [x] (book) [C.O.D.E](https://en.wikipedia.org/wiki/Code:_The_Hidden_Language_of_Computer_Hardware_and_Software) by [Charles Petzold](https://www.charlespetzold.com/). Stunning book on the nature of computers, clear explanations, great storytelling. 
 - [x] (book/video course) [Learn C the Hard Way](https://shop.learncodethehardway.org) by [Zed Shaw](https://twitter.com/lzsthw). I've learned a lot about modern C programming from Zed, but more importantly, good habits. The learning methodology really stuck with me and pays dividends on all learning since.
 - [x] (mooc + book) [Learning How To Learn](https://www.coursera.org/learn/learning-how-to-learn) and [A Mind for Numbers](https://barbaraoakley.com/books/a-mind-for-numbers/) by [Barbara Oakley](https://barbaraoakley.com/). Transforming course and a book. Understanding the neuroscience behind learning has helped me treat a lot of imposter syndrome and made my learning more efficient.
+- [x] (book) [Effective C](https://nostarch.com/Effective_C). A thorough look at C - provided great commentary and supplimented a lot of knowledge in a very clear way. Recommend.
+- [x] (book) [The C Programming Language](https://en.wikipedia.org/wiki/The_C_Programming_Language). Absolute classic, great peek into the past, but I found myself not being the target audience. Only used it correctly after Zed Shaw's resources and reading Effective C. Still a valuable read.
+- [x] (book) [Good Math](https://www.amazon.com/Good-Math-Computation-Pragmatic-Programmers/dp/1937785335). I've been shying away from maths most of my life, and this book is one of the reasons I've turned around to the beauty of Mathematics.
+- [x] (mooc) [Information Representation in Computer Systems](https://www.educative.io/courses/information-representation-computer-systems). Sounded great, but ended up being very superficial and kinda put together in a rush. One of many resources from educative that I tried and wasn't happy with. Their content is a hit or miss, still, the coding interview prep resources are quite decent, and I can see the resources quality grow over a few months since I started my subscription so don't write them off just yet.
 
 ### Next in line
+- (video course) [CS 186 - DBMS](https://www.youtube.com/user/CS186Berkeley/playlists)
+- (book) [Composing Programs](https://composingprograms.com)
+- (book) [Computer Systems, a Programmer's Perspective](http://csapp.cs.cmu.edu/3e/home.html)
+- (book) [Algorithm Design Manual](https://www.amazon.com/Algorithm-Design-Manual-Steven-Skiena/dp/1848000693/?pldnSite=1)
+- [How to Solve It](https://www.amazon.com/How-Solve-Mathematical-Princeton-Science/dp/069111966X)
+- [Discrete Mathematics, Lovasz](https://cims.nyu.edu/~regev/teaching/discrete_math_fall_2005/dmbook.pdf)
+- [Operating Systems - Three Easy Pieces](https://pages.cs.wisc.edu/~remzi/OSTEP/)
+- [(only available in Polish) Zrozumiec Programowanie](https://ksiegarnia.pwn.pl/Zrozumiec-programowanie,688790689,p.html)
+- [Computer Networking: A Top-Down Approach](https://www.amazon.com/Computer-Networking-Top-Down-Approach-7th/dp/0133594149)
+- [Practical SQL](https://www.amazon.com/Practical-SQL-Beginners-Guide-Storytelling/dp/1593278276)
+- [Crafting Interpreters](https://craftinginterpreters.com/)
+- [Designing Data-Intensive Applications](https://www.amazon.com/Designing-Data-Intensive-Applications-Reliable-Maintainable/dp/1449373321)
+- [Cracking the Coding Interview](https://www.amazon.com/Cracking-Coding-Interview-Programming-Questions/dp/0984782850)
+- [100 LeetCode Questions](https://www.amazon.com/Cracking-Coding-Interview-Programming-Questions/dp/0984782850)
+- [Advent of Code - all challenges from years 2015-2020](https://adventofcode.com/)
+- [Practical Vim: Edit Text at the Speed of Thought](https://www.amazon.com/Practical-Vim-Edit-Speed-Thought/dp/1680501275/)
+- [Oh shit git](https://wizardzines.com/zines/oh-shit-git/)
+- [tmux 2 - Productive Mouse-Free Development](https://pragprog.com/titles/bhtmux2/tmux-2/)
+- [Shotts, Linux Command Line](http://linuxcommand.org/tlcl.php)
+- [Introducing Python](https://www.amazon.com/Introducing-Python-Modern-Computing-Packages/dp/1492051365)
+- [Python for Programmers (educative)](https://www.educative.io/path/python-for-programmers)
+- [Python Data Analysis and Visualisation (educative)](https://www.educative.io/path/python-data-analysis)
+- [Ace the Python Coding Interview (educative)](https://www.educative.io/path/ace-python-coding-interview)
+- [Scalability & System Design for Developers (educative)](https://www.educative.io/path/scalability-system-design)
+- [DevOps for Developers (educative)](https://www.educative.io/path/devops-for-developers)
 - (book) [Annotated Turing](https://www.charlespetzold.com/books/) by [Charles Petzold](https://www.charlespetzold.com/)
-### teachyourselfcs core
-
-Resource | Type | Topic | Status | Source
----------|------|-------|--------|-------
-Composing Programs | Book | Programming | in progress | [composing programs](https://composingprograms.com/) 
-Structure and Implementation of Computer Programs | Book | Programming | in progress | [tycs](https://teachyourselfcs.com/)
-Brian Harvey's Berkeley CS 61A | Video |  Programming | in progress | [videos](https://archive.org/details/ucberkeley-webcast-PL3E89002AA9B9879E?sort=titleSorter)
-Computer Systems: A Programmer's Perspective | Book | Computer Architecture | queued | [tycs](https://teachyourselfcs.com/)
-Berkeley CS 61C | Video | Computer Architecture | queued | [tycs](https://teachyourselfcs.com/)
-The Algorithm Design Manual | Book | Algorithms and Data Structures | queued | [tycs](https://teachyourselfcs.com/)
-Steven Skiena's Lectures | Video | Algorithms and Data Structures | queued | [tycs](https://teachyourselfcs.com/)
-Mathematics for Computer Science | Book | Math for CS | queued | [tycs](https://teachyourselfcs.com/)
-Tom Leighton's MIT 6.042J | Video | Math for CS | queued | [tycs](https://teachyourselfcs.com/)
-Operating Systems: Three Easy Pieces | Book | Operating Systems | queued | [tycs](https://teachyourselfcs.com/)
-Berkeley CS 162 | Video | Operating Systems | queued | [tycs](https://teachyourselfcs.com/)
-Computer Networking: A Top-Down Approach | Book | Computer Networking | queued | [tycs](https://teachyourselfcs.com/)
-Stanford CS 144 | Video | Computer Networking | queued | [tycs](https://teachyourselfcs.com/)
-Readings in Database Systems | Book | Databases | queued | [tycs](https://teachyourselfcs.com/)
-Joe Hellerstein's Berkeley CS 186 | Video | Databases | queued | [tycs](https://teachyourselfcs.com/)
-Crafting Interpreters | Book | Languages and Compilers | queued | [tycs](https://teachyourselfcs.com/)
-Alex Aiken's course on edX | Video | Languages and Compilers | queued | [tycs](https://teachyourselfcs.com/)
-Designing Data-Intensive Applications by Martin Kleppmann | Book | Distributed Systems | queued | [tycs](https://teachyourselfcs.com/)
-MIT 6.824 | Video | Distributed Systems | queued | [tycs](https://teachyourselfcs.com/)
-
-### Other Resources I've Found Valuable
-
-Resource | Type | Topic | Status | Source
----------|------|-------|--------|-------
-MIT Missing Semester | Videos | Tooling | in progress | [source](https://missing.csail.mit.edu/)
-YDKJS Book Series (all) | Book | JS | completed | [ydkjs](https://github.com/getify/You-Dont-Know-JS)
-tmux: productive mouse-free development | Book | tmux | in progress | [no link yet]() 
-William Shotts - The Linux Command Line A Complete Introduction No Starch Press (2019) | Book | linux | in progress | [no link yet]() 
-Drew Neil - Modern Vim Craft Your Development Environment with Vim 8 and Neovim-Pragmatic Bookshelf (2018) | Book | vim | in progress | [no link yet]()
-CS50 | Video | CS | 2020 queued | [no link yet]()
-C.O.D.E. by Charles Petzold | Book | Programming | completed | [amazon](https://www.amazon.co.uk/Code-Language-Computer-Hardware-Software/dp/0735611319/ref=sr_1_1?adgrpid=50764275022&dchild=1&gclid=CjwKCAiAnvj9BRA4EiwAuUMDfyT5n7YXKm936Z8c81dv1Zk3kFNT3XOw6WG6fv90hR5zkOFLpAvgpxoCnF0QAvD_BwE&hvadid=259073923662&hvdev=c&hvlocint=9045954&hvlocphy=20853&hvnetw=g&hvqmt=b&hvrand=15507896899033965839&hvtargid=kwd-300578219443&hydadcr=17607_1775410&keywords=charles+petzold+code&qid=1606314907&sr=8-1&tag=googhydr-21)
-Mathematical Thinking in Computer Science | Video | Discrete Maths | in progress | [coursera](https://www.coursera.org/learn/what-is-a-proof/home/welcome)
+- [Structure and Implementation of Computer Programs](https://mitpress.mit.edu/sites/default/files/sicp/full-text/book/book.html)
+- [Brian Harvey's Berkeley CS 61A](https://archive.org/details/ucberkeley-webcast-PL3E89002AA9B9879E?sort=titleSorter)
+- [Berkeley CS 61C](https://teachyourselfcs.com/)
+- [Steven Skiena's Lectures](https://teachyourselfcs.com/)
+- [Mathematics for Computer Science](https://teachyourselfcs.com/)
+- [Tom Leighton's MIT 6.042J](https://teachyourselfcs.com/)
+- [Berkeley CS 162](https://teachyourselfcs.com/)
+- [Stanford CS 144](https://teachyourselfcs.com/)
+- [Readings in Database Systems](https://teachyourselfcs.com/)
+- [Alex Aiken's course on Languages and Compilers](https://teachyourselfcs.com/)
+- [MIT 6.824 Distributed Systems](https://teachyourselfcs.com/)
+- [MIT Missing Semester](https://missing.csail.mit.edu/)
+- [CS50](blank)
+- [Mathematical Thinking in Computer Science](https://www.coursera.org/learn/what-is-a-proof/home/welcome)
 
 ## General Findings
 
