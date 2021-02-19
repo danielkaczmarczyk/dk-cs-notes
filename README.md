@@ -17,9 +17,14 @@ Join my [Discord server](https://discord.gg/HjNfTnu9aQ) if you're interested in 
 
 Here's a list of all courses I'm planning to take. They're mostly taken from the [tycs](teachyourselfcs.com) website, which I'm treating as a central point of my curriculum, but I've been adding other resources as I was exploring varous avenues.
 
-- [x] (book) [You Don't Know JS](https://github.com/getify/You-Dont-Know-JS), by [getify](https://github.com/getify) books 1-6
-- [x] (book) [C.O.D.E](https://en.wikipedia.org/wiki/Code:_The_Hidden_Language_of_Computer_Hardware_and_Software) by [Charles Petzold](https://www.charlespetzold.com/)
-- [] (book) [Annotated Turing](https://www.charlespetzold.com/books/) by [Charles Petzold](https://www.charlespetzold.com/)
+### Completed
+- [x] (book) [You Don't Know JS](https://github.com/getify/You-Dont-Know-JS), by [getify](https://github.com/getify) books 1-6. Absolutely an amazing piece of work on JS. Highly recommend.
+- [x] (book) [C.O.D.E](https://en.wikipedia.org/wiki/Code:_The_Hidden_Language_of_Computer_Hardware_and_Software) by [Charles Petzold](https://www.charlespetzold.com/). Stunning book on the nature of computers, clear explanations, great storytelling. 
+- [x] (book/video course) [Learn C the Hard Way](https://shop.learncodethehardway.org) by [Zed Shaw](https://twitter.com/lzsthw). I've learned a lot about modern C programming from Zed, but more importantly, good habits. The learning methodology really stuck with me and pays dividends on all learning since.
+- [x] (mooc + book) [Learning How To Learn](https://www.coursera.org/learn/learning-how-to-learn) and [A Mind for Numbers](https://barbaraoakley.com/books/a-mind-for-numbers/) by [Barbara Oakley](https://barbaraoakley.com/). Transforming course and a book. Understanding the neuroscience behind learning has helped me treat a lot of imposter syndrome and made my learning more efficient.
+
+### Next in line
+- (book) [Annotated Turing](https://www.charlespetzold.com/books/) by [Charles Petzold](https://www.charlespetzold.com/)
 ### teachyourselfcs core
 
 Resource | Type | Topic | Status | Source
