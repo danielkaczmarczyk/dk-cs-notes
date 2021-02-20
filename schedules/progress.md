@@ -1,27 +1,16 @@
-priority,progress,name,link
-1,1/22 lectures,CS186 Berkeley: Databases,https://www.youtube.com/user/CS186Berkeley/playlists
-Composing Programs
-Computer Systems, a Programmer's Perspective
-Algorithm Design Manual
-How to Solve It
-Discrete Mathematics, Lovasz
-Operating Systems - Three Easy Pieces
-Zrozumiec Programowanie
-Networking: Top-Down Approach
-Practical SQL
-Crafting Interpreters
-Designing Data-Intensive Applications
-Cracking the Coding Interview
-100 LeetCode Questions
-Advent of Code year 2015
-Vim 
-Oh shit git
-Tmux
-Shotts, Linux Command Line
-Lubanovitz, Python3
-Python for Programmers (educative)
-Python Data Analysis and Visualisation (educative)
-Ace the Python Coding Interview (educative)
-Scalability & System Design for Developers (educative)
-DevOps for Developers (educative)
+02.19.2021
+
+- [x] check email, slack, discord
+- [x] read news
+- [x] flashcards
+- [x] code challenge (game of life)
+- [ ] main (CS 186)
+
+Template
+
+- [ ] check email, slack, discord
+- [ ] read news
+- [ ] flashcards 
+- [ ] main
+- [ ] code challenge 
 

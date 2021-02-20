@@ -29,10 +29,11 @@ Here's a list of all courses I'm planning to take. They're mostly taken from the
 
 ### Currently working on
 
-- (video course) [CS 186 - DBMS](https://www.youtube.com/user/CS186Berkeley/playlists)
+- (video) [CS 186 - DBMS](https://www.youtube.com/user/CS186Berkeley/playlists)
 - (book) [Composing Programs](https://composingprograms.com)
 - (book) [Practical Vim: Edit Text at the Speed of Thought](https://www.amazon.com/Practical-Vim-Edit-Speed-Thought/dp/1680501275/)
-- [Cracking the Coding Interview](https://www.amazon.com/Cracking-Coding-Interview-Programming-Questions/dp/0984782850)
+- (book) [Cracking the Coding Interview](https://www.amazon.com/Cracking-Coding-Interview-Programming-Questions/dp/0984782850)
+- (project) Game of Life implementation in Python
 
 ### Next in line
 - (book) [Computer Systems, a Programmer's Perspective](http://csapp.cs.cmu.edu/3e/home.html)
