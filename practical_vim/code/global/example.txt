@@ -1,0 +1,5 @@
+Global commands
+
+    Select or reject lines containing a pattern
+
+    Collect TODO items in a register

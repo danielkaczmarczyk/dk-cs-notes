@@ -1,0 +1,22 @@
+# START:head
+the_vim_way.pml
+normal_mode.pml
+insert_mode.pml
+visual_mode.pml
+# END:head
+ex_mode.pml
+managing_files.pml
+files.pml
+motions.pml
+jumps.pml
+copy_and_paste.pml
+macros.pml
+patterns.pml
+search.pml
+substitution.pml
+global_commands.pml
+ctags.pml
+quickfix.pml
+grep.pml
+auto_complete.pml
+spell_check.pml

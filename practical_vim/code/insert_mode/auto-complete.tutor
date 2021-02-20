@@ -1,0 +1,42 @@
+    Go faster; au
+
+This list of words will fuel the auto-complete menu:
+    aubergine auctioneer audibly audience aureole
+    auspicious author automate autumnal
+
+Using <Up> and <Down> to navigate the popup menu
+------------------------------------------------
+
+- ggA to enter insert mode at end of first line
+- <c-x><c-n> to trigger keyword auto-completion
+  [Note: the first match ('auto') is selected]
+- press <Down> cursor until 'automate' is selected
+- having selected 'automate', press <Enter> to insert it
+  [Note: you're dropped back into insert mode]
+- finish up by typing " everything."
+
+
+Using <c-n> and <c-p> to navigate the popup menu
+------------------------------------------------
+
+- ggA to enter insert mode at end of first line
+- <c-x><c-n> to trigger keyword auto-completion
+- press <c-n> repeatedly, until 'automate' is selected
+  [Note: the word in the document and popup selection are synchronized]
+- having selected 'automate', continue typing
+  [Note: the popup menu disappears]
+- finish up by typing " everything."
+
+
+Refining the wordlist
+---------------------
+
+- ggA to enter insert mode at end of first line
+- <c-x><c-n> to trigger keyword auto-completion
+- <c-p> to return to word fragment
+  [Note: the popup menu is still present]
+- type the characters 'F', 'I', 'X' one at a time
+  [Note: the wordlist is refined as you type]
+- <c-n> to select the first item in the list
+- having selected 'USEME', finish up by typing " everything."
+

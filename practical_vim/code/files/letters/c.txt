@@ -1,0 +1,16 @@
+        CCCCCCCCCCCCC
+     CCC::::::::::::C
+   CC:::::::::::::::C
+  C:::::CCCCCCCC::::C
+ C:::::C       CCCCCC
+C:::::C              
+C:::::C              
+C:::::C              
+C:::::C              
+C:::::C              
+C:::::C              
+ C:::::C       CCCCCC
+  C:::::CCCCCCCC::::C
+   CC:::::::::::::::C
+     CCC::::::::::::C
+        CCCCCCCCCCCCC

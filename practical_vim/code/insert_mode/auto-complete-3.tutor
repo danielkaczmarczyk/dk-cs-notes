@@ -1,0 +1,17 @@
+    Go faster; au
+
+This list of words will fuel the auto-complete menu:
+    aubergine auctioneer audibly audience aureole
+    auspicious author automate autumnal
+
+Refining the wordlist
+---------------------
+
+- ggA to enter insert mode at end of first line
+- <c-x><c-n> to trigger keyword auto-completion
+- <c-p> to return to word fragment
+  [Note: the popup menu is still present]
+- type the characters 't', 'o', 'm' one at a time
+  [Note: the wordlist is refined as you type]
+- <c-n> to select the first (and only) item in the list
+- finish up by typing " everything."
