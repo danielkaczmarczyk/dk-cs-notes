@@ -38,6 +38,7 @@ Here's a list of all courses I'm planning to take. They're mostly taken from the
 ### Next in line
 - (book) [Computer Systems, a Programmer's Perspective](http://csapp.cs.cmu.edu/3e/home.html)
 - (book) [Algorithm Design Manual](https://www.amazon.com/Algorithm-Design-Manual-Steven-Skiena/dp/1848000693/?pldnSite=1)
+- (videos) [Gynvael Coldwind's YT Channel, selected content](https://www.youtube.com/watch?v=MM4hDpzFUcA)
 - [How to Solve It](https://www.amazon.com/How-Solve-Mathematical-Princeton-Science/dp/069111966X)
 - [Discrete Mathematics, Lovasz](https://cims.nyu.edu/~regev/teaching/discrete_math_fall_2005/dmbook.pdf)
 - [Operating Systems - Three Easy Pieces](https://pages.cs.wisc.edu/~remzi/OSTEP/)
