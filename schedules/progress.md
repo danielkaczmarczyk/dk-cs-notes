@@ -3,9 +3,13 @@
 - [x] check email, slack, discord
 - [x] read news
 - [x] flashcards
-- [ ] vim
-- [ ] code challenge (game of life)
+- [x] vim
+- [x] code challenge (game of life)
+- [ ] https://gynvael.coldwind.pl/?id=374
+- [ ] ka math
+- [ ] ccwp
 - [ ] main (CS 186)
+- [ ] blog
 
 02.19.2021
 
