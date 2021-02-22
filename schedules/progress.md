@@ -1,8 +1,8 @@
-02.19.2021
+02.21.2021
 
-- [ ] check email, slack, discord
-- [ ] read news
-- [ ] flashcards
+- [x] check email, slack, discord
+- [x] read news
+- [x] flashcards
 - [ ] vim
 - [ ] code challenge (game of life)
 - [ ] main (CS 186)

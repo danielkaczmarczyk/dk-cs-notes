@@ -73,6 +73,8 @@ Here's a list of all courses I'm planning to take. They're mostly taken from the
 - [MIT Missing Semester](https://missing.csail.mit.edu/)
 - [CS50](blank)
 - [Mathematical Thinking in Computer Science](https://www.coursera.org/learn/what-is-a-proof/home/welcome)
+- [One Lone Coder's Youtube Channel](https://www.youtube.com/channel/UC-yuWVUplUJZvieEligKBkA)
+- [Coding Train]()
 
 ## General Findings
 
