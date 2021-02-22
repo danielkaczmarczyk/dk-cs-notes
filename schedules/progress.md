@@ -5,7 +5,7 @@
 - [x] flashcards
 - [x] vim
 - [x] code challenge (game of life)
-- [ ] https://gynvael.coldwind.pl/?id=374
+- [x] https://gynvael.coldwind.pl/?id=374
 - [ ] ka math
 - [ ] ccwp
 - [ ] main (CS 186)
