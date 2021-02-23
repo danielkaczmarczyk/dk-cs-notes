@@ -1,6 +1,6 @@
 # teach-yourself-cs-curriculum
 
-This document is my record of work towards a Self-Taught equivalent of a CS degree. The core curriculum is as perscribed by Oz Nova and Myles Byrne, authors of [teachyourselfcs.com](https://teachyourselfcs.com), but consists of additional resources that I have completed / am interested in. If you want to ask questions about the core curriculum, all the answers are to be found at the link above.
+This document is my record of work towards a Self-Taught equivalent of a CS degree. The core curriculum is as perscribed by Oz Nova and Myles Byrne, authors of [teachyourselfcs.com](https://teachyourselfcs.com), but consists of additional resources that I have completed / am interested in. If you want to ask questions about the core curriculum, all the answers are to be found at the link above. The files in this repository are a collection of all the possible files, notes, etc. that I have been using for my work. It's a snapshot of a real-life workplace, with various papers and books scattered around than a repository of coherent code, and it should be treated as such. Use it to guess my process, look at resources I've worked on, etc. 
 
 The purpose of this repository is twofold - to keep myself organised and accountable, and also to be able to share my experience with other people who are undertaking a similar challenge of completing this curriculum.
 
@@ -26,6 +26,7 @@ Here's a list of all courses I'm planning to take. They're mostly taken from the
 - [x] (book) [The C Programming Language](https://en.wikipedia.org/wiki/The_C_Programming_Language). Absolute classic, great peek into the past, but I found myself not being the target audience. Only used it correctly after Zed Shaw's resources and reading Effective C. Still a valuable read.
 - [x] (book) [Good Math](https://www.amazon.com/Good-Math-Computation-Pragmatic-Programmers/dp/1937785335). I've been shying away from maths most of my life, and this book is one of the reasons I've turned around to the beauty of Mathematics.
 - [x] (mooc) [Information Representation in Computer Systems](https://www.educative.io/courses/information-representation-computer-systems). Sounded great, but ended up being very superficial and kinda put together in a rush. One of many resources from educative that I tried and wasn't happy with. Their content is a hit or miss, still, the coding interview prep resources are quite decent, and I can see the resources quality grow over a few months since I started my subscription so don't write them off just yet.
+- [x] (book) [Practical Algorithms](https://bradfieldcs.com/algos/)
 
 ### Currently working on
 
