@@ -1,3 +1,12 @@
+# Various
+
+using the system pastebin register for copying:
+
+```
+"*y "*p
+```
+[link](https://stackoverflow.com/questions/3961859/how-to-copy-to-clipboard-in-vim)
+
 # Tip 1
 
 `.` repeats the last action
