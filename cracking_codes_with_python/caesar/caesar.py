@@ -1,18 +1,28 @@
-message = 'hello'
-key = 213
 SYMBOLS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890 !?.'
-translated = ''
 
-for symbol in message:
-    if symbol in SYMBOLS:
+def rotate_wheel(message, key=0, mode='encrypt'):
+    target = ''
+  
+    if mode == 'encrypt':
+        for symbol in message:
+            target += get_symbol_after_rotation(symbol, key)
+        print(message)
+        print(target)
+    elif mode == 'decrypt':
+        for key in range(len(SYMBOLS)):
+            for symbol in message:
+                target += get_symbol_after_rotation(symbol, key)
+            print(f"{key}: {target}")
+            target = ''
+
+
+def get_symbol_after_rotation(symbol, key):
+    if symbol not in SYMBOLS:
+        return symbol
+    else:
         new_symbol_index = SYMBOLS.index(symbol) + key
         if new_symbol_index >= len(SYMBOLS):
             new_symbol_index %= len(SYMBOLS)
-        replaced = SYMBOLS[new_symbol_index]
-        translated += replaced
-    else:
-        translated += symbol
+        return SYMBOLS[new_symbol_index]
 
-print(message)
-print(translated)
-
+rotate_wheel('hello world', 300)
