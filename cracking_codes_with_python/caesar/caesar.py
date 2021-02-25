@@ -1,7 +1,6 @@
-message = "secretz"
-key = 1
+message = 'hello'
+key = 213
 SYMBOLS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890 !?.'
-
 translated = ''
 
 for symbol in message:
@@ -11,10 +10,9 @@ for symbol in message:
             new_symbol_index %= len(SYMBOLS)
         replaced = SYMBOLS[new_symbol_index]
         translated += replaced
-        print(f"{symbol=} replaced by: {replaced=}")
     else:
-        print(f"{symbol=} NOT IN SYMBOLS")
         translated += symbol
 
 print(message)
 print(translated)
+
