@@ -32,18 +32,30 @@ def crack_columnar_transposition(ciphertext, key):
     return result
 
 def brute_force(ciphertext):
+    from reader import get_words
+    words = get_words()
     """
         brute forces all possible solutions, returns an array
         of various transpositions of the ciphertext
     """
     results = []
     for n in range(1, len(ciphertext)):
-        results.append(crack_columnar_transposition(ciphertext, n))
+        crack_attempt = crack_columnar_transposition(ciphertext, n)
+        results.append(crack_attempt)
 
-    for i, string in enumerate(results):
-        print(i + 1, string)
     return results
 
+def practice_question_task():
+    messages = [
+        "H▪cb▪▪irhdeuousBdi▪▪▪prrtyevdgp▪nir▪▪eerit▪eatoreechadihf▪paken▪ge▪b▪te▪dih▪aoa.da▪tts▪tn",
+        "A▪b▪▪drottthawa▪nwar▪eci▪t▪nlel▪ktShw▪leec,hheat▪.na▪▪e▪soogmah▪a▪▪ateniAcgakh▪dmnor▪▪",
+        "Bmmsrl▪dpnaua!toeboo’ktn▪uknrwos.▪yaregonr▪w▪nd,tu▪▪oiady▪hgtRwt▪▪▪A▪hhanhhasthtev▪▪e▪t▪e▪▪eo"
+    ]
+    for msg in messages:
+        msg = msg.replace("▪", " ")
+        attempts = brute_force(msg)
+        # from the book we know the key is 9
+        print(attempts[8])
 
 if __name__ == '__main__':
     import unittest
@@ -70,20 +82,8 @@ if __name__ == '__main__':
 
             self.assertTrue(found)
 
-        def test_practice_question_task(self):
-            messages = [
-                "H▪cb▪▪irhdeuousBdi▪▪▪prrtyevdgp▪nir▪▪eerit▪eatoreechadihf▪paken▪ge▪b▪te▪dih▪aoa.da▪tts▪tn",
-                "A▪b▪▪drottthawa▪nwar▪eci▪t▪nlel▪ktShw▪leec,hheat▪.na▪▪e▪soogmah▪a▪▪ateniAcgakh▪dmnor▪▪",
-                "Bmmsrl▪dpnaua!toeboo’ktn▪uknrwos.▪yaregonr▪w▪nd,tu▪▪oiady▪hgtRwt▪▪▪A▪hhanhhasthtev▪▪e▪t▪e▪▪eo"
-            ]
-            for msg in messages:
-                msg = msg.replace("▪", " ")
-                print()
-                brute_force(msg)
 
-            
-
-    
-    unittest.main()
+    #unittest.main()
+    practice_question_task()
 
 
