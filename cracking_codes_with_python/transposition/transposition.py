@@ -9,13 +9,25 @@ def columnar_transposition(message, key):
     return transposed
 
 def crack_columnar_transposition(ciphertext, key):
+    import math
     result = ''
-    for i in range(len(ciphertext)):
-        if i == key + 1:
-            break
-        while i < len(ciphertext):
-            result += ciphertext[i]
-            i += key + 1
+    rows = int(math.ceil(len(ciphertext) / float(key)))
+    count = 0
+    grid_size = rows * key
+    shaded_boxes = grid_size - len(ciphertext)
+    skip_over = key - shaded_boxes
+    print(f"{grid_size=} {rows=} {key=} {shaded_boxes=} {skip_over=}")
+    for i in range(rows):
+        while count < key:
+            print(f"{i=}", end=" ")
+            if count < skip_over:
+                i += rows
+            else:
+                i += rows - 1
+            count += 1
+            print(f"{count=}")
+        count = 0
+    print()
     return result
 
 def brute_force(ciphertext):
@@ -24,7 +36,7 @@ def brute_force(ciphertext):
         of various transpositions of the ciphertext
     """
     results = []
-    for n in range(len(ciphertext)):
+    for n in range(1, len(ciphertext)):
         results.append(crack_columnar_transposition(ciphertext, n))
     return results
 
@@ -51,7 +63,7 @@ if __name__ == '__main__':
             self.assertEqual(ciphertext, expected)
 
         def test_book_example_decryption(self):
-            plaintext = "Common sense is not so common."
+            plaintext  = "Common sense is not so common."
             ciphertext = "Cenoonommstmme oo snnio. s s c"
             cracked = brute_force(ciphertext)
             found = False
@@ -65,6 +77,8 @@ if __name__ == '__main__':
             self.assertTrue(found)
 
     
-    unittest.main()
+    #unittest.main()
+    ciphertext = "Cenoonommstmme oo snnio. s s c"
+    crack_columnar_transposition(ciphertext, 8)
 
 
