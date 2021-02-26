@@ -20,8 +20,11 @@ def crack_columnar_transposition(ciphertext, key):
 
     count = 1
     for row in range(rows):
+        print(f"{row=}")
         i = row
         while i < len(ciphertext):
+            if row == rows - 1 and count > skip_over:
+                continue
             print(f"{i=} {count=}")
             if count <= skip_over:
                 i += rows
