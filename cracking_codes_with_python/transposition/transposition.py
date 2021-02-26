@@ -1,3 +1,5 @@
+import math
+
 def columnar_transposition(message, key):
     transposed = ''
     for i in range(len(message)): 
@@ -9,23 +11,18 @@ def columnar_transposition(message, key):
     return transposed
 
 def crack_columnar_transposition(ciphertext, key):
-    import math
     result = ''
     rows = int(math.ceil(len(ciphertext) / float(key)))
     grid_size = rows * key
     shaded_boxes = grid_size - len(ciphertext)
     skip_over = key - shaded_boxes
-    str_limit = grid_size - shaded_boxes - 1
-    print(f"{grid_size=} {rows=} {key=} {shaded_boxes=} {skip_over=}")
-
     count = 1
     for row in range(rows):
-        print(f"{row=}")
         i = row
         while i < len(ciphertext):
             if row == rows - 1 and count > skip_over:
-                continue
-            print(f"{i=} {count=}")
+                break
+            result += ciphertext[i]
             if count <= skip_over:
                 i += rows
             else:
@@ -81,8 +78,6 @@ if __name__ == '__main__':
             self.assertTrue(found)
 
     
-    #unittest.main()
-    ciphertext = "Cenoonommstmme oo snnio. s s c"
-    crack_columnar_transposition(ciphertext, 8)
+    unittest.main()
 
 
