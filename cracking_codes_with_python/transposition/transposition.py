@@ -28,24 +28,43 @@ def brute_force(ciphertext):
         results.append(crack_columnar_transposition(ciphertext, n))
     return results
 
-if __name__ == '__main__':
-    from reader import get_words
-
+def practice_question():
     messages = [
         "H▪cb▪▪irhdeuousBdi▪▪▪prrtyevdgp▪nir▪▪eerit▪eatoreechadihf▪paken▪ge▪b▪te▪dih▪aoa.da▪tts▪tn",
         "A▪b▪▪drottthawa▪nwar▪eci▪t▪nlel▪ktShw▪leec,hheat▪.na▪▪e▪soogmah▪a▪▪ateniAcgakh▪dmnor▪▪",
         "Bmmsrl▪dpnaua!toeboo’ktn▪uknrwos.▪yaregonr▪w▪nd,tu▪▪oiady▪h gtRwt▪▪▪A▪hhanhhasthtev▪▪e▪t▪e▪▪eo"
     ]
-
     for msg in messages:
         msg = msg.replace("▪", " ")
 
-    text = "daniel kaczmarczyk"
-    ciphertext = columnar_transposition(text, 7)
-    print(f"{ciphertext=}")
-    bruted = brute_force(ciphertext)
 
-    for attempt in bruted:
-        print(attempt)
+if __name__ == '__main__':
+    import unittest
+
+    class TranspositionTests(unittest.TestCase):
+
+        def test_book_example_encryption(self):
+            plaintext = "Common sense is not so common."
+            key = 8
+            ciphertext = columnar_transposition(plaintext, key)
+            expected = "Cenoonommstmme oo snnio. s s c"
+            self.assertEqual(ciphertext, expected)
+
+        def test_book_example_decryption(self):
+            plaintext = "Common sense is not so common."
+            ciphertext = "Cenoonommstmme oo snnio. s s c"
+            cracked = brute_force(ciphertext)
+            found = False
+
+            for string in cracked:
+                print(string)
+                if string == plaintext:
+                    found = True
+                    break
+
+            self.assertTrue(found)
+
+    
+    unittest.main()
 
 
