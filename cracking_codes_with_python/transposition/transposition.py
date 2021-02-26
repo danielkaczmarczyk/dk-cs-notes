@@ -12,29 +12,23 @@ def crack_columnar_transposition(ciphertext, key):
     import math
     result = ''
     rows = int(math.ceil(len(ciphertext) / float(key)))
-    count = 0
     grid_size = rows * key
     shaded_boxes = grid_size - len(ciphertext)
     skip_over = key - shaded_boxes
     str_limit = grid_size - shaded_boxes - 1
-    i = 0
     print(f"{grid_size=} {rows=} {key=} {shaded_boxes=} {skip_over=}")
+
+    count = 1
     for row in range(rows):
-        while count < key:
-            if count < skip_over:
+        i = row
+        while i < len(ciphertext):
+            print(f"{i=} {count=}")
+            if count <= skip_over:
                 i += rows
             else:
                 i += rows - 1
             count += 1
-            if row == rows - 1 and count >= skip_over:
-                continue
-            if i >= str_limit:
-                continue
-            print(f"{i=}", end=" ")
-            print(f"{count=}")
-        i = row + 1
-        count = 0
-    print()
+        count = 1
     return result
 
 def brute_force(ciphertext):
