@@ -58,6 +58,7 @@ def practice_question_task():
         print(attempts[8])
 
 if __name__ == '__main__':
+    import random
     import unittest
 
     class TranspositionTests(unittest.TestCase):
@@ -82,8 +83,21 @@ if __name__ == '__main__':
 
             self.assertTrue(found)
 
+        def test_random_examples(self):
+            random.seed(42)
+            plaintext = '' 
 
-    #unittest.main()
-    practice_question_task()
+            for n in range(100):
+                for n in range(50):
+                    integer = math.floor(random.random() * 10)
+                    plaintext += str(integer)
+                key = random.randrange(1, len(plaintext) // 2)
+                ciphertext = columnar_transposition(plaintext, key)
+                plaintext_2 = crack_columnar_transposition(ciphertext, key)
+                self.assertEqual(plaintext, plaintext_2)
+                plaintext = ''
+
+
+    unittest.main()
 
 
