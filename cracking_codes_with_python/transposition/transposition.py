@@ -39,16 +39,10 @@ def brute_force(ciphertext):
     results = []
     for n in range(1, len(ciphertext)):
         results.append(crack_columnar_transposition(ciphertext, n))
-    return results
 
-def practice_question():
-    messages = [
-        "H▪cb▪▪irhdeuousBdi▪▪▪prrtyevdgp▪nir▪▪eerit▪eatoreechadihf▪paken▪ge▪b▪te▪dih▪aoa.da▪tts▪tn",
-        "A▪b▪▪drottthawa▪nwar▪eci▪t▪nlel▪ktShw▪leec,hheat▪.na▪▪e▪soogmah▪a▪▪ateniAcgakh▪dmnor▪▪",
-        "Bmmsrl▪dpnaua!toeboo’ktn▪uknrwos.▪yaregonr▪w▪nd,tu▪▪oiady▪h gtRwt▪▪▪A▪hhanhhasthtev▪▪e▪t▪e▪▪eo"
-    ]
-    for msg in messages:
-        msg = msg.replace("▪", " ")
+    for i, string in enumerate(results):
+        print(i + 1, string)
+    return results
 
 
 if __name__ == '__main__':
@@ -70,12 +64,24 @@ if __name__ == '__main__':
             found = False
 
             for string in cracked:
-                print(string)
                 if string == plaintext:
                     found = True
                     break
 
             self.assertTrue(found)
+
+        def test_practice_question_task(self):
+            messages = [
+                "H▪cb▪▪irhdeuousBdi▪▪▪prrtyevdgp▪nir▪▪eerit▪eatoreechadihf▪paken▪ge▪b▪te▪dih▪aoa.da▪tts▪tn",
+                "A▪b▪▪drottthawa▪nwar▪eci▪t▪nlel▪ktShw▪leec,hheat▪.na▪▪e▪soogmah▪a▪▪ateniAcgakh▪dmnor▪▪",
+                "Bmmsrl▪dpnaua!toeboo’ktn▪uknrwos.▪yaregonr▪w▪nd,tu▪▪oiady▪hgtRwt▪▪▪A▪hhanhhasthtev▪▪e▪t▪e▪▪eo"
+            ]
+            for msg in messages:
+                msg = msg.replace("▪", " ")
+                print()
+                brute_force(msg)
+
+            
 
     
     unittest.main()
