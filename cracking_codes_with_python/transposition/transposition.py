@@ -16,6 +16,7 @@ def crack_columnar_transposition(ciphertext, key):
     grid_size = rows * key
     shaded_boxes = grid_size - len(ciphertext)
     skip_over = key - shaded_boxes
+    str_limit = grid_size - shaded_boxes - 1
     i = 0
     print(f"{grid_size=} {rows=} {key=} {shaded_boxes=} {skip_over=}")
     for row in range(rows):
@@ -26,6 +27,8 @@ def crack_columnar_transposition(ciphertext, key):
                 i += rows - 1
             count += 1
             if row == rows - 1 and count >= skip_over:
+                continue
+            if i >= str_limit:
                 continue
             print(f"{i=}", end=" ")
             print(f"{count=}")
