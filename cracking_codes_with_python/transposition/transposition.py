@@ -28,17 +28,8 @@ def brute_force(ciphertext):
         results.append(crack_columnar_transposition(ciphertext, n))
     return results
 
-def filter_english(bruted, words):
-    results = []
-    for line in bruted:
-        split = line.split(" ")
-        for word in split:
-            pass
-    return results
-
 if __name__ == '__main__':
     from reader import get_words
-    words = get_words()
 
     messages = [
         "H▪cb▪▪irhdeuousBdi▪▪▪prrtyevdgp▪nir▪▪eerit▪eatoreechadihf▪paken▪ge▪b▪te▪dih▪aoa.da▪tts▪tn",
@@ -48,4 +39,13 @@ if __name__ == '__main__':
 
     for msg in messages:
         msg = msg.replace("▪", " ")
+
+    text = "daniel kaczmarczyk"
+    ciphertext = columnar_transposition(text, 7)
+    print(f"{ciphertext=}")
+    bruted = brute_force(ciphertext)
+
+    for attempt in bruted:
+        print(attempt)
+
 
