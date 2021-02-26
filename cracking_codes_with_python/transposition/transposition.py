@@ -58,20 +58,28 @@ def practice_question_task():
 if __name__ == '__main__':
     import sys, os
     input_file_name = sys.argv[sys.argv.index('-i') + 1]
-    key = sys.argv[sys.argv.index('-k') + 1]
+    key = int(sys.argv[sys.argv.index('-k') + 1])
+    if '-d' in sys.argv:
+        mode = 'd'
+    else:
+        mode = 'e'
+
     if not os.path.exists(input_file_name):
         print(f"The file {input_file_name} does not exist. Please check path.")
         sys.exit()
 
     with open(input_file_name, 'r') as reader:
-        plaintext = reader.read()
-        ciphertext = columnar_transposition(plaintext, int(key))
+        input_text = reader.read()
+        if key >= len(input_text):
+            print("Key too high. Exiting")
+            sys.exit()
 
-
-    with open('_scrambl_' + input_file_name, 'w') as writer:
-        writer.write(ciphertext)
-
-
-
+        if mode == 'e':
+            ciphertext = columnar_transposition(input_text, key)
+            with open('_scrambl_' + input_file_name, 'w') as writer:
+                writer.write(ciphertext)
+        elif mode == 'd':
+            plaintext = crack_columnar_transposition(input_text, key)
+            print(plaintext)
 
 
