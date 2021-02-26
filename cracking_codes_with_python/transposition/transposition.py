@@ -56,4 +56,22 @@ def practice_question_task():
         print(attempts[8])
 
 if __name__ == '__main__':
-    print('hi')
+    import sys, os
+    input_file_name = sys.argv[sys.argv.index('-i') + 1]
+    key = sys.argv[sys.argv.index('-k') + 1]
+    if not os.path.exists(input_file_name):
+        print(f"The file {input_file_name} does not exist. Please check path.")
+        sys.exit()
+
+    with open(input_file_name, 'r') as reader:
+        plaintext = reader.read()
+        ciphertext = columnar_transposition(plaintext, int(key))
+
+
+    with open('_scrambl_' + input_file_name, 'w') as writer:
+        writer.write(ciphertext)
+
+
+
+
+
