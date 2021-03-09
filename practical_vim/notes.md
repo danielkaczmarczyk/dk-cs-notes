@@ -30,3 +30,20 @@ Every vim repeatable action has a reverse button.
 
 `*` executes a search for the word under cursor. you can navigate then using your usual `n | N`.
 
+# Tip 6
+
+--
+
+# Tip 7
+
+--
+
+# Tip 8
+
+Chunk your undos
+
+The `u` key rigters the undo command, which reverts the most recent change. Remember that the `u` key will undo the last _change_, and a change counts as everything we type or delete between the time of entering insert mode to time when we return to normal mode. 
+
+Beware that moving around in insert mode resets the change. ( Only possible with arrow keys )
+
+

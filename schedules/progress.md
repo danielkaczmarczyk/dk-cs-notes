@@ -1,9 +1,9 @@
-02.25.2021
+03.08.2021
 
 - [x] check email, slack, discord
 - [x] read news
 - [x] flashcards
-- [ ] main (CS 186)
+- [x] main (CS 186) (skip - no broadband)
 - [ ] vim
 - [ ] code challenge (CTCI)
 - [ ] ka math
