@@ -9,14 +9,8 @@ the function should check if those strings are one edit away
 hints 23 97 130
 """
 def one_away(string_1, string_2):
-    # removing / inserting case
-    # if the length difference is greater than 1
-    # that means they're not one away
-    if abs(len(string_1) - len(string_2)) > 1:
-        return False
-    
-    pass
 
+    pass
 
 if __name__ == '__main__':
     import unittest

@@ -3,8 +3,8 @@
 - [x] check email, slack, discord
 - [x] read news
 - [x] flashcards
-- [x] main (CS 186) (skip - no broadband)
-- [ ] vim
+- [ ] main (CS 186) (skip - no broadband)
+- [x] vim
 - [ ] code challenge (CTCI)
 - [ ] ka math
 - [ ] ccwp

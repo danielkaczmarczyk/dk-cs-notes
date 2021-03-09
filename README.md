@@ -27,6 +27,7 @@ Here's a list of all courses I'm planning to take. They're mostly taken from the
 - [x] (book) [Good Math](https://www.amazon.com/Good-Math-Computation-Pragmatic-Programmers/dp/1937785335). I've been shying away from maths most of my life, and this book is one of the reasons I've turned around to the beauty of Mathematics.
 - [x] (mooc) [Information Representation in Computer Systems](https://www.educative.io/courses/information-representation-computer-systems). Sounded great, but ended up being very superficial and kinda put together in a rush. One of many resources from educative that I tried and wasn't happy with. Their content is a hit or miss, still, the coding interview prep resources are quite decent, and I can see the resources quality grow over a few months since I started my subscription so don't write them off just yet.
 - [x] (book) [Practical Algorithms](https://bradfieldcs.com/algos/)
+- [x] (project) Game of Life implementation in Python
 
 ### Currently working on
 
@@ -34,7 +35,6 @@ Here's a list of all courses I'm planning to take. They're mostly taken from the
 - (book) [Composing Programs](https://composingprograms.com)
 - (book) [Practical Vim: Edit Text at the Speed of Thought](https://www.amazon.com/Practical-Vim-Edit-Speed-Thought/dp/1680501275/)
 - (book) [Cracking the Coding Interview](https://www.amazon.com/Cracking-Coding-Interview-Programming-Questions/dp/0984782850)
-- (project) Game of Life implementation in Python
 
 ### Next in line
 - (book) [Computer Systems, a Programmer's Perspective](http://csapp.cs.cmu.edu/3e/home.html)
