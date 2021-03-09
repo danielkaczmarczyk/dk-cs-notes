@@ -56,7 +56,8 @@ def practice_question_task():
         print(attempts[8])
 
 if __name__ == '__main__':
-    import sys, os
+    import os, sys, time
+    start = time.time()
     input_file_name = sys.argv[sys.argv.index('-i') + 1]
     key = int(sys.argv[sys.argv.index('-k') + 1])
     if '-d' in sys.argv:
@@ -81,5 +82,7 @@ if __name__ == '__main__':
         elif mode == 'd':
             plaintext = crack_columnar_transposition(input_text, key)
             print(plaintext)
-
+    
+    seconds = time.time() - start
+    print(f"Process over. Took: {seconds}s")
 
