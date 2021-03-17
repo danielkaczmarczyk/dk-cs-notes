@@ -62,3 +62,18 @@ my_dungeon = Dungeon.new(me)
 my_dungeon.add_room(:largecave, "Large Cave", "a large cavernous cave", {west: :smallcave })
 my_dungeon.add_room(:smallcave, "Small Cave", "a small, claustrophobic cave", {east: :largecave })
 my_dungeon.start(:largecave)
+
+while true
+  puts "What do you want to do?"
+  action = gets
+
+  if action.strip == 'go'
+      puts 'where? your options are:'
+      puts my_dungeon.find_room_in_dungeon(me.location).connections
+      direction = gets.strip
+      my_dungeon.go(direction.to_sym)
+    else if action.strip == 'exit'
+      exit
+    end
+  end
+end
