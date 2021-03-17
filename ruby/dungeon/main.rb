@@ -1,6 +1,9 @@
+# this class creates a dungeon
+# it's absolutely necessary
 class Dungeon
   attr_accessor :player
 
+  # guess what this does
   def initialize(player)
     @player = player
     @rooms = {}
@@ -19,6 +22,9 @@ class Dungeon
     puts find_room_in_dungeon(@player.location).full_description
   end
 
+  # 1
+  # 2
+  # 3
   def find_room_in_dungeon(reference)
     @rooms[reference]
   end
