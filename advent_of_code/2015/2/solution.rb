@@ -5,6 +5,9 @@ class Present
     @@all
   end
 
+  def self.total_area
+  end
+
   def initialize(size_string)
     @size_string = size_string.strip
     self.parse_size
@@ -13,7 +16,7 @@ class Present
   end
 
   def to_s
-    "P> dim:#{@size_string} s_a:#{@size_array.to_s} area:#{@area} "
+    "Present> dim:#{@size_string} area:#{@area} "
   end
 
   def self.parse_bulk(sizes_array)
@@ -30,7 +33,6 @@ class Present
     sa = @size_array
     @area = 2 * ((sa[0] * sa[1]) + (sa[1] * sa[2]) + (sa[2] * sa[0]))
     @area += self.calculate_shortest_side_area
-    @area
   end
 
   def calculate_shortest_side_area
@@ -38,14 +40,27 @@ class Present
   end
 end
 
-class Main
-  def self.run
-    input = File.readlines('input_gh.txt')[..-2] # cut off the last empty line
-    input = input[0..5] # cut down on input size for debugging brevity
-    Present.parse_bulk input
+class Advent
+  def initialize(file_location, mode='')
+    @input = File.readlines('input_gh.txt')[..-2]
+    self.trim_input
+    if mode == 'dev'
+      @data = @dev_input
+    else
+      @data = @input
+    end
+  end
+
+  def trim_input(bound_a=0, bound_b=5)
+    @dev_input = @input[bound_a..bound_b]
+  end
+
+  def solve
+    Present.parse_bulk @data
   end
 end
 
-Main::run
+solver = Advent.new 'input_gh.txt', 'dev'
+solver.solve
 puts Present.all
 
