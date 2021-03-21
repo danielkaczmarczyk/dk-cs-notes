@@ -29,17 +29,18 @@ Here's a list of all courses I'm planning to take. They're mostly taken from the
 - [x] (mooc) [Information Representation in Computer Systems](https://www.educative.io/courses/information-representation-computer-systems). Sounded great, but ended up being very superficial and kinda put together in a rush. One of many resources from educative that I tried and wasn't happy with. Their content is a hit or miss, still, the coding interview prep resources are quite decent, and I can see the resources quality grow over a few months since I started my subscription so don't write them off just yet.
 - [x] (book) [Practical Algorithms](https://bradfieldcs.com/algos/)
 - [x] (project) Game of Life implementation in Python
-- [x] (book) [Beginning Ruby 3 from Beginner to Pro](https://www.apress.com/gp/book/9781484263235)
+- [x] (book) [Beginning Ruby 3 from Beginner to Pro](https://www.apress.com/gp/book/9781484263235) Ruby was a in-and-out favourite language of mine and I am so happy to have revisited it. That book was a great help and came to be especially useful due to inclusion of an appendix that gives you a crash course in Ruby if you're not new to programming and a great library overview.
 
 ### Currently working on
+
+- (book) [Practical SQL](https://www.amazon.com/Practical-SQL-Beginners-Guide-Storytelling/dp/1593278276)
+
+### Next in line
 
 - (video) [CS 186 - DBMS](https://www.youtube.com/user/CS186Berkeley/playlists)
 - (book) [Composing Programs](https://composingprograms.com)
 - (book) [Practical Vim: Edit Text at the Speed of Thought](https://www.amazon.com/Practical-Vim-Edit-Speed-Thought/dp/1680501275/)
 - (book) [Cracking the Coding Interview](https://www.amazon.com/Cracking-Coding-Interview-Programming-Questions/dp/0984782850)
-
-### Next in line
-
 - (book) [Computer Systems, a Programmer's Perspective](http://csapp.cs.cmu.edu/3e/home.html)
 - (book) [Algorithm Design Manual](https://www.amazon.com/Algorithm-Design-Manual-Steven-Skiena/dp/1848000693/?pldnSite=1)
 - (videos) [Gynvael Coldwind's YT Channel, selected content](https://www.youtube.com/watch?v=MM4hDpzFUcA)
@@ -48,7 +49,6 @@ Here's a list of all courses I'm planning to take. They're mostly taken from the
 - [Operating Systems - Three Easy Pieces](https://pages.cs.wisc.edu/~remzi/OSTEP/)
 - [(only available in Polish) Zrozumiec Programowanie](https://ksiegarnia.pwn.pl/Zrozumiec-programowanie,688790689,p.html)
 - [Computer Networking: A Top-Down Approach](https://www.amazon.com/Computer-Networking-Top-Down-Approach-7th/dp/0133594149)
-- [Practical SQL](https://www.amazon.com/Practical-SQL-Beginners-Guide-Storytelling/dp/1593278276)
 - [Crafting Interpreters](https://craftinginterpreters.com/)
 - [Designing Data-Intensive Applications](https://www.amazon.com/Designing-Data-Intensive-Applications-Reliable-Maintainable/dp/1449373321)
 - [100 LeetCode Questions](https://www.amazon.com/Cracking-Coding-Interview-Programming-Questions/dp/0984782850)
