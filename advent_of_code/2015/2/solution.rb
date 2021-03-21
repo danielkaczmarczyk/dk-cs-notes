@@ -1,17 +1,27 @@
 class Present
   @@all = []
 
+  attr_reader :area, :ribbon
+
   def self.all
     @@all
   end
 
   def self.total_area
+    @@all.map { |p| p.area }.reduce(0) { |total, area| total + area }
+  end
+
+  def self.total_ribbon
+    @@all.map { |p| p.ribbon }.reduce(0) { |total, area| total + area }
   end
 
   def initialize(size_string)
     @size_string = size_string.strip
     self.parse_size
     self.calculate_area
+    self.calculate_ribbon_length
+    self.calculate_bow
+    self.total_ribbon
     @@all << self
   end
 
@@ -38,6 +48,18 @@ class Present
   def calculate_shortest_side_area
     @size_array[0] * @size_array[1]
   end
+
+  def calculate_ribbon_length
+    @ribbon = 2 * (@size_array[0] + @size_array[1]) 
+  end
+
+  def calculate_bow
+    @bow = @size_array[0] * @size_array[1] * @size_array[2]
+  end
+
+  def total_ribbon
+    @ribbon = @ribbon + @bow
+  end
 end
 
 class Advent
@@ -60,7 +82,7 @@ class Advent
   end
 end
 
-solver = Advent.new 'input_gh.txt', 'dev'
+solver = Advent.new 'input_gh.txt'
 solver.solve
-puts Present.all
+puts Present.total_ribbon
 
