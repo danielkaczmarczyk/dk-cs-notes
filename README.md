@@ -1,6 +1,6 @@
 # teach-yourself-cs-curriculum
 
-This document is my record of work towards a Self-Taught equivalent of a CS degree. The core curriculum is as perscribed by Oz Nova and Myles Byrne, authors of [teachyourselfcs.com](https://teachyourselfcs.com), but consists of additional resources that I have completed / am interested in. If you want to ask questions about the core curriculum, all the answers are to be found at the link above. The files in this repository are a collection of all the possible files, notes, etc. that I have been using for my work. It's a snapshot of a real-life workplace, with various papers and books scattered around than a repository of coherent code, and it should be treated as such. Use it to guess my process, look at resources I've worked on, etc. 
+This document is my record of work towards a Self-Taught equivalent of a CS degree. The core curriculum is as perscribed by Oz Nova and Myles Byrne, authors of [teachyourselfcs.com](https://teachyourselfcs.com), but consists of additional resources that I have completed / am interested in. If you want to ask questions about the core curriculum, all the answers are to be found at the link above. The files in this repository are a collection of all the possible files, notes, etc. that I have been using for my work. It's a snapshot of a real-life workplace, with various papers and books scattered around than a repository of coherent code, and it should be treated as such. Use it to guess my process, look at resources I've worked on, etc.
 
 The purpose of this repository is twofold - to keep myself organised and accountable, and also to be able to share my experience with other people who are undertaking a similar challenge of completing this curriculum.
 
@@ -18,8 +18,9 @@ Join my [Discord server](https://discord.gg/HjNfTnu9aQ) if you're interested in 
 Here's a list of all courses I'm planning to take. They're mostly taken from the [tycs](teachyourselfcs.com) website, which I'm treating as a central point of my curriculum, but I've been adding other resources as I was exploring varous avenues.
 
 ### Completed
+
 - [x] (book) [You Don't Know JS](https://github.com/getify/You-Dont-Know-JS), by [getify](https://github.com/getify) books 1-6. Absolutely an amazing piece of work on JS. Highly recommend.
-- [x] (book) [C.O.D.E](https://en.wikipedia.org/wiki/Code:_The_Hidden_Language_of_Computer_Hardware_and_Software) by [Charles Petzold](https://www.charlespetzold.com/). Stunning book on the nature of computers, clear explanations, great storytelling. 
+- [x] (book) [C.O.D.E](https://en.wikipedia.org/wiki/Code:_The_Hidden_Language_of_Computer_Hardware_and_Software) by [Charles Petzold](https://www.charlespetzold.com/). Stunning book on the nature of computers, clear explanations, great storytelling.
 - [x] (book/video course) [Learn C the Hard Way](https://shop.learncodethehardway.org) by [Zed Shaw](https://twitter.com/lzsthw). I've learned a lot about modern C programming from Zed, but more importantly, good habits. The learning methodology really stuck with me and pays dividends on all learning since.
 - [x] (mooc + book) [Learning How To Learn](https://www.coursera.org/learn/learning-how-to-learn) and [A Mind for Numbers](https://barbaraoakley.com/books/a-mind-for-numbers/) by [Barbara Oakley](https://barbaraoakley.com/). Transforming course and a book. Understanding the neuroscience behind learning has helped me treat a lot of imposter syndrome and made my learning more efficient.
 - [x] (book) [Effective C](https://nostarch.com/Effective_C). A thorough look at C - provided great commentary and supplimented a lot of knowledge in a very clear way. Recommend.
@@ -28,6 +29,7 @@ Here's a list of all courses I'm planning to take. They're mostly taken from the
 - [x] (mooc) [Information Representation in Computer Systems](https://www.educative.io/courses/information-representation-computer-systems). Sounded great, but ended up being very superficial and kinda put together in a rush. One of many resources from educative that I tried and wasn't happy with. Their content is a hit or miss, still, the coding interview prep resources are quite decent, and I can see the resources quality grow over a few months since I started my subscription so don't write them off just yet.
 - [x] (book) [Practical Algorithms](https://bradfieldcs.com/algos/)
 - [x] (project) Game of Life implementation in Python
+- [x] (book) [Beginning Ruby 3 from Beginner to Pro](https://www.apress.com/gp/book/9781484263235)
 
 ### Currently working on
 
@@ -37,6 +39,7 @@ Here's a list of all courses I'm planning to take. They're mostly taken from the
 - (book) [Cracking the Coding Interview](https://www.amazon.com/Cracking-Coding-Interview-Programming-Questions/dp/0984782850)
 
 ### Next in line
+
 - (book) [Computer Systems, a Programmer's Perspective](http://csapp.cs.cmu.edu/3e/home.html)
 - (book) [Algorithm Design Manual](https://www.amazon.com/Algorithm-Design-Manual-Steven-Skiena/dp/1848000693/?pldnSite=1)
 - (videos) [Gynvael Coldwind's YT Channel, selected content](https://www.youtube.com/watch?v=MM4hDpzFUcA)
@@ -112,9 +115,9 @@ All should be supported under most unix systems.
 - `fzf` for fuzzy matching searches in text files. a good alternative to grep/ripgrep for quick searches
 - `broot` for a very neat alternative to `ls -R` or `tree` commands
 - `nnn` a more advanced alt to `broot`
-- `ranger` for navigating files with `vi` bindings 
+- `ranger` for navigating files with `vi` bindings
 - `tldr` for snippets of usage examples of tools, saves you stackoverflow googling
-- `pretzo` [for a really pretty](https://github.com/sorin-ionescu/prezto) `zsh` prompt. 
+- `pretzo` [for a really pretty](https://github.com/sorin-ionescu/prezto) `zsh` prompt.
 
 ### Course
 
@@ -126,13 +129,13 @@ Various notes from the course content, that I will probably want to look up late
 
 I found [this article](https://accu.org/journals/overload/16/86/golodetz_1506/) useful while digesting Partition Trees described in section 2.3.6. Excerpt:
 
- A partition tree is a way of representing a hierarchy of these partitions of an entity. The way it works is as follows:
+A partition tree is a way of representing a hierarchy of these partitions of an entity. The way it works is as follows:
 
 - Each node in the tree represents a part of the whole entity. In particular, the root node of the tree represents the entity in its entirety.
 - As is usual with trees in computer science, a node is either a branch node or a leaf node. (The distinction is that a branch node has child nodes, whereas a leaf has none.) In a partition tree, the children of a branch node represent a partition of the branch node (properly speaking, the parts of the entity represented by the children of the branch node represent a partition of the part of the entity represented by the branch node, but continually distinguishing between nodes and the sub-entities they represent is tedious).
 - Each layer in the hierarchy represents a partition of the entire entity.
 
-Using our pizza analogy, we could imagine first dividing our pizza into three portions, one for each person at the table. Each person's portion is then further sub-divided into four slices. Each person's slices are a partition of their portion, and the portions are a partition of the pizza as a whole. Furthermore, if you take all the slices, or all the portions, together, you have the entire pizza. 
+Using our pizza analogy, we could imagine first dividing our pizza into three portions, one for each person at the table. Each person's portion is then further sub-divided into four slices. Each person's slices are a partition of their portion, and the portions are a partition of the pizza as a whole. Furthermore, if you take all the slices, or all the portions, together, you have the entire pizza.
 
 ## References
 
