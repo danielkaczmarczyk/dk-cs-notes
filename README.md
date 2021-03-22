@@ -37,9 +37,10 @@ Here's a list of all courses I'm planning to take. They're mostly taken from the
 
 ### Next in line
 
-- (video) [CS 186 - DBMS](https://www.youtube.com/user/CS186Berkeley/playlists)
-- (book) [Composing Programs](https://composingprograms.com)
+- (challenge) [advent of code (all years, up to challenge 5](https://adventofcode.com) I want to practice what I learn about Ruby and test out some of the language features, so I am intending to solve a bunch of challenges to explore the language's features.
 - (book) [Practical Vim: Edit Text at the Speed of Thought](https://www.amazon.com/Practical-Vim-Edit-Speed-Thought/dp/1680501275/)
+- (book) [Composing Programs](https://composingprograms.com)
+- (video) [CS 186 - DBMS](https://www.youtube.com/user/CS186Berkeley/playlists)
 - (book) [Cracking the Coding Interview](https://www.amazon.com/Cracking-Coding-Interview-Programming-Questions/dp/0984782850)
 - (book) [Computer Systems, a Programmer's Perspective](http://csapp.cs.cmu.edu/3e/home.html)
 - (book) [Algorithm Design Manual](https://www.amazon.com/Algorithm-Design-Manual-Steven-Skiena/dp/1848000693/?pldnSite=1)
