@@ -39,10 +39,10 @@ Here's a list of all courses I'm planning to take. They're mostly taken from the
 
 - [ ] (challenge) [advent of code (all years, up to challenge 5](https://adventofcode.com) I want to practice what I learn about Ruby and test out some of the language features, so I am intending to solve a bunch of challenges to explore the language's features.
 - [ ] (book) [Practical Vim: Edit Text at the Speed of Thought](https://www.amazon.com/Practical-Vim-Edit-Speed-Thought/dp/1680501275/) I've been using `vim` for everything I do for a while now, and it's great, but I know there's so much more to discover.
-- [ ] (book) [Composing Programs](https://composingprograms.com)
-- [ ] (video) [CS 186 - DBMS](https://www.youtube.com/user/CS186Berkeley/playlists)
-- [ ] (book) [Cracking the Coding Interview](https://www.amazon.com/Cracking-Coding-Interview-Programming-Questions/dp/0984782850)
-- [ ] (book) [Computer Systems, a Programmer's Perspective](http://csapp.cs.cmu.edu/3e/home.html)
+- [ ] (book) [Composing Programs](https://composingprograms.com) Alternative to SICP as per the tycs guide, using Python as examples. I have attempted it early on in the process and didn't like it - the textbook itself is quite dry as it is intended to be used as a textbook alongside an actual course. If I can get access to good quality videos from the CS61A lectures I will probably finish it at a later date.
+- [ ] (video) [CS 186 - DBMS](https://www.youtube.com/user/CS186Berkeley/playlists) This series of database lectures videos I have postponed working with, similarly as Composing Programs, it is intended to be used alongside the course, and that is something to solve for.
+- [ ] (book) [Cracking the Coding Interview](https://www.amazon.com/Cracking-Coding-Interview-Programming-Questions/dp/0984782850) Interviewing is a controversial topic, and this books is the holy grail of a _certain_ kind of interviewing methodology. I am intending to go through most of them, and although it focuses on Java and many challenges are deeply connected to Java and don't translate to _any_ language, studying bits of it, I found great use of the solutions and other explanations of the _attitude_ of solving those problems, moreso than the actual problems themselves, so I am planning to give it a go.
+- [ ] (book) [Computer Systems, a Programmer's Perspective](http://csapp.cs.cmu.edu/3e/home.html) I've started reading it and it's a leviathan of a book - great in size, and quite dense, but nicely laid out. I'm yet to decide how to approach working with such a large text in a way that makes it most useful.
 - [ ] (book) [Algorithm Design Manual](https://www.amazon.com/Algorithm-Design-Manual-Steven-Skiena/dp/1848000693/?pldnSite=1)
 - [ ] (videos) [Gynvael Coldwind's YT Channel, selected content](https://www.youtube.com/watch?v=MM4hDpzFUcA)
 - [ ] [How to Solve It](https://www.amazon.com/How-Solve-Mathematical-Princeton-Science/dp/069111966X)
