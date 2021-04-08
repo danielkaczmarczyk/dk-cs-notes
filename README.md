@@ -21,10 +21,10 @@ Here's a list of all courses I'm planning to take. They're mostly taken from the
 
 - [x] (book) [You Don't Know JS](https://github.com/getify/You-Dont-Know-JS), by [getify](https://github.com/getify) books 1-6. Absolutely an amazing piece of work on JS. Highly recommend.
 - [x] (book) [C.O.D.E](https://en.wikipedia.org/wiki/Code:_The_Hidden_Language_of_Computer_Hardware_and_Software) by [Charles Petzold](https://www.charlespetzold.com/). Stunning book on the nature of computers, clear explanations, great storytelling.
-- [x] (book/video course) [Learn C the Hard Way](https://shop.learncodethehardway.org) by [Zed Shaw](https://twitter.com/lzsthw). I've learned a lot about modern C programming from Zed, but more importantly, good habits. The learning methodology really stuck with me and pays dividends on all learning since.
+- [x] (book/video course) [Learn C the Hard Way](https://shop.learncodethehardway.org) by [Zed Shaw](https://twitter.com/lzsthw). I've learned a lot about modern C programming from Zed, but more importantly, good habits. The learning methodology really stuck with me and pays dividends on all learning since. I highly recommend it even just for that reason.
 - [x] (mooc + book) [Learning How To Learn](https://www.coursera.org/learn/learning-how-to-learn) and [A Mind for Numbers](https://barbaraoakley.com/books/a-mind-for-numbers/) by [Barbara Oakley](https://barbaraoakley.com/). Transforming course and a book. Understanding the neuroscience behind learning has helped me treat a lot of imposter syndrome and made my learning more efficient.
 - [x] (book) [Effective C](https://nostarch.com/Effective_C). A thorough look at C - provided great commentary and supplimented a lot of knowledge in a very clear way. Recommend.
-- [x] (book) [The C Programming Language](https://en.wikipedia.org/wiki/The_C_Programming_Language). Absolute classic, great peek into the past, but I found myself not being the target audience. Only used it correctly after Zed Shaw's resources and reading Effective C. Still a valuable read.
+- [x] (book) [The C Programming Language](https://en.wikipedia.org/wiki/The_C_Programming_Language). Absolute classic, great peek into the 'past', but I found myself not being the target audience. Only used it correctly after Zed Shaw's resources and reading Effective C. Still a valuable read.
 - [x] (book) [Good Math](https://www.amazon.com/Good-Math-Computation-Pragmatic-Programmers/dp/1937785335). I've been shying away from maths most of my life, and this book is one of the reasons I've turned around to the beauty of Mathematics.
 - [x] (mooc) [Information Representation in Computer Systems](https://www.educative.io/courses/information-representation-computer-systems). Sounded great, but ended up being very superficial and kinda put together in a rush. One of many resources from educative that I tried and wasn't happy with. Their content is a hit or miss, still, the coding interview prep resources are quite decent, and I can see the resources quality grow over a few months since I started my subscription so don't write them off just yet.
 - [x] (book) [Practical Algorithms](https://bradfieldcs.com/algos/)
@@ -38,6 +38,7 @@ Here's a list of all courses I'm planning to take. They're mostly taken from the
 ### Next in line
 
 - [ ] (challenge) [advent of code (all years, up to challenge 5](https://adventofcode.com) I want to practice what I learn about Ruby and test out some of the language features, so I am intending to solve a bunch of challenges to explore the language's features.
+- [ ] [Shotts, Linux Command Line](http://linuxcommand.org/tlcl.php)
 - [ ] (book) [Practical Vim: Edit Text at the Speed of Thought](https://www.amazon.com/Practical-Vim-Edit-Speed-Thought/dp/1680501275/) I've been using `vim` for everything I do for a while now, and it's great, but I know there's so much more to discover.
 - [ ] (book) [Composing Programs](https://composingprograms.com) Alternative to SICP as per the tycs guide, using Python as examples. I have attempted it early on in the process and didn't like it - the textbook itself is quite dry as it is intended to be used as a textbook alongside an actual course. If I can get access to good quality videos from the CS61A lectures I will probably finish it at a later date.
 - [ ] (video) [CS 186 - DBMS](https://www.youtube.com/user/CS186Berkeley/playlists) This series of database lectures videos I have postponed working with, similarly as Composing Programs, it is intended to be used alongside the course, and that is something to solve for.
@@ -56,7 +57,6 @@ Here's a list of all courses I'm planning to take. They're mostly taken from the
 - [ ] [Advent of Code - all challenges from years 2015-2020](https://adventofcode.com/)
 - [ ] [Oh shit git](https://wizardzines.com/zines/oh-shit-git/)
 - [ ] [tmux 2 - Productive Mouse-Free Development](https://pragprog.com/titles/bhtmux2/tmux-2/)
-- [ ] [Shotts, Linux Command Line](http://linuxcommand.org/tlcl.php)
 - [ ] [Introducing Python](https://www.amazon.com/Introducing-Python-Modern-Computing-Packages/dp/1492051365)
 - [ ] [Python for Programmers (educative)](https://www.educative.io/path/python-for-programmers)
 - [ ] [Python Data Analysis and Visualisation (educative)](https://www.educative.io/path/python-data-analysis)
