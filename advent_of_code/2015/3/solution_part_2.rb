@@ -2,9 +2,6 @@ require 'set'
 
 input = File.read('./input_gh.txt')
 
-# there are two 'drivers' now delivering packages - santa, and robo-santa
-# they both have a position, but we can still assume that they're just cool with having one houses_visited slot
-
 position = [0, 0]
 houses_visited = Set.new
 
