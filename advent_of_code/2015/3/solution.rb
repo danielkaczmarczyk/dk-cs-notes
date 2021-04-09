@@ -5,24 +5,33 @@ input = File.read('./input_gh.txt')
 # there are two 'drivers' now delivering packages - santa, and robo-santa
 # they both have a position, but we can still assume that they're just cool with having one houses_visited slot
 
-position = [0, 0]
+positions = [[0, 0], [0,0]]
 houses_visited = Set.new
 
-houses_visited << "#{position[0]}:#{position[1]}"
+def visit_house(driver_index, houses_visited, positions)
+  houses_visited << "#{positions[driver_index][0]}:#{positions[driver_index][1]}"
+end
 
-input.each_char do |char|
+def move(char, driver_index, positions)
   if char == 'v'
-    position[0] -= 1
+    positions[driver_index][0] -= 1
   elsif char == '^'
-    position[0] += 1
+    positions[driver_index][0] += 1
   elsif char == '>'
-    position[1] += 1
+    positions[driver_index][1] += 1
   elsif char == '<'
-    position[1] -= 1
+    positions[driver_index][1] -= 1
   end
-  houses_visited << "#{position[0]}:#{position[1]}"
+end
+
+visit_house(0, houses_visited, positions)
+visit_house(1, houses_visited, positions)
+
+input.each_char.with_index do |char, i|
+  move(char, i % 2, positions)
+  visit_house(i % 2, houses_visited, positions)
 end
 
 
-p position
+p positions
 p houses_visited.size
