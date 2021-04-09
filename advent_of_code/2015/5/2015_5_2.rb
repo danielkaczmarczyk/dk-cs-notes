@@ -1,3 +1,7 @@
+# a quick win to make this more optimised is to
+# rewrite the checkers to check for both properties during 
+# a single run-through the string
+
 input = File.readlines 'input.txt'
 require 'set'
 
@@ -11,7 +15,6 @@ def check_first_property(string)
     substring = string[i..j-1]
     while j <= string.size - 2
       substring_two = string[j..j+1]
-      puts "#{substring} #{substring_two}"
       if substring == substring_two
         return true
       end
@@ -23,6 +26,18 @@ def check_first_property(string)
   false
 end
 
+def check_second_property(string)
+  i = 0
+
+  while i <= string.size - 3
+    if string[i] == string[i + 2] 
+      return true
+    end
+    i += 1
+  end
+  false
+end
+
 strings= [
   'qjhvhtzxzqqjkmpb',
   'xxyxx',
@@ -30,10 +45,10 @@ strings= [
   'ieodomkazucvgmuy',
 ]
 
-require 'pry'; binding.pry
-
 count = 0
-strings.each do |string|
-  count += 1 if is_nice? string
+input.each do |string|
+  if check_first_property(string) and check_second_property(string)
+    count += 1
+  end
 end
 puts count
