@@ -1,20 +1,19 @@
-input = File.read('input_gh.txt')
-#input = input[0..20]
+input_string = File.read('input_gh.txt')
 
+### Part 1
 floor = 0
-index = 0
 
-input.each_char do |char|
-  puts "#{floor} #{index} #{char}"
-  break if floor == -1
+input_string.each_char do |char|
   if char == '('
     floor += 1
   elsif char == ')'
     floor -= 1
   end
-  if floor == -1
-    break
-  end
-  index += 1
 end
-puts floor, index
+puts floor
+
+# cool solution #1
+puts eval(input_string.gsub('(', '+1').gsub(')', '-1'))
+
+# cool solution #2
+puts eval(input_string.strip.gsub(/\W/) { |char| char == '(' ? '+1' : '-1' })
