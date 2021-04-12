@@ -1,7 +1,7 @@
 # 1. create a hash with the 'definitions'
 
-input = File.readlines('./input.txt')
-answers = File.readlines('./test_output.txt')
+input = File.readlines('./test_input.txt')
+$answers = File.readlines('./test_output.txt')
 
 $wires = {}
 
@@ -31,11 +31,7 @@ def remap(operation)
   ops[operation.to_sym]
 end
 
-$count = 0
-
 def resolve(string)
-  $cout += 1
-  puts "#{$count} resolving for: #{string}"
   # puts "input: #{string}"
   split_string = string.split(' ')
   size = split_string.size
@@ -62,4 +58,26 @@ def resolve(string)
   end
 end
 
-p resolve('a')
+def test_input_cases
+  pp $wires
+  pp $answers
+  puts ""
+
+  print('d: ')
+  p resolve $wires['d']
+  print('e: ')
+  p resolve $wires['e']
+  print('f: ')
+  p resolve $wires['f']
+  print('g: ')
+  p resolve $wires['g']
+  print('h: ')
+  p resolve $wires['h']
+  print('i: ')
+  p resolve $wires['i']
+  print('x: ')
+  p resolve $wires['x']
+  print('y: ')
+  p resolve $wires['y']
+end
+#test_input_cases
