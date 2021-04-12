@@ -52,7 +52,7 @@ NOT ft -> fu
 jn OR jo -> jp
 iv OR jb -> jc
 hv OR hu -> hw
-19138 -> b
+16076 -> b
 gj RSHIFT 5 -> gm
 hq AND hs -> ht
 dy RSHIFT 1 -> er
