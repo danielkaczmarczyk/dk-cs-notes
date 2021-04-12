@@ -11,7 +11,6 @@ input.each do |line|
 end
 
 def remap(operation)
-  # p "input to remap: #{operation}"
   ops = {
     "LSHIFT": "<<",
     "RSHIFT": ">>",
@@ -38,23 +37,19 @@ def resolve(string, previous=nil)
 
   if size == 1
     begin
-      puts "Trying to make an integer from #{string}"
       num = Integer(string)
       return num
     rescue
-      puts "Failed making an integer from #{string}"
       num = resolve($wires[string], string)
       $wires[string] = num
       return num
     end
   elsif size == 2
-    puts "Got a size 2, returning a NOT of #{split_string[1]}"
     num = 65535 - resolve(split_string[1])
     $wires[previous] = num
     return num
   elsif size == 3
     num = eval "#{resolve(split_string[0])} #{remap(split_string[1])} #{resolve(split_string[2])}"
-    puts "Got a size 3, returning #{num}"
     $wires[previous] = num
     return num
   end
