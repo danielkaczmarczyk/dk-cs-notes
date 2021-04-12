@@ -1,3 +1,4 @@
+# v 0.0.1 - no refactors or optimizations yet
 require 'byebug'
 
 input = File.readlines('./input.txt')

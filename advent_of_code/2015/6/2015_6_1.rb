@@ -1,3 +1,4 @@
+# v 0.0.1 - no improvoements/optimizations
 # idea for making it better: do not use an array of arrays
 # use a single array representing the lights and modulo arithmetic to access indexes in O(1)
 instructions = File.readlines('./input.txt')
