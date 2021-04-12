@@ -28,12 +28,19 @@ def resolve(string, previous=nil)
   $count += 1
   print "___#{$count} "
   puts "input to resolve: #{string}"
+
+  if string.is_a? Integer
+    return string
+  end
+
   split_string = string.split(' ')
   size = split_string.size
+
   if size == 1
     begin
       puts "Trying to make an integer from #{string}"
-      number = Integer(string)
+      num = Integer(string)
+      return num
     rescue
       puts "Failed making an integer from #{string}"
       num = resolve($wires[string], string)
@@ -41,12 +48,13 @@ def resolve(string, previous=nil)
       return num
     end
   elsif size == 2
+    puts "Got a size 2, returning a NOT of #{split_string[1]}"
     num = 65535 - resolve(split_string[1])
     $wires[previous] = num
     return num
   elsif size == 3
     num = eval "#{resolve(split_string[0])} #{remap(split_string[1])} #{resolve(split_string[2])}"
-    puts "writing #{num} to $wires[#{previous}]"
+    puts "Got a size 3, returning #{num}"
     $wires[previous] = num
     return num
   end
