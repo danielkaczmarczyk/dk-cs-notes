@@ -142,6 +142,7 @@ Using our pizza analogy, we could imagine first dividing our pizza into three po
 
 This repository would not have existed if I had not been insipred by the people who did things like that before me. I'm eternally grateful for efforts of others publishing resources online, and here is a list of just a select few that I've used over the years to become a better programmer.
 
+- [CS academy - algos resource + useful graph visualisation tool](https://csacademy.com/)
 - [Coding Interview University](https://github.com/jwasham/coding-interview-university)
 - [5+5](https://www.reddit.com/r/learnprogramming/comments/gsansp/my_55step_selftaught_cs_curriculum_updated/)
 - [Project-Based Learning](https://github.com/tuvtran/project-based-learning)
