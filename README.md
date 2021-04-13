@@ -34,10 +34,11 @@ Here's a list of all courses I'm planning to take. They're mostly taken from the
 
 ### Currently working on
 
-- (book) [Grokking Algorithms](https://www.manning.com/books/grokking-algorithms)
+- (course)[Algoexpert](https://www.algoexpert.io)
 
 ### Next in line
 
+- (book) [Grokking Algorithms](https://www.manning.com/books/grokking-algorithms)
 - [ ] (challenge) [advent of code (all years, up to challenge 5](https://adventofcode.com) I want to practice what I learn about Ruby and test out some of the language features, so I am intending to solve a bunch of challenges to explore the language's features.
 - [ ] [Shotts, Linux Command Line](http://linuxcommand.org/tlcl.php)
 - [ ] (book) [Practical Vim: Edit Text at the Speed of Thought](https://www.amazon.com/Practical-Vim-Edit-Speed-Thought/dp/1680501275/) I've been using `vim` for everything I do for a while now, and it's great, but I know there's so much more to discover.
