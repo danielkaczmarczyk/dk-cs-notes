@@ -1,13 +1,16 @@
+# constant time - O(1)
 def f1(a)
   1 + a[0]
 end
 
+# linear time - O(n)
 def f2(a)
   sum = 0
   a.each { |int| sum += int }
   sum
 end
 
+# quadratic time O(n^2)
 def f3(a)
   pairs = []
   a.each do |int_1|
@@ -18,10 +21,11 @@ def f3(a)
   pairs
 end
 
-array = Array.new(1_000, 1)
+array = Array.new(4_000, 1)
 
 require 'benchmark'
 
+puts "Array of size: #{array.size}"
 Benchmark.bm do |x|
   x.report { f1(array) }
   x.report { f2(array) }
