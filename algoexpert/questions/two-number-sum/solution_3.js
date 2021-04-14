@@ -5,7 +5,7 @@ function twoNumberSum(array, targetSum) {
     const complement = targetSum - currentInt;
     numbers[currentInt] = complement;
     if (currentInt === complement) continue;
-    if (numbers[complement]) {
+    if (numbers[complement] !== undefined) {
       return [currentInt, complement];
     }
   }
