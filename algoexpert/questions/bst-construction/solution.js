@@ -61,6 +61,14 @@ class BST {
     }
   }
 
+  getMaxValue() {
+    let currentNode = this;
+    while (true) {
+      if (currentNode.right === null) return currentNode.value;
+      currentNode = currentNode.right;
+    }
+  }
+
   remove(value) {
     //
   }
@@ -69,5 +77,6 @@ class BST {
 tree = new BST(10);
 [5, 15, 2, 5, 1, 13, 22, 14].forEach((n) => tree.insert(n));
 log(tree.getMinValue());
+log(tree.getMaxValue());
 //console.log(util.inspect(tree, { depth: null }));
 //console.log(tree.contains(124));
