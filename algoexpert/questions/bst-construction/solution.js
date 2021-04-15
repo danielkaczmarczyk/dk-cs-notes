@@ -1,5 +1,7 @@
 const util = require("util");
 
+const log = console.log;
+
 class BST {
   constructor(value) {
     this.value = value;
@@ -50,9 +52,22 @@ class BST {
       }
     }
   }
+
+  getMinValue() {
+    let currentNode = this;
+    while (true) {
+      if (currentNode.left === null) return currentNode.value;
+      currentNode = currentNode.left;
+    }
+  }
+
+  remove(value) {
+    //
+  }
 }
 
 tree = new BST(10);
 [5, 15, 2, 5, 1, 13, 22, 14].forEach((n) => tree.insert(n));
+log(tree.getMinValue());
 //console.log(util.inspect(tree, { depth: null }));
 //console.log(tree.contains(124));
