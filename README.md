@@ -1,6 +1,6 @@
 # teach-yourself-cs-curriculum
 
-This document is my record of work towards a Self-Taught equivalent of a CS degree. The core curriculum is as perscribed by Oz Nova and Myles Byrne, authors of [teachyourselfcs.com](https://teachyourselfcs.com), but consists of additional resources that I have completed / am interested in. If you want to ask questions about the core curriculum, all the answers are to be found at the link above. The files in this repository are a collection of all the possible files, notes, etc. that I have been using for my work. It's a snapshot of a real-life workplace, with various papers and books scattered around than a repository of coherent code, and it should be treated as such. Use it to guess my process, look at resources I've worked on, etc.
+This document is my record of work towards a Self-Taught equivalent of a CS degree. I want to pursue mastery in my craft and the aim for this project that will most likely span years is to keep track and log of all things and be able to share it with people who could benefit form it. The core curriculum is as perscribed by Oz Nova and Myles Byrne, authors of [teachyourselfcs.com](https://teachyourselfcs.com), but consists of many additional resources that I have completed / am interested in. If you want to ask questions about the core curriculum, all the answers are to be found at the link above. The files in this repository are a collection of all the possible files, notes, etc. that I have been using for my work. It's a snapshot of a real-life workplace, with various papers and books scattered around than a repository of coherent code, and it should be treated as such. Use it to guess my process, look at resources I've worked on, etc.
 
 The purpose of this repository is twofold - to keep myself organised and accountable, and also to be able to share my experience with other people who are undertaking a similar challenge of completing this curriculum.
 
@@ -30,11 +30,12 @@ Here's a list of all courses I'm planning to take. They're mostly taken from the
 - [x] (book) [Practical Algorithms](https://bradfieldcs.com/algos/)
 - [x] (project) Game of Life implementation in Python
 - [x] (book) [Beginning Ruby 3 from Beginner to Pro](https://www.apress.com/gp/book/9781484263235) Ruby was a in-and-out favourite language of mine and I am so happy to have revisited it. That book was a great help and came to be especially useful due to inclusion of an appendix that gives you a crash course in Ruby if you're not new to programming and a great library overview.
-- (book) [Practical SQL](https://www.amazon.com/Practical-SQL-Beginners-Guide-Storytelling/dp/1593278276)
+- [x] (book) [Practical SQL](https://www.amazon.com/Practical-SQL-Beginners-Guide-Storytelling/dp/1593278276)
+- [x] (course)[Algoexpert - Systems Expert](https://www.algoexpert.io)
 
 ### Currently working on
 
-- (course)[Algoexpert](https://www.algoexpert.io)
+- [ ] (course)[Algoexpert - AlgoExpert - 150 questions](https://www.algoexpert.io)
 
 ### Next in line
 
