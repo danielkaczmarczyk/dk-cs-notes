@@ -30,11 +30,12 @@ Here's a list of all courses I'm planning to take. They're mostly taken from the
 - [x] (book) [Practical Algorithms](https://bradfieldcs.com/algos/)
 - [x] (project) Game of Life implementation in Python
 - [x] (book) [Beginning Ruby 3 from Beginner to Pro](https://www.apress.com/gp/book/9781484263235) Ruby was a in-and-out favourite language of mine and I am so happy to have revisited it. That book was a great help and came to be especially useful due to inclusion of an appendix that gives you a crash course in Ruby if you're not new to programming and a great library overview.
-- (book) [Practical SQL](https://www.amazon.com/Practical-SQL-Beginners-Guide-Storytelling/dp/1593278276)
+- [x] (book) [Practical SQL](https://www.amazon.com/Practical-SQL-Beginners-Guide-Storytelling/dp/1593278276)
+- [x] (course)[Algoexpert - Systems Expert](https://www.algoexpert.io)
 
 ### Currently working on
 
-- (course)[Algoexpert](https://www.algoexpert.io)
+- [ ] (course)[Algoexpert - AlgoExpert - 150 questions](https://www.algoexpert.io)
 
 ### Next in line
 
