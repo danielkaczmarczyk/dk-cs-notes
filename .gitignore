@@ -8,4 +8,4 @@ __pycache__
 *.plist
 !Makefile
 *dat
-
+node_modules

@@ -1,0 +1,48 @@
+type Query {
+  author(id: ID!): Author
+}
+
+type Author {
+  posts: [Post]
+}
+
+type Post {
+  title: String
+  content: String
+}
+
+// the following is a query that we'd be able to send to a server with that
+// schema
+
+query {
+  author(id: 'abc') {
+    posts {
+      title
+      content
+    }   
+  }
+}
+
+// notice that every field in the query is associated with a type
+
+query: Qurey {
+  author(id: "abc"): Author {
+    posts: [Post] {
+      title: String
+      content: String
+    }
+  }
+}
+
+// it's easy to find the resolvers in our server to run per field.
+// the execution starts at the query type and goes breadth first.
+// this means we run the respolver for Query.author first. Then we take the
+// result of that resolver, nad pass it into its child, the resolver for
+Author.posts. At the next level, the result is a list, so in that case,
+the execution algo runs on on eitem at a time. So the execution looks like this:
+
+Query.author(root, {id: 'abc' }, context) -> author
+Author.posts(author, null, context) -> posts
+for each post in posts
+  Post.title(post, null, context) -> title
+  Post.content(post, null, context) -> content
