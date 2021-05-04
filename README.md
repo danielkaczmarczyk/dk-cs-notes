@@ -36,6 +36,7 @@ Here's a list of all courses I'm planning to take. They're mostly taken from the
 ### Currently working on
 
 - [ ] (course)[Algoexpert - AlgoExpert - 150 questions](https://www.algoexpert.io)
+- [ ] (book)[Effective Typescript]()
 
 ### Next in line
 
