@@ -37,6 +37,7 @@ Here's a list of all courses I'm planning to take. They're mostly taken from the
 
 ### Currently working on
 
+- [ ] (book)[Discrete Mathematics lecture notes by Laszlo Lovasz (direct download)](http://www.cs.elte.hu/~lovasz/dmbook.ps)
 - [ ] (project + book)[Arduino Projects Book](https://bastiaanvanhengel.files.wordpress.com/2016/06/arduino_projects_book.pdf)
 - [ ] (book)[The Secret Life of Programs: Understand Computers -- Craft Better Code by Jonathan E. Steinheart](https://www.amazon.com/Secret-Life-Programs-Understand-Computers-ebook/dp/B07PCKLDW1)
 - [ ] (book)[Hackers and Painters by Paul Graham]()
