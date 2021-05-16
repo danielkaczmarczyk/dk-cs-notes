@@ -31,11 +31,13 @@ Here's a list of all courses I'm planning to take. They're mostly taken from the
 - [x] (project) Game of Life implementation in Python
 - [x] (book) [Beginning Ruby 3 from Beginner to Pro](https://www.apress.com/gp/book/9781484263235) Ruby was a in-and-out favourite language of mine and I am so happy to have revisited it. That book was a great help and came to be especially useful due to inclusion of an appendix that gives you a crash course in Ruby if you're not new to programming and a great library overview.
 - [x] (book) [Practical SQL](https://www.amazon.com/Practical-SQL-Beginners-Guide-Storytelling/dp/1593278276)
-- [x] (course)[Algoexpert - Systems Expert](https://www.algoexpert.io)
-- [x] (book)[A Mathematician's Lament by Paul Lockhart]()
+- [x] (course)[Algoexpert - Systems Expert](https://www.algoexpert.io) Very good content, highly recommend.
+- [x] (book)[A Mathematician's Lament by Paul Lockhart](https://www.maa.org/external_archive/devlin/LockhartsLament.pdf) A very valuable read. I've linked just the essay but I recommend the whole book. Easily findable on Amazon.
+- [x] (paper)[The Unreasonable Efectiveness of Mathematics by RW Hamming](<https://web.njit.edu/~akansu/PAPERS/The%20Unreasonable%20Effectiveness%20of%20Mathematics%20(RW%20Hamming).pdf>)
 
 ### Currently working on
 
+- [ ] (project + book)[Arduino Projects Book](https://bastiaanvanhengel.files.wordpress.com/2016/06/arduino_projects_book.pdf)
 - [ ] (book)[The Secret Life of Programs: Understand Computers -- Craft Better Code by Jonathan E. Steinheart](https://www.amazon.com/Secret-Life-Programs-Understand-Computers-ebook/dp/B07PCKLDW1)
 - [ ] (book)[Hackers and Painters by Paul Graham]()
 
