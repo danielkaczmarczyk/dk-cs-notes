@@ -32,13 +32,11 @@ Here's a list of all courses I'm planning to take. They're mostly taken from the
 - [x] (book) [Beginning Ruby 3 from Beginner to Pro](https://www.apress.com/gp/book/9781484263235) Ruby was a in-and-out favourite language of mine and I am so happy to have revisited it. That book was a great help and came to be especially useful due to inclusion of an appendix that gives you a crash course in Ruby if you're not new to programming and a great library overview.
 - [x] (book) [Practical SQL](https://www.amazon.com/Practical-SQL-Beginners-Guide-Storytelling/dp/1593278276)
 - [x] (course)[Algoexpert - Systems Expert](https://www.algoexpert.io)
+- [x] (book)[A Mathematician's Lament by Paul Lockhart]()
 
 ### Currently working on
 
-Reading to many books at a time...!
-
 - [ ] (book)[The Secret Life of Programs: Understand Computers -- Craft Better Code by Jonathan E. Steinheart](https://www.amazon.com/Secret-Life-Programs-Understand-Computers-ebook/dp/B07PCKLDW1)
-- [ ] (book)[A Mathematician's Lament by Paul Lockhart]()
 - [ ] (book)[Hackers and Painters by Paul Graham]()
 
 ### Next in line
