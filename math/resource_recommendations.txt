@@ -1,0 +1,19 @@
+YT
+3blue1 brown - Linear Algebra
+Steve Brunton - Applied Mathematics
+
+Books
+[Programming Language Foundations in Agd](https://plfa.github.io/)
+Gallian - Algebra
+
+Topics
+Group Theory
+Graph Theory
+Sicsper's Computability Theory
+Programming Language Theory
+Mathematical Logic
+
+Blogs
+[Jeremy Kun](https://jeremykun.com/)
+[Jeremy Kun - A Programmer's Introduction to Mathematics](https://pimbook.org/)
+
