@@ -5,6 +5,7 @@ Steve Brunton - Applied Mathematics
 Books
 [Programming Language Foundations in Agd](https://plfa.github.io/)
 Gallian - Algebra
+"What is Mathematics" by Courant and Robbins
 
 Topics
 Group Theory
