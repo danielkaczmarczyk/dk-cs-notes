@@ -35,18 +35,21 @@ Here's a list of all courses I'm planning to take. They're mostly taken from the
 
 ### Currently working on
 
-- [ ] (course)[Algoexpert - AlgoExpert - 150 questions](https://www.algoexpert.io)
-- [ ] (book)[Effective Typescript]()
+Reading to many books at a time...!
+
+- [ ] (book)[The Secret Life of Programs: Understand Computers -- Craft Better Code by Jonathan E. Steinheart](https://www.amazon.com/Secret-Life-Programs-Understand-Computers-ebook/dp/B07PCKLDW1)
+- [ ] (book)[A Mathematician's Lament by Paul Lockhart]()
+- [ ] (book)[Hackers and Painters by Paul Graham]()
 
 ### Next in line
 
+- [ ] (course)[Algoexpert - AlgoExpert - 150 questions](https://www.algoexpert.io)
 - (book) [Grokking Algorithms](https://www.manning.com/books/grokking-algorithms)
-- (book) [Secret Life of Programs]()
 - (book) [The Effective Engineer]()
 - (book) [Clean Code]()
 - (book) [Code Complete]()
 - (book) [Ther Pragmatic Programmer]()
-- [ ] (challenge) [advent of code (all years, up to challenge 5](https://adventofcode.com) I want to practice what I learn about Ruby and test out some of the language features, so I am intending to solve a bunch of challenges to explore the language's features.
+- [ ] (challenge) [advent of code (all years, all challenges](https://adventofcode.com)
 - [ ] [Shotts, Linux Command Line](http://linuxcommand.org/tlcl.php)
 - [ ] (book) [Practical Vim: Edit Text at the Speed of Thought](https://www.amazon.com/Practical-Vim-Edit-Speed-Thought/dp/1680501275/) I've been using `vim` for everything I do for a while now, and it's great, but I know there's so much more to discover.
 - [ ] (book) [Composing Programs](https://composingprograms.com) Alternative to SICP as per the tycs guide, using Python as examples. I have attempted it early on in the process and didn't like it - the textbook itself is quite dry as it is intended to be used as a textbook alongside an actual course. If I can get access to good quality videos from the CS61A lectures I will probably finish it at a later date.
