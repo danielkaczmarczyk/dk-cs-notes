@@ -34,16 +34,17 @@ Here's a list of all courses I'm planning to take. They're mostly taken from the
 - [x] (course)[Algoexpert - Systems Expert](https://www.algoexpert.io) Very good content, highly recommend.
 - [x] (book)[A Mathematician's Lament by Paul Lockhart](https://www.maa.org/external_archive/devlin/LockhartsLament.pdf) A very valuable read. I've linked just the essay but I recommend the whole book. Easily findable on Amazon.
 - [x] (paper)[The Unreasonable Efectiveness of Mathematics by RW Hamming](<https://web.njit.edu/~akansu/PAPERS/The%20Unreasonable%20Effectiveness%20of%20Mathematics%20(RW%20Hamming).pdf>)
+- [x] (book)[Hackers and Painters by Paul Graham](https://www.amazon.com/Hackers-Painters-Big-Ideas-Computer/dp/1449389554)
 
 ### Currently working on
 
-- [ ] (book)[Discrete Mathematics lecture notes by Laszlo Lovasz (direct download)](http://www.cs.elte.hu/~lovasz/dmbook.ps)
-- [ ] (project + book)[Arduino Projects Book](https://bastiaanvanhengel.files.wordpress.com/2016/06/arduino_projects_book.pdf)
+- [ ] (course)[Mathematical Thinking in Computer Science](https://www.coursera.org/learn/what-is-a-proof/home/welcome)
 - [ ] (book)[The Secret Life of Programs: Understand Computers -- Craft Better Code by Jonathan E. Steinheart](https://www.amazon.com/Secret-Life-Programs-Understand-Computers-ebook/dp/B07PCKLDW1)
-- [ ] (book)[Hackers and Painters by Paul Graham]()
 
 ### Next in line
 
+- [ ] (book)[Discrete Mathematics lecture notes by Laszlo Lovasz (direct download)](http://www.cs.elte.hu/~lovasz/dmbook.ps)
+- [ ] (project + book)[Arduino Projects Book](https://bastiaanvanhengel.files.wordpress.com/2016/06/arduino_projects_book.pdf)
 - [ ] (course)[Algoexpert - AlgoExpert - 150 questions](https://www.algoexpert.io)
 - (book) [Grokking Algorithms](https://www.manning.com/books/grokking-algorithms)
 - (book) [The Effective Engineer]()
