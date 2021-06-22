@@ -35,10 +35,12 @@ Here's a list of all courses I'm planning to take. They're mostly taken from the
 - [x] (book)[A Mathematician's Lament by Paul Lockhart](https://www.maa.org/external_archive/devlin/LockhartsLament.pdf) A very valuable read. I've linked just the essay but I recommend the whole book. Easily findable on Amazon.
 - [x] (paper)[The Unreasonable Efectiveness of Mathematics by RW Hamming](<https://web.njit.edu/~akansu/PAPERS/The%20Unreasonable%20Effectiveness%20of%20Mathematics%20(RW%20Hamming).pdf>)
 - [x] (book)[Hackers and Painters by Paul Graham](https://www.amazon.com/Hackers-Painters-Big-Ideas-Computer/dp/1449389554)
+- [x] (course)[CSS in Depth, v2](https://frontendmasters.com/courses/css-in-depth-v2/)
+- [x] (video)[What is a File Format?](https://www.youtube.com/watch?v=VVdmmN0su6E)
 
 ### Currently working on
 
-- [ ] (course)[Mathematical Thinking in Computer Science](https://www.coursera.org/learn/what-is-a-proof/home/welcome)
+- [ ] (course)[VIM fundamentals](https://frontendmasters.com/courses/vim-fundamentals)
 - [ ] (book)[The Secret Life of Programs: Understand Computers -- Craft Better Code by Jonathan E. Steinheart](https://www.amazon.com/Secret-Life-Programs-Understand-Computers-ebook/dp/B07PCKLDW1)
 
 ### Next in line
@@ -58,6 +60,7 @@ Here's a list of all courses I'm planning to take. They're mostly taken from the
 - [ ] (video) [CS 186 - DBMS](https://www.youtube.com/user/CS186Berkeley/playlists) This series of database lectures videos I have postponed working with, similarly as Composing Programs, it is intended to be used alongside the course, and that is something to solve for.
 - [ ] (book) [Cracking the Coding Interview](https://www.amazon.com/Cracking-Coding-Interview-Programming-Questions/dp/0984782850) Interviewing is a controversial topic, and this books is the holy grail of a _certain_ kind of interviewing methodology. I am intending to go through most of them, and although it focuses on Java and many challenges are deeply connected to Java and don't translate to _any_ language, studying bits of it, I found great use of the solutions and other explanations of the _attitude_ of solving those problems, moreso than the actual problems themselves, so I am planning to give it a go.
 - [ ] (book) [Computer Systems, a Programmer's Perspective](http://csapp.cs.cmu.edu/3e/home.html) I've started reading it and it's a leviathan of a book - great in size, and quite dense, but nicely laid out. I'm yet to decide how to approach working with such a large text in a way that makes it most useful.
+- [ ] (course)[Mathematical Thinking in Computer Science](https://www.coursera.org/learn/what-is-a-proof/home/welcome)
 - [ ] (book) [Algorithm Design Manual](https://www.amazon.com/Algorithm-Design-Manual-Steven-Skiena/dp/1848000693/?pldnSite=1)
 - [ ] (videos) [Gynvael Coldwind's YT Channel, selected content](https://www.youtube.com/watch?v=MM4hDpzFUcA)
 - [ ] [How to Solve It](https://www.amazon.com/How-Solve-Mathematical-Princeton-Science/dp/069111966X)
