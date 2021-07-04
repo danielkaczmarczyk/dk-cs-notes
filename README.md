@@ -4,8 +4,6 @@ This document is my record of work towards a Self-Taught equivalent of a CS degr
 
 The purpose of this repository is twofold - to keep myself organised and accountable, and also to be able to share my experience with other people who are undertaking a similar challenge of completing this curriculum.
 
-Join my [Discord server](https://discord.gg/HjNfTnu9aQ) if you're interested in working through that curriculum too!
-
 ## Table of Contents
 
 - [Progress](#progress)
@@ -19,37 +17,41 @@ Here's a list of all courses I'm planning to take. They're mostly taken from the
 
 ### Completed
 
+## 2020
+
 - [x] (book) [You Don't Know JS](https://github.com/getify/You-Dont-Know-JS), by [getify](https://github.com/getify) books 1-6. Absolutely an amazing piece of work on JS. Highly recommend.
 - [x] (book) [C.O.D.E](https://en.wikipedia.org/wiki/Code:_The_Hidden_Language_of_Computer_Hardware_and_Software) by [Charles Petzold](https://www.charlespetzold.com/). Stunning book on the nature of computers, clear explanations, great storytelling.
 - [x] (book/video course) [Learn C the Hard Way](https://shop.learncodethehardway.org) by [Zed Shaw](https://twitter.com/lzsthw). I've learned a lot about modern C programming from Zed, but more importantly, good habits. The learning methodology really stuck with me and pays dividends on all learning since. I highly recommend it even just for that reason.
 - [x] (mooc + book) [Learning How To Learn](https://www.coursera.org/learn/learning-how-to-learn) and [A Mind for Numbers](https://barbaraoakley.com/books/a-mind-for-numbers/) by [Barbara Oakley](https://barbaraoakley.com/). Transforming course and a book. Understanding the neuroscience behind learning has helped me treat a lot of imposter syndrome and made my learning more efficient.
+
+## 2021
+
 - [x] (book) [Effective C](https://nostarch.com/Effective_C). A thorough look at C - provided great commentary and supplimented a lot of knowledge in a very clear way. Recommend.
 - [x] (book) [The C Programming Language](https://en.wikipedia.org/wiki/The_C_Programming_Language). Absolute classic, great peek into the 'past', but I found myself not being the target audience. Only used it correctly after Zed Shaw's resources and reading Effective C. Still a valuable read.
 - [x] (book) [Good Math](https://www.amazon.com/Good-Math-Computation-Pragmatic-Programmers/dp/1937785335). I've been shying away from maths most of my life, and this book is one of the reasons I've turned around to the beauty of Mathematics.
 - [x] (mooc) [Information Representation in Computer Systems](https://www.educative.io/courses/information-representation-computer-systems). Sounded great, but ended up being very superficial and kinda put together in a rush. One of many resources from educative that I tried and wasn't happy with. Their content is a hit or miss, still, the coding interview prep resources are quite decent, and I can see the resources quality grow over a few months since I started my subscription so don't write them off just yet.
 - [x] (book) [Practical Algorithms](https://bradfieldcs.com/algos/)
-- [x] (project) Game of Life implementation in Python
 - [x] (book) [Beginning Ruby 3 from Beginner to Pro](https://www.apress.com/gp/book/9781484263235) Ruby was a in-and-out favourite language of mine and I am so happy to have revisited it. That book was a great help and came to be especially useful due to inclusion of an appendix that gives you a crash course in Ruby if you're not new to programming and a great library overview.
 - [x] (book) [Practical SQL](https://www.amazon.com/Practical-SQL-Beginners-Guide-Storytelling/dp/1593278276)
-- [x] (course)[Algoexpert - Systems Expert](https://www.algoexpert.io) Very good content, highly recommend.
-- [x] (book)[A Mathematician's Lament by Paul Lockhart](https://www.maa.org/external_archive/devlin/LockhartsLament.pdf) A very valuable read. I've linked just the essay but I recommend the whole book. Easily findable on Amazon.
-- [x] (paper)[The Unreasonable Efectiveness of Mathematics by RW Hamming](<https://web.njit.edu/~akansu/PAPERS/The%20Unreasonable%20Effectiveness%20of%20Mathematics%20(RW%20Hamming).pdf>)
-- [x] (book)[Hackers and Painters by Paul Graham](https://www.amazon.com/Hackers-Painters-Big-Ideas-Computer/dp/1449389554)
-- [x] (course)[CSS in Depth, v2](https://frontendmasters.com/courses/css-in-depth-v2/)
-- [x] (video)[What is a File Format?](https://www.youtube.com/watch?v=VVdmmN0su6E)
-- [x] (course)[Tree and Graph Data Structures](https://frontendmasters.com/courses/trees-and-graphs)
-- [x] (book)[The Secret Life of Programs: Understand Computers -- Craft Better Code by Jonathan E. Steinheart](https://www.amazon.com/Secret-Life-Programs-Understand-Computers-ebook/dp/B07PCKLDW1)
+- [x] (course) [Algoexpert - Systems Expert](https://www.algoexpert.io) Very good content, highly recommend.
+- [x] (book) [A Mathematician's Lament by Paul Lockhart](https://www.maa.org/external_archive/devlin/LockhartsLament.pdf) A very valuable read. I've linked just the essay but I recommend the whole book. Easily findable on Amazon.
+- [x] (paper) [The Unreasonable Efectiveness of Mathematics by RW Hamming](<https://web.njit.edu/~akansu/PAPERS/The%20Unreasonable%20Effectiveness%20of%20Mathematics%20(RW%20Hamming).pdf>) Absolutely incredible read.
+- [x] (book) [Hackers and Painters by Paul Graham](https://www.amazon.com/Hackers-Painters-Big-Ideas-Computer/dp/1449389554) A little oudated, more of a history lesson and a book-long rant on programming language design. I found it valuable and entertaining.
+- [x] (course) [CSS in Depth, v2](https://frontendmasters.com/courses/css-in-depth-v2/) Admit it, you've been avoiding CSS a lot didn't you? I did. Not anymore.
+- [x] (video) [What is a File Format?](https://www.youtube.com/watch?v=VVdmmN0su6E) Quick watch that may teach you a lot about files even if you think you know a bit or two.
+- [x] (course) [Tree and Graph Data Structures](https://frontendmasters.com/courses/trees-and-graphs) A course that doesn't go in as much depth as I'd like it to, but has helped in re-hashing a few things and enabled me to organize some knowledge in my mind.
+- [x] (book) [The Secret Life of Programs: Understand Computers -- Craft Better Code by Jonathan E. Steinheart](https://www.amazon.com/Secret-Life-Programs-Understand-Computers-ebook/dp/B07PCKLDW1) **VERY IMPORTANT READ**. Along with C.O.D.E (see above), two of the most important books that I've encountered so far. Full of great details about things that really matter. Every page is packed with crucial, well described information.
 
 ### Currently working on
 
-- [ ] (course)[Complete Intro to Databases](https://frontendmasters.com/courses/databases/)
+- [ ] (course) [Complete Intro to Databases](https://frontendmasters.com/courses/databases/)
 
 ### Next in line
 
-- [ ] (course)[VIM fundamentals](https://frontendmasters.com/courses/vim-fundamentals)
-- [ ] (book)[Discrete Mathematics lecture notes by Laszlo Lovasz (direct download)](http://www.cs.elte.hu/~lovasz/dmbook.ps)
-- [ ] (project + book)[Arduino Projects Book](https://bastiaanvanhengel.files.wordpress.com/2016/06/arduino_projects_book.pdf)
-- [ ] (course)[Algoexpert - AlgoExpert - 160 questions](https://www.algoexpert.io)
+- [ ] (course) [VIM fundamentals](https://frontendmasters.com/courses/vim-fundamentals)
+- [ ] (book) [Discrete Mathematics lecture notes by Laszlo Lovasz (direct download)](http://www.cs.elte.hu/~lovasz/dmbook.ps)
+- [ ] (project + book) [Arduino Projects Book](https://bastiaanvanhengel.files.wordpress.com/2016/06/arduino_projects_book.pdf)
+- [ ] (course) [Algoexpert - AlgoExpert - 160 questions](https://www.algoexpert.io)
 - [ ] (book) [Grokking Algorithms](https://www.manning.com/books/grokking-algorithms)
 - [ ] (book) [The Effective Engineer]()
 - [ ] (book) [Clean Code]()
@@ -105,7 +107,7 @@ Here's a list of all courses I'm planning to take. They're mostly taken from the
 
 ### Biggest Challenges
 
-By far the most challenging part of taking a self-guided course like this is not doing it with other people. I have started a [Discord Server](https://discord.gg/HjNfTnu9aQ) for people who are also working through that curriculum, and it is helpful to exchange experiences and advice. Be ready for a lot of frustration trying to find solutions to your problems without a centralised place for people who are doing something similar hang out. Luckily there are groups centered around various resources and topics (SICP has a big community).
+By far the most challenging part of taking a self-guided course like this is not doing it with other people. I have started a Discord Server (now not very active) for people who are also working through that curriculum, and it is helpful to exchange experiences and advice. Be ready for a lot of frustration trying to find solutions to your problems without a centralised place for people who are doing something similar hang out. Luckily there are groups centered around various resources and topics (SICP has a big community).
 
 ### First few weeks
 
