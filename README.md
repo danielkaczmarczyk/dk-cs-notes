@@ -15,7 +15,7 @@ Join my [Discord server](https://discord.gg/HjNfTnu9aQ) if you're interested in 
 
 ## Progress
 
-Here's a list of all courses I'm planning to take. They're mostly taken from the [tycs](teachyourselfcs.com) website, which I'm treating as a central point of my curriculum, but I've been adding other resources as I was exploring varous avenues.
+Here's a list of all courses I'm planning to take. They're mostly taken from the [tycs](teachyourselfcs.com) website, which I'm treating as a central point of my curriculum, but I've been adding other resources as I was exploring varous avenues. The content and topics vary, and over the months of maintaining this list I have found myself diverting form the original course, and coming back, and generally noting down things that I've done, cause they were interesting at the time. I became a record of my interests.
 
 ### Completed
 
@@ -37,24 +37,27 @@ Here's a list of all courses I'm planning to take. They're mostly taken from the
 - [x] (book)[Hackers and Painters by Paul Graham](https://www.amazon.com/Hackers-Painters-Big-Ideas-Computer/dp/1449389554)
 - [x] (course)[CSS in Depth, v2](https://frontendmasters.com/courses/css-in-depth-v2/)
 - [x] (video)[What is a File Format?](https://www.youtube.com/watch?v=VVdmmN0su6E)
+- [x] (course)[Tree and Graph Data Structures](https://frontendmasters.com/courses/trees-and-graphs)
+- [x] (book)[The Secret Life of Programs: Understand Computers -- Craft Better Code by Jonathan E. Steinheart](https://www.amazon.com/Secret-Life-Programs-Understand-Computers-ebook/dp/B07PCKLDW1)
 
 ### Currently working on
 
-- [ ] (course)[VIM fundamentals](https://frontendmasters.com/courses/vim-fundamentals)
-- [ ] (book)[The Secret Life of Programs: Understand Computers -- Craft Better Code by Jonathan E. Steinheart](https://www.amazon.com/Secret-Life-Programs-Understand-Computers-ebook/dp/B07PCKLDW1)
+- [ ] (course)[Complete Intro to Databases](https://frontendmasters.com/courses/databases/)
 
 ### Next in line
 
+- [ ] (course)[VIM fundamentals](https://frontendmasters.com/courses/vim-fundamentals)
 - [ ] (book)[Discrete Mathematics lecture notes by Laszlo Lovasz (direct download)](http://www.cs.elte.hu/~lovasz/dmbook.ps)
 - [ ] (project + book)[Arduino Projects Book](https://bastiaanvanhengel.files.wordpress.com/2016/06/arduino_projects_book.pdf)
-- [ ] (course)[Algoexpert - AlgoExpert - 150 questions](https://www.algoexpert.io)
-- (book) [Grokking Algorithms](https://www.manning.com/books/grokking-algorithms)
-- (book) [The Effective Engineer]()
-- (book) [Clean Code]()
-- (book) [Code Complete]()
-- (book) [Ther Pragmatic Programmer]()
+- [ ] (course)[Algoexpert - AlgoExpert - 160 questions](https://www.algoexpert.io)
+- [ ] (book) [Grokking Algorithms](https://www.manning.com/books/grokking-algorithms)
+- [ ] (book) [The Effective Engineer]()
+- [ ] (book) [Clean Code]()
+- [ ] (book) [Code Complete]()
+- [ ] (book) [Calculus By and For Young People]()
+- [ ] (book) [Ther Pragmatic Programmer]()
 - [ ] (challenge) [advent of code (all years, all challenges](https://adventofcode.com)
-- [ ] [Shotts, Linux Command Line](http://linuxcommand.org/tlcl.php)
+- [ ] (book)[Shotts, Linux Command Line](http://linuxcommand.org/tlcl.php)
 - [ ] (book) [Practical Vim: Edit Text at the Speed of Thought](https://www.amazon.com/Practical-Vim-Edit-Speed-Thought/dp/1680501275/) I've been using `vim` for everything I do for a while now, and it's great, but I know there's so much more to discover.
 - [ ] (book) [Composing Programs](https://composingprograms.com) Alternative to SICP as per the tycs guide, using Python as examples. I have attempted it early on in the process and didn't like it - the textbook itself is quite dry as it is intended to be used as a textbook alongside an actual course. If I can get access to good quality videos from the CS61A lectures I will probably finish it at a later date.
 - [ ] (video) [CS 186 - DBMS](https://www.youtube.com/user/CS186Berkeley/playlists) This series of database lectures videos I have postponed working with, similarly as Composing Programs, it is intended to be used alongside the course, and that is something to solve for.
