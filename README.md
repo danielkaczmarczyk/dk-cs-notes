@@ -45,6 +45,7 @@ Here's a list of all courses I'm planning to take. They're mostly taken from the
 ### Currently working on
 
 - [ ] (course) [Complete Intro to Databases](https://frontendmasters.com/courses/databases/)
+- [ ] (book) [Programming Typescript](https://www.oreilly.com/library/view/programming-typescript/9781492037644/)
 
 ### Next in line
 
