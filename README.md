@@ -57,6 +57,7 @@ Here's a list of all courses I'm planning to take. They're mostly taken from the
 - [ ] (book) [The Effective Engineer]()
 - [ ] (book) [Clean Code]()
 - [ ] (book) [Code Complete]()
+- [ ] (book) [Software Engineering at Google]()
 - [ ] (book) [Calculus By and For Young People]()
 - [ ] (book) [Ther Pragmatic Programmer]()
 - [ ] (challenge) [advent of code (all years, all challenges](https://adventofcode.com)
