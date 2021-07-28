@@ -46,13 +46,13 @@ Here's a list of all courses I'm planning to take. They're mostly taken from the
 
 - [ ] (course) [Complete Intro to Databases](https://frontendmasters.com/courses/databases/)
 - [ ] (book) [Programming Typescript](https://www.oreilly.com/library/view/programming-typescript/9781492037644/)
+- [ ] (course) [Algoexpert - AlgoExpert - 160 questions](https://www.algoexpert.io)
 
 ### Next in line
 
 - [ ] (course) [VIM fundamentals](https://frontendmasters.com/courses/vim-fundamentals)
 - [ ] (book) [Discrete Mathematics lecture notes by Laszlo Lovasz (direct download)](http://www.cs.elte.hu/~lovasz/dmbook.ps)
 - [ ] (project + book) [Arduino Projects Book](https://bastiaanvanhengel.files.wordpress.com/2016/06/arduino_projects_book.pdf)
-- [ ] (course) [Algoexpert - AlgoExpert - 160 questions](https://www.algoexpert.io)
 - [ ] (book) [Grokking Algorithms](https://www.manning.com/books/grokking-algorithms)
 - [ ] (book) [The Effective Engineer]()
 - [ ] (book) [Clean Code]()
