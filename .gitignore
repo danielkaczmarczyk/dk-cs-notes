@@ -9,3 +9,4 @@ __pycache__
 !Makefile
 *dat
 node_modules
+*.out
