@@ -44,12 +44,14 @@ Here's a list of all courses I'm planning to take. They're mostly taken from the
 
 ### Currently working on
 
-- [ ] (course) [Complete Intro to Databases](https://frontendmasters.com/courses/databases/)
-- [ ] (book) [Programming Typescript](https://www.oreilly.com/library/view/programming-typescript/9781492037644/)
-- [ ] (course) [Algoexpert - AlgoExpert - 160 questions](https://www.algoexpert.io)
+- [ ] [Designing Data-Intensive Applications](https://www.amazon.com/Designing-Data-Intensive-Applications-Reliable-Maintainable/dp/1449373321)
+- [ ] [Linux Programming Interface](https://www.amazon.com/Linux-Programming-Interface-System-Handbook/dp/1593272200/ref=sr_1_3?dchild=1&keywords=linux+programming+interface&qid=1628305669&sr=8-3)
 
 ### Next in line
 
+- [ ] (book) [Programming Typescript](https://www.oreilly.com/library/view/programming-typescript/9781492037644/)
+- [ ] (course) [Complete Intro to Databases](https://frontendmasters.com/courses/databases/)
+- [ ] (course) [Algoexpert - AlgoExpert - 160 questions](https://www.algoexpert.io)
 - [ ] (course) [VIM fundamentals](https://frontendmasters.com/courses/vim-fundamentals)
 - [ ] (book) [Discrete Mathematics lecture notes by Laszlo Lovasz (direct download)](http://www.cs.elte.hu/~lovasz/dmbook.ps)
 - [ ] (project + book) [Arduino Projects Book](https://bastiaanvanhengel.files.wordpress.com/2016/06/arduino_projects_book.pdf)
@@ -76,7 +78,6 @@ Here's a list of all courses I'm planning to take. They're mostly taken from the
 - [ ] [(only available in Polish) Zrozumiec Programowanie](https://ksiegarnia.pwn.pl/Zrozumiec-programowanie,688790689,p.html)
 - [ ] [Computer Networking: A Top-Down Approach](https://www.amazon.com/Computer-Networking-Top-Down-Approach-7th/dp/0133594149)
 - [ ] [Crafting Interpreters](https://craftinginterpreters.com/)
-- [ ] [Designing Data-Intensive Applications](https://www.amazon.com/Designing-Data-Intensive-Applications-Reliable-Maintainable/dp/1449373321)
 - [ ] [100 LeetCode Questions](https://www.amazon.com/Cracking-Coding-Interview-Programming-Questions/dp/0984782850)
 - [ ] [Advent of Code - all challenges from years 2015-2020](https://adventofcode.com/)
 - [ ] [Oh shit git](https://wizardzines.com/zines/oh-shit-git/)
