@@ -1,5 +1,9 @@
     four spaces
-eight tabs
+								eight tabs
 another line
 another one. that and the next will make four newlines
+
+\ this was a single slash
+
+\\ this was two of them
 
