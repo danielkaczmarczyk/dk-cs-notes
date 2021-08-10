@@ -1,6 +1,8 @@
 # C
 
-Exercises:
+## Exercises
+
+### Chapter 1
 
 [x] 1-1
 [x] 1-2
@@ -17,4 +19,10 @@ Exercises:
 [x] 1-13
 [x] 1-14
 [x] 1-15
+[ ] 1-16 to 1-24 skipping 
+
+### Chapter 2
+
+[ ] 2-1
+
 
