@@ -38,7 +38,5 @@ int main(void) {
 
   middle = makepoint((screen.pt1.x + screen.pt2.x) / 2,
                      (screen.pt1.y + screen.pt2.y) / 2);
-
   return 0;
- 
 }
