@@ -14,8 +14,12 @@ void print( int (*f)(int) ) {
 int main(int argc, char *argv[]) {
   if (strcmp(argv[1], "upper") == 0) {
     print(toupper);
+    return 0;
   } else if (strcmp(argv[1], "lower") == 0) {
     print(tolower);
-  }
+    return 0;
+  } 
+  printf("Invalid command.\n");
+  return 1;
 }
 
