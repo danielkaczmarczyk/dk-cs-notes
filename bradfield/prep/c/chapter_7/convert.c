@@ -2,6 +2,8 @@
 #include <string.h>
 #include <ctype.h>
 
+// function that accepts pointer to a function
+// as an argument
 void print( int (*f)(int) ) {
   int c;
   while ((c = getchar()) != EOF) {
@@ -9,14 +11,10 @@ void print( int (*f)(int) ) {
   }
 }
 
-
 int main(int argc, char *argv[]) {
-  // available options
-  char upper[] = "upper";
-  char lower[] = "lower";
-  if (strcmp(argv[1], upper) == 0) {
+  if (strcmp(argv[1], "upper") == 0) {
     print(toupper);
-  } else if (strcmp(argv[1], lower) == 0) {
+  } else if (strcmp(argv[1], "lower") == 0) {
     print(tolower);
   }
 }
