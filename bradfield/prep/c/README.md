@@ -2,6 +2,10 @@
 
 ## Exercises
 
+## Resources
+
+- [Notes on Data Structures and Programming Techniques - Yale CPSC 223](cs.yale.edu/homes/aspnes/classes/223/notes.html)
+
 ### Chapter 1
 
 [x] 1-1

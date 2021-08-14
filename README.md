@@ -51,6 +51,7 @@ Here's a list of all courses I'm planning to take. They're mostly taken from the
 
 - [ ] (book) [Programming Typescript](https://www.oreilly.com/library/view/programming-typescript/9781492037644/)
 - [ ] (course) [Complete Intro to Databases](https://frontendmasters.com/courses/databases/)
+- [ ] (book) [Interactive Linear Algebra](http://textbooks.math.gatech.edu/ila/overview.html)
 - [ ] (course) [Algoexpert - AlgoExpert - 160 questions](https://www.algoexpert.io)
 - [ ] (course) [VIM fundamentals](https://frontendmasters.com/courses/vim-fundamentals)
 - [ ] (book) [Discrete Mathematics lecture notes by Laszlo Lovasz (direct download)](http://www.cs.elte.hu/~lovasz/dmbook.ps)
