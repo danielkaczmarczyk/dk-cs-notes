@@ -75,8 +75,6 @@ void parse_flags(int argc, char **argv, int *direction) {
   printf("parsing flags complete...\n");
 }
 
-// use binary numbers for config?
-
 int main(int argc, char **argv) {
   if (DEBUG_ON) printf("DEBUG MODE: ON\n");
   if (DEBUG_ON) printf("--------------\n");
@@ -125,15 +123,18 @@ int main(int argc, char **argv) {
   exit(EXIT_SUCCESS);
 }
 
-
 /* 
  * TODO
  *
+ * I want a nicer way to log debug messages.
+ * How do I pass a varied amount of arguments to a function? I could write a logger
+ * function that takes a template string and an amount of arguments to be passed to printf.
+ *
+ * definition of done:
  * - [ ] implement flag handling
  *  - [x] r
+ *  - [ ] d (for debug)
  *  - [ ] a
  *  - [ ] l
  *  - [ ] h
- * - [ ] write tests
- *
  */
