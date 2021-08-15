@@ -12,30 +12,21 @@
 
 #define true 1
 #define false 0
+#define bool int
 
 #define DEBUG_ON 1
 
-// get a macro for swapping directions?
-int starts_with(const char *string, const char c) {
+#define _for(x) for (int i = 0; i < x ; i++) {
+#define __for(x) for (int i = x; i > 0; i--) {
+
+bool starts_with(const char *string, const char c) {
   return string[0] == c;
 }
 
-
-#define for_up(x) for (int i = 0; i < x ; i++) {
-#define for_down(x) for (int i = x; i > 0; i--) {
-
-
 void print_entries(int direction, int file_count, struct dirent **directory_entries) {
-  //(direction == true) ? for_up(file_count) : for_down(file_count);
-
-  direction == true ? for_up(file_count) : for_down(file_count);
-    printf("hello\n");
-  }
-
   if (direction == DIR_N) {
     int i = 0;
     while (i < file_count) {
-      // prints name of file
       char *entry = directory_entries[i]->d_name;
         if (!starts_with(entry, '.')) {
           printf("%s ", entry); 
@@ -52,26 +43,43 @@ void print_entries(int direction, int file_count, struct dirent **directory_entr
   }
 }
 
-// void get_file_stats(char *filename, struct stat *stbuf) {
-//   stat(filename, stbuf);
-//   
-//     char *name = ".";
-//     struct stat stbuf;
-//     
-//     // man 2 stat to look up details
-//     stat(name, &stbuf);
-//   
-//       printf("no argument specified. acting on cwd.\n");
-//       printf("%llu\n", stbuf.st_ino);
-//       printf("%u\n", stbuf.st_uid);
-//       printf("%u\n", stbuf.st_gid);
-//       printf("%u\n", stbuf.st_rdev);
-//     }
-// }
+/*
+ * file OR directory - same thing
+ */
+void get_file_stats(char *filename, struct stat *stbuf) {
+  // man 2 stat to look up details
+  stat(filename, stbuf);
 
+  printf("no argument specified. acting on cwd.\n");
+  printf("%llu\n", stbuf->st_ino);
+  printf("%u\n", stbuf->st_uid);
+  printf("%u\n", stbuf->st_gid);
+  printf("%u\n", stbuf->st_rdev);
+}
+
+// make it accept a pointer to array to the config
+void parse_flags(int argc, char **argv, int *direction) {
+  int flag;
+  printf("parsing flags...\n");
+  while ((flag = getopt(argc, argv, "r")) != -1) {
+    printf("flag: %d\n", flag);
+    switch(flag) {
+      case 'r':
+        if (DEBUG_ON) printf("setting direction: reverse\n");
+        *direction = 1;
+        break;
+      default:
+        printf("usage: -[r]\n");
+    }
+  }
+  printf("parsing flags complete...\n");
+}
+
+// use binary numbers for config?
 
 int main(int argc, char **argv) {
   if (DEBUG_ON) printf("DEBUG MODE: ON\n");
+  if (DEBUG_ON) printf("--------------\n");
 
   int direction = 0; // normal=0, reverse=1
   int flag;
@@ -90,6 +98,7 @@ int main(int argc, char **argv) {
   }
   printf("parsing flags complete...\n");
 
+  // get the directory entries
   struct dirent **directory_entries;
   int file_count;
   char *directory = ".";
