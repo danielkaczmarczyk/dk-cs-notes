@@ -2,8 +2,10 @@ package main
 
 import (
 	"fmt"
+    "encoding/csv"
     //"net"
-    "net/url"
+    "io/ioutil"
+    //"net/url"
 	"io"
 	"net/http"
 	"os"
@@ -25,15 +27,37 @@ func main() {
     // additional goroutines.
 	ch := make(chan string)
     fmt.Printf("before creating channels\n")
-	for _, url := range os.Args[1:] {
-		go fetch(url, ch) // start a goroutine
+
+    // get all csv 
+
+    type website struct {
+        i string
+        url string
+    }
+
+    csvFile, err := os.Open("top-1m.csv")
+    if err != nil {
+        fmt.Println(err)
+    }
+    fmt.Println("Successfully opened the csv file.")
+    defer csvFile.Close()
+
+    csvLines, err := csv.NewReader(csvFile).ReadAll()
+
+    for _, line := range csvLines {
+        site := website {
+            i: line[0],
+            url: line[1],
+        }
+        fmt.Println("fetching " + site.url)
+        go fetch("https://" + site.url, ch) // start a goroutine
 	}
-    fmt.Printf("between creating channels and prints from the chcannel\n")
-	for range os.Args[1:] {
+
+	for range csvLines {
 		fmt.Println(<-ch) // receive from channel ch
 	}
+
 	fmt.Printf("%.2fs elapsed\n", time.Since(start).Seconds())
-    fmt.Printf("after the channels\n")
 }
 
 func fetch(src_url string, ch chan<- string) {
@@ -44,17 +68,17 @@ func fetch(src_url string, ch chan<- string) {
 		return
 	}
 
-    u, err := url.Parse(src_url)
+    //u, err := url.Parse(src_url)
 
-    w, err := os.Create(u.Host + ".out.html")
-    if err != nil {
-        panic(err)
-    }
+    // w, err := os.Create(u.Host + ".out.html")
+    // if err != nil {
+    //     panic(err)
+    // }
     // defer defers the execution of the function
     // until the surrounding function returns
-    defer w.Close()
+    //defer w.Close()
 
-	nbytes, err := io.Copy(w, resp.Body)
+	nbytes, err := io.Copy(ioutil.Discard, resp.Body)
 	resp.Body.Close() // don't leak resources
 	if err != nil {
 		ch <- fmt.Sprintf("while reading %s: %v", src_url, err)
