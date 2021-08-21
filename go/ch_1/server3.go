@@ -10,6 +10,7 @@ import (
 	"math"
 	"math/rand"
 	"net/http"
+	"strconv"
 	"sync"
 )
 
@@ -24,22 +25,23 @@ const (
 	blackIndex = 2 // third color in the palette
 )
 
-func lissajous(out io.Writer) {
+func lissajous(out io.Writer, cycles int) {
 	const (
-		cycles  = 5      // nubmer of complete oscillations
 		res     = 0.0001 // angular resolution
 		size    = 200    // image canvas covers [-size..+size]
 		nframes = 100    // number of animation frames
 		delay   = 4      // delay between the frames in 10ms units
 	)
 
+	var cycles_float float64
+	cycles_float = float64(cycles)
 	freq := rand.Float64() * 3.0 // relative frequency of the y oscillator
 	anim := gif.GIF{LoopCount: nframes}
 	phase := 0.0 // phase difference
 	for i := 0; i < nframes; i++ {
 		rect := image.Rect(0, 0, 2*size+1, 2*size+1)
 		img := image.NewPaletted(rect, palette)
-		for t := 0.0; t < cycles*2*math.Pi; t += res {
+		for t := 0.0; t < cycles_float*2*math.Pi; t += res {
 			x := math.Sin(t)
 			y := math.Sin(t*freq + phase)
 			img.SetColorIndex(size+int(x*size+0.5), size+int(y*size+0.5), blackIndex)
@@ -54,7 +56,14 @@ func lissajous(out io.Writer) {
 
 func main() {
 	handler := func(w http.ResponseWriter, r *http.Request) {
-		lissajous(w)
+		query := r.URL.Query()
+		fmt.Printf("query: %s\n", query)
+		var cycles string
+		cycles = query.Get("cycles")
+		fmt.Printf("value of cycles: %s", cycles)
+		var cycles_int int
+		cycles_int, _ = strconv.Atoi(cycles)
+		lissajous(w, cycles_int)
 	}
 	http.HandleFunc("/", handler)
 	http.HandleFunc("/count", counter)
