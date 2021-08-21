@@ -21,8 +21,9 @@ func main() {
 		if err != nil {
 			panic(err)
 		}
-        fmt.Printf("status: %s", resp.Status)
+        fmt.Printf("status: %s\n", resp.Status)
 		fmt.Printf("The number of bytes are: %d\n", bytes)
+        fmt.Printf("response:\n, %v", resp.Body) 
 	}
     fmt.Printf("%.2fs elapsed\n", time.Since(start).Seconds())
 }

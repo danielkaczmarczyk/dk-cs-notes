@@ -1,23 +1,30 @@
-package lissajous
+package main
 
 import (
+	"fmt"
 	"image"
 	"image/color"
 	"image/gif"
 	"io"
+	"log"
 	"math"
 	"math/rand"
+	"net/http"
+	"sync"
 )
+
+var mu sync.Mutex
+var count int
 
 var palette = []color.Color{color.Black, color.RGBA{0x23, 0xf1, 0xba, 0xff}, color.White}
 
 const (
 	whiteIndex = 0 // first color in the palette
-    greenIndex = 1 // second color
+	greenIndex = 1 // second color
 	blackIndex = 2 // third color in the palette
 )
 
-func Lissajous(out io.Writer) {
+func lissajous(out io.Writer) {
 	const (
 		cycles  = 5      // nubmer of complete oscillations
 		res     = 0.0001 // angular resolution
@@ -43,4 +50,36 @@ func Lissajous(out io.Writer) {
 
 	}
 	gif.EncodeAll(out, &anim) // ignoring errors btw
+}
+
+func main() {
+	handler := func(w http.ResponseWriter, r *http.Request) {
+		lissajous(w)
+	}
+	http.HandleFunc("/", handler)
+	http.HandleFunc("/count", counter)
+	log.Fatal(http.ListenAndServe("localhost:8000", nil))
+}
+
+// handler echoes the Path component of the requested URL.
+func handler(w http.ResponseWriter, r *http.Request) {
+	fmt.Fprintf(w, "%s %s %s\n", r.Method, r.URL, r.Proto)
+	for k, v := range r.Header {
+		fmt.Fprintf(w, "Header[%q] = %q\n", k, v)
+	}
+	fmt.Fprintf(w, "Host = %q\n", r.Host)
+	fmt.Fprintf(w, "RemoteAddr = %q\n", r.RemoteAddr)
+	if err := r.ParseForm(); err != nil {
+		log.Print(err)
+	}
+	for k, v := range r.Form {
+		fmt.Fprintf(w, "Form[%q] = %q\n", k, v)
+	}
+}
+
+// counter echoes the number of calls so far.
+func counter(w http.ResponseWriter, r *http.Request) {
+	mu.Lock()
+	fmt.Fprintf(w, "Count %d\n", count)
+	mu.Unlock()
 }
