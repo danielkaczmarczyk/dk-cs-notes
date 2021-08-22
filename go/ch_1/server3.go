@@ -63,6 +63,9 @@ func main() {
 		fmt.Printf("value of cycles: %s", cycles)
 		var cycles_int int
 		cycles_int, _ = strconv.Atoi(cycles)
+        if cycles_int < 1 {
+            cycles_int = 1
+        }
 		lissajous(w, cycles_int)
 	}
 	http.HandleFunc("/", handler)
