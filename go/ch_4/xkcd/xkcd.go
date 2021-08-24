@@ -5,8 +5,11 @@ import (
 	"encoding/json"
 	"fmt"
 	"io/ioutil"
+	"log"
 	"net/http"
 	"os"
+	"strings"
+	"time"
 )
 
 type Comics struct {
@@ -14,10 +17,10 @@ type Comics struct {
 }
 
 type Comic struct {
-	Day        string    
-	Month      string 
-	Num        int    
-    Year       string
+	Day        string
+	Month      string
+	Num        int
+	Year       string
 	News       string
 	Title      string
 	SafeTitle  string
@@ -25,6 +28,8 @@ type Comic struct {
 	Img        string
 	Alt        string
 }
+
+var comics Comics
 
 func printComic(comic Comic) {
 	fmt.Println("num: ", comic.Num)
@@ -40,7 +45,16 @@ func printComic(comic Comic) {
 	fmt.Println("-----------------------")
 }
 
+func track(msg string) (string, time.Time) {
+	return msg, time.Now()
+}
+
+func duration(msg string, start time.Time) {
+	log.Printf("%v: %v\n", msg, time.Since(start))
+}
+
 func loadJSON() {
+	defer duration(track("loading json"))
 	// read the json file into memory
 	jsonFile, err := os.Open("xkcd.json")
 	check(err)
@@ -48,18 +62,12 @@ func loadJSON() {
 	defer jsonFile.Close()
 
 	byteValue, _ := ioutil.ReadAll(jsonFile)
-	var comics Comics
 
 	// parse in as an array of Comic structs
 	json.Unmarshal(byteValue, &comics)
 
-	for _, comic := range comics.Comics {
-        fmt.Println("printing comic")
-		printComic(comic)
-	}
-
-	// declare a global var with the necessary size
-
+	count := len(comics.Comics)
+	fmt.Printf("%d comics loaded into memory\n", count)
 }
 
 func getURL(comicId int) (url string) {
@@ -116,8 +124,25 @@ func downloadAll() {
 	w.Flush()
 }
 
+func checkText(query string, comic Comic) bool {
+	var inTitle bool = strings.Contains(comic.Title, query)
+	var inAlt bool = strings.Contains(comic.Alt, query)
+	var inTranscript bool = strings.Contains(comic.Transcript, query)
+
+	return inTitle || inAlt || inTranscript
+}
+
+func search(query string) {
+	for _, comic := range comics.Comics {
+		if checkText(query, comic) {
+			printComic(comic)
+		}
+	}
+}
+
 func main() {
 	loadJSON()
+	search("broke up")
 }
 
 // TODO
