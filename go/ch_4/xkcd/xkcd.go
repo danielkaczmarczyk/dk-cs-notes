@@ -14,10 +14,10 @@ type Comics struct {
 }
 
 type Comic struct {
-	Day        int    `json:",string"`
-	Month      string `json:",string"`
+	Day        string    
+	Month      string 
 	Num        int    
-    Year       int  `json:",string"`
+    Year       string
 	News       string
 	Title      string
 	SafeTitle  string
@@ -54,6 +54,7 @@ func loadJSON() {
 	json.Unmarshal(byteValue, &comics)
 
 	for _, comic := range comics.Comics {
+        fmt.Println("printing comic")
 		printComic(comic)
 	}
 
