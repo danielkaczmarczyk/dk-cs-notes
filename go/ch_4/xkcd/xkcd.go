@@ -63,4 +63,4 @@ func main() {
 
 // TODO
 // - [x] generate valid URLs for all comics
-// - [ ] ping each of them and write the JSON results to a file.
+// - [x] ping each of them and write the JSON results to a file.
