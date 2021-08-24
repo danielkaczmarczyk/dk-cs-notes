@@ -12,25 +12,29 @@ func getURL(comicId int) (url string) {
 	return "https://xkcd.com/" + fmt.Sprint(comicId) + "/info.0.json"
 }
 
+func check(err error) {
+	if err != nil {
+		panic(err)
+	}
+}
+
 func main() {
-	fmt.Println("Hello XKCD")
-
-	var comicId int = 1
-
-	for comicId < 100 {
-		fmt.Println(getURL(comicId))
-
+	var comicId int = 2503
+	for {
 		resp, err := http.Get(getURL(comicId))
-		if err != nil {
-			log.Fatalln(err)
-		}
+
+        if resp.StatusCode != 200 {
+            break
+        }
+
+        check(err)
 
 		body, err := ioutil.ReadAll(resp.Body)
-		if err != nil {
-			log.Fatalln(err)
-		}
+
+        check(err)
 
 		stringifiedBody := string(body)
+
 		log.Printf(stringifiedBody)
 
 		comicId += 1
