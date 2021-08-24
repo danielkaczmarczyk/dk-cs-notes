@@ -28,10 +28,10 @@ func main() {
 	var count int = 0
 
 	for {
-        if comicId == 404 {
-            comicId += 1
-            continue
-        }
+		if comicId == 404 {
+			comicId += 1
+			continue
+		}
 
 		count++
 		resp, err := http.Get(getURL(comicId))
@@ -51,7 +51,7 @@ func main() {
 		n, err := w.WriteString(stringifiedBody + "\n")
 		check(err)
 
-        fmt.Printf("%d: Wrote %d bytes\n", count, n)
+		fmt.Printf("%d: Wrote %d bytes\n", count, n)
 
 		w.Flush()
 		comicId += 1
