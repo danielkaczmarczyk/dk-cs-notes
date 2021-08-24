@@ -10,14 +10,14 @@ import (
 )
 
 type Comics struct {
-    Comics []Comic `json:"comics"`
+	Comics []Comic `json:"comics"`
 }
 
 type Comic struct {
-    Day        int `json:",string"`
-	Month      string 
-    Num        int `json:"num"`
-	Year       string
+	Day        int    `json:",string"`
+	Month      string `json:",string"`
+	Num        int    
+    Year       int  `json:",string"`
 	News       string
 	Title      string
 	SafeTitle  string
@@ -27,38 +27,38 @@ type Comic struct {
 }
 
 func printComic(comic Comic) {
-    fmt.Println("num: ", comic.Num)
-    fmt.Println("day: ", comic.Day)
-    fmt.Println("month: ", comic.Month)
-    fmt.Println("year: ", comic.Year)
-    fmt.Println("news: ", comic.News)
-    fmt.Println("title: ", comic.Title)
-    fmt.Println("safeTitle: ", comic.SafeTitle)
-    fmt.Println("transcript: ", comic.Transcript)
-    fmt.Println("img: ", comic.Img)
-    fmt.Println("alt: ", comic.Alt)
-    fmt.Println("-----------------------")
+	fmt.Println("num: ", comic.Num)
+	fmt.Println("day: ", comic.Day)
+	fmt.Println("month: ", comic.Month)
+	fmt.Println("year: ", comic.Year)
+	fmt.Println("news: ", comic.News)
+	fmt.Println("title: ", comic.Title)
+	fmt.Println("safeTitle: ", comic.SafeTitle)
+	fmt.Println("transcript: ", comic.Transcript)
+	fmt.Println("img: ", comic.Img)
+	fmt.Println("alt: ", comic.Alt)
+	fmt.Println("-----------------------")
 }
 
 func loadJSON() {
 	// read the json file into memory
-    jsonFile, err := os.Open("xkcd.json")
-    check(err)
-    fmt.Println("successfully opened xkcd.json")
-    defer jsonFile.Close()
+	jsonFile, err := os.Open("xkcd.json")
+	check(err)
+	fmt.Println("successfully opened xkcd.json")
+	defer jsonFile.Close()
 
-    byteValue, _ := ioutil.ReadAll(jsonFile)
-    var comics Comics
+	byteValue, _ := ioutil.ReadAll(jsonFile)
+	var comics Comics
 
 	// parse in as an array of Comic structs
-    json.Unmarshal(byteValue, &comics)
-   
-    for _, comic := range comics.Comics {
-        printComic(comic)
-    }
+	json.Unmarshal(byteValue, &comics)
+
+	for _, comic := range comics.Comics {
+		printComic(comic)
+	}
 
 	// declare a global var with the necessary size
-     
+
 }
 
 func getURL(comicId int) (url string) {
@@ -116,7 +116,7 @@ func downloadAll() {
 }
 
 func main() {
-    loadJSON()
+	loadJSON()
 }
 
 // TODO
