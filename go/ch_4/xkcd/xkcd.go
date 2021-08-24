@@ -1,11 +1,11 @@
-// download each URL once, and build an offline index.
 package main
 
 import (
+	"bufio"
 	"fmt"
 	"io/ioutil"
-	"log"
 	"net/http"
+	"os"
 )
 
 func getURL(comicId int) (url string) {
@@ -23,20 +23,26 @@ func main() {
 	for {
 		resp, err := http.Get(getURL(comicId))
 
-        if resp.StatusCode != 200 {
-            break
-        }
+		if resp.StatusCode != 200 {
+			break
+		}
 
-        check(err)
+		check(err)
 
 		body, err := ioutil.ReadAll(resp.Body)
 
-        check(err)
+		check(err)
 
 		stringifiedBody := string(body)
 
-		log.Printf(stringifiedBody)
+		f, err := os.Create("./xkcd.json")
+		w := bufio.NewWriter(f)
 
+        n, err := w.WriteString(stringifiedBody)
+        check(err)
+        fmt.Printf("Wrote %d bytes\n", n)
+
+        w.Flush()
 		comicId += 1
 	}
 
