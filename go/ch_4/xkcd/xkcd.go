@@ -20,32 +20,40 @@ func check(err error) {
 
 func main() {
 	var comicId int = 2503
+	f, err := os.Create("./xkcd.json")
+	check(err)
+	w := bufio.NewWriter(f)
+    w.WriteString("{\"comics\": [\n")
+    
+    var count int = 0
+
 	for {
+        count++
 		resp, err := http.Get(getURL(comicId))
 
 		if resp.StatusCode != 200 {
 			break
 		}
 
-		check(err)
-
 		body, err := ioutil.ReadAll(resp.Body)
-
 		check(err)
 
 		stringifiedBody := string(body)
 
-		f, err := os.Create("./xkcd.json")
-		w := bufio.NewWriter(f)
+        if count != 1 {
+            w.WriteString(",")
+        }
+		n, err := w.WriteString(stringifiedBody + "\n")
+		check(err)
 
-        n, err := w.WriteString(stringifiedBody)
-        check(err)
-        fmt.Printf("Wrote %d bytes\n", n)
+		fmt.Printf("Wrote %d bytes\n", n)
 
-        w.Flush()
+		w.Flush()
 		comicId += 1
 	}
 
+    w.WriteString("]}\n")
+    w.Flush()
 }
 
 // TODO
