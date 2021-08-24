@@ -23,12 +23,12 @@ func main() {
 	f, err := os.Create("./xkcd.json")
 	check(err)
 	w := bufio.NewWriter(f)
-    w.WriteString("{\"comics\": [\n")
-    
-    var count int = 0
+	w.WriteString("{\"comics\": [\n")
+
+	var count int = 0
 
 	for {
-        count++
+		count++
 		resp, err := http.Get(getURL(comicId))
 
 		if resp.StatusCode != 200 {
@@ -40,9 +40,9 @@ func main() {
 
 		stringifiedBody := string(body)
 
-        if count != 1 {
-            w.WriteString(",")
-        }
+		if count != 1 {
+			w.WriteString(",")
+		}
 		n, err := w.WriteString(stringifiedBody + "\n")
 		check(err)
 
@@ -52,8 +52,8 @@ func main() {
 		comicId += 1
 	}
 
-    w.WriteString("]}\n")
-    w.Flush()
+	w.WriteString("]}\n")
+	w.Flush()
 }
 
 // TODO
