@@ -3,7 +3,8 @@ package main
 
 import (
 	"fmt"
-    "log"
+	"io/ioutil"
+	"log"
 	"net/http"
 )
 
@@ -20,9 +21,17 @@ func main() {
 		fmt.Println(getURL(comicId))
 
 		resp, err := http.Get(getURL(comicId))
-        if err != nil {
-            log.Fatalln(err)
-        }
+		if err != nil {
+			log.Fatalln(err)
+		}
+
+		body, err := ioutil.ReadAll(resp.Body)
+		if err != nil {
+			log.Fatalln(err)
+		}
+
+		stringifiedBody := string(body)
+		log.Printf(stringifiedBody)
 
 		comicId += 1
 	}
@@ -30,5 +39,5 @@ func main() {
 }
 
 // TODO
-// - [ ] generate valid URLs for all comics
+// - [x] generate valid URLs for all comics
 // - [ ] ping each of them and write the JSON results to a file.
