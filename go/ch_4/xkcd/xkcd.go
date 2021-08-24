@@ -19,7 +19,7 @@ func check(err error) {
 }
 
 func main() {
-	var comicId int = 2503
+	var comicId int = 1
 	f, err := os.Create("./xkcd.json")
 	check(err)
 	w := bufio.NewWriter(f)
@@ -28,6 +28,11 @@ func main() {
 	var count int = 0
 
 	for {
+        if comicId == 404 {
+            comicId += 1
+            continue
+        }
+
 		count++
 		resp, err := http.Get(getURL(comicId))
 
@@ -46,7 +51,7 @@ func main() {
 		n, err := w.WriteString(stringifiedBody + "\n")
 		check(err)
 
-		fmt.Printf("Wrote %d bytes\n", n)
+        fmt.Printf("%d: Wrote %d bytes\n", count, n)
 
 		w.Flush()
 		comicId += 1
