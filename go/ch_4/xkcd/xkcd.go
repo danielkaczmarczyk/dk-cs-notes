@@ -64,3 +64,8 @@ func main() {
 // TODO
 // - [x] generate valid URLs for all comics
 // - [x] ping each of them and write the JSON results to a file.
+// - [ ] write a fn that loads the json into memory using structs
+// - [ ] write a search index function that builds a text index (per word?)
+// - [ ] enable querying
+// - [ ] write a concurrent version that can fetch comics faster
+// - [ ] write a concurrent search that searches faster (search by batches/buckets)
