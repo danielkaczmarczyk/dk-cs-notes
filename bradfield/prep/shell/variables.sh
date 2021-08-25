@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -e
+
 NUM_APPLES=5
 APPLE_PRICE=10
 echo "There are $NUM_APPLES in my pocket."
@@ -21,4 +23,11 @@ FILENAME_WITH_TIMESAMP=/bin/bash_$(/bin/date +%Y-%m-%d).txt
 
 echo $FILENAME_WITH_TIMESAMP
 
+# task
 
+echo "----------------------"
+
+BIRTHDATE="Jan 1, 2000"
+BIRTHDAY=`date -d $BIRTHDATE +%A`
+
+echo $BIRTHDAY 
