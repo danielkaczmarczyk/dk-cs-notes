@@ -70,8 +70,14 @@ func loadJSON() {
 	fmt.Printf("%d comics loaded into memory\n", count)
 }
 
-func getURL(comicId int) (url string) {
-	return "https://xkcd.com/" + fmt.Sprint(comicId) + "/info.0.json"
+func getURL(comicId int, json bool) string {
+	url := "https//xkcd.com/" + fmt.Sprint(comicId)
+
+	if json {
+		url += "/info.0.json"
+	}
+
+	return url
 }
 
 func check(err error) {
@@ -97,7 +103,7 @@ func downloadAll() {
 		}
 
 		count++
-		resp, err := http.Get(getURL(comicId))
+		resp, err := http.Get(getURL(comicId, true))
 
 		if resp.StatusCode != 200 {
 			break
@@ -135,7 +141,7 @@ func checkText(query string, comic Comic) bool {
 func search(query string) {
 	for _, comic := range comics.Comics {
 		if checkText(query, comic) {
-			fmt.Printf("Found your comic at: %s\n", getURL(comic.Num))
+			fmt.Printf("Found your comic at: %s\n", getURL(comic.Num, false))
 		}
 	}
 }
@@ -149,5 +155,5 @@ func main() {
 // - [x] generate valid URLs for all comics
 // - [x] ping each of them and write the JSON results to a file.
 // - [x] write a fn that loads the json into memory using structs
-// - [ ] write a search function
-// - [ ] enable querying
+// - [x] write a search function
+// - [ ] enable querying through cli args
