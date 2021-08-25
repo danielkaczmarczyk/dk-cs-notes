@@ -1,38 +1,38 @@
 Text processing
 
-- [ ] grep
-- [ ] sort
-- [ ] uniq
-- [ ] cut
-- [ ] wc
-- [ ] sed
-- [ ] strings
-- [ ] head
-- [ ] tail
-- [ ] awk
+- [x] grep
+- [x] sort
+- [x] uniq
+- [x] cut
+- [x] wc
+- [x] sed
+- [x] strings
+- [x] head
+- [x] tail
+- [x] awk
 
 Process management
 
-- [ ] ps
-- [ ] fg
-- [ ] bg
-- [ ] jobs
-- [ ] kill
+- [x] ps
+- [x] fg
+- [x] bg
+- [x] jobs
+- [x] kill
 
 Filesystem
 
-- [ ] cd
-- [ ] cat
-- [ ] cp
-- [ ] rm
-- [ ] ls
-- [ ] mv
-- [ ] ln
-- [ ] file
-- [ ] chmod
-- [ ] chown
-- [ ] du
-- [ ] mkdir
+- [x] cd
+- [x] cat
+- [x] cp
+- [x] rm
+- [x] ls
+- [x] mv
+- [x] ln
+- [x] file
+- [x] chmod
+- [x] chown
+- [x] du
+- [x] mkdir
 - [ ] mkfifo
 
 Shell use
