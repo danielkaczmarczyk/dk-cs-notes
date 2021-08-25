@@ -1,3 +1,3 @@
-#!/bin/zsh
+#!/bin/bash
 
 echo "Hello, world!"
