@@ -4,6 +4,16 @@ This document is my record of work towards a Self-Taught equivalent of a CS degr
 
 The purpose of this repository is twofold - to keep myself organised and accountable, and also to be able to share my experience with other people who are undertaking a similar challenge of completing this curriculum.
 
+## Summer 2021 Update
+
+Time flies. I've been working on my cs knowledge since Dec 2020, and ATOW it's August 2021. Since then I've actually enrolled in a [intensive computer science course offered by Bradfield](https://bradfieldcs.com/csi/). For transparency - it's offered by the authors of the [teachyourselfcs](https://teachyourselfcs.com) curriculum. That means that the title of this repository, and by extension, the actual notion of teaching _yourself_ cs changes a little bit, since I'm actually enrolled in an institution where I'm being taught. Nonetheless, I am going to keep maintaining it and adding it for visibility, inspiration, accountability, and numerous amount of other reasons, and I'm sure its maintenance will outlive taking that course.
+
+For those of you who found this repository since I have started it and messaged me about it - thank you, I'm glad it's inspiring action!
+
+Anyhow, that's all for now. Good times ahead. Updates to follow.
+
+Over and out.
+
 ## Table of Contents
 
 - [Progress](#progress)
@@ -13,7 +23,7 @@ The purpose of this repository is twofold - to keep myself organised and account
 
 ## Progress
 
-Here's a list of all courses I'm planning to take. They're mostly taken from the [tycs](teachyourselfcs.com) website, which I'm treating as a central point of my curriculum, but I've been adding other resources as I was exploring varous avenues. The content and topics vary, and over the months of maintaining this list I have found myself diverting form the original course, and coming back, and generally noting down things that I've done, cause they were interesting at the time. I became a record of my interests.
+Here's a list of all courses I'm planning to take. They're mostly taken from the [tycs](teachyourselfcs.com) website, which I'm treating as a central point of my curriculum, but I've been adding other resources as I was exploring varous avenues. The content and topics vary, and over the months of maintaining this list I have found myself diverting form the original course, and coming back, and generally noting down things that I've done, cause they were interesting at the time. I became a record of my interests. _update August 2021_: Also, it hosts a scrapbook notepad of my notes from [Bradfield](https://bradfieldcs.com/csi).
 
 ### Completed
 
@@ -41,6 +51,7 @@ Here's a list of all courses I'm planning to take. They're mostly taken from the
 - [x] (video) [What is a File Format?](https://www.youtube.com/watch?v=VVdmmN0su6E) Quick watch that may teach you a lot about files even if you think you know a bit or two.
 - [x] (course) [Tree and Graph Data Structures](https://frontendmasters.com/courses/trees-and-graphs) A course that doesn't go in as much depth as I'd like it to, but has helped in re-hashing a few things and enabled me to organize some knowledge in my mind.
 - [x] (book) [The Secret Life of Programs: Understand Computers -- Craft Better Code by Jonathan E. Steinheart](https://www.amazon.com/Secret-Life-Programs-Understand-Computers-ebook/dp/B07PCKLDW1) **VERY IMPORTANT READ**. Along with C.O.D.E (see above), two of the most important books that I've encountered so far. Full of great details about things that really matter. Every page is packed with crucial, well described information.
+- [x] (book) [The Go Programming Language](https://www.amazon.com/Programming-Language-Addison-Wesley-Professional-Computing/dp/0134190440) Done for my coursework at Bradfield, and I am happy I stumbled upon it. Go feels great, is very similar to C, but "better" in many ways. I've enjoyed learning about it. The book itself is very challenge oriented, there's plenty of examples, and very similarly to K&R, you're probably going to learn a lot about computer science when learning Go, if you're not v. advanced. I really liked it.
 
 ### Currently working on
 
@@ -49,6 +60,7 @@ Here's a list of all courses I'm planning to take. They're mostly taken from the
 
 ### Next in line
 
+- [ ] (course) I've found a [great resource from Yale University](http://cs.yale.edu/homes/aspnes/classes/223/notes.html) on Data Structures and Programming Techniques, all in C. I am very skeptical about being able to finish it within the time boundaries I'm working with but hey, it's a good aspirational bit.
 - [ ] (book) [Programming Typescript](https://www.oreilly.com/library/view/programming-typescript/9781492037644/)
 - [ ] (course) [Complete Intro to Databases](https://frontendmasters.com/courses/databases/)
 - [ ] (book) [Interactive Linear Algebra](http://textbooks.math.gatech.edu/ila/overview.html)
@@ -69,7 +81,7 @@ Here's a list of all courses I'm planning to take. They're mostly taken from the
 - [ ] (book) [Composing Programs](https://composingprograms.com) Alternative to SICP as per the tycs guide, using Python as examples. I have attempted it early on in the process and didn't like it - the textbook itself is quite dry as it is intended to be used as a textbook alongside an actual course. If I can get access to good quality videos from the CS61A lectures I will probably finish it at a later date.
 - [ ] (video) [CS 186 - DBMS](https://www.youtube.com/user/CS186Berkeley/playlists) This series of database lectures videos I have postponed working with, similarly as Composing Programs, it is intended to be used alongside the course, and that is something to solve for.
 - [ ] (book) [Cracking the Coding Interview](https://www.amazon.com/Cracking-Coding-Interview-Programming-Questions/dp/0984782850) Interviewing is a controversial topic, and this books is the holy grail of a _certain_ kind of interviewing methodology. I am intending to go through most of them, and although it focuses on Java and many challenges are deeply connected to Java and don't translate to _any_ language, studying bits of it, I found great use of the solutions and other explanations of the _attitude_ of solving those problems, moreso than the actual problems themselves, so I am planning to give it a go.
-- [ ] (book) [Computer Systems, a Programmer's Perspective](http://csapp.cs.cmu.edu/3e/home.html) I've started reading it and it's a leviathan of a book - great in size, and quite dense, but nicely laid out. I'm yet to decide how to approach working with such a large text in a way that makes it most useful.
+- [ ] (book) [Computer Systems, a Programmer's Perspective](http://csapp.cs.cmu.edu/3e/home.html) I've started reading it and it's a leviathan of a book - great in size, and quite dense, but nicely laid out. I'm yet to decide how to approach working with such a large text in a way that makes it most useful. Mostly using it as a reference.
 - [ ] (course)[Mathematical Thinking in Computer Science](https://www.coursera.org/learn/what-is-a-proof/home/welcome)
 - [ ] (book) [Algorithm Design Manual](https://www.amazon.com/Algorithm-Design-Manual-Steven-Skiena/dp/1848000693/?pldnSite=1)
 - [ ] (videos) [Gynvael Coldwind's YT Channel, selected content](https://www.youtube.com/watch?v=MM4hDpzFUcA)

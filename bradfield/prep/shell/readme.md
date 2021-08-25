@@ -33,17 +33,17 @@ Filesystem
 - [x] chown
 - [x] du
 - [x] mkdir
-- [ ] mkfifo
+- [ ] mkfifo  ---> that one is interesting!
 
 Shell use
 
-- [ ] man
-- [ ] help
-- [ ] echo
-- [ ] apropos
-- [ ] tee
-- [ ] test
-- [ ] xargs
+- [x] man
+- [x] help
+- [x] echo
+- [x] apropos
+- [x] tee
+- [x] test
+- [x] xargs
 
 Completion Exercise
 
