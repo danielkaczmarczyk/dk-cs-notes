@@ -71,7 +71,7 @@ func loadJSON() {
 }
 
 func getURL(comicId int, json bool) string {
-	url := "https//xkcd.com/" + fmt.Sprint(comicId)
+    url := "https://xkcd.com/" + fmt.Sprint(comicId)
 
 	if json {
 		url += "/info.0.json"
@@ -148,7 +148,16 @@ func search(query string) {
 
 func main() {
 	loadJSON()
-	search("broke up")
+
+	if len(os.Args[1:]) < 1 {
+		fmt.Println("Cannot perform search. Please add queries")
+        os.Exit(1)
+	}
+
+	for _, arg := range os.Args[1:] {
+        search(arg)
+	}
+
 }
 
 // TODO
@@ -156,4 +165,4 @@ func main() {
 // - [x] ping each of them and write the JSON results to a file.
 // - [x] write a fn that loads the json into memory using structs
 // - [x] write a search function
-// - [ ] enable querying through cli args
+// - [x] enable querying through cli args
