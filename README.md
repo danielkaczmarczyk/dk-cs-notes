@@ -8,7 +8,7 @@ The purpose of this repository is twofold - to keep myself organised and account
 
 Time flies. I've been working on my cs knowledge since Dec 2020, and ATOW it's August 2021. Since then I've actually enrolled in a [intensive computer science course offered by Bradfield](https://bradfieldcs.com/csi/). For transparency - it's offered by the authors of the [teachyourselfcs](https://teachyourselfcs.com) curriculum. That means that the title of this repository, and by extension, the actual notion of teaching _yourself_ cs changes a little bit, since I'm actually enrolled in an institution where I'm being taught. Nonetheless, I am going to keep maintaining it for visibility, inspiration, accountability, and numerous other reasons, and I'm sure its maintenance will outlive taking that course.
 
-For those of you who found this repository since I have started it and messaged me about it - thank you, I'm glad it's inspiring action!
+For those of you who found this repository since I have started it and messaged me about it - thank you, I'm glad it's inspiring action! Although I do often come here to add blog-like notes like this, it is more likely to happen on [my blog](https://reversepolishnotation.com).
 
 Anyhow, that's all for now. Good times ahead. Updates to follow.
 
