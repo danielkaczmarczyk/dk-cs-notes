@@ -135,7 +135,7 @@ func checkText(query string, comic Comic) bool {
 func search(query string) {
 	for _, comic := range comics.Comics {
 		if checkText(query, comic) {
-			printComic(comic)
+			fmt.Printf("Found your comic at: %s\n", getURL(comic.Num))
 		}
 	}
 }
