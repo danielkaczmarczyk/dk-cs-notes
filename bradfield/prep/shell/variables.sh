@@ -10,24 +10,23 @@ echo "Sadly, bash isn't great with arithmetic ;("
 
 GREETING="hello,            world!"
 
-echo $GREETING
 # encapsulating a variable with quotes preservers spacing
 echo "$GREETING"
 
 # substitution can be done using backticks or $()
-files=`ls -alf`
+files=$(ls -alf)
 
 echo "files: ${files}"
 
 FILENAME_WITH_TIMESAMP=/bin/bash_$(/bin/date +%Y-%m-%d).txt
 
-echo $FILENAME_WITH_TIMESAMP
+echo "$FILENAME_WITH_TIMESAMP"
 
 # task
 
 echo "----------------------"
 
 BIRTHDATE="Jan 1, 2000"
-BIRTHDAY=`date -d $BIRTHDATE +%A`
+BIRTHDAY=$(date -d "$BIRTHDATE" +%A)
 
-echo $BIRTHDAY 
+echo "$BIRTHDAY"
