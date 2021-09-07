@@ -1,0 +1,213 @@
+{
+  "continue": {
+    "aicontinue": "\"13_Steps_Lead_Down\"_-_Elvis_Costello.jpg",
+    "clcontinue": "18978754|Articles_with_NARA_identifiers",
+    "pccontinue": "18978754|224",
+    "continue": "||info|pageimages"
+  },
+  "query": {
+    "normalized": [
+      {
+        "from": "apple",
+        "to": "Apple"
+      }
+    ],
+    "pages": {
+      "18978754": {
+        "pageid": 18978754,
+        "ns": 0,
+        "title": "Apple",
+        "categories": [
+          {
+            "ns": 14,
+            "title": "Category:All accuracy disputes"
+          },
+          {
+            "ns": 14,
+            "title": "Category:All pages needing factual verification"
+          },
+          {
+            "ns": 14,
+            "title": "Category:Apples"
+          },
+          {
+            "ns": 14,
+            "title": "Category:Articles containing French-language text"
+          },
+          {
+            "ns": 14,
+            "title": "Category:Articles containing Middle English (1100-1500)-language text"
+          },
+          {
+            "ns": 14,
+            "title": "Category:Articles containing Old English (ca. 450-1100)-language text"
+          },
+          {
+            "ns": 14,
+            "title": "Category:Articles containing Proto-Germanic-language text"
+          },
+          {
+            "ns": 14,
+            "title": "Category:Articles containing Proto-Indo-European-language text"
+          },
+          {
+            "ns": 14,
+            "title": "Category:Articles with 'species' microformats"
+          },
+          {
+            "ns": 14,
+            "title": "Category:Articles with LCCN identifiers"
+          }
+        ],
+        "anoncontributors": 1325,
+        "contributors": [
+          {
+            "userid": 17980321,
+            "name": "Nitpicking polish"
+          },
+          {
+            "userid": 2153309,
+            "name": "Peter coxhead"
+          },
+          {
+            "userid": 2666701,
+            "name": "Chiswick Chap"
+          },
+          {
+            "userid": 194203,
+            "name": "Graham87"
+          },
+          {
+            "userid": 29259446,
+            "name": "Pkbwcgs"
+          },
+          {
+            "userid": 9336033,
+            "name": "HJ Mitchell"
+          },
+          {
+            "userid": 27015025,
+            "name": "InternetArchiveBot"
+          },
+          {
+            "userid": 17216044,
+            "name": "RMCD bot"
+          },
+          {
+            "userid": 7611264,
+            "name": "AnomieBOT"
+          },
+          {
+            "userid": 54809,
+            "name": "Utcursch"
+          }
+        ],
+        "contentmodel": "wikitext",
+        "pagelanguage": "en",
+        "pagelanguagehtmlcode": "en",
+        "pagelanguagedir": "ltr",
+        "touched": "2021-09-05T16:06:03Z",
+        "lastrevid": 1036963231,
+        "length": 79249,
+        "thumbnail": {
+          "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Malus_domestica_a1.jpg/50px-Malus_domestica_a1.jpg",
+          "width": 50,
+          "height": 37
+        },
+        "pageimage": "Malus_domestica_a1.jpg"
+      }
+    },
+    "allimages": [
+      {
+        "name": "!!!_(Chk_Chk_Chk)_-_One_Girl_One_Boy_cover_art.jpg",
+        "timestamp": "2017-12-31T06:16:58Z",
+        "url": "https://upload.wikimedia.org/wikipedia/en/b/ba/%21%21%21_%28Chk_Chk_Chk%29_-_One_Girl_One_Boy_cover_art.jpg",
+        "descriptionurl": "https://en.wikipedia.org/wiki/File:!!!_(Chk_Chk_Chk)_-_One_Girl_One_Boy_cover_art.jpg",
+        "descriptionshorturl": "https://en.wikipedia.org/w/index.php?curid=49816251",
+        "ns": 6,
+        "title": "File:!!! (Chk Chk Chk) - One Girl One Boy cover art.jpg"
+      },
+      {
+        "name": "!!!_-_!!!_album_cover.jpg",
+        "timestamp": "2010-05-24T17:22:43Z",
+        "url": "https://upload.wikimedia.org/wikipedia/en/5/5c/%21%21%21_-_%21%21%21_album_cover.jpg",
+        "descriptionurl": "https://en.wikipedia.org/wiki/File:!!!_-_!!!_album_cover.jpg",
+        "descriptionshorturl": "https://en.wikipedia.org/w/index.php?curid=14124672",
+        "ns": 6,
+        "title": "File:!!! - !!! album cover.jpg"
+      },
+      {
+        "name": "!!!_-_Wallop.png",
+        "timestamp": "2019-12-08T23:07:45Z",
+        "url": "https://upload.wikimedia.org/wikipedia/en/1/11/%21%21%21_-_Wallop.png",
+        "descriptionurl": "https://en.wikipedia.org/wiki/File:!!!_-_Wallop.png",
+        "descriptionshorturl": "https://en.wikipedia.org/w/index.php?curid=62534993",
+        "ns": 6,
+        "title": "File:!!! - Wallop.png"
+      },
+      {
+        "name": "!0_Trombones_Like_2_Pianos.jpg",
+        "timestamp": "2016-10-12T06:02:55Z",
+        "url": "https://upload.wikimedia.org/wikipedia/en/9/97/%210_Trombones_Like_2_Pianos.jpg",
+        "descriptionurl": "https://en.wikipedia.org/wiki/File:!0_Trombones_Like_2_Pianos.jpg",
+        "descriptionshorturl": "https://en.wikipedia.org/w/index.php?curid=51956677",
+        "ns": 6,
+        "title": "File:!0 Trombones Like 2 Pianos.jpg"
+      },
+      {
+        "name": "!ClaudiaPascoal.png",
+        "timestamp": "2020-08-15T17:52:39Z",
+        "url": "https://upload.wikimedia.org/wikipedia/en/7/7b/%21ClaudiaPascoal.png",
+        "descriptionurl": "https://en.wikipedia.org/wiki/File:!ClaudiaPascoal.png",
+        "descriptionshorturl": "https://en.wikipedia.org/w/index.php?curid=64947528",
+        "ns": 6,
+        "title": "File:!ClaudiaPascoal.png"
+      },
+      {
+        "name": "!Haunu.ogg",
+        "timestamp": "2019-04-07T04:44:17Z",
+        "url": "https://upload.wikimedia.org/wikipedia/en/b/b2/%21Haunu.ogg",
+        "descriptionurl": "https://en.wikipedia.org/wiki/File:!Haunu.ogg",
+        "descriptionshorturl": "https://en.wikipedia.org/w/index.php?curid=60432898",
+        "ns": 6,
+        "title": "File:!Haunu.ogg"
+      },
+      {
+        "name": "!Hero_(album).jpg",
+        "timestamp": "2012-05-23T01:10:52Z",
+        "url": "https://upload.wikimedia.org/wikipedia/en/7/7a/%21Hero_%28album%29.jpg",
+        "descriptionurl": "https://en.wikipedia.org/wiki/File:!Hero_(album).jpg",
+        "descriptionshorturl": "https://en.wikipedia.org/w/index.php?curid=35907496",
+        "ns": 6,
+        "title": "File:!Hero (album).jpg"
+      },
+      {
+        "name": "!Women_Art_Revolution_(documentary_film)_poster_art.jpg",
+        "timestamp": "2018-01-10T22:44:46Z",
+        "url": "https://upload.wikimedia.org/wikipedia/en/1/18/%21Women_Art_Revolution_%28documentary_film%29_poster_art.jpg",
+        "descriptionurl": "https://en.wikipedia.org/wiki/File:!Women_Art_Revolution_(documentary_film)_poster_art.jpg",
+        "descriptionshorturl": "https://en.wikipedia.org/w/index.php?curid=33662256",
+        "ns": 6,
+        "title": "File:!Women Art Revolution (documentary film) poster art.jpg"
+      },
+      {
+        "name": "\"\"Motor-Cycle\"_LP_cover-Lotti_Golden.jpg",
+        "timestamp": "2018-01-14T22:46:48Z",
+        "url": "https://upload.wikimedia.org/wikipedia/en/1/19/%22%22Motor-Cycle%22_LP_cover-Lotti_Golden.jpg",
+        "descriptionurl": "https://en.wikipedia.org/wiki/File:%22%22Motor-Cycle%22_LP_cover-Lotti_Golden.jpg",
+        "descriptionshorturl": "https://en.wikipedia.org/w/index.php?curid=33004262",
+        "ns": 6,
+        "title": "File:\"\"Motor-Cycle\" LP cover-Lotti Golden.jpg"
+      },
+      {
+        "name": "\"...And_Mother_Makes_Five\".jpg",
+        "timestamp": "2015-06-30T22:39:42Z",
+        "url": "https://upload.wikimedia.org/wikipedia/en/d/d5/%22...And_Mother_Makes_Five%22.jpg",
+        "descriptionurl": "https://en.wikipedia.org/wiki/File:%22...And_Mother_Makes_Five%22.jpg",
+        "descriptionshorturl": "https://en.wikipedia.org/w/index.php?curid=47123102",
+        "ns": 6,
+        "title": "File:\"...And Mother Makes Five\".jpg"
+      }
+    ]
+  }
+}
