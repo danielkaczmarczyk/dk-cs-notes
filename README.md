@@ -51,22 +51,25 @@ Here's a list of all courses I'm planning to take. They're mostly taken from the
 - [x] (video) [What is a File Format?](https://www.youtube.com/watch?v=VVdmmN0su6E) Quick watch that may teach you a lot about files even if you think you know a bit or two.
 - [x] (course) [Tree and Graph Data Structures](https://frontendmasters.com/courses/trees-and-graphs) A course that doesn't go in as much depth as I'd like it to, but has helped in re-hashing a few things and enabled me to organize some knowledge in my mind.
 - [x] (book) [The Secret Life of Programs: Understand Computers -- Craft Better Code by Jonathan E. Steinheart](https://www.amazon.com/Secret-Life-Programs-Understand-Computers-ebook/dp/B07PCKLDW1) **VERY IMPORTANT READ**. Along with C.O.D.E (see above), two of the most important books that I've encountered so far. Full of great details about things that really matter. Every page is packed with crucial, well described information.
-- [x] (book) [The Go Programming Language](https://www.amazon.com/Programming-Language-Addison-Wesley-Professional-Computing/dp/0134190440) Done for my coursework at Bradfield, and I am happy I stumbled upon it. Go feels great, is very similar to C, but "better" in many ways. I've enjoyed learning about it. The book itself is very challenge oriented, there's plenty of examples, and very similarly to K&R, you're probably going to learn a lot about computer science when learning Go, if you're not v. advanced. I really liked it.
+- [x] (book) [The Art of Invisibility](https://www.audible.com/pd/The-Art-of-Invisibility-Audiobook/B01N80UK3J?ref=a_library_t_c5_libItem_&pf_rd_p=80765e81-b10a-4f33-b1d3-ffb87793d047&pf_rd_r=Y6WZCF3162D418HPWH4W). Not a computer science book, but a very interesting read. I found to have known most of the things Mitnick is talking about but it was an entertaning read.
+- [x] (book) [This Is How They Tell Me The World Ends](https://www.audible.com/pd/This-Is-How-They-Tell-Me-the-World-Ends-Audiobook/1635577179?ref=a_library_t_c5_libItem_&pf_rd_p=80765e81-b10a-4f33-b1d3-ffb87793d047&pf_rd_r=Y6WZCF3162D418HPWH4W). Thrilling. If you ever listened to Darknet Diaries, you will like this. Again, not a CS book or edcuation per se, but a gripping story on the threshold of politics and computers.
+- [x] (book) [Sandworm - A New Era of Cyberwar](https://www.audible.com/pd/Sandworm-Audiobook/0593146786?ref=a_library_t_c5_libItem_&pf_rd_p=80765e81-b10a-4f33-b1d3-ffb87793d047&pf_rd_r=Y6WZCF3162D418HPWH4W) Last entry in a row of three books on ifnosec I've literally devoured one after another. Great pace, covers in detail parts of "This Is How They Tell Me The World Ends", going deeper on a specific hacking group.
 
 ### Currently working on
 
+- [ ] (book) [Discrete Mathematics lecture notes by Laszlo Lovasz (direct download)](http://www.cs.elte.hu/~lovasz/dmbook.ps)
 - [ ] (book) [Designing Data-Intensive Applications](https://www.amazon.com/Designing-Data-Intensive-Applications-Reliable-Maintainable/dp/1449373321)
-- [ ] (book) [Linux Programming Interface](https://www.amazon.com/Linux-Programming-Interface-System-Handbook/dp/1593272200/ref=sr_1_3?dchild=1&keywords=linux+programming+interface&qid=1628305669&sr=8-3)
 
 ### Next in line
 
+- [ ] (book) [Linux Programming Interface](https://www.amazon.com/Linux-Programming-Interface-System-Handbook/dp/1593272200/ref=sr_1_3?dchild=1&keywords=linux+programming+interface&qid=1628305669&sr=8-3)
+- [ ] (book) [The Go Programming Language](https://www.amazon.com/Programming-Language-Addison-Wesley-Professional-Computing/dp/0134190440) Done for my coursework at Bradfield, and I am happy I stumbled upon it. Go feels great, is very similar to C, but "better" in many ways. I've enjoyed learning about it. The book itself is very challenge oriented, there's plenty of examples, and very similarly to K&R, you're probably going to learn a lot about computer science when learning Go, if you're not v. advanced. I really liked it.
 - [ ] (course) I've found a [great resource from Yale University](http://cs.yale.edu/homes/aspnes/classes/223/notes.html) on Data Structures and Programming Techniques, all in C. I am very skeptical about being able to finish it within the time boundaries I'm working with but hey, it's a good aspirational bit.
 - [ ] (book) [Programming Typescript](https://www.oreilly.com/library/view/programming-typescript/9781492037644/)
 - [ ] (course) [Complete Intro to Databases](https://frontendmasters.com/courses/databases/)
 - [ ] (book) [Interactive Linear Algebra](http://textbooks.math.gatech.edu/ila/overview.html)
 - [ ] (course) [Algoexpert - AlgoExpert - 160 questions](https://www.algoexpert.io)
 - [ ] (course) [VIM fundamentals](https://frontendmasters.com/courses/vim-fundamentals)
-- [ ] (book) [Discrete Mathematics lecture notes by Laszlo Lovasz (direct download)](http://www.cs.elte.hu/~lovasz/dmbook.ps)
 - [ ] (project + book) [Arduino Projects Book](https://bastiaanvanhengel.files.wordpress.com/2016/06/arduino_projects_book.pdf)
 - [ ] (book) [Grokking Algorithms](https://www.manning.com/books/grokking-algorithms)
 - [ ] (book) [The Effective Engineer]()
