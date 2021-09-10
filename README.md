@@ -54,10 +54,11 @@ Here's a list of all courses I'm planning to take. They're mostly taken from the
 - [x] (book) [The Art of Invisibility](https://www.audible.com/pd/The-Art-of-Invisibility-Audiobook/B01N80UK3J?ref=a_library_t_c5_libItem_&pf_rd_p=80765e81-b10a-4f33-b1d3-ffb87793d047&pf_rd_r=Y6WZCF3162D418HPWH4W). Not a computer science book, but a very interesting read. I found to have known most of the things Mitnick is talking about but it was an entertaning read.
 - [x] (book) [This Is How They Tell Me The World Ends](https://www.audible.com/pd/This-Is-How-They-Tell-Me-the-World-Ends-Audiobook/1635577179?ref=a_library_t_c5_libItem_&pf_rd_p=80765e81-b10a-4f33-b1d3-ffb87793d047&pf_rd_r=Y6WZCF3162D418HPWH4W). Thrilling. If you ever listened to Darknet Diaries, you will like this. Again, not a CS book or edcuation per se, but a gripping story on the threshold of politics and computers.
 - [x] (book) [Sandworm - A New Era of Cyberwar](https://www.audible.com/pd/Sandworm-Audiobook/0593146786?ref=a_library_t_c5_libItem_&pf_rd_p=80765e81-b10a-4f33-b1d3-ffb87793d047&pf_rd_r=Y6WZCF3162D418HPWH4W) Last entry in a row of three books on ifnosec I've literally devoured one after another. Great pace, covers in detail parts of "This Is How They Tell Me The World Ends", going deeper on a specific hacking group.
+- [x] (book) [Discrete Mathematics lecture notes by Laszlo Lovasz (direct download)](http://www.cs.elte.hu/~lovasz/dmbook.ps)
 
 ### Currently working on
 
-- [ ] (book) [Discrete Mathematics lecture notes by Laszlo Lovasz (direct download)](http://www.cs.elte.hu/~lovasz/dmbook.ps)
+- [ ] (video course) [MIT 6.042J Mathematics for Computer Science](https://www.youtube.com/watch?v=L3LMbpZIKhQ&list=PLB7540DEDD482705B) 
 - [ ] (book) [Designing Data-Intensive Applications](https://www.amazon.com/Designing-Data-Intensive-Applications-Reliable-Maintainable/dp/1449373321)
 
 ### Next in line
