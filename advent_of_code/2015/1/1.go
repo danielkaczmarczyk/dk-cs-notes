@@ -1,9 +1,11 @@
 package main
 
 import (
+	"bufio"
 	"flag"
 	"fmt"
 	"image"
+	"log"
 	"os"
 	//"image"
 	"image/color"
@@ -23,7 +25,7 @@ func check_basement(seen_basement *bool, floor int, i int) {
 }
 
 func main() {
-	fptr := flag.String("fpath", "test.txt", "file path")
+	fptr := flag.String("fpath", "1_input.txt", "file path")
 	flag.Parse()
 	fmt.Println("value of fpath is:", *fptr)
 	data, err := ioutil.ReadFile(*fptr)
@@ -41,6 +43,8 @@ func main() {
 		}
 	}
 
+	fmt.Printf("nframes: %d", nframes)
+
 	const (
 		whiteIndex = 0
 		blackIndex = 1
@@ -54,7 +58,7 @@ func main() {
 	var seen_basement bool = false
 
 	for i, char := range string(data) {
-		rect := image.Rect(0, 0, 2*size+1, 2*size+1)
+		rect := image.Rect(0, 0, nframes, nframes)
 		img := image.NewPaletted(rect, palette)
 
 		if char == '(' {
@@ -66,11 +70,24 @@ func main() {
 		}
 
 		img.SetColorIndex(i, floor, blackIndex)
+		img.SetColorIndex(i+1, floor, blackIndex)
 		anim.Delay = append(anim.Delay, delay)
 		anim.Image = append(anim.Image, img)
 	}
 	fmt.Printf("The final floor is: %d\n", floor)
 	var gifFileName string = "1_out.gif"
 	fmt.Printf("Rendering the gif to %s\n", gifFileName)
-	gif.EncodeAll(os.Stdout, &anim)
+	file, err := os.Create("./out.gif")
+	if err != nil {
+        fmt.Println("error when opening file")
+        log.Fatal(err)
+	}
+	writer := bufio.NewWriter(file)
+	err = gif.EncodeAll(writer, &anim)
+	if err != nil {
+        fmt.Println("error when writing gif")
+        log.Fatal(err)
+	}
+	writer.Flush()
+    file.Close()
 }
