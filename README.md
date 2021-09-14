@@ -155,6 +155,12 @@ One example of a simple gain is to use a tool like [nodemon](https://github.com/
 
 I always steered away from was mathematics. I've fallen in love with it this time around, mostly thanks to a few things that have made it way more applicable, relevant, and fun. If you're feeling iffy about maths, make sure to read [Mathematician's Lament](https://www.maa.org/sites/default/files/pdf/devlin/LockhartsLament.pdf), watch a video on the [Mandelbrot Set](https://www.youtube.com/watch?v=56gzV0od6DU), and read about [The Library of Babel](https://libraryofbabel.info/) (do not forget to read the [original story](https://sites.evergreen.edu/politicalshakespeares/wp-content/uploads/sites/226/2015/12/Borges-The-Library-of-Babel.pdf). Those are the things that I have found enjoyable and were the tipping point. They may not be this for you, so just keep looking. Mathematics is a beautiful art form and I'm sure you can find that.
 
+One thing that was very challenging early on was writing proofs. Here's a list of resources I've used to get more advice and support:
+
+- [Writing Mathematical Proofs](https://www.hamilton.edu/documents/Writing%20Mathematical%20Proofs.pdf)
+- [How to Write Proofs](http://zimmer.csufresno.edu/~larryc/proofs/proofs.html)
+- [Advice for Students Writing Proofs](https://www.d.umn.edu/~jgallian/Proofs.html)
+
 ### Command Line tools i highly recommend
 
 All should be supported under most unix systems.
