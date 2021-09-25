@@ -159,10 +159,3 @@ func main() {
 	}
 
 }
-
-// TODO
-// - [x] generate valid URLs for all comics
-// - [x] ping each of them and write the JSON results to a file.
-// - [x] write a fn that loads the json into memory using structs
-// - [x] write a search function
-// - [x] enable querying through cli args

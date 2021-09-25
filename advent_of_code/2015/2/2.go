@@ -4,19 +4,19 @@ import (
     "fmt"
 	"io/ioutil"
 	"log"
+    "strings"
 )
 
-// TODO time it
-// TODO make it run concurrently on different parts of the slice
-
 func main() {
-	_, err := ioutil.ReadFile("2_input.txt")
+	data, err := ioutil.ReadFile("2_input.txt")
 	if err != nil {
 		log.Fatal(err)
 	}
 
-    myArray := [...]int{1, 2}
+    presents := strings.Split(string(data), "\n")
+    demo_presents := presents[:5]
 
-    fmt.Printf("%d\n", len(myArray))
-	fmt.Printf("%v\n", myArray)
+    fmt.Print("Hello World!\n")
+    fmt.Printf("amount of presents: %d\n", len(demo_presents))
+    fmt.Printf("%s", strings.Split(presents[0], "x"))
 }

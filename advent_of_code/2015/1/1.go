@@ -1,20 +1,9 @@
 package main
 
 import (
-	"bufio"
 	"flag"
 	"fmt"
-	"image"
-	"log"
-	"os"
-	//"image"
-	"image/color"
-	"image/gif"
-	//"io"
-	"io/ioutil"
-	//"math"
-	//"math/rand"
-	//"os"
+    "io/ioutil"
 )
 
 func check_basement(seen_basement *bool, floor int, i int) {
@@ -33,7 +22,6 @@ func main() {
 		fmt.Println("File reading error", err)
 		return
 	}
-	var palette = []color.Color{color.White, color.Black}
 
 	var nframes int = 0
 
@@ -52,15 +40,11 @@ func main() {
 		delay      = 8
 	)
 
-	anim := gif.GIF{LoopCount: nframes}
 
 	var floor int = 0
 	var seen_basement bool = false
 
 	for i, char := range string(data) {
-		rect := image.Rect(0, 0, nframes, nframes)
-		img := image.NewPaletted(rect, palette)
-
 		if char == '(' {
 			floor += 1
 			check_basement(&seen_basement, floor, i)
@@ -69,25 +53,5 @@ func main() {
 			check_basement(&seen_basement, floor, i)
 		}
 
-		img.SetColorIndex(i, floor, blackIndex)
-		img.SetColorIndex(i+1, floor, blackIndex)
-		anim.Delay = append(anim.Delay, delay)
-		anim.Image = append(anim.Image, img)
 	}
-	fmt.Printf("The final floor is: %d\n", floor)
-	var gifFileName string = "1_out.gif"
-	fmt.Printf("Rendering the gif to %s\n", gifFileName)
-	file, err := os.Create("./out.gif")
-	if err != nil {
-        fmt.Println("error when opening file")
-        log.Fatal(err)
-	}
-	writer := bufio.NewWriter(file)
-	err = gif.EncodeAll(writer, &anim)
-	if err != nil {
-        fmt.Println("error when writing gif")
-        log.Fatal(err)
-	}
-	writer.Flush()
-    file.Close()
 }
