@@ -64,11 +64,11 @@ Here's a list of all courses I'm planning to take. They're mostly taken from the
 
 ### Currently working on
 
-- [ ] (video course) [MIT 6.042J Mathematics for Computer Science](https://www.youtube.com/watch?v=L3LMbpZIKhQ&list=PLB7540DEDD482705B)
-- [ ] (book) [Designing Data-Intensive Applications](https://www.amazon.com/Designing-Data-Intensive-Applications-Reliable-Maintainable/dp/1449373321)
+Notes regarding that are on [my blog](https://reversepolishnotation.com). I've moved my attention there. May come back to this list approach later. I still see value in that list I've collated here, maybe it'll get resurrected.
 
 ### Next in line
-
+- [ ] (video course) [MIT 6.042J Mathematics for Computer Science](https://www.youtube.com/watch?v=L3LMbpZIKhQ&list=PLB7540DEDD482705B)
+- [ ] (book) [Designing Data-Intensive Applications](https://www.amazon.com/Designing-Data-Intensive-Applications-Reliable-Maintainable/dp/1449373321)
 - [ ] (book) [Linux Programming Interface](https://www.amazon.com/Linux-Programming-Interface-System-Handbook/dp/1593272200/ref=sr_1_3?dchild=1&keywords=linux+programming+interface&qid=1628305669&sr=8-3)
 - [ ] (book) [The Go Programming Language](https://www.amazon.com/Programming-Language-Addison-Wesley-Professional-Computing/dp/0134190440) Done for my coursework at Bradfield, and I am happy I stumbled upon it. Go feels great, is very similar to C, but "better" in many ways. I've enjoyed learning about it. The book itself is very challenge oriented, there's plenty of examples, and very similarly to K&R, you're probably going to learn a lot about computer science when learning Go, if you're not v. advanced. I really liked it.
 - [ ] (course) I've found a [great resource from Yale University](http://cs.yale.edu/homes/aspnes/classes/223/notes.html) on Data Structures and Programming Techniques, all in C. I am very skeptical about being able to finish it within the time boundaries I'm working with but hey, it's a good aspirational bit.
