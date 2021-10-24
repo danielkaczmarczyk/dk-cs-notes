@@ -1,5 +1,11 @@
 # teach-yourself-cs-curriculum
 
+## I've moved!
+
+These days most of my notes can be found on [my blog](https://reversepolishnotation.com) instead of this repo. It's not archived, but will get less frequent updates.
+
+## Intro
+
 This document is my record of work towards a Self-Taught equivalent of a CS degree. I want to pursue mastery in my craft and the aim for this project that will most likely span years is to keep track and log of all things and be able to share it with people who could benefit form it. The core curriculum is as perscribed by Oz Nova and Myles Byrne, authors of [teachyourselfcs.com](https://teachyourselfcs.com), but consists of many additional resources that I have completed / am interested in. If you want to ask questions about the core curriculum, all the answers are to be found at the link above. The files in this repository are a collection of all the possible files, notes, etc. that I have been using for my work. It's a snapshot of a real-life workplace, with various papers and books scattered around than a repository of coherent code, and it should be treated as such. Use it to guess my process, look at resources I've worked on, etc.
 
 The purpose of this repository is twofold - to keep myself organised and accountable, and also to be able to share my experience with other people who are undertaking a similar challenge of completing this curriculum.
@@ -58,11 +64,11 @@ Here's a list of all courses I'm planning to take. They're mostly taken from the
 
 ### Currently working on
 
-- [ ] (video course) [MIT 6.042J Mathematics for Computer Science](https://www.youtube.com/watch?v=L3LMbpZIKhQ&list=PLB7540DEDD482705B)
-- [ ] (book) [Designing Data-Intensive Applications](https://www.amazon.com/Designing-Data-Intensive-Applications-Reliable-Maintainable/dp/1449373321)
+Notes regarding that are on [my blog](https://reversepolishnotation.com). I've moved my attention there. May come back to this list approach later. I still see value in that list I've collated here, maybe it'll get resurrected.
 
 ### Next in line
-
+- [ ] (video course) [MIT 6.042J Mathematics for Computer Science](https://www.youtube.com/watch?v=L3LMbpZIKhQ&list=PLB7540DEDD482705B)
+- [ ] (book) [Designing Data-Intensive Applications](https://www.amazon.com/Designing-Data-Intensive-Applications-Reliable-Maintainable/dp/1449373321)
 - [ ] (book) [Linux Programming Interface](https://www.amazon.com/Linux-Programming-Interface-System-Handbook/dp/1593272200/ref=sr_1_3?dchild=1&keywords=linux+programming+interface&qid=1628305669&sr=8-3)
 - [ ] (book) [The Go Programming Language](https://www.amazon.com/Programming-Language-Addison-Wesley-Professional-Computing/dp/0134190440) Done for my coursework at Bradfield, and I am happy I stumbled upon it. Go feels great, is very similar to C, but "better" in many ways. I've enjoyed learning about it. The book itself is very challenge oriented, there's plenty of examples, and very similarly to K&R, you're probably going to learn a lot about computer science when learning Go, if you're not v. advanced. I really liked it.
 - [ ] (course) I've found a [great resource from Yale University](http://cs.yale.edu/homes/aspnes/classes/223/notes.html) on Data Structures and Programming Techniques, all in C. I am very skeptical about being able to finish it within the time boundaries I'm working with but hey, it's a good aspirational bit.
