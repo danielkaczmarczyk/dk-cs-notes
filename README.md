@@ -23,14 +23,24 @@ Here's a list of all courses I'm planning to take. They're mostly taken from the
 
 ### Completed
 
+<details>
+
 #### 2020
+
+<summary> 2020 </summary>
 
 - [x] (book) [You Don't Know JS](https://github.com/getify/You-Dont-Know-JS), by [getify](https://github.com/getify) books 1-6. Absolutely an amazing piece of work on JS. Highly recommend.
 - [x] (book) [C.O.D.E](https://en.wikipedia.org/wiki/Code:_The_Hidden_Language_of_Computer_Hardware_and_Software) by [Charles Petzold](https://www.charlespetzold.com/). Stunning book on the nature of computers, clear explanations, great storytelling.
 - [x] (book/video course) [Learn C the Hard Way](https://shop.learncodethehardway.org) by [Zed Shaw](https://twitter.com/lzsthw). I've learned a lot about modern C programming from Zed, but more importantly, good habits. The learning methodology really stuck with me and pays dividends on all learning since. I highly recommend it even just for that reason.
 - [x] (mooc + book) [Learning How To Learn](https://www.coursera.org/learn/learning-how-to-learn) and [A Mind for Numbers](https://barbaraoakley.com/books/a-mind-for-numbers/) by [Barbara Oakley](https://barbaraoakley.com/). Transforming course and a book. Understanding the neuroscience behind learning has helped me treat a lot of imposter syndrome and made my learning more efficient.
 
+</details>
+
+<details>
+
 #### 2021
+
+<summary> 2021 </summary>
 
 - [x] (book) [Effective C](https://nostarch.com/Effective_C). A thorough look at C - provided great commentary and supplimented a lot of knowledge in a very clear way. Recommend.
 - [x] (book) [The C Programming Language](https://en.wikipedia.org/wiki/The_C_Programming_Language). Absolute classic, great peek into the 'past', but I found myself not being the target audience. Only used it correctly after Zed Shaw's resources and reading Effective C. Still a valuable read.
@@ -52,6 +62,11 @@ Here's a list of all courses I'm planning to take. They're mostly taken from the
 - [x] (book) [Sandworm - A New Era of Cyberwar](https://www.audible.com/pd/Sandworm-Audiobook/0593146786?ref=a_library_t_c5_libItem_&pf_rd_p=80765e81-b10a-4f33-b1d3-ffb87793d047&pf_rd_r=Y6WZCF3162D418HPWH4W) Last entry in a row of three books on ifnosec I've literally devoured one after another. Great pace, covers in detail parts of "This Is How They Tell Me The World Ends", going deeper on a specific hacking group.
 - [x] (book) [Discrete Mathematics lecture notes by Laszlo Lovasz (direct download)](http://www.cs.elte.hu/~lovasz/dmbook.ps)
 
+</details>
+
+<details>
+
+<summary> next in line </summary>
 ### Next in line
 - [ ] (video course) [MIT 6.042J Mathematics for Computer Science](https://www.youtube.com/watch?v=L3LMbpZIKhQ&list=PLB7540DEDD482705B)
 - [ ] (book) [Designing Data-Intensive Applications](https://www.amazon.com/Designing-Data-Intensive-Applications-Reliable-Maintainable/dp/1449373321)
@@ -114,6 +129,8 @@ Here's a list of all courses I'm planning to take. They're mostly taken from the
 - [ ] [Mathematical Thinking in Computer Science](https://www.coursera.org/learn/what-is-a-proof/home/welcome)
 - [ ] [One Lone Coder's Youtube Channel](https://www.youtube.com/channel/UC-yuWVUplUJZvieEligKBkA)
 - [ ] [Coding Train]()
+
+</details>
 
 ## General Findings
 
