@@ -10,12 +10,6 @@ The purpose of this repository is twofold - to keep myself organised and account
 
 Time flies. I've been working on my cs knowledge since Dec 2020, and ATOW it's August 2021. Since then I've actually enrolled in a [intensive computer science course offered by Bradfield](https://bradfieldcs.com/csi/). For transparency - it's offered by the authors of the [teachyourselfcs](https://teachyourselfcs.com) curriculum. That means that the title of this repository, and by extension, the actual notion of teaching _yourself_ cs changes a little bit, since I'm actually enrolled in an institution where I'm being taught. Nonetheless, I am going to keep maintaining it for visibility, inspiration, accountability, and numerous other reasons, and I'm sure its maintenance will outlive taking that course.
 
-For those of you who found this repository since I have started it and messaged me about it - thank you, I'm glad it's inspiring action! Although I do often come here to add blog-like notes like this, it is more likely to happen on [my blog](https://reversepolishnotation.com).
-
-Anyhow, that's all for now. Good times ahead. Updates to follow.
-
-Over and out.
-
 ## Table of Contents
 
 - [Progress](#progress)
@@ -57,10 +51,6 @@ Here's a list of all courses I'm planning to take. They're mostly taken from the
 - [x] (book) [This Is How They Tell Me The World Ends](https://www.audible.com/pd/This-Is-How-They-Tell-Me-the-World-Ends-Audiobook/1635577179?ref=a_library_t_c5_libItem_&pf_rd_p=80765e81-b10a-4f33-b1d3-ffb87793d047&pf_rd_r=Y6WZCF3162D418HPWH4W). Thrilling. If you ever listened to Darknet Diaries, you will like this. Again, not a CS book or edcuation per se, but a gripping story on the threshold of politics and computers.
 - [x] (book) [Sandworm - A New Era of Cyberwar](https://www.audible.com/pd/Sandworm-Audiobook/0593146786?ref=a_library_t_c5_libItem_&pf_rd_p=80765e81-b10a-4f33-b1d3-ffb87793d047&pf_rd_r=Y6WZCF3162D418HPWH4W) Last entry in a row of three books on ifnosec I've literally devoured one after another. Great pace, covers in detail parts of "This Is How They Tell Me The World Ends", going deeper on a specific hacking group.
 - [x] (book) [Discrete Mathematics lecture notes by Laszlo Lovasz (direct download)](http://www.cs.elte.hu/~lovasz/dmbook.ps)
-
-### Currently working on
-
-Notes regarding that are on [my blog](https://reversepolishnotation.com). I've moved my attention there. May come back to this list approach later. I still see value in that list I've collated here, maybe it'll get resurrected.
 
 ### Next in line
 - [ ] (video course) [MIT 6.042J Mathematics for Computer Science](https://www.youtube.com/watch?v=L3LMbpZIKhQ&list=PLB7540DEDD482705B)
