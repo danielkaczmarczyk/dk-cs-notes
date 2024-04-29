@@ -67,6 +67,7 @@ Here's a list of all courses I'm planning to take. They're mostly taken from the
 <details>
 
 <summary> next in line </summary>
+
 ### Next in line
 - [ ] (video course) [MIT 6.042J Mathematics for Computer Science](https://www.youtube.com/watch?v=L3LMbpZIKhQ&list=PLB7540DEDD482705B)
 - [ ] (book) [Designing Data-Intensive Applications](https://www.amazon.com/Designing-Data-Intensive-Applications-Reliable-Maintainable/dp/1449373321)
