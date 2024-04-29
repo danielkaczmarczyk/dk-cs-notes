@@ -1,8 +1,4 @@
-# teach-yourself-cs-curriculum
-
-## I've moved!
-
-These days most of my notes can be found on [my blog](https://reversepolishnotation.com) instead of this repo. It's not archived, but will get less frequent updates.
+# Daniel's Computer Science Notes
 
 ## Intro
 
