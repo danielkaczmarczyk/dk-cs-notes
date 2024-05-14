@@ -1,0 +1,1 @@
+- [ ] [The Notifier Pattern for Applications That Use Postgres](https://brandur.org/notifier)

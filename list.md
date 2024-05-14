@@ -28,3 +28,6 @@ A record of things I am considering consuming for one reason or another.
 - [ ] [*** nixos homepage](https://nixos.org/explore/)
 - [ ] [**** generic gymnastics - sussman to production](https://www.youtube.com/watch?v=kv-bHHHGeV4)
 - [ ] [*** monte carlo simulations](https://www.youtube.com/watch?v=slbZ-SLpIgg)
+- [ ] [tcp packets](https://www.youtube.com/watch?v=4NjE86ur-ck)
+- [ ] [setting up nvim for sicp](https://nguyenhuythanh.com/posts/getting-started-with-sicp-in-vim/)
+- [ ] [cpp vs rust](https://www.youtube.com/watch?v=VMpSYJ_7aYM)
